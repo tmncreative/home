@@ -4,6 +4,18 @@
 
   var STORE_KEY = 'tmn_attribution_v1';
   var PARAMS = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','gbraid','wbraid','fbclid','msclkid'];
+  var AI_SOURCES = [
+    ['chatgpt', 'ChatGPT'],
+    ['openai', 'ChatGPT'],
+    ['perplexity', 'Perplexity'],
+    ['claude', 'Claude'],
+    ['anthropic', 'Claude'],
+    ['gemini', 'Gemini'],
+    ['bard.google', 'Gemini'],
+    ['copilot', 'Microsoft Copilot'],
+    ['bing.com/chat', 'Microsoft Copilot'],
+    ['you.com', 'You.com']
+  ];
 
   function readStore(){
     try { return JSON.parse(window.localStorage.getItem(STORE_KEY) || '{}') || {}; }
@@ -17,6 +29,19 @@
 
   function cleanPath(){
     return window.location.pathname || '/';
+  }
+
+  function aiSource(qs){
+    var candidates = [
+      qs.get('utm_source') || '',
+      qs.get('utm_medium') || '',
+      document.referrer || ''
+    ].join(' ').toLowerCase();
+
+    for(var i = 0; i < AI_SOURCES.length; i++){
+      if(candidates.indexOf(AI_SOURCES[i][0]) !== -1) return AI_SOURCES[i][1];
+    }
+    return '';
   }
 
   function initAttribution(){
@@ -44,6 +69,12 @@
       if(!data['first_' + key]) data['first_' + key] = value;
       data[key] = value;
     });
+
+    var detectedAiSource = aiSource(qs);
+    if(detectedAiSource){
+      if(!data.first_ai_source) data.first_ai_source = detectedAiSource;
+    }
+    data.ai_source = detectedAiSource;
 
     writeStore(data);
     return data;
@@ -73,6 +104,8 @@
     hidden(form, 'last_landing_path', data.last_landing_path || cleanPath());
     hidden(form, 'source_page', cleanPath());
     hidden(form, 'referrer', data.referrer || document.referrer || '');
+    hidden(form, 'ai_source', data.ai_source || '');
+    hidden(form, 'first_ai_source', data.first_ai_source || '');
     hidden(form, 'submitted_at_iso', new Date().toISOString());
   }
 
@@ -132,6 +165,7 @@
     catch(e){ return null; }
 
     if(url.hostname.indexOf('calendly.com') !== -1) return ['Calendly Click', url.href];
+    if(url.pathname === '/start-a-project') return ['Project CTA Click', url.pathname];
     if(url.pathname === '/free-review') return ['Free Review CTA Click', url.pathname];
     if(url.pathname === '/pricing') return ['Pricing Click', url.pathname];
     if(url.pathname === '/pay') return ['Client Portal Click', url.pathname];
@@ -143,6 +177,20 @@
 
   document.addEventListener('DOMContentLoaded', function(){
     hydrateForms();
+
+    var data = readStore();
+    if(data.ai_source){
+      try {
+        if(!window.sessionStorage.getItem('tmn_ai_visit_tracked')){
+          window.sessionStorage.setItem('tmn_ai_visit_tracked', '1');
+          sendEvent('AI Referral Visit', {
+            label: data.ai_source,
+            provider: data.ai_source,
+            landing_path: data.last_landing_path || cleanPath()
+          });
+        }
+      } catch(e){}
+    }
 
     if(cleanPath() === '/success' || cleanPath() === '/success.html'){
       setTimeout(function(){ sendEvent('Lead Confirmed', { label: 'success-page' }); }, 500);

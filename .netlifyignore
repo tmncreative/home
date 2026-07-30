@@ -1,0 +1,7 @@
+audits/
+new landing stuff/
+images/_orig-backup/
+.claude/
+.git/
+.DS_Store
+*.md

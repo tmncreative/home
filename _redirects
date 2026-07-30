@@ -25,7 +25,9 @@
 /phoenix.html                    /phoenix               301!
 /plumbing.html                   /plumbing              301!
 /portfolio.html                  /portfolio             301!
+/walnut-ventures-website-design.html /walnut-ventures-website-design 301!
 /pricing.html                    /pricing               301!
+/start-a-project.html            /start-a-project       301!
 /privacy.html                    /privacy               301!
 /real-estate.html                /real-estate           301!
 /scottsdale.html                 /scottsdale            301!
@@ -49,6 +51,11 @@
 /websites-for-law-firms.html     /websites-for-law-firms 301!
 /dental-website-redesign.html    /dental-website-redesign 301!
 /med-spa-website-design-guide.html /med-spa-website-design-guide 301!
+/how-to-choose-a-home-services-web-design-company.html /how-to-choose-a-home-services-web-design-company 301!
+/plumbing-lead-generation-website-guide.html /plumbing-lead-generation-website-guide 301!
+/multi-location-home-services-website-strategy.html /multi-location-home-services-website-strategy 301!
+/hvac-branding-and-website-guide.html /hvac-branding-and-website-guide 301!
+/roofing-ppc-landing-page-guide.html /roofing-ppc-landing-page-guide 301!
 
 # Function source and build internals are not public pages
 /netlify/*   /404.html   404!
@@ -101,6 +108,9 @@
 /mockup              /free-review   301
 /site-review         /free-review   301
 /audit               /free-review   301
+/discuss-a-project    /start-a-project 301
+/project-inquiry      /start-a-project 301
+/website-project      /start-a-project 301
 /wordpress-redesign  /wordpress-website-redesign 301
 /replace-wordpress   /wordpress-website-redesign 301
 /dental-redesign     /dental-website-redesign 301
