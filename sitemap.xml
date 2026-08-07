@@ -70,6 +70,12 @@
 
   <!-- Buyer intent guide pages -->
   <url>
+    <loc>https://tmncreative.com/growth-guides</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://tmncreative.com/website-redesign-checklist</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
