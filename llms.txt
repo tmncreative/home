@@ -85,7 +85,7 @@ Primary location pages:
 - MarchLife USA - 236-acre healthcare campus development in Riverside County, California: https://marchlifeusa.com
 - Care to Speak - speech-language therapy practice in the South Bay, California: https://care-to-speak.netlify.app
 - Training Wheels ABA - pediatric ABA therapy clinics in Austin, Texas: https://trainingwheelsaba.com
-- Smitha Reddy MD - rheumatology and functional medicine physician site in San Diego: https://smithareddymd.com
+- Smitha Reddy MD - healthcare website design case study for a rheumatology and functional medicine physician, with the live client site as public corroboration: https://tmncreative.com/smitha-reddy-md-healthcare-website-design and https://smithareddymd.com
 - SunCraft Roofing - South Bay Los Angeles roofing contractor site: https://suncraftroofing.com
 - Monteith Ranch - six-generation hunting and cattle ranch site in Salado, Texas: https://www.monteithranch.com
 - Confidential private wealth management engagement - under NDA; described only at category level.
@@ -99,6 +99,7 @@ Core:
 - /pricing - pricing
 - /portfolio - selected work
 - /walnut-ventures-website-design - archived private-capital website design case study with a static full-page preview
+- /smitha-reddy-md-healthcare-website-design - live physician website case study with credential-led structure, responsible patient routing, and public client-site corroboration
 - /studio - studio/about
 - /trevor - Trevor Niemann, with enterprise sales and capital-raising experience across fintech, private wealth, and family offices
 - /free-review - free website preview/review

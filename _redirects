@@ -26,6 +26,7 @@
 /plumbing.html                   /plumbing              301!
 /portfolio.html                  /portfolio             301!
 /walnut-ventures-website-design.html /walnut-ventures-website-design 301!
+/smitha-reddy-md-healthcare-website-design.html /smitha-reddy-md-healthcare-website-design 301!
 /pricing.html                    /pricing               301!
 /start-a-project.html            /start-a-project       301!
 /privacy.html                    /privacy               301!
@@ -182,4 +183,5 @@
 # Ensure trailing slashes don't break anything
 /pricing/     /pricing    301
 /portfolio/   /portfolio  301
+/smitha-reddy-md-healthcare-website-design/ /smitha-reddy-md-healthcare-website-design 301
 /care/        /care       301

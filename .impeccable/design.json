@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-14T12:56:48Z",
+  "title": "Design System: TMN Creative",
+  "extensions": {
+    "colorMeta": {
+      "near-white-paper": {
+        "role": "neutral",
+        "displayName": "Near-White Paper"
+      },
+      "white-paper": {
+        "role": "neutral",
+        "displayName": "White Paper"
+      },
+      "tonal-paper": {
+        "role": "neutral",
+        "displayName": "Tonal Paper"
+      },
+      "dark-ink": {
+        "role": "neutral",
+        "displayName": "Dark Ink"
+      },
+      "secondary-ink": {
+        "role": "neutral",
+        "displayName": "Secondary Ink"
+      },
+      "muted-ink": {
+        "role": "neutral",
+        "displayName": "Muted Ink"
+      },
+      "soft-ink": {
+        "role": "neutral",
+        "displayName": "Soft Ink"
+      },
+      "structural-line": {
+        "role": "neutral",
+        "displayName": "Structural Line"
+      },
+      "soft-line": {
+        "role": "neutral",
+        "displayName": "Soft Line"
+      },
+      "restrained-gold": {
+        "role": "primary",
+        "displayName": "Restrained Gold"
+      },
+      "deep-gold": {
+        "role": "primary",
+        "displayName": "Deep Gold"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Editorial Display",
+        "purpose": "First-view headlines and the largest proof-led statements."
+      },
+      "headline": {
+        "displayName": "Section Headline",
+        "purpose": "Major section transitions and proof-panel headings."
+      },
+      "title": {
+        "displayName": "Record Title",
+        "purpose": "Client records, cards, and component headings."
+      },
+      "body": {
+        "displayName": "Plain Body",
+        "purpose": "Explanations, context, and decision-support copy."
+      },
+      "label": {
+        "displayName": "Evidence Label",
+        "purpose": "Facts, categories, numbers, table headers, and proof links."
+      }
+    },
+    "shadows": [
+      {
+        "name": "ambient-answer-panel",
+        "value": "0 24px 50px oklch(18% 0.037 262 / 0.08)",
+        "purpose": "Broad separation for the shared answer panel."
+      },
+      {
+        "name": "interactive-card-lift",
+        "value": "0 14px 32px oklch(18% 0.037 262 / 0.07)",
+        "purpose": "Faint lift for linked evidence cards on hover."
+      }
+    ],
+    "motion": [
+      {
+        "name": "quick-state",
+        "value": "200ms cubic-bezier(0.25, 1, 0.5, 1)",
+        "purpose": "Compact navigation and link state changes."
+      },
+      {
+        "name": "surface-lift",
+        "value": "300ms cubic-bezier(0.25, 1, 0.5, 1)",
+        "purpose": "Restrained card and control movement."
+      },
+      {
+        "name": "work-image-settle",
+        "value": "700ms cubic-bezier(0.25, 1, 0.5, 1)",
+        "purpose": "Slow, subtle scale on real work imagery."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "major-collapse",
+        "value": "900px"
+      },
+      {
+        "name": "work-grid-collapse",
+        "value": "760px"
+      },
+      {
+        "name": "compact-guide",
+        "value": "560px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Direct dark action used on light paper surfaces.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Discuss a Practice Project</a>",
+      "css": ".ds-btn-primary { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem; border: 1px solid var(--ink); border-radius: 4px; padding: 0.78rem 1rem; background: var(--ink); color: var(--paper); font-family: var(--sans); font-size: 0.86rem; font-weight: 650; line-height: 1; text-decoration: none; transition: background 250ms cubic-bezier(0.25, 1, 0.5, 1), transform 250ms cubic-bezier(0.25, 1, 0.5, 1); } .ds-btn-primary:hover { background: var(--ink-2); transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Quiet bordered action for supporting routes.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#\">View Portfolio</a>",
+      "css": ".ds-btn-secondary { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem; border: 1px solid var(--line); border-radius: 4px; padding: 0.78rem 1rem; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 0.86rem; font-weight: 650; line-height: 1; text-decoration: none; transition: background 250ms cubic-bezier(0.25, 1, 0.5, 1), border-color 250ms cubic-bezier(0.25, 1, 0.5, 1); } .ds-btn-secondary:hover { background: oklch(97% 0.006 240); border-color: oklch(70% 0.016 245); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }"
+    },
+    {
+      "name": "Evidence Card",
+      "kind": "card",
+      "refersTo": "evidence-card",
+      "description": "Compact factual card used in guide grids and linked records.",
+      "html": "<a class=\"ds-evidence-card\" href=\"#\"><span class=\"ds-evidence-card__num\">02</span><h3>Provider credibility</h3><p>Use real provider photos, credentials, training, and bio structure that feels human.</p></a>",
+      "css": ".ds-evidence-card { display: block; min-height: 190px; padding: 1.15rem; background: var(--paper); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; text-decoration: none; transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease; } .ds-evidence-card__num { display: block; margin-bottom: 1.35rem; color: var(--accent-deep); font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.1em; } .ds-evidence-card h3 { margin: 0 0 0.55rem; font-family: var(--sans); font-size: 1.08rem; font-weight: 600; letter-spacing: -0.02em; } .ds-evidence-card p { margin: 0; color: var(--muted); font-family: var(--sans); font-size: 0.94rem; line-height: 1.58; } .ds-evidence-card:hover { transform: translateY(-2px); border-color: oklch(78% 0.055 85); box-shadow: 0 14px 32px oklch(18% 0.037 262 / 0.07); } .ds-evidence-card:focus-visible { outline: 2px solid var(--accent-deep); outline-offset: 3px; }"
+    },
+    {
+      "name": "Guide Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Restrained translucent top rail from the shared growth-guide stack.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary\"><div class=\"ds-nav__inner\"><a class=\"ds-nav__logo\" href=\"#\" aria-label=\"TMN Creative home\">TMN Creative</a><div class=\"ds-nav__links\"><a href=\"#\">Work</a><a href=\"#\">Pricing</a><a href=\"#\">Healthcare</a></div><a class=\"ds-nav__action\" href=\"#\">Discuss a Practice Project</a></div></nav>",
+      "css": ".ds-nav { background: oklch(98.5% 0.004 240 / 0.88); color: var(--ink); border-bottom: 1px solid var(--line); backdrop-filter: blur(18px); } .ds-nav__inner { max-width: 1220px; margin: 0 auto; padding: 0.82rem clamp(1rem, 3vw, 2.5rem); display: flex; align-items: center; justify-content: space-between; gap: 1rem; } .ds-nav__logo { color: var(--ink); font-family: var(--sans); font-size: 1.05rem; font-weight: 700; letter-spacing: -0.02em; text-decoration: none; } .ds-nav__links { display: flex; align-items: center; gap: 1.45rem; } .ds-nav__links a { color: var(--muted); font-family: var(--sans); font-size: 0.86rem; text-decoration: none; } .ds-nav__links a:hover { color: var(--ink); } .ds-nav__action { min-height: 44px; display: inline-flex; align-items: center; padding: 0.78rem 1rem; border: 1px solid var(--ink); border-radius: 4px; background: var(--ink); color: var(--paper); font-family: var(--sans); font-size: 0.86rem; font-weight: 650; text-decoration: none; } .ds-nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; } @media (max-width: 900px) { .ds-nav__links { display: none; } }"
+    },
+    {
+      "name": "Proof Panel",
+      "kind": "custom",
+      "refersTo": "proof-panel",
+      "description": "Dark evidence field used to connect factual context with direct routes.",
+      "html": "<section class=\"ds-proof-panel\"><p class=\"ds-proof-panel__label\">Healthcare Proof</p><h2>The website should feel as considered as the patient experience.</h2><p>Our healthcare work includes pediatric ABA, speech-language therapy, physician, and specialty-practice websites. Each one uses a different visual system, but the same trust structure: clear provider context, understandable services, careful intake routing, mobile accessibility, and one calm next step.</p><div class=\"ds-proof-panel__actions\"><a class=\"ds-proof-panel__primary\" href=\"#\">Discuss a Practice Project</a><a class=\"ds-proof-panel__secondary\" href=\"#\">See Healthcare Work</a></div></section>",
+      "css": ".ds-proof-panel { min-height: 320px; padding: clamp(1.25rem, 3vw, 2rem); display: flex; flex-direction: column; justify-content: space-between; background: var(--ink); color: var(--paper); border-radius: 8px; } .ds-proof-panel__label { margin: 0 0 1rem; color: var(--accent); font-family: var(--mono); font-size: 0.72rem; font-weight: 650; letter-spacing: 0.12em; text-transform: uppercase; } .ds-proof-panel h2 { margin: 0 0 0.8rem; max-width: 18ch; color: var(--paper); font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 4.8rem); font-weight: 520; letter-spacing: -0.04em; line-height: 0.94; } .ds-proof-panel > p:not(.ds-proof-panel__label) { max-width: 58ch; color: oklch(84% 0.012 248); font-family: var(--sans); line-height: 1.65; } .ds-proof-panel__actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; } .ds-proof-panel__primary, .ds-proof-panel__secondary { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; padding: 0.78rem 1rem; border-radius: 4px; font-family: var(--sans); font-size: 0.86rem; font-weight: 650; text-decoration: none; } .ds-proof-panel__primary { background: var(--accent); color: var(--ink); border: 1px solid var(--accent); } .ds-proof-panel__secondary { background: transparent; color: var(--paper); border: 1px solid oklch(100% 0 0 / 0.18); } .ds-proof-panel__primary:hover { transform: translateY(-1px); } .ds-proof-panel__secondary:hover { border-color: var(--accent); color: var(--accent); } .ds-proof-panel a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Proof Ledger",
+    "overview": "The Proof Ledger treats the site as a calm, public record of the studio's work. Near-white paper, dark ink, restrained gold, editorial serif type, and real client imagery create an institutional surface that feels handcrafted and easy to verify.\n\nWork, client context, and direct evidence should remain visually ahead of broad agency claims. Pages may choose different compositions, but they share bounded rails, crisp controls, factual labels, and a restrained hierarchy that keeps attention on the artifact and the next useful route.",
+    "keyCharacteristics": [
+      "Evidence and real client work lead the visual hierarchy.",
+      "Near-white paper and dark ink carry most of the interface.",
+      "Gold acts as a restrained annotation and action color.",
+      "Editorial serif headlines pair with plain sans body copy and compact evidence labels.",
+      "Layouts stay bounded, responsive, and quiet enough for trust-first subjects."
+    ],
+    "rules": [
+      {
+        "name": "The Annotation Rule",
+        "body": "Gold marks labels, selected emphasis, and high-value actions. Keep it rare enough to retain meaning.",
+        "section": "colors"
+      },
+      {
+        "name": "The Serif Lead Rule",
+        "body": "Source Serif 4 carries display and section headlines. IBM Plex Sans handles explanation and controls. Geist Mono is reserved for compact facts and evidence markers.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tracking Guardrail",
+        "body": "New or touched serif display headings stay at -0.04em or looser. Tighter values in legacy shared CSS are migration debt, not a pattern to repeat.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat at Rest Rule",
+        "body": "Paper tone and hairline borders define most surfaces. Use the established ambient shadows for an answer panel or an interactive lift, never as a default around every container.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do put real client imagery, project names, and verifiable routes ahead of decorative agency claims.",
+      "Do preserve the near-white, dark-ink, and restrained-gold balance.",
+      "Do keep actions at least 44px high and maintain visible focus treatment.",
+      "Do collapse multi-column grids before the content becomes compressed, and honor reduced-motion preferences."
+    ],
+    "donts": [
+      "Don't turn the Smitha Reddy split hero, fact band, or case-study sequence into a universal page template.",
+      "Don't use gold as a full-page field or repeated decorative effect.",
+      "Don't replace real work with stock scenes, generic device mockups, or invented outcomes.",
+      "Don't spread pill controls or large friendly radii across the editorial system."
+    ]
+  }
+}
