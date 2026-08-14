@@ -3,6 +3,9 @@
   window.__TMN_ATTRIBUTION__ = true;
 
   var STORE_KEY = 'tmn_attribution_v1';
+  var SESSION_AI_KEY = 'tmn_current_ai_source';
+  var SESSION_AI_TRACKED_KEY = 'tmn_ai_visit_tracked';
+  var SESSION_TTL_MS = 30 * 60 * 1000;
   var PARAMS = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','gbraid','wbraid','fbclid','msclkid'];
   var AI_SOURCES = [
     ['chatgpt', 'ChatGPT'],
@@ -25,6 +28,27 @@
   function writeStore(data){
     try { window.localStorage.setItem(STORE_KEY, JSON.stringify(data)); }
     catch(e){}
+  }
+
+  function readSessionValue(key){
+    try {
+      var record = JSON.parse(window.sessionStorage.getItem(key) || 'null');
+      if(!record || !record.value || !record.at || Date.now() - record.at > SESSION_TTL_MS){
+        window.sessionStorage.removeItem(key);
+        return '';
+      }
+      return record.value;
+    } catch(e){
+      try { window.sessionStorage.removeItem(key); } catch(ignore){}
+      return '';
+    }
+  }
+
+  function writeSessionValue(key, value){
+    try {
+      if(value) window.sessionStorage.setItem(key, JSON.stringify({ value: value, at: Date.now() }));
+      else window.sessionStorage.removeItem(key);
+    } catch(e){}
   }
 
   function cleanPath(){
@@ -114,6 +138,20 @@
     if(detectedAiSource){
       if(!data.first_ai_source) data.first_ai_source = detectedAiSource;
       data.ai_source = detectedAiSource;
+      writeSessionValue(SESSION_AI_KEY, detectedAiSource);
+    } else if(currentExternalReferrer || PARAMS.some(function(key){ return Boolean(qs.get(key)); })){
+      delete data.ai_source;
+      writeSessionValue(SESSION_AI_KEY, '');
+      writeSessionValue(SESSION_AI_TRACKED_KEY, '');
+    } else {
+      var sessionAiSource = readSessionValue(SESSION_AI_KEY);
+      if(sessionAiSource){
+        data.ai_source = sessionAiSource;
+        writeSessionValue(SESSION_AI_KEY, sessionAiSource);
+      } else {
+        delete data.ai_source;
+        writeSessionValue(SESSION_AI_TRACKED_KEY, '');
+      }
     }
 
     writeStore(data);
@@ -147,7 +185,7 @@
     hidden(form, 'vertical_source', qs.get('vertical') || qs.get('vertical_source') || '');
     hidden(form, 'referrer', data.first_external_referrer || data.referrer || '');
     hidden(form, 'first_external_referrer', data.first_external_referrer || '');
-    hidden(form, 'ai_source', data.ai_source || data.first_ai_source || '');
+    hidden(form, 'ai_source', readSessionValue(SESSION_AI_KEY));
     hidden(form, 'first_ai_source', data.first_ai_source || '');
     hidden(form, 'lead_source', leadSource(data));
     hidden(form, 'submitted_at_iso', new Date().toISOString());
@@ -259,17 +297,17 @@
     hydrateForms();
 
     var data = readStore();
-    if(data.ai_source){
-      try {
-        if(!window.sessionStorage.getItem('tmn_ai_visit_tracked')){
-          window.sessionStorage.setItem('tmn_ai_visit_tracked', '1');
-          sendEvent('AI Referral Visit', {
-            label: data.ai_source,
-            provider: data.ai_source,
-            landing_path: data.last_landing_path || cleanPath()
-          });
-        }
-      } catch(e){}
+    var currentAiSource = readSessionValue(SESSION_AI_KEY);
+    if(currentAiSource){
+      var trackedAiSource = readSessionValue(SESSION_AI_TRACKED_KEY);
+      if(trackedAiSource !== currentAiSource){
+        sendEvent('AI Referral Visit', {
+          label: currentAiSource,
+          provider: currentAiSource,
+          landing_path: data.last_landing_path || cleanPath()
+        });
+      }
+      writeSessionValue(SESSION_AI_TRACKED_KEY, currentAiSource);
     }
 
     if(cleanPath() === '/success' || cleanPath() === '/success.html'){
