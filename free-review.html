@@ -131,6 +131,7 @@
     .form-card{grid-area:form;scroll-margin-top:calc(var(--nav-h) + 1rem)}
     @media(max-width:880px){
       .grid{grid-template-columns:1fr;grid-template-areas:"intro" "form" "preview"}
+      .grid>*{min-width:0}
       .primary-preview{margin-top:2rem}
     }
 
@@ -163,6 +164,7 @@
     .fg input:focus,.fg select:focus{outline:none;border-color:var(--accent);background:var(--bg-elev);box-shadow:0 0 0 3px var(--accent-soft)}
     .fg input::placeholder{color:var(--ink-faint)}
     .fg select{background-image:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none' stroke='%2394A3B8' stroke-width='1.4'%3E%3Cpolyline points='1 1 5 5 9 1'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 0.9rem center;padding-right:2rem;cursor:pointer}
+    @media(max-width:880px){.fg input,.fg select{font-size:16px}.fg select{width:100%;min-width:0;max-width:100%}}
     .form-sub{
       width:100%;margin-top:0.5rem;padding:1rem 1.25rem;
       background:var(--ink);color:var(--bg);border-radius:var(--r-sm);
@@ -485,6 +487,20 @@
               </select>
             </div>
             <div class="fg"><label for="phone">Phone <span style="text-transform:none;letter-spacing:0;color:var(--ink-faint);font-weight:400">(optional)</span></label><input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" autocomplete="tel" inputmode="tel" /></div>
+            <div class="fg"><label for="preview-source">How did you hear about TMN? <span style="text-transform:none;letter-spacing:0;color:var(--ink-faint);font-weight:400">(optional)</span></label>
+              <select id="preview-source" name="self_reported_source">
+                <option value="" selected>Select one if you&rsquo;d like</option>
+                <option value="chatgpt">ChatGPT</option>
+                <option value="other-ai">Another AI assistant</option>
+                <option value="google-search">Google search</option>
+                <option value="referral">Referral from someone I know</option>
+                <option value="tmn-work">A website or project TMN built</option>
+                <option value="social-media">LinkedIn or another social platform</option>
+                <option value="agency-directory">Clutch, DesignRush, Agency List, or another directory</option>
+                <option value="already-knew-tmn">I already knew TMN</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
             <button type="submit" class="form-sub">Request a Free Preview <svg viewBox="0 0 14 10"><path d="M1 5h12m0 0L9 1m4 4L9 9"/></svg></button>
           </form>
           <div class="form-micro"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>No spam. No credit card. We build it. You decide.</div>
@@ -605,7 +621,7 @@
           <div class="step">
             <div class="step-num">01</div>
             <h3>Fill out the 30-second form</h3>
-            <p>Six fields. Name, email, current site, business type, planned build range, and optional phone.</p>
+            <p>A short form with the basics: name, email, current site, business type, planned build range, plus optional phone and discovery source.</p>
           </div>
           <div class="step">
             <div class="step-num">02</div>
