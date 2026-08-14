@@ -111,6 +111,7 @@ Buyer intent guides:
 - /custom-website-vs-wix-squarespace - custom website vs Wix, Squarespace, and template builders
 - /professional-services-website-trust - what makes a professional services website trustworthy
 - /best-website-design-for-financial-advisors - website options for financial advisors, RIAs, and wealth firms
+- /ria-website-compliance-guide - what the SEC Marketing Rule, FINRA Rule 2210, and state rules require of RIA and advisor websites, including testimonials, Form CRS posting, BrokerCheck links, performance content, archiving, and firm review workflow
 - /website-design-for-healthcare-practices - healthcare practice website design guide for medical, dental, therapy, and med spa operators
 - /web-design-for-attorneys - attorney and law firm website design guide
 - /med-spa-website-design-guide - what makes a med spa website convert bookings, including treatment pages, booking integration, and compliant proof
@@ -150,7 +151,7 @@ Search/topic:
 - /websites-for-roofing-companies - roofing company website design
 - /websites-for-electricians - electrician and electrical contractor website design
 - /websites-for-accounting-firms - accounting firm, CPA, tax, and bookkeeping website design
-- /growth-guides - library index of all 14 TMN buyer and growth guides, free with no email gate
+- /growth-guides - library index of all 15 TMN buyer and growth guides, free with no email gate
 
 ## AI/search visibility notes
 
