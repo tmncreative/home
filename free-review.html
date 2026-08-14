@@ -125,8 +125,14 @@
     .intro-tag strong{color:var(--ink);font-weight:600}
 
     /* INTRO + FORM GRID */
-    .grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:clamp(2rem,4vw,3.5rem);align-items:start;margin-bottom:clamp(3rem,5vw,5rem)}
-    @media(max-width:880px){.grid{grid-template-columns:1fr}}
+    .grid{display:grid;grid-template-columns:1.1fr 0.9fr;grid-template-areas:"intro form" "preview form";column-gap:clamp(2rem,4vw,3.5rem);row-gap:0;align-items:start;margin-bottom:clamp(3rem,5vw,5rem)}
+    .intro{grid-area:intro}
+    .primary-preview{grid-area:preview}
+    .form-card{grid-area:form;scroll-margin-top:calc(var(--nav-h) + 1rem)}
+    @media(max-width:880px){
+      .grid{grid-template-columns:1fr;grid-template-areas:"intro" "form" "preview"}
+      .primary-preview{margin-top:2rem}
+    }
 
     .intro h1{margin-bottom:1.25rem;max-width:14ch}
     .intro .lead{font-family:var(--sans);font-size:clamp(1.05rem,0.4vw + 1rem,1.2rem);color:var(--ink-mid);line-height:1.55;margin-bottom:1.5rem;max-width:44ch}
@@ -414,18 +420,6 @@
             <div class="perk"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg>No credit card. No obligation.</div>
           </div>
 
-          <div class="ba-block">
-            <div class="ba-block-head">See a better version of your website</div>
-            <div class="ba-pair" data-ba>
-              <img src="images/ba-rdg-before.webp" alt="Ramon Design Group before" width="2000" height="1310" fetchpriority="high" decoding="async">
-              <img src="images/ba-rdg-after.v20260503.webp" alt="Ramon Design Group after" class="ba-after" width="2000" height="1303" fetchpriority="high" decoding="async">
-              <span class="ba-lbl ba-lbl-b">Before</span>
-              <span class="ba-lbl ba-lbl-a">After</span>
-              <div class="ba-line"></div>
-              <input type="range" min="0" max="100" value="50" class="ba-range" aria-label="Before / after slider">
-            </div>
-            <div class="ba-cap">Ramon Design Group · <a href="https://ramondesigngroup.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">ramondesigngroup.com</a></div>
-          </div>
         </div>
 
         <div class="form-card" id="form-card">
@@ -495,6 +489,19 @@
           </form>
           <div class="form-micro"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>No spam. No credit card. We build it. You decide.</div>
           <div class="form-alt">Rather talk first? <a href="https://calendly.com/tmn-book/review" target="_blank" rel="noopener">Book a 15-Minute Call</a> &middot; <a href="tel:6822500533">(682) 250-0533</a></div>
+        </div>
+
+        <div class="ba-block primary-preview">
+          <div class="ba-block-head">See a better version of your website</div>
+          <div class="ba-pair" data-ba>
+            <img src="images/ba-rdg-before.webp" alt="Ramon Design Group before" width="2000" height="1310" fetchpriority="high" decoding="async">
+            <img src="images/ba-rdg-after.v20260503.webp" alt="Ramon Design Group after" class="ba-after" width="2000" height="1303" fetchpriority="high" decoding="async">
+            <span class="ba-lbl ba-lbl-b">Before</span>
+            <span class="ba-lbl ba-lbl-a">After</span>
+            <div class="ba-line"></div>
+            <input type="range" min="0" max="100" value="50" class="ba-range" aria-label="Before / after slider">
+          </div>
+          <div class="ba-cap">Ramon Design Group · <a href="https://ramondesigngroup.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">ramondesigngroup.com</a></div>
         </div>
       </div>
 

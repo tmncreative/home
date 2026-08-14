@@ -1,11 +1,13 @@
 # TMN Creative Authority Roadmap
 
-Prepared July 23, 2026 from the live SE Ranking project, competitor backlink profiles, and current directory/membership pages.
+Prepared July 23, 2026 and refreshed August 14, 2026 from the live SE Ranking project, current agency profiles, competitor backlink profiles, and current directory/membership pages.
 
 ## What the data says
 
-- TMN has 170 backlinks but only 13 referring domains.
-- 169 of 170 backlinks point to the homepage.
+- TMN has 192 backlinks from 18 referring domains.
+- 191 of 192 backlinks point to the homepage. The only deep link points to the Scottsdale page.
+- The portfolio, financial-services, and Trevor pages have no backlinks in the current report.
+- 188 backlinks are dofollow, but the profile spans only 8 IPs/subnets.
 - Most existing links are repeated client-site attribution links, not contextual recommendations.
 - The local competitors ranking above TMN often have more referring domains, but some of those profiles are inflated by spam, cloned city sites, and sitewide cross-links. TMN should not copy that pattern.
 - The useful gap is smaller and cleaner: authoritative local memberships, verified agency profiles, founder/editorial coverage, and contextual links to relevant proof and service pages.
@@ -17,7 +19,7 @@ Earn 15 to 25 new legitimate referring domains, with at least half pointing some
 Recommended destination mix:
 
 - 35% Arlington and DFW pages
-- 20% portfolio and Walnut Ventures private-capital case study
+- 20% portfolio and approved project proof
 - 15% financial-advisor and financial-services pages
 - 10% healthcare-practice page
 - 10% accounting-firm page
@@ -58,20 +60,30 @@ Do not force exact-match anchors. Prefer natural descriptions such as “TMN Cre
 
 SE Ranking found these domains in the backlink profiles of local competitors. They are more useful than generic mass-submission directories.
 
+### Clutch
+
+- Live profile: https://clutch.co/profile/tmn-creative
+- Direct client review form: https://review.clutch.co/review/?provider_id=2688811
+- Current status: live, with no published reviews and no portfolio projects.
+- Highest-priority action: request genuine reviews from recent Web Design clients who can describe their own experience accurately. Never draft, submit, incentivize, or manipulate a client review.
+- Clutch's current methodology gives reviews substantial weight. Three recent Web Design reviews averaging 4.0 or higher can meet the review threshold for Clutch Certified, subject to Clutch's other requirements and verification.
+- Strong candidates, if Trevor approves outreach: Diamond H Irrigation, Promised Land Renovations, and QC Atlantic.
+- Add only approved, accurately labeled portfolio work. Do not present an archived design showcase or uncommissioned concept as client work.
+
+### Agency List
+
+- Live verified profile: https://agencylist.com/agencies/tmn-creative/
+- Current status: verified and live, with a direct dofollow link to the TMN homepage.
+- Keep the profile aligned with TMN's current published pricing: $2,250 Starter, $3,750 Full, and most professional-firm work at $5,000+.
+
 ### GoodFirms
 
 - Apply: https://www.goodfirms.co/get-listed
 - Fort Worth category: https://www.goodfirms.co/directory/city/top-web-design-companies/fort-worth
 - Current free application is human-reviewed and expects real portfolio work and references.
-- Lead with the Walnut Ventures case study, healthcare work, SCL Metal Works, Ramon Design Group, and True Margin North.
+- Lead only with approved, completed client work such as healthcare work, SCL Metal Works, Ramon Design Group, and True Margin North.
+- If Walnut Ventures appears anywhere, label it accurately as an archived design showcase. Do not imply it was a commissioned engagement or a current client relationship.
 - Primary destination: https://tmncreative.com/portfolio
-
-### Agency List
-
-- Submit: https://agencylist.com/dashboard-certify-listings/
-- Primary category: Web & Software / Web Design
-- Primary destination: https://tmncreative.com/portfolio
-- Use a $1,500 minimum only for reduced-scope work; describe the normal professional-firm engagement as $5,000+.
 
 ### UpCity
 
@@ -123,7 +135,7 @@ Do not add these links to client websites without explicit client/site authoriza
 
 - Arlington service page: https://tmncreative.com/arlington
 - DFW website buyer guide: https://tmncreative.com/web-design-fort-worth
-- Private-capital case study: https://tmncreative.com/walnut-ventures-website-design
+- Archived private-capital design showcase: https://tmncreative.com/walnut-ventures-website-design
 - Financial-advisor website guide: https://tmncreative.com/best-website-design-for-financial-advisors
 - Healthcare-practice website guide: https://tmncreative.com/website-design-for-healthcare-practices
 - Accounting-firm website page: https://tmncreative.com/websites-for-accounting-firms
@@ -137,7 +149,7 @@ TMN Creative is a founder-led Fort Worth web design studio serving Arlington, DF
 
 ### Full description
 
-TMN Creative is a husband-and-wife web design studio based in Fort Worth, Texas. Trevor and Taylor Niemann work directly with every client to plan, write, design, and hand-code premium websites for professional firms, healthcare practices, financial advisors, attorneys, accounting firms, home-service operators, and other trust-dependent businesses. Projects emphasize credibility, mobile performance, clear positioning, conversion paths, search foundations, structured data, accessibility, and full client ownership. Reduced-scope projects can begin at $1,500, while most professional-firm engagements begin around $5,000. First paid drafts are typically delivered within 72 hours.
+TMN Creative is a husband-and-wife web design studio based in Fort Worth, Texas. Trevor and Taylor Niemann work directly with every client to plan, write, design, and hand-code premium websites for professional firms, healthcare practices, financial advisors, attorneys, accounting firms, home-service operators, and other trust-dependent businesses. Projects emphasize credibility, mobile performance, clear positioning, conversion paths, search foundations, structured data, accessibility, and full client ownership. Current published pricing is $2,250 for Starter, $3,750 for Full, and $5,000+ for most professional-firm engagements. First paid drafts are typically delivered within 72 hours.
 
 ### Consistent business details
 
@@ -149,18 +161,28 @@ TMN Creative is a husband-and-wife web design studio based in Fort Worth, Texas.
 - Base: Fort Worth, Texas
 - Service area: Arlington, Dallas-Fort Worth, and clients across the United States
 
-## Outreach sequence
+### Entity consistency cleanup
+
+- Founding year is unresolved across public surfaces. The owned site omits the year, while Clutch and DesignRush say 2024 and Agency List reports 2 years in business. Confirm the legally and historically accurate year before adding it back or changing any profile, then use the same year everywhere.
+- LinkedIn publicly shows three employees and includes Tim Norris, while the owned site describes a two-person husband-and-wife studio. Confirm the correct current team representation before changing LinkedIn or owned copy.
+- DesignRush lists Walnut Ventures as a client. Correct that entry if the relationship or permission is unsupported, and describe the public work only as an archived design showcase.
+- Keep legal business name, public brand, contact details, service area, pricing, client status, team size, and founding year consistent across owned schema and every agency profile.
+
+## Recommended execution sequence
+
+Every outreach message, purchase, client request, profile submission, and client-site change requires Trevor's explicit approval before execution.
 
 ### Week 1
 
-- Apply for the free GoodFirms profile.
-- Create the Agency List account and draft the listing.
+- Prepare the free GoodFirms profile using only approved, completed work.
+- Keep the verified Agency List profile accurate and current.
+- Prepare Clutch review requests for three qualified recent Web Design clients, using the direct review form and asking only for an honest account of their experience.
 - Request consideration from Expertise.com and Three Best Rated.
 - Decide whether the $50 Arlington Business Association listing is worth purchasing.
 
 ### Weeks 2–4
 
-- Collect two to five current client reviews specifically mentioning direct founder access, speed, professionalism, and ownership.
+- Collect two to five genuine current-client reviews. Do not script required language or ask clients to mention claims they cannot independently verify.
 - Pitch one founder story to VoyageDallas or CanvasRebel.
 - Ask three strong clients whether they would approve a joint case study and one contextual credit link.
 
