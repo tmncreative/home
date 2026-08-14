@@ -77,7 +77,7 @@
   <!-- Buyer intent guide pages -->
   <url>
     <loc>https://tmncreative.com/growth-guides</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -113,6 +113,18 @@
   </url>
   <url>
     <loc>https://tmncreative.com/ria-website-compliance-guide</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://tmncreative.com/breakaway-advisor-website-guide</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://tmncreative.com/financial-advisor-website-cost</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
