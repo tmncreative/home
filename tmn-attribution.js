@@ -1,5 +1,6 @@
 (function(){
-  var isAutomatedQa = !!(window.navigator && window.navigator.webdriver);
+  var hasQaOptOut = /(?:^|[?&])tmn_qa=1(?:&|$)/.test(window.location.search || '');
+  var isAutomatedQa = !!(window.navigator && window.navigator.webdriver) || hasQaOptOut;
   if(isAutomatedQa){
     document.documentElement.setAttribute('data-tmn-qa-browser', 'true');
     try { window.localStorage.setItem('blockFathomTracking', 'true'); }
