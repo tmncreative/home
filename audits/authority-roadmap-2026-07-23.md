@@ -167,8 +167,8 @@ TMN Creative is a husband-and-wife web design studio based in Fort Worth, Texas.
 
 ### Entity consistency cleanup
 
-- Founding year is unresolved across public surfaces. The owned site omits the year, while Clutch and DesignRush say 2024 and Agency List reports 2 years in business. Confirm the legally and historically accurate year before adding it back or changing any profile, then use the same year everywhere.
-- LinkedIn publicly shows three employees and includes Tim Norris, while the owned site describes a two-person husband-and-wife studio. Confirm the correct current team representation before changing LinkedIn or owned copy.
+- Founding year CONFIRMED by Trevor on August 14, 2026: 2025. The owned site now carries foundingDate 2025 in the organization schema and llms.txt. Remaining corrections are external: Clutch and DesignRush say 2024 and Agency List reports 2 years in business, so each profile should be edited to 2025 by Trevor.
+- Team size CONFIRMED by Trevor on August 14, 2026: 2 (Trevor and Taylor Niemann). The owned schema already models exactly these 2 people. LinkedIn still publicly shows 3 employees including Tim Norris, which requires the associated member profile to change or a correction through LinkedIn, so keep the LinkedIn company page out of sameAs until it matches.
 - DesignRush lists Walnut Ventures as a client. Correct that entry if the relationship or permission is unsupported, and describe the public work only as an archived design showcase.
 - Keep legal business name, public brand, contact details, service area, pricing, client status, team size, and founding year consistent across owned schema and every agency profile.
 
