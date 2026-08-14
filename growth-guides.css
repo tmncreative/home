@@ -100,6 +100,7 @@ h1 em,h2 em{font-family:var(--serif);font-style:italic;font-weight:390;color:var
 @media(max-width:900px){
   .nav-links,.nav-actions .btn-secondary{display:none}
   .hero-inner,.proof-strip,.cta-inner{grid-template-columns:1fr}
+  .proof-img--contain img{height:auto;min-height:0;object-fit:contain}
   h1{font-size:clamp(3rem,12.5vw,4.45rem);line-height:.94;letter-spacing:-.05em;max-width:12.4ch}
   .grid,.comparison{grid-template-columns:1fr}
   .wide{grid-column:auto}
