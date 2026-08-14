@@ -52,6 +52,10 @@ Do not force exact-match anchors. Prefer natural descriptions such as “TMN Cre
 
 ### Google Business Profile, Bing Places, and Apple Business Connect
 
+- Exact Google Maps entity: https://www.google.com/maps?cid=546421792563016260
+- Verified August 14, 2026 public state: 5.0 rating from 4 reviews, category `Website designer`, phone `(682) 250-0533`, and website `https://tmncreative.com/`.
+- The profile does not publish a street address or a named service area. Keep the owned site accurate at the city level and do not add a precise address or platform-defined service area that the public profile does not support.
+- The profile says `Open 24 hours`, while the owned site says `By Appointment`. Confirm the real client-contact hours before changing either surface, then make them consistent.
 - Keep the TMN name, Fort Worth address/service-area status, phone, website, and descriptions consistent.
 - Link the primary website field to the homepage. Use posts, services, or appointment links for deeper destinations where the platforms permit them.
 - Do not create a fake Arlington office or address.
