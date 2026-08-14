@@ -18,7 +18,7 @@ Success means qualified prospective clients can find TMN Creative, understand it
 
 ## Positioning
 
-TMN Creative is a husband-and-wife studio that combines custom visual direction, hand-coded implementation, clear positioning, SEO and AI-readable foundations, and a fast founder-led workflow. Clients work directly with the people designing, writing, and building the site and can take ownership of the finished code and assets.
+TMN Creative is a husband-and-wife studio that combines custom visual direction, hand-coded implementation, clear positioning, SEO and AI-readable foundations, and a fast founder-led workflow. Clients work directly with the people designing, writing, and building the site. After full payment, clients can take ownership of the completed project files and assets created for their project, subject to the signed agreement.
 
 ## Operating Context
 
@@ -33,7 +33,7 @@ Prospects compare TMN Creative with freelancers, template platforms, industry-sp
 - Website projects start at $2,250, with larger rebuild and custom studio tiers published on the pricing page
 - Do not invent client outcomes, rankings, conversion gains, revenue, testimonials, credentials, or compliance claims
 - Do not publish private client information or expand a client engagement beyond public evidence without permission
-- The public founding year is currently inconsistent across properties and must remain undecided until confirmed
+- The public founding year is 2025, and the current team is Trevor and Taylor Niemann, a two-person husband-and-wife studio. External profiles that conflict with those facts should be corrected rather than copied into owned content
 
 ## Brand Commitments
 
