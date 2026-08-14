@@ -51,7 +51,7 @@ Prospects compare TMN Creative with freelancers, template platforms, industry-sp
 - Named work for healthcare, financial services, professional firms, and service operators in `portfolio.html`
 - Independent client-site credits linking to TMN Creative, including Smitha Reddy MD and Ramon Design Group
 - Public profiles on Clutch, DesignRush, and Agency List
-- Existing Walnut Ventures private-capital case study at `walnut-ventures-website-design.html`
+- Existing Walnut Ventures archived private-capital design showcase at `walnut-ventures-website-design.html`
 - Client quotes may be reused only where already public and accurately attributed
 - Analytics may establish acquisition and navigation patterns, but not business outcomes for client work
 

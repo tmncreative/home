@@ -97,7 +97,7 @@ Core:
 - /start-a-project - qualified project inquiry for established firms, including scope, investment, timing, decision role, and desired business outcome
 - /pricing - pricing
 - /portfolio - selected work
-- /walnut-ventures-website-design - archived private-capital website design case study with a static full-page preview
+- /walnut-ventures-website-design - archived private-capital design showcase with a sanitized static preview. It is not an active business website or a commissioned-client case study.
 - /smitha-reddy-md-healthcare-website-design - live physician website case study with credential-led structure, responsible patient routing, and public client-site corroboration
 - /studio - studio/about
 - /trevor - Trevor Niemann, with enterprise sales and capital-raising experience across fintech, private wealth, and family offices

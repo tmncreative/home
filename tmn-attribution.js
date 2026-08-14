@@ -43,7 +43,36 @@
     ['bard.google', 'Gemini'],
     ['copilot', 'Microsoft Copilot'],
     ['bing.com/chat', 'Microsoft Copilot'],
-    ['you.com', 'You.com']
+    ['you.com', 'You.com'],
+    ['poe', 'Poe'],
+    ['deepseek', 'DeepSeek'],
+    ['grok', 'Grok'],
+    ['x.ai', 'Grok'],
+    ['meta.ai', 'Meta AI'],
+    ['meta-ai', 'Meta AI'],
+    ['mistral', 'Mistral'],
+    ['kimi', 'Kimi'],
+    ['qwen', 'Qwen']
+  ];
+  var AI_HOST_SOURCES = [
+    ['chatgpt.com', 'ChatGPT'],
+    ['chat.openai.com', 'ChatGPT'],
+    ['openai.com', 'ChatGPT'],
+    ['perplexity.ai', 'Perplexity'],
+    ['claude.ai', 'Claude'],
+    ['anthropic.com', 'Claude'],
+    ['gemini.google.com', 'Gemini'],
+    ['bard.google.com', 'Gemini'],
+    ['copilot.microsoft.com', 'Microsoft Copilot'],
+    ['you.com', 'You.com'],
+    ['poe.com', 'Poe'],
+    ['deepseek.com', 'DeepSeek'],
+    ['grok.com', 'Grok'],
+    ['x.ai', 'Grok'],
+    ['meta.ai', 'Meta AI'],
+    ['mistral.ai', 'Mistral'],
+    ['kimi.com', 'Kimi'],
+    ['qwen.ai', 'Qwen']
   ];
 
   function readStore(){
@@ -153,17 +182,40 @@
       'Direct / unknown';
   }
 
+  function sourceAliasMatches(value, alias){
+    var escapedAlias = alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return new RegExp('(^|[^a-z0-9])' + escapedAlias + '($|[^a-z0-9])').test(value);
+  }
+
+  function hostMatches(host, domain){
+    return host === domain || host.slice(-(domain.length + 1)) === '.' + domain;
+  }
+
+  function aiReferrerSource(value){
+    if(!value) return '';
+    try {
+      var url = new URL(value, window.location.href);
+      var host = url.hostname.toLowerCase().replace(/^www\./, '');
+      var path = url.pathname.toLowerCase();
+      if(hostMatches(host, 'bing.com') && (path === '/chat' || path.indexOf('/chat/') === 0)) return 'Microsoft Copilot';
+      if(hostMatches(host, 'x.com') && (path === '/i/grok' || path.indexOf('/i/grok/') === 0)) return 'Grok';
+      for(var i = 0; i < AI_HOST_SOURCES.length; i++){
+        if(hostMatches(host, AI_HOST_SOURCES[i][0])) return AI_HOST_SOURCES[i][1];
+      }
+    } catch(e){}
+    return '';
+  }
+
   function aiSource(qs){
     var candidates = [
       qs.get('utm_source') || '',
-      qs.get('utm_medium') || '',
-      document.referrer || ''
+      qs.get('utm_medium') || ''
     ].join(' ').toLowerCase();
 
     for(var i = 0; i < AI_SOURCES.length; i++){
-      if(candidates.indexOf(AI_SOURCES[i][0]) !== -1) return AI_SOURCES[i][1];
+      if(sourceAliasMatches(candidates, AI_SOURCES[i][0])) return AI_SOURCES[i][1];
     }
-    return '';
+    return aiReferrerSource(document.referrer);
   }
 
   function aiSourceSlug(source){
@@ -173,7 +225,14 @@
       'Claude': 'claude',
       'Gemini': 'gemini',
       'Microsoft Copilot': 'microsoft-copilot',
-      'You.com': 'you-com'
+      'You.com': 'you-com',
+      'Poe': 'poe',
+      'DeepSeek': 'deepseek',
+      'Grok': 'grok',
+      'Meta AI': 'meta-ai',
+      'Mistral': 'mistral',
+      'Kimi': 'kimi',
+      'Qwen': 'qwen'
     };
     return values[source] || 'other-ai';
   }
