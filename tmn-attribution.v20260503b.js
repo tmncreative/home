@@ -1,4 +1,11 @@
 (function(){
+  var isAutomatedQa = !!(window.navigator && window.navigator.webdriver);
+  if(isAutomatedQa){
+    document.documentElement.setAttribute('data-tmn-qa-browser', 'true');
+    try { window.localStorage.setItem('blockFathomTracking', 'true'); }
+    catch(e){}
+  }
+
   if(window.__TMN_ATTRIBUTION__) return;
   window.__TMN_ATTRIBUTION__ = true;
 

@@ -69,15 +69,24 @@ SE Ranking found these domains in the backlink profiles of local competitors. Th
 - Live profile: https://clutch.co/profile/tmn-creative
 - Direct client review form: https://review.clutch.co/review/?provider_id=2688811
 - Current status: live, with no published reviews and no portfolio projects.
+- Public profile corrections needed: founding year should be 2025. Replace unconditional ownership and delivery language with the package-specific timing and ownership terms in the profile copy below. Owner or admin access is required.
 - Highest-priority action: request genuine reviews from recent Web Design clients who can describe their own experience accurately. Never draft, submit, incentivize, or manipulate a client review.
 - Clutch's current methodology gives reviews substantial weight. Three recent Web Design reviews averaging 4.0 or higher can meet the review threshold for Clutch Certified, subject to Clutch's other requirements and verification.
 - Strong candidates, if Trevor approves outreach: Diamond H Irrigation, Promised Land Renovations, and QC Atlantic.
 - Add only approved, accurately labeled portfolio work. Do not present an archived design showcase or uncommissioned concept as client work.
 
+### DesignRush
+
+- Live profile: https://www.designrush.com/agency/profile/tmn-creative
+- Public profile corrections needed: founding year should be 2025. Published website packages start at $2,250, $3,750, and $5,000+. Timing must distinguish Starter and Full first-draft targets from Custom first-review targets. Project-file ownership transfers only after full payment for completed work, subject to the agreement.
+- Remove Walnut Ventures from the client list unless DesignRush can label it accurately as an archived design showcase rather than an active or completed client engagement.
+- Owner or admin access is required for profile edits. Do not create a duplicate listing.
+
 ### Agency List
 
 - Live verified profile: https://agencylist.com/agencies/tmn-creative/
 - Current status: verified and live, with a direct dofollow link to the TMN homepage.
+- Public profile corrections needed: replace `2 years in business` with founded 2025 and qualify the 72-hour language as a Starter and Full first-draft target. Use the platform's correction channel rather than submitting a duplicate agency.
 - Keep the profile aligned with TMN's current published pricing: $2,250 Starter, $3,750 Full, and most professional-firm work at $5,000+.
 
 ### GoodFirms
@@ -100,7 +109,7 @@ SE Ranking found these domains in the backlink profiles of local competitors. Th
 
 - Provider portal: https://www.expertise.com/update
 - This is not a self-serve guaranteed listing. Use the portal/contact path to request consideration for Fort Worth web designers.
-- Pitch the founder-led model, public pricing, 72-hour first-draft process, and real portfolio.
+- Pitch the founder-led model, public pricing, package-specific first-review targets, and real portfolio.
 
 ### Three Best Rated
 
@@ -113,13 +122,13 @@ SE Ranking found these domains in the backlink profiles of local competitors. Th
 ### VoyageDallas
 
 - Homepage: https://voyagedallas.com/
-- Pitch angle: “The Fort Worth husband-and-wife studio competing with slow agency models through direct founder access and 72-hour first drafts.”
+- Pitch angle: “The Fort Worth husband-and-wife studio building hand-coded websites through direct founder access, public pricing, and package-specific first-review targets.”
 - Best destination: https://tmncreative.com/studio
 
 ### CanvasRebel
 
 - Homepage: https://canvasrebel.com/
-- Pitch angle: honest founder story, fast-build operating model, and why TMN publishes prices and lets clients own their code.
+- Pitch angle: honest founder story, fast-build operating model, public pricing, and clear project-file ownership terms.
 - Best destination: https://tmncreative.com/trevor or https://tmncreative.com/studio
 
 ### Client and partner case-study collaboration
@@ -153,7 +162,7 @@ TMN Creative is a founder-led Fort Worth web design studio serving Arlington, DF
 
 ### Full description
 
-TMN Creative is a husband-and-wife web design studio based in Fort Worth, Texas. Trevor and Taylor Niemann work directly with every client to plan, write, design, and hand-code premium websites for professional firms, healthcare practices, financial advisors, attorneys, accounting firms, home-service operators, and other trust-dependent businesses. Projects emphasize credibility, mobile performance, clear positioning, conversion paths, search foundations, structured data, accessibility, and full client ownership. Current published pricing is $2,250 for Starter, $3,750 for Full, and $5,000+ for most professional-firm engagements. First paid drafts are typically delivered within 72 hours.
+TMN Creative is a 2-person, husband-and-wife web design studio founded in 2025 and based in Fort Worth, Texas. Trevor and Taylor Niemann work directly with every client to plan, write, design, and hand-code premium websites for professional firms, healthcare practices, financial advisors, attorneys, accounting firms, home-service operators, and other trust-dependent businesses. Projects emphasize credibility, mobile performance, clear positioning, conversion paths, search foundations, structured data, and accessibility. Project-file ownership transfers after full payment for completed work, subject to the agreement. Published website packages start at $2,250 for Starter, $3,750 for Full, and $5,000+ for Custom. Starter and Full first drafts typically target 72 hours after kickoff, while Custom first reviews typically target 7 to 10 days. Final launch timing depends on scope, content, integrations, review requirements, and approvals.
 
 ### Consistent business details
 
