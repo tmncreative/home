@@ -112,7 +112,7 @@
     var menuBtn=document.getElementById('menuBtn'),mobMenu=document.getElementById('mobMenu');if(menuBtn&&mobMenu){menuBtn.addEventListener('click',function(){var open=mobMenu.classList.toggle('open');menuBtn.setAttribute('aria-expanded',open?'true':'false');});}
     if('IntersectionObserver' in window){var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:0.08});document.querySelectorAll('[data-r]').forEach(function(el){io.observe(el);});}else{document.querySelectorAll('[data-r]').forEach(function(el){el.classList.add('in');});}
   </script>
-  <script src="/tmn-attribution.v20260503b.js?v=20260814c" defer></script>
+  <script src="/tmn-attribution.v20260503b.js?v=20260814d" defer></script>
 <!-- Fathom - beautiful, simple website analytics -->
 <script src="https://cdn.usefathom.com/script.js" data-site="TBWMZHLW" defer></script>
 <!-- / Fathom -->
