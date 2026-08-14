@@ -4,6 +4,18 @@
 
   var STORE_KEY = 'tmn_attribution_v1';
   var PARAMS = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','gbraid','wbraid','fbclid','msclkid'];
+  var AI_SOURCES = [
+    ['chatgpt', 'ChatGPT'],
+    ['openai', 'ChatGPT'],
+    ['perplexity', 'Perplexity'],
+    ['claude', 'Claude'],
+    ['anthropic', 'Claude'],
+    ['gemini', 'Gemini'],
+    ['bard.google', 'Gemini'],
+    ['copilot', 'Microsoft Copilot'],
+    ['bing.com/chat', 'Microsoft Copilot'],
+    ['you.com', 'You.com']
+  ];
 
   function readStore(){
     try { return JSON.parse(window.localStorage.getItem(STORE_KEY) || '{}') || {}; }
@@ -17,6 +29,45 @@
 
   function cleanPath(){
     return window.location.pathname || '/';
+  }
+
+  function isExternalUrl(value){
+    if(!value) return false;
+    try {
+      return new URL(value, window.location.href).origin !== window.location.origin;
+    } catch(e){
+      return false;
+    }
+  }
+
+  function externalReferrer(){
+    return isExternalUrl(document.referrer) ? document.referrer : '';
+  }
+
+  function referrerHost(value){
+    if(!value) return '';
+    try { return new URL(value, window.location.href).hostname; }
+    catch(e){ return ''; }
+  }
+
+  function leadSource(data){
+    return data.first_utm_source ||
+      data.first_ai_source ||
+      referrerHost(data.first_external_referrer) ||
+      'Direct / unknown';
+  }
+
+  function aiSource(qs){
+    var candidates = [
+      qs.get('utm_source') || '',
+      qs.get('utm_medium') || '',
+      document.referrer || ''
+    ].join(' ').toLowerCase();
+
+    for(var i = 0; i < AI_SOURCES.length; i++){
+      if(candidates.indexOf(AI_SOURCES[i][0]) !== -1) return AI_SOURCES[i][1];
+    }
+    return '';
   }
 
   function initAttribution(){
@@ -34,8 +85,22 @@
     data.last_landing_path = cleanPath();
     data.last_seen_at = now;
 
-    if(document.referrer && !data.referrer){
-      data.referrer = document.referrer;
+    if(data.referrer && !isExternalUrl(data.referrer)){
+      delete data.referrer;
+    }
+    if(data.first_external_referrer && !isExternalUrl(data.first_external_referrer)){
+      delete data.first_external_referrer;
+    }
+
+    if(!data.first_external_referrer && data.referrer){
+      data.first_external_referrer = data.referrer;
+    }
+
+    var currentExternalReferrer = externalReferrer();
+    if(currentExternalReferrer){
+      if(!data.first_external_referrer) data.first_external_referrer = currentExternalReferrer;
+      data.last_external_referrer = currentExternalReferrer;
+      data.referrer = data.first_external_referrer;
     }
 
     PARAMS.forEach(function(key){
@@ -44,6 +109,12 @@
       if(!data['first_' + key]) data['first_' + key] = value;
       data[key] = value;
     });
+
+    var detectedAiSource = aiSource(qs);
+    if(detectedAiSource){
+      if(!data.first_ai_source) data.first_ai_source = detectedAiSource;
+      data.ai_source = detectedAiSource;
+    }
 
     writeStore(data);
     return data;
@@ -72,8 +143,43 @@
     hidden(form, 'last_landing_url', data.last_landing_url || window.location.href);
     hidden(form, 'last_landing_path', data.last_landing_path || cleanPath());
     hidden(form, 'source_page', cleanPath());
-    hidden(form, 'referrer', data.referrer || document.referrer || '');
+    hidden(form, 'referrer', data.first_external_referrer || data.referrer || '');
+    hidden(form, 'first_external_referrer', data.first_external_referrer || '');
+    hidden(form, 'ai_source', data.ai_source || data.first_ai_source || '');
+    hidden(form, 'first_ai_source', data.first_ai_source || '');
+    hidden(form, 'lead_source', leadSource(data));
     hidden(form, 'submitted_at_iso', new Date().toISOString());
+  }
+
+  function rememberPendingForm(form){
+    try {
+      window.sessionStorage.setItem('tmn_pending_form', JSON.stringify({
+        form: form.getAttribute('name') || form.getAttribute('id') || 'netlify-form',
+        at: Date.now()
+      }));
+    } catch(e){}
+  }
+
+  function consumePendingForm(){
+    try {
+      var raw = window.sessionStorage.getItem('tmn_pending_form');
+      if(!raw) return null;
+      window.sessionStorage.removeItem('tmn_pending_form');
+      var pending = JSON.parse(raw);
+      if(!pending || !pending.form || !pending.at) return null;
+      if(Date.now() - pending.at > 10 * 60 * 1000) return null;
+      return pending;
+    } catch(e){
+      return null;
+    }
+  }
+
+  function confirmedEvent(formName){
+    if(formName === 'tmn-meta-intake') return 'Free Review Form Submit';
+    if(formName === 'qualified-project-inquiry' || formName === 'tmn-creative-intake' || formName === 'studio-inquiry'){
+      return 'Qualified Project Form Submit';
+    }
+    return '';
   }
 
   function isAttributionForm(form){
@@ -132,6 +238,7 @@
     catch(e){ return null; }
 
     if(url.hostname.indexOf('calendly.com') !== -1) return ['Calendly Click', url.href];
+    if(url.pathname === '/start-a-project') return ['Project CTA Click', url.pathname];
     if(url.pathname === '/free-review') return ['Free Review CTA Click', url.pathname];
     if(url.pathname === '/pricing') return ['Pricing Click', url.pathname];
     if(url.pathname === '/pay') return ['Client Portal Click', url.pathname];
@@ -144,8 +251,29 @@
   document.addEventListener('DOMContentLoaded', function(){
     hydrateForms();
 
+    var data = readStore();
+    if(data.ai_source){
+      try {
+        if(!window.sessionStorage.getItem('tmn_ai_visit_tracked')){
+          window.sessionStorage.setItem('tmn_ai_visit_tracked', '1');
+          sendEvent('AI Referral Visit', {
+            label: data.ai_source,
+            provider: data.ai_source,
+            landing_path: data.last_landing_path || cleanPath()
+          });
+        }
+      } catch(e){}
+    }
+
     if(cleanPath() === '/success' || cleanPath() === '/success.html'){
-      setTimeout(function(){ sendEvent('Lead Confirmed', { label: 'success-page' }); }, 500);
+      var pending = consumePendingForm();
+      if(pending){
+        setTimeout(function(){
+          sendEvent('Lead Confirmed', { label: pending.form, form: pending.form });
+          var specificEvent = confirmedEvent(pending.form);
+          if(specificEvent) sendEvent(specificEvent, { label: pending.form, form: pending.form });
+        }, 500);
+      }
     }
   });
 
@@ -153,6 +281,7 @@
     var form = e.target;
     if(!isAttributionForm(form)) return;
     hydrateForm(form);
+    rememberPendingForm(form);
     sendEvent('Lead Intent', {
       form: form.getAttribute('name') || form.getAttribute('id') || 'netlify-form'
     });
