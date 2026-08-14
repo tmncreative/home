@@ -65,8 +65,8 @@ Primary location pages:
 - /weatherford - Weatherford and Parker County website design
 - /dallas - Dallas web design
 - /arlington - Arlington TX web design
-- /scottsdale - Scottsdale web design
-- /phoenix - Phoenix web design
+- /scottsdale - Scottsdale service-market web design for med spas, dental practices, financial advisors, real estate businesses, and premium service firms
+- /phoenix - Phoenix and East Valley web design for healthcare practices, home-service operators, professional firms, and technology companies. Includes published Phoenix architecture work for Ramon Design Group
 - /los-angeles - Los Angeles web design
 - /new-york - New York web design
 
