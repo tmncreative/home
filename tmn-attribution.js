@@ -134,6 +134,7 @@
 
   function hydrateForm(form){
     var data = readStore();
+    var qs = new URLSearchParams(window.location.search);
     PARAMS.forEach(function(key){
       hidden(form, key, data[key] || '');
       hidden(form, 'first_' + key, data['first_' + key] || '');
@@ -143,6 +144,7 @@
     hidden(form, 'last_landing_url', data.last_landing_url || window.location.href);
     hidden(form, 'last_landing_path', data.last_landing_path || cleanPath());
     hidden(form, 'source_page', cleanPath());
+    hidden(form, 'vertical_source', qs.get('vertical') || qs.get('vertical_source') || '');
     hidden(form, 'referrer', data.first_external_referrer || data.referrer || '');
     hidden(form, 'first_external_referrer', data.first_external_referrer || '');
     hidden(form, 'ai_source', data.ai_source || data.first_ai_source || '');
@@ -238,7 +240,12 @@
     catch(e){ return null; }
 
     if(url.hostname.indexOf('calendly.com') !== -1) return ['Calendly Click', url.href];
-    if(url.pathname === '/start-a-project') return ['Project CTA Click', url.pathname];
+    if(url.pathname === '/start-a-project'){
+      var vertical = url.searchParams.get('vertical') || '';
+      var verticalEvent = vertical === 'financial-services' ? 'Advisor Project CTA Click' :
+        vertical === 'healthcare' ? 'Healthcare Project CTA Click' : '';
+      return ['Project CTA Click', url.pathname, verticalEvent];
+    }
     if(url.pathname === '/free-review') return ['Free Review CTA Click', url.pathname];
     if(url.pathname === '/pricing') return ['Pricing Click', url.pathname];
     if(url.pathname === '/pay') return ['Client Portal Click', url.pathname];
@@ -296,5 +303,11 @@
       href: classified[1],
       label: (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 80)
     });
+    if(classified[2]){
+      sendEvent(classified[2], {
+        href: classified[1],
+        label: (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 80)
+      });
+    }
   }, true);
 })();
