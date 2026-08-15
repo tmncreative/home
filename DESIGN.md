@@ -16,16 +16,16 @@ colors:
 typography:
   display:
     fontFamily: "'Source Serif 4', Georgia, serif"
-    fontSize: "clamp(3rem, 6.2vw, 6.35rem)"
-    fontWeight: 520
-    lineHeight: 0.91
-    letterSpacing: "-0.04em"
+    fontSize: "clamp(2.75rem, 5.2vw, 4.85rem)"
+    fontWeight: 450
+    lineHeight: 1.06
+    letterSpacing: "-0.035em"
   headline:
-    fontFamily: "'Source Serif 4', Georgia, serif"
-    fontSize: "clamp(2.2rem, 3vw, 4.2rem)"
-    fontWeight: 520
-    lineHeight: 0.98
-    letterSpacing: "-0.04em"
+    fontFamily: "'IBM Plex Sans', system-ui, -apple-system, sans-serif"
+    fontSize: "clamp(2rem, 3.2vw, 3.35rem)"
+    fontWeight: 550
+    lineHeight: 1.08
+    letterSpacing: "-0.035em"
   title:
     fontFamily: "'IBM Plex Sans', system-ui, -apple-system, sans-serif"
     fontSize: "1.08rem"
@@ -36,14 +36,15 @@ typography:
     fontWeight: 400
     lineHeight: 1.62
   label:
-    fontFamily: "'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace"
-    fontSize: "0.72rem"
-    fontWeight: 650
-    letterSpacing: "0.12em"
+    fontFamily: "'IBM Plex Sans', system-ui, -apple-system, sans-serif"
+    fontSize: "0.82rem"
+    fontWeight: 600
+    letterSpacing: "0"
 rounded:
-  control: "4px"
-  compact-surface: "6px"
-  surface: "8px"
+  edge: "2px"
+  control: "3px"
+  compact-surface: "4px"
+  surface: "5px"
 spacing:
   rail: "clamp(1rem, 3vw, 2.5rem)"
   section-y: "clamp(3.2rem, 6vw, 6rem)"
@@ -91,7 +92,7 @@ Work, client context, and direct evidence should remain visually ahead of broad 
 - Evidence and real client work lead the visual hierarchy.
 - Near-white paper and dark ink carry most of the interface.
 - Gold acts as a restrained annotation and action color.
-- Editorial serif headlines pair with plain sans body copy and compact evidence labels.
+- A limited editorial serif pairs with plain sans headlines, body copy, and evidence labels.
 - Layouts stay bounded, responsive, and quiet enough for trust-first subjects.
 
 ## Colors
@@ -121,23 +122,24 @@ The palette uses paper-like neutrals and cool ink for almost the entire page, wi
 
 ## Typography
 
-- **Display Font:** Source Serif 4 with Georgia fallback
+- **Identity Display Font:** Source Serif 4 with Georgia fallback
 - **Body Font:** IBM Plex Sans with system sans fallbacks
-- **Label Font:** Geist Mono with system monospace fallbacks
+- **Functional Headline and Label Font:** IBM Plex Sans with system sans fallbacks
+- **Data Font:** Geist Mono with system monospace fallbacks
 
-**Character:** The serif gives headlines editorial authority without ornamental excess. The sans keeps explanations and controls direct, while the mono face makes facts, categories, and small proof labels feel recorded rather than promotional.
+**Character:** The serif is a limited brand voice for the homepage and founder profile. IBM Plex Sans carries service-page headlines, guide headlines, explanations, controls, and ordinary evidence labels. Geist Mono is reserved for actual data, code, or compact numerical facts rather than used as a general design accent.
 
 ### Hierarchy
 
-- **Display:** Large, tightly tracked serif for first-view headlines. Italic words may carry the deep-gold accent.
-- **Headline:** Serif section headings with compact line height and regular-to-medium weight.
+- **Display:** Restrained roman serif for the homepage and founder profile only. Avoid italic highlight words and colored phrase fragments.
+- **Headline:** IBM Plex Sans for service pages, guides, sections, and conversion pages.
 - **Title:** Firm sans titles for cards, records, and component headings.
 - **Body:** Plain sans copy with generous line height and bounded reading widths.
-- **Label:** Compact mono text for numbers, facts, categories, table headers, and evidence links. Use uppercase only where the incumbent component does.
+- **Label:** Plain sans text for categories, bylines, captions, and evidence links. Use mono only when the content is truly data-like.
 
 ### Named Rules
 
-**The Serif Lead Rule.** Source Serif 4 carries display and section headlines. IBM Plex Sans handles explanation and controls. Geist Mono is reserved for compact facts and evidence markers.
+**The Limited Serif Rule.** Source Serif 4 carries only the homepage and founder-profile hero statements. IBM Plex Sans handles service and guide headlines, explanations, controls, and labels. Geist Mono is reserved for real numerical or technical data.
 
 **The Tracking Guardrail.** New or touched serif display headings stay at `-0.04em` or looser. Tighter values in legacy shared CSS are migration debt, not a pattern to repeat.
 
@@ -145,26 +147,26 @@ The palette uses paper-like neutrals and cool ink for almost the entire page, wi
 
 The shared growth-guide rail caps content at 1220px and uses a fluid outer gutter. Portfolio and healthcare work grids extend to 1240px or 1280px where real client imagery needs more room. Section spacing is generous and consistent, with hairline borders or tonal paper shifts separating major ideas.
 
-Desktop layouts use clear grids, including three-column information cards, two-column proof pairings, and asymmetric text-and-artifact arrangements where the content calls for them. The 900px breakpoint collapses major grids and navigation density. The 560px breakpoint tightens controls, surfaces, and type on the shared guide stack. Other established portfolio components collapse at their own narrower 760px, 640px, or 520px thresholds.
+Desktop layouts use asymmetric text-and-artifact arrangements and two-column proof ledgers where the content calls for them. Repeated three-column boxed-card grids are a migration pattern, not a default. The 900px breakpoint collapses major grids and navigation density. The 560px breakpoint tightens controls, surfaces, and type on the shared guide stack. Other established portfolio components collapse at their own narrower 760px, 640px, or 520px thresholds.
 
 Real client imagery receives a defined frame, a stable crop or aspect ratio, and enough width to be inspected. The Smitha Reddy split hero, project-fact band, and sequential case-study layouts are page-specific expressions rather than mandatory compositions.
 
 ## Elevation & Depth
 
-The system is flat by default. Near-white and white paper tones, dark contrast bands, and hairline borders establish most depth. The shared answer panel uses a soft ambient shadow, and linked cards gain a faint shadow only as they lift on hover.
+The system is flat by default. Near-white and white paper tones, dark contrast bands, and hairline borders establish depth. Answer panels and proof ledgers use rules and spacing rather than floating cards. Hover states should change color or border treatment without lifting the page into an app-like layer stack.
 
 ### Shadow Vocabulary
 
-- **Ambient Answer Panel:** A broad, low-opacity shadow separates a key explanatory panel from the page without making it feel like an app card.
-- **Interactive Card Lift:** A smaller, faint shadow appears with a 2px lift on linked evidence cards.
+- **Media Separation:** A neutral hairline separates a real image or screenshot from the paper ground.
+- **Functional Focus:** Focus rings and selected borders provide interaction feedback without decorative glow.
 
 ### Named Rules
 
-**The Flat at Rest Rule.** Paper tone and hairline borders define most surfaces. Use the established ambient shadows for an answer panel or an interactive lift, never as a default around every container.
+**The Flat at Rest Rule.** Paper tone, spacing, and hairline borders define surfaces. Avoid floating answer cards, hover lift, and colored glow.
 
 ## Shapes
 
-Controls stay nearly square. The shared guide system uses crisp 4px controls and 8px content surfaces, with selected surfaces tightening to 6px on narrow screens. Portfolio media and larger cards may use the existing 10px or 14px frames. Pill shapes are limited to an established status tag, not used as a default action language.
+Controls and media stay nearly square. Controls use a 3px radius, media and plain proof surfaces use 2px to 5px, and editorial ledgers can use no radius at all. Pill shapes, status chips, pulsing dots, floating badges, and decorative counters are not part of the system.
 
 Borders are thin and structural. Media crops, proof frames, and cards use restrained clipping while dark proof fields remain simple rectangles with modest corner treatment.
 
@@ -172,16 +174,16 @@ Borders are thin and structural. Media crops, proof frames, and cards use restra
 
 ### Buttons
 
-- **Shape:** Nearly square, with a 4px radius and a minimum 44px target on the shared guide stack.
+- **Shape:** Nearly square, with a 3px radius and a minimum 44px target on the shared guide stack.
 - **Primary:** Dark ink on light paper. On dark proof and CTA fields, restrained gold becomes the primary fill with dark ink text.
 - **Secondary:** White paper with a structural-line border and dark ink text. Dark fields use a transparent secondary action with a low-contrast white border.
-- **Hover / Focus:** Hover changes stay small, usually a 1px lift, a darker ink fill, or a border shift. Visible focus uses the established gold outline treatment.
+- **Hover / Focus:** Hover changes stay small, usually a darker ink fill or border shift without movement. Visible focus uses the established gold outline treatment.
 
 ### Cards / Containers
 
-- **Corner Style:** 8px on the shared guide cards, with the established 10px and 14px variants used for larger portfolio media and card surfaces.
+- **Corner Style:** 0px to 5px for ledgers, media, proof surfaces, and conversion forms.
 - **Background:** White paper on the near-white or tonal-paper page grounds. Selected proof cards may invert to dark ink.
-- **Shadow Strategy:** Flat at rest, with a faint lift for linked or hoverable records.
+- **Shadow Strategy:** Flat at rest and flat on hover.
 - **Border:** A single structural hairline defines the surface.
 - **Internal Padding:** Compact on evidence cards, with larger padding reserved for explanatory or proof panels.
 
@@ -207,4 +209,5 @@ Proof components pair real client imagery with the project name, sector or categ
 - **Don't** turn the Smitha Reddy split hero, fact band, or case-study sequence into a universal page template.
 - **Don't** use gold as a full-page field or repeated decorative effect.
 - **Don't** replace real work with stock scenes, generic device mockups, or invented outcomes.
-- **Don't** spread pill controls or large friendly radii across the editorial system.
+- **Don't** use pill chips, pulsing status lights, fake avatar groups, floating badges, decorative counters, or large friendly radii.
+- **Don't** use italic gold fragments, animated word reveals, cursor glows, or oversized magazine-cover headlines as a default signature.

@@ -1,0 +1,988 @@
+/*
+ * TMN Creative authenticity layer
+ *
+ * Keeps the existing information architecture, proof, and conversion paths.
+ * Removes ornamental interface patterns that make a small studio look like a
+ * generated software landing page.
+ */
+
+.tmn-authentic {
+  --r-xs: 2px;
+  --r-sm: 3px;
+  --r-md: 5px;
+  --r-lg: 7px;
+}
+
+/* Quiet the decorative motion layer. */
+.tmn-authentic .cursor-light,
+.tmn-authentic .scroll-prog,
+.tmn-authentic .hero-glow,
+.tmn-authentic .hero-caustic,
+.tmn-authentic .hero-photo-glow,
+.tmn-authentic .orb,
+.tmn-authentic .foot-mark {
+  display: none !important;
+}
+
+.tmn-authentic [data-r],
+.tmn-authentic .r,
+.tmn-authentic .stagger .w > span,
+.tmn-authentic .hero-text,
+.tmn-authentic .hero-copy,
+.tmn-authentic .hero-visual {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+  transition-delay: 0s !important;
+}
+
+.tmn-authentic .imac-site img,
+.tmn-authentic .iphone-screen img,
+.tmn-authentic .macbook-site img,
+.tmn-authentic .hv-main img,
+.tmn-authentic .hv-stack img {
+  animation: none !important;
+  will-change: auto !important;
+}
+
+/* Keep the brand serif for the 3 identity-page hero statements only. */
+.tmn-authentic h1,
+.tmn-authentic h2,
+.tmn-authentic .section-head h2,
+.tmn-authentic .sec-head h2,
+.tmn-authentic .faq-head h2,
+.tmn-authentic .testi-head h2,
+.tmn-authentic .cta-inner h2,
+.tmn-authentic .answer-panel h2 {
+  font-family: var(--sans) !important;
+  font-style: normal !important;
+  font-weight: 550 !important;
+  letter-spacing: -0.035em !important;
+  line-height: 1.08 !important;
+}
+
+.tmn-authentic.tmn-home .hero h1,
+.tmn-authentic.tmn-profile .hero h1,
+.tmn-authentic.tmn-studio .hero h1 {
+  font-family: var(--serif) !important;
+  font-style: normal !important;
+  font-weight: 450 !important;
+  letter-spacing: -0.035em !important;
+  line-height: 1.06 !important;
+}
+
+.tmn-authentic h1 em,
+.tmn-authentic h2 em,
+.tmn-authentic h1 .ac,
+.tmn-authentic h2 .ac,
+.tmn-authentic .hero h1 em,
+.tmn-authentic .htext h1 em,
+.tmn-authentic .htext h1 .ac {
+  color: inherit !important;
+  display: inline !important;
+  font-family: inherit !important;
+  font-style: normal !important;
+  font-weight: inherit !important;
+  letter-spacing: inherit !important;
+  line-height: inherit !important;
+  padding: 0 !important;
+}
+
+.tmn-authentic .cards > .card h2,
+.tmn-authentic .cards > .card .sec-head h2,
+.tmn-authentic .cards > .card .feat-copy h2,
+.tmn-authentic .cards > .card .testi-head h2,
+.tmn-authentic .cards > .card .faq-head h2,
+.tmn-authentic .cards > .card .studio-inner h2,
+.tmn-authentic .cards > .card .ct-copy h2,
+.tmn-authentic .section-head h2 {
+  font-size: clamp(2rem, 3.2vw, 3.35rem) !important;
+  max-width: 22ch;
+}
+
+.tmn-authentic .logo,
+.tmn-authentic .logo-word,
+.tmn-authentic .nav-link,
+.tmn-authentic .nav-ghost,
+.tmn-authentic .mob-menu a {
+  font-family: var(--sans) !important;
+}
+
+.tmn-authentic .logo-word {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+}
+
+.tmn-authentic .nav-link,
+.tmn-authentic .nav-ghost {
+  font-size: .9rem !important;
+  font-weight: 500 !important;
+  letter-spacing: -.008em !important;
+}
+
+.tmn-authentic .logo:hover .logo-mark,
+.tmn-authentic .btn:hover,
+.tmn-authentic .nav-cta:hover,
+.tmn-authentic .work-item:hover,
+.tmn-authentic .card:hover,
+.tmn-authentic .price-card:hover,
+.tmn-authentic .proc-step:hover,
+.tmn-authentic .cred-card:hover,
+.tmn-authentic .stat:hover {
+  transform: none !important;
+}
+
+/* Plain topic labels replace counters, dots, and terminal-style microcopy. */
+.tmn-authentic .eye,
+.tmn-authentic .eyebrow,
+.tmn-authentic .label,
+.tmn-authentic .hub-k,
+.tmn-authentic .card-label,
+.tmn-authentic .pc-label,
+.tmn-authentic .mplan-k,
+.tmn-authentic .cred-kicker,
+.tmn-authentic .operator-kicker,
+.tmn-authentic .stat-label,
+.tmn-authentic .work-cat,
+.tmn-authentic .foot-col h3,
+.tmn-authentic .foot h3,
+.tmn-authentic .foot-bar,
+.tmn-authentic .article-meta,
+.tmn-authentic .fact-list strong,
+.tmn-authentic .cost-table th,
+.tmn-authentic .cost-table .price {
+  font-family: var(--sans) !important;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+.tmn-authentic .eye,
+.tmn-authentic .eyebrow,
+.tmn-authentic .label {
+  color: var(--ink-mid, var(--muted)) !important;
+  font-size: .82rem !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+}
+
+.tmn-authentic .eye::before,
+.tmn-authentic .card .eye::before,
+.tmn-authentic .hero-pill .dot,
+.tmn-authentic .hero-photo-chip .pulse,
+.tmn-authentic .hp .dot,
+.tmn-authentic .hp .dot::before,
+.tmn-authentic .hv-chip .pulse,
+.tmn-authentic .studio-chip .dot,
+.tmn-authentic .foot-badge .dot,
+.tmn-authentic .seg-row .dot {
+  display: none !important;
+}
+
+.tmn-authentic .card-num {
+  display: none !important;
+}
+
+/* Pills become ordinary evidence lines. */
+.tmn-authentic .hero-pill,
+.tmn-authentic .hero-photo-chip,
+.tmn-authentic .hero-cred,
+.tmn-authentic .hp,
+.tmn-authentic .hv-chip,
+.tmn-authentic .studio-chip,
+.tmn-authentic .foot-badge,
+.tmn-authentic .testi-badge {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-family: var(--sans) !important;
+  letter-spacing: 0 !important;
+}
+
+.tmn-authentic .foot-badges {
+  gap: .65rem 1.25rem !important;
+}
+
+.tmn-authentic .foot-badge {
+  color: oklch(78% .012 250) !important;
+  padding: 0 !important;
+}
+
+.tmn-authentic .hero-creds {
+  align-items: center;
+  gap: 0 !important;
+}
+
+.tmn-authentic .hero-cred {
+  color: var(--ink-mid) !important;
+  padding: .2rem .75rem !important;
+}
+
+.tmn-authentic .hero-cred:first-child {
+  padding-left: 0 !important;
+}
+
+.tmn-authentic .hero-cred + .hero-cred {
+  border-left: 1px solid var(--line) !important;
+}
+
+.tmn-authentic .hero-cred::before {
+  display: none !important;
+}
+
+/* Calm buttons. They still read as controls without floating off the page. */
+.tmn-authentic .btn,
+.tmn-authentic .nav-cta,
+.tmn-authentic .mob-cta,
+.tmn-authentic .pc-cta,
+.tmn-authentic .bcta-p,
+.tmn-authentic .bcta-s {
+  border-radius: 3px !important;
+  box-shadow: none !important;
+}
+
+.tmn-authentic .btn:hover,
+.tmn-authentic .nav-cta:hover,
+.tmn-authentic .pc-cta:hover,
+.tmn-authentic .bcta-p:hover,
+.tmn-authentic .bcta-s:hover {
+  box-shadow: none !important;
+}
+
+/* Homepage: real client imagery, no floating device theater. */
+.tmn-authentic.tmn-home .cards > .card,
+.tmn-authentic.tmn-profile .cards > .card {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  display: block !important;
+  min-height: 0 !important;
+  position: relative !important;
+  top: auto !important;
+}
+
+.tmn-authentic.tmn-home .hero,
+.tmn-authentic.tmn-profile .hero {
+  background: var(--bg) !important;
+}
+
+.tmn-authentic.tmn-home .hero::before,
+.tmn-authentic.tmn-profile .hero::before,
+.tmn-authentic.tmn-profile .hero::after {
+  display: none !important;
+}
+
+.tmn-authentic.tmn-home .hero {
+  padding-top: calc(var(--nav-h) + clamp(2.5rem, 5vw, 4.5rem)) !important;
+}
+
+.tmn-authentic.tmn-home .hero h1 {
+  font-size: clamp(3.1rem, 5.2vw, 4.85rem) !important;
+  max-width: 13ch;
+}
+
+.tmn-authentic.tmn-home .hero-grid {
+  align-items: center;
+  margin-top: 0 !important;
+}
+
+.tmn-authentic.tmn-home .hero-tags,
+.tmn-authentic.tmn-home .hv-badge,
+.tmn-authentic.tmn-home .hv-iphone,
+.tmn-authentic.tmn-home .feat-visual .hv-iphone {
+  display: none !important;
+}
+
+.tmn-authentic.tmn-home .hero-visual {
+  min-height: 0 !important;
+}
+
+.tmn-authentic.tmn-home .hero-work-caption {
+  align-items: baseline;
+  color: var(--ink-mid);
+  display: flex;
+  font-family: var(--sans);
+  font-size: .82rem;
+  gap: .4rem 1rem;
+  justify-content: space-between;
+  margin-top: .75rem;
+}
+
+.tmn-authentic.tmn-home .hero-work-caption a {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 3px;
+}
+
+.tmn-authentic.tmn-home .hv-imac,
+.tmn-authentic.tmn-home .feat-visual .hv-macbook {
+  aspect-ratio: 16 / 10;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  filter: none !important;
+  overflow: hidden;
+  transform: none !important;
+}
+
+.tmn-authentic.tmn-home .imac-frame,
+.tmn-authentic.tmn-home .feat-visual .macbook-frame {
+  display: none !important;
+}
+
+.tmn-authentic.tmn-home .imac-screen,
+.tmn-authentic.tmn-home .feat-visual .macbook-screen {
+  background: var(--bg-alt) !important;
+  border-radius: 0 !important;
+  height: 100% !important;
+  inset: 0 !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+}
+
+.tmn-authentic.tmn-home .imac-site img,
+.tmn-authentic.tmn-home .feat-visual .macbook-site img {
+  object-position: center top !important;
+}
+
+.tmn-authentic.tmn-home .hero-meta {
+  gap: 1.5rem 2.5rem;
+  margin-top: 2rem;
+}
+
+.tmn-authentic.tmn-home .hero-footer {
+  display: grid;
+  gap: .5rem 2.5rem;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, .75fr);
+}
+
+.tmn-authentic.tmn-home .hero-proof {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  margin-top: 0 !important;
+}
+
+.tmn-authentic.tmn-home .hero-proof-stars {
+  display: none !important;
+}
+
+.tmn-authentic.tmn-home .hero-proof blockquote {
+  border-left: 1px solid var(--accent);
+  font-family: var(--sans) !important;
+  font-size: 1rem !important;
+  font-style: normal;
+  padding-left: 1rem;
+}
+
+.tmn-authentic.tmn-home .hero-trust em {
+  color: inherit !important;
+  font-family: inherit !important;
+  font-style: normal !important;
+}
+
+.tmn-authentic.tmn-home .work,
+.tmn-authentic.tmn-home .craft,
+.tmn-authentic.tmn-home .contact {
+  background: var(--bg) !important;
+  color: var(--ink) !important;
+}
+
+.tmn-authentic.tmn-home .work h2,
+.tmn-authentic.tmn-home .work h3,
+.tmn-authentic.tmn-home .craft h2,
+.tmn-authentic.tmn-home .contact h2,
+.tmn-authentic.tmn-home .contact h3,
+.tmn-authentic.tmn-home .work p,
+.tmn-authentic.tmn-home .craft p,
+.tmn-authentic.tmn-home .contact p {
+  color: inherit !important;
+}
+
+.tmn-authentic.tmn-home .pc-tag {
+  display: none !important;
+}
+
+.tmn-authentic.tmn-home .growth-card,
+.tmn-authentic.tmn-home .price-card,
+.tmn-authentic.tmn-home .proc-step,
+.tmn-authentic.tmn-home .testi-card,
+.tmn-authentic.tmn-home .form,
+.tmn-authentic.tmn-home .cta-card {
+  border-radius: 4px !important;
+  box-shadow: none !important;
+}
+
+/* Founder profile: one portrait, one caption, and a readable record. */
+.tmn-authentic.tmn-profile .hero {
+  padding-top: calc(var(--nav-h) + clamp(2.5rem, 5vw, 4.5rem)) !important;
+}
+
+.tmn-authentic.tmn-profile .hero-pill,
+.tmn-authentic.tmn-profile .hero-photo-chip {
+  display: none !important;
+}
+
+.tmn-authentic.tmn-profile .hero-grid {
+  grid-template-columns: minmax(250px, 330px) minmax(0, 1fr) !important;
+  margin-top: 0 !important;
+}
+
+.tmn-authentic.tmn-profile .hero-photo-frame {
+  border-radius: 2px !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.tmn-authentic.tmn-profile .hero-photo-caption {
+  color: var(--ink-mid);
+  font-size: .88rem;
+  line-height: 1.5;
+  margin-top: .8rem;
+}
+
+.tmn-authentic.tmn-profile .hero-photo-caption strong {
+  color: var(--ink);
+  display: block;
+  font-weight: 600;
+}
+
+.tmn-authentic.tmn-profile .hero h1 {
+  font-size: clamp(2.9rem, 4.2vw, 4rem) !important;
+  margin-bottom: 1.25rem !important;
+}
+
+.tmn-authentic.tmn-profile .story-pull,
+.tmn-authentic.tmn-profile .operator-card,
+.tmn-authentic.tmn-profile .cred-card,
+.tmn-authentic.tmn-profile .cta-card {
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.tmn-authentic.tmn-profile .story-pull {
+  border: 0 !important;
+  border-left: 2px solid var(--accent) !important;
+  padding: .35rem 0 .35rem 1.25rem !important;
+}
+
+.tmn-authentic.tmn-profile .story-pull p {
+  font-family: var(--sans) !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+}
+
+.tmn-authentic.tmn-profile .stats-grid {
+  gap: 0 2rem !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.tmn-authentic.tmn-profile .stat {
+  background: transparent !important;
+  border: 0 !important;
+  border-top: 1px solid var(--line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 1.4rem 0 !important;
+}
+
+.tmn-authentic.tmn-profile .stat::before,
+.tmn-authentic.tmn-profile .cred-card::before {
+  display: none !important;
+}
+
+.tmn-authentic.tmn-profile .operator-card {
+  border: 0 !important;
+  border-top: 1px solid var(--line) !important;
+  padding: 1.75rem 0 !important;
+}
+
+.tmn-authentic.tmn-profile .creds-grid {
+  gap: 0 !important;
+  grid-template-columns: 1fr !important;
+}
+
+.tmn-authentic.tmn-profile .cred-card,
+.tmn-authentic.tmn-profile .cred-feature {
+  border: 0 !important;
+  border-top: 1px solid var(--line) !important;
+  grid-column: auto !important;
+  padding: 1.5rem 0 !important;
+}
+
+.tmn-authentic.tmn-profile .sec-dark {
+  background: var(--bg) !important;
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  color: var(--ink) !important;
+}
+
+.tmn-authentic.tmn-profile .sec-dark h2,
+.tmn-authentic.tmn-profile .sec-dark h3,
+.tmn-authentic.tmn-profile .sec-dark p,
+.tmn-authentic.tmn-profile .sec-dark strong {
+  color: inherit !important;
+}
+
+/* Service pages: replace the repeated 3-card template with a proof ledger. */
+.tmn-authentic:not(.tmn-home):not(.tmn-profile):not(.tmn-studio) .hero::before {
+  display: none !important;
+}
+
+.tmn-authentic:not(.tmn-home):not(.tmn-profile):not(.tmn-studio) main:not(.cards) .cards {
+  gap: 0 2.5rem !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.tmn-authentic:not(.tmn-home):not(.tmn-profile):not(.tmn-studio) main:not(.cards) .cards > .card {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  border-top: 1px solid var(--line) !important;
+  box-shadow: none !important;
+  min-height: 0 !important;
+  padding: 1.5rem 0 !important;
+}
+
+.tmn-authentic:not(.tmn-home):not(.tmn-profile):not(.tmn-studio) main:not(.cards) .cards > .card::before {
+  display: none !important;
+}
+
+.tmn-authentic .stats {
+  background: var(--bg) !important;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink) !important;
+  padding-bottom: 1.6rem !important;
+  padding-top: 1.6rem !important;
+}
+
+.tmn-authentic .stat-k {
+  color: var(--ink) !important;
+  font-family: var(--sans) !important;
+  font-size: clamp(1.2rem, 1.1vw + 1rem, 1.65rem) !important;
+  font-weight: 600 !important;
+}
+
+.tmn-authentic .stat-k .u,
+.tmn-authentic .stat-l {
+  color: var(--ink-soft, var(--muted)) !important;
+  font-family: var(--sans) !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+.tmn-authentic .stat + .stat::before {
+  background: var(--line) !important;
+}
+
+.tmn-authentic details {
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--line) !important;
+  border-radius: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.tmn-authentic .bcta::before,
+.tmn-authentic .cta-band::before {
+  display: none !important;
+}
+
+/* Guides: stronger editorial hierarchy without magazine-cover scale. */
+.tmn-authentic.tmn-guide .hero-inner > div > h1,
+.tmn-authentic.tmn-guide .article-hero h1 {
+  font-family: var(--sans) !important;
+  font-size: clamp(2.8rem, 5vw, 5rem) !important;
+  font-weight: 550 !important;
+  letter-spacing: -.055em !important;
+  line-height: 1.01 !important;
+  max-width: 14ch !important;
+}
+
+.tmn-authentic.tmn-guide .answer-panel {
+  background: transparent !important;
+  border: 0 !important;
+  border-left: 1px solid var(--line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding-left: clamp(1.25rem, 3vw, 2.5rem) !important;
+}
+
+.tmn-authentic.tmn-guide .answer-panel h2 {
+  font-size: clamp(1.45rem, 1.4vw + 1rem, 2.2rem) !important;
+  letter-spacing: -.035em !important;
+}
+
+.tmn-authentic.tmn-guide .grid {
+  gap: 0 2rem !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.tmn-authentic.tmn-guide .grid > .card {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  border-top: 1px solid var(--line) !important;
+  min-height: 0 !important;
+  padding: 1.35rem 0 !important;
+}
+
+.tmn-authentic.tmn-guide .grid > .card.kicker {
+  color: var(--ink) !important;
+}
+
+.tmn-authentic.tmn-guide .grid > .card.kicker p {
+  color: var(--muted, var(--ink-mid)) !important;
+}
+
+.tmn-authentic.tmn-guide .wide {
+  grid-column: auto !important;
+}
+
+/* Studio page: a quiet portfolio introduction, with the work doing the selling. */
+.tmn-authentic.tmn-studio .cursor-light,
+.tmn-authentic.tmn-studio .orb {
+  display: none !important;
+}
+
+.tmn-authentic.tmn-studio .hero {
+  align-items: flex-start !important;
+  background: var(--navy-deep) !important;
+  min-height: 0 !important;
+  padding: clamp(9rem, 14vw, 12rem) var(--rail) clamp(5rem, 9vw, 8rem) !important;
+  text-align: left !important;
+}
+
+.tmn-authentic.tmn-studio .hero::before,
+.tmn-authentic.tmn-studio .tagline,
+.tmn-authentic.tmn-studio .scroll-cue {
+  display: none !important;
+}
+
+.tmn-authentic.tmn-studio .hero > * {
+  margin-left: auto;
+  margin-right: auto;
+  width: min(100%, 1160px);
+}
+
+.tmn-authentic.tmn-studio .hero .eyebrow {
+  animation: none !important;
+  color: var(--gold) !important;
+  font-size: .78rem !important;
+  letter-spacing: 0 !important;
+  margin-bottom: 1.5rem !important;
+  opacity: 1 !important;
+  text-transform: none !important;
+  transform: none !important;
+}
+
+.tmn-authentic.tmn-studio .hero h1 {
+  animation: none !important;
+  color: var(--stone) !important;
+  font-family: var(--sans) !important;
+  font-size: clamp(3rem, 6.2vw, 5.75rem) !important;
+  font-weight: 500 !important;
+  letter-spacing: -.055em !important;
+  line-height: .99 !important;
+  margin-bottom: 1.75rem !important;
+  max-width: 13ch !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.tmn-authentic.tmn-studio .hero .lede {
+  animation: none !important;
+  color: var(--stone-dim) !important;
+  font-size: clamp(1.05rem, .55vw + .95rem, 1.3rem) !important;
+  margin: 0 auto 0 !important;
+  max-width: 48ch !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.tmn-authentic.tmn-studio .segments {
+  border-bottom: 1px solid var(--stone-hairline) !important;
+  border-top: 1px solid var(--stone-hairline) !important;
+  padding-bottom: 1.5rem !important;
+  padding-top: 1.5rem !important;
+}
+
+.tmn-authentic.tmn-studio .seg-row {
+  animation: none !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  transform: none !important;
+}
+
+.tmn-authentic.tmn-studio .seg-row .lead {
+  color: var(--stone) !important;
+  font-weight: 600;
+}
+
+.tmn-authentic.tmn-studio .piece,
+.tmn-authentic.tmn-studio .step {
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.tmn-authentic.tmn-studio .piece {
+  border-radius: 2px !important;
+}
+
+.tmn-authentic.tmn-studio .manifesto em,
+.tmn-authentic.tmn-studio .contact h2 em {
+  color: inherit !important;
+  font-style: normal !important;
+}
+
+.tmn-authentic.tmn-studio .process .num {
+  display: none !important;
+}
+
+.tmn-authentic.tmn-studio .credentials,
+.tmn-authentic.tmn-studio .label,
+.tmn-authentic.tmn-studio .piece .detail {
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+/* Free preview: retain the evidence and form while removing sales-widget styling. */
+.tmn-authentic.tmn-free-review main::before,
+.tmn-authentic.tmn-free-review .page-glow {
+  display: none !important;
+}
+
+.tmn-authentic.tmn-free-review .intro-tag {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  gap: .65rem 1rem !important;
+  margin-bottom: 1.5rem !important;
+  padding: 0 !important;
+}
+
+.tmn-authentic.tmn-free-review .intro-tag .stars {
+  font-size: .74rem !important;
+  letter-spacing: .03em !important;
+}
+
+.tmn-authentic.tmn-free-review .intro-tag .sep {
+  background: var(--line) !important;
+  height: 1rem !important;
+}
+
+.tmn-authentic.tmn-free-review .form-card,
+.tmn-authentic.tmn-free-review .testimonial,
+.tmn-authentic.tmn-free-review .step,
+.tmn-authentic.tmn-free-review .detail-card,
+.tmn-authentic.tmn-free-review .fit-card,
+.tmn-authentic.tmn-free-review .preview-compare {
+  border-radius: 2px !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.tmn-authentic.tmn-free-review .form-card {
+  background: transparent !important;
+  padding: clamp(1.35rem, 2.5vw, 2rem) 0 !important;
+}
+
+.tmn-authentic.tmn-free-review .form-card::before,
+.tmn-authentic.tmn-free-review .proof-label::before,
+.tmn-authentic.tmn-free-review .steps-label::before,
+.tmn-authentic.tmn-free-review .finale::before,
+.tmn-authentic.tmn-free-review .finale-eye::before,
+.tmn-authentic.tmn-free-review .step::before {
+  display: none !important;
+}
+
+.tmn-authentic.tmn-free-review .fg label,
+.tmn-authentic.tmn-free-review .ba-block-head,
+.tmn-authentic.tmn-free-review .ba-cap,
+.tmn-authentic.tmn-free-review .ba-lbl,
+.tmn-authentic.tmn-free-review .form-micro,
+.tmn-authentic.tmn-free-review .proof-label,
+.tmn-authentic.tmn-free-review .steps-label,
+.tmn-authentic.tmn-free-review .detail-head .k,
+.tmn-authentic.tmn-free-review .detail-card .num,
+.tmn-authentic.tmn-free-review .finale-eye,
+.tmn-authentic.tmn-free-review .finale-or,
+.tmn-authentic.tmn-free-review .foot-inner {
+  font-family: var(--sans) !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+.tmn-authentic.tmn-free-review .fg label {
+  color: var(--ink-2) !important;
+  font-size: .78rem !important;
+  font-weight: 600 !important;
+}
+
+.tmn-authentic.tmn-free-review .fg input,
+.tmn-authentic.tmn-free-review .fg select {
+  background-color: var(--bg-elev) !important;
+  border-radius: 2px !important;
+}
+
+.tmn-authentic.tmn-free-review .form-sub,
+.tmn-authentic.tmn-free-review .finale-cta,
+.tmn-authentic.tmn-free-review .mob-cta-btn {
+  border-radius: 2px !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.tmn-authentic.tmn-free-review .intro .perk svg {
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 1px !important;
+  stroke: var(--accent-deep) !important;
+}
+
+.tmn-authentic.tmn-free-review .ba-pair {
+  border-radius: 2px !important;
+  box-shadow: none !important;
+}
+
+.tmn-authentic.tmn-free-review .ba-lbl {
+  backdrop-filter: none !important;
+  border-radius: 1px !important;
+}
+
+.tmn-authentic.tmn-free-review .testimonial,
+.tmn-authentic.tmn-free-review .step,
+.tmn-authentic.tmn-free-review .detail-card {
+  background: transparent !important;
+  border: 0 !important;
+  border-top: 1px solid var(--line) !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.tmn-authentic.tmn-free-review .testimonial-init {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  height: auto !important;
+  justify-content: flex-start !important;
+  width: auto !important;
+}
+
+.tmn-authentic.tmn-free-review .testimonial-quote {
+  font-family: var(--sans) !important;
+  font-style: normal !important;
+}
+
+.tmn-authentic.tmn-free-review .step-num {
+  color: var(--ink-soft) !important;
+  font-family: var(--sans) !important;
+  font-size: .82rem !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+}
+
+.tmn-authentic.tmn-free-review .finale-h,
+.tmn-authentic.tmn-free-review .finale-h em {
+  color: var(--ink) !important;
+  font-family: var(--sans) !important;
+  font-style: normal !important;
+  font-weight: 550 !important;
+}
+
+@media (max-width: 900px) {
+  .tmn-authentic.tmn-home .hero-footer,
+  .tmn-authentic.tmn-profile .hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .tmn-authentic.tmn-home .hero-proof {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 1rem !important;
+  }
+
+  .tmn-authentic.tmn-profile .hero-photo {
+    display: block !important;
+  }
+
+  .tmn-authentic.tmn-profile .hero-photo-frame {
+    max-width: 320px !important;
+  }
+
+  .tmn-authentic:not(.tmn-home):not(.tmn-profile):not(.tmn-studio) main:not(.cards) .cards,
+  .tmn-authentic.tmn-guide .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .tmn-authentic.tmn-home .hero {
+    padding-top: calc(var(--nav-h) + 1.6rem) !important;
+  }
+
+  .tmn-authentic.tmn-home .hero h1,
+  .tmn-authentic.tmn-profile .hero h1 {
+    font-size: clamp(2.75rem, 12vw, 3.65rem) !important;
+  }
+
+  .tmn-authentic.tmn-profile .hero-creds {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .tmn-authentic.tmn-profile .hero-cred {
+    padding: .3rem 0 !important;
+  }
+
+  .tmn-authentic.tmn-profile .hero-cred + .hero-cred {
+    border-left: 0 !important;
+  }
+
+  .tmn-authentic.tmn-profile .stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .tmn-authentic.tmn-guide .hero-inner > div > h1,
+  .tmn-authentic.tmn-guide .article-hero h1 {
+    font-size: clamp(2.65rem, 12vw, 3.7rem) !important;
+    max-width: 100% !important;
+  }
+
+  .tmn-authentic.tmn-guide .answer-panel {
+    border-left: 0 !important;
+    border-top: 1px solid var(--line) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 1.5rem !important;
+  }
+
+  .tmn-authentic.tmn-home .hero-work-caption {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .15rem;
+  }
+
+  .tmn-authentic.tmn-studio .hero {
+    padding-bottom: 4.5rem !important;
+    padding-top: calc(var(--nav-h, 76px) + 4rem) !important;
+  }
+
+  .tmn-authentic.tmn-studio .hero h1 {
+    font-size: clamp(2.75rem, 13vw, 4rem) !important;
+    max-width: 11ch !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tmn-authentic *,
+  .tmn-authentic *::before,
+  .tmn-authentic *::after {
+    scroll-behavior: auto !important;
+  }
+}
