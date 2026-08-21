@@ -7,7 +7,8 @@ Inspected from live sources the evening of August 20, 2026. Clutch, DesignRush, 
 - Sent and verified honest Clutch review requests to Garrett Horton and Alex Ramon by TMN email, and to Jose Molina and Cody Elmore in their existing Messages threads
 - Kept Kimberly Charvet and Jon Parks on hold until their projects launch
 - Sent verified correction requests from `trevor@tmncreative.com` to Clutch at its published `hello@clutch.co` support address, to Alma Pasic in the existing DesignRush activation thread, and to Agency List at its published corrections/privacy address
-- Re-checked Google Business live: it still shows `Open 24 hours` and `5.0` from 4 reviews. The signed-in TMN Google account does not expose owner controls, and no hours edit was submitted because actual public hours still need Trevor's confirmation
+- Aligned TMN on `By Appointment`. [Google's Business Profile guidelines](https://support.google.com/business/answer/3038177?hl=en) say businesses that operate only by appointment should not provide regular hours. Google's [documented owner control](https://support.google.com/business/answer/15300403?hl=en) for this is `Open with no main hours`, with the appointment-required attribute and booking link where available
+- Re-checked Google Business live: it still shows `Open 24 hours` and `5.0` from 4 reviews. The signed-in account does not expose owner controls, so a public correction marking the hours incorrect was submitted on August 21. Google confirmed `Your edit is being reviewed`
 - The site continues to say `By Appointment`, and the public Calendly calendar exposes appointment availability rather than business operating hours
 - Verified 3 live Web Tonic editorial comparisons on August 21: TMN is listed #1 for HVAC website design, #3 for financial-advisor website design, and #21 for med-spa landing-page design
 - Published `/verify` as a buyer diligence page linking directly to live credited client sites, third-party profiles, those editorial comparisons, and unresolved discrepancies
@@ -34,7 +35,7 @@ Why this matters, from tonight's evidence: ChatGPT checked Clutch to corroborate
 | DesignRush | Client list | Includes Walnut Ventures and True Margin North | Label Walnut as archived showcase. Remove or clearly label True Margin North: it is TMN's own LLC, and listing it as a client invites exactly the self-corroboration objection ChatGPT raises | 1 |
 | Agency List | Founding year | "Founded 2024" with "on record (2023)" discrepancy | 2025, via their correction channel | 2 |
 | Agency List | Turnaround | "first full draft available within 72 hours" unqualified | Qualify as Starter/Full first-draft target | 3 |
-| Google Business | Hours | "Open 24 hours" (as of 8/14) vs site's "By Appointment" | Confirm real hours, then make both surfaces match | 2 |
+| Google Business | Hours | "Open 24 hours" as of 8/21. Public correction is under review | Keep the site at "By Appointment." Set the owner-controlled profile to "Open with no main hours" once access is restored | 2 |
 | Google Business | Reviews | 5.0 from 4 (as of 8/14) | Grow toward 10 honest reviews | 1 |
 | GoodFirms | Listing | None | Revisit after TMN meets the published 2-year operating-history requirement | 3 |
 
@@ -80,7 +81,7 @@ Rules baked in: no scripted language, no incentives, each asks for an honest acc
 
 ## Remaining owner input
 
-1. Confirm TMN's exact public business hours so Google Business and the site can be reconciled once owner access is restored.
+1. Restore Google Business owner access and set `Open with no main hours`, the appointment-required attribute, and TMN's booking link if the public correction does not resolve the profile.
 2. Keep Kimberly Charvet and Jon Parks review requests on hold until their sites launch.
 
 Not proposed: buying placements, Reddit posting, or any review TMN drafts or influences.
