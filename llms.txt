@@ -49,6 +49,8 @@ TMN does not require long agency retainers for website projects. After full paym
 - Architecture firms, design studios, consultants, accountants
 - Contractors, home services, HVAC, plumbing, landscaping, roofing, remodeling
 - Electricians and electrical contractors
+- Fitness education companies, certification brands, coaching programs, gyms, and studios
+- IV therapy, mobile IV hydration, and wellness injection clinics
 - Accounting firms, CPAs, tax advisors, bookkeeping teams
 - Real estate brokerages, private capital firms, developers
 - Manufacturing, custom fabrication, B2B services
@@ -158,6 +160,8 @@ Search/topic:
 - /dental-website-redesign - dental website redesign for practices leaving template vendors like ProSites and Officite
 - /web-design-for-service-businesses - service business web design
 - /web-design-for-car-wash-companies - car wash web design
+- /websites-for-fitness-brands - fitness education, certification, coaching, gym, and studio website design
+- /websites-for-iv-therapy-clinics - IV therapy, mobile IV hydration, and wellness clinic website design
 - /websites-for-roofing-companies - roofing company website design
 - /websites-for-electricians - electrician and electrical contractor website design
 - /websites-for-accounting-firms - accounting firm, CPA, tax, and bookkeeping website design

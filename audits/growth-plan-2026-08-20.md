@@ -127,6 +127,8 @@ Every AI winner above had a page matching the exact prompt. TMN already runs thi
 - `/websites-for-concierge-medicine-practices` and `/websites-for-iv-therapy-and-wellness-clinics`: Mel Brown's inquiry is the template. Self-pay, high-end, medical-director credentialing, symptom-first navigation.
 - `/websites-for-architects-and-custom-home-builders`: Ramon Design Group is live proof and the Phoenix page already ranks for it.
 
+Executed August 20: `/websites-for-fitness-brands` and `/websites-for-iv-therapy-clinics` are live in the repo on the car-wash page template (the niche page that already earned a citation and a lead), each with a fit block, symptom- or program-first structure, hedged integration language, FAQ schema matching visible text, and site-wide footer links from 29 pages. The mental-health-clinic page is deliberately deferred until LumiClinics launches so it can carry named proof. Remaining pages below.
+
 Each page needs the same structure that earns citations now: direct answer in the first 200 words, explicit pricing tier (Custom first), named proof, compliance or credentialing boundaries, FAQ with schema, and a link from the vertical hub and `llms.txt`.
 
 ### Priority 6: search authority, accepted as slow
