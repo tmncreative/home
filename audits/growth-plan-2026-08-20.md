@@ -140,6 +140,10 @@ Each page needs the same structure that earns citations now: direct answer in th
 
 Nothing here changes in 30 days. Execute the authority roadmap's Tier 1 and Tier 2 items and stop expecting organic clicks to move before the referring-domain count does. The pages are ready. The links are not there.
 
+### Release and baseline record (August 20 late evening)
+
+The 8 new pages deployed to production in Netlify deploy 6a87cf3b (commit c74e2ab, published 2026-08-21T04:08 UTC). All 8 live URLs verified: 200, correct canonicals, indexable, in the live sitemap and llms.txt, valid JSON-LD, assets loading. IndexNow accepted 8 URLs (HTTP 200). Search Console sitemap resubmitted with visible confirmation. The ChatGPT recommendation baseline is recorded in `chatgpt-baseline-2026-08-20.md`: 0 of 6 high-intent prompts surfaced TMN that evening, against 3 verified AI-sourced leads earlier in the month. First re-test on or after September 3.
+
 ## 3. How to measure it
 
 Monthly, 15 minutes:
