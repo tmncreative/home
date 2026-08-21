@@ -9,8 +9,13 @@ Inspected from live sources the evening of August 20, 2026. Clutch, DesignRush, 
 - Sent verified correction requests from `trevor@tmncreative.com` to Clutch at its published `hello@clutch.co` support address, to Alma Pasic in the existing DesignRush activation thread, and to Agency List at its published corrections/privacy address
 - Re-checked Google Business live: it still shows `Open 24 hours` and `5.0` from 4 reviews. The signed-in TMN Google account does not expose owner controls, and no hours edit was submitted because actual public hours still need Trevor's confirmation
 - The site continues to say `By Appointment`, and the public Calendly calendar exposes appointment availability rather than business operating hours
+- Verified 3 live Web Tonic editorial comparisons on August 21: TMN is listed #1 for HVAC website design, #3 for financial-advisor website design, and #21 for med-spa landing-page design
+- Published `/verify` as a buyer diligence page linking directly to live credited client sites, third-party profiles, those editorial comparisons, and unresolved discrepancies
+- Checked other public-listing opportunities. GoodFirms currently requires at least 2 years in business and 5 completed projects with reference checks, so a 2025-founded studio is not yet eligible. Expertise currently accepts review requests only for Legal and Home Improvement providers, not web-design agencies. Three Best Rated requires an exact physical address, business hours, reviews, and 3 images, so submission is deferred until TMN's public hours are resolved
 
 Directory correction requests are pending until each publisher changes the public profile. Do not treat the requested values as live until they are re-verified.
+
+Web Tonic update, verified live August 21: the earlier "unreachable" note used the wrong domain (webtonic.com; the publisher is webtonic.io). Web Tonic already lists TMN in 3 August 2026 comparisons: HVAC #1 (Aug 11), advisor #3 (Aug 11), med spa #21 (Aug 10). No pitch needed for these; they are cited with dates and positions on /verify. Approval item 6 is narrowed to whether to contact Web Tonic about its other lists and Bethany Works about its RIA roundup.
 
 Why this matters, from tonight's evidence: ChatGPT checked Clutch to corroborate TMN before recommending it to Jon Parks and quoted the wrong founding year and empty reviews as its reason for caution.
 
@@ -31,7 +36,7 @@ Why this matters, from tonight's evidence: ChatGPT checked Clutch to corroborate
 | Agency List | Turnaround | "first full draft available within 72 hours" unqualified | Qualify as Starter/Full first-draft target | 3 |
 | Google Business | Hours | "Open 24 hours" (as of 8/14) vs site's "By Appointment" | Confirm real hours, then make both surfaces match | 2 |
 | Google Business | Reviews | 5.0 from 4 (as of 8/14) | Grow toward 10 honest reviews | 1 |
-| GoodFirms | Listing | None | Free application using approved completed work only | 3 |
+| GoodFirms | Listing | None | Revisit after TMN meets the published 2-year operating-history requirement | 3 |
 
 ## Review request drafts, for Trevor to send after approval
 
@@ -73,13 +78,9 @@ Rules baked in: no scripted language, no incentives, each asks for an honest acc
 
 > Jon, when the site's live and you've had a minute with it, would you please leave an honest review of the project on Clutch? https://review.clutch.co/review/?provider_id=2688811. Check with your compliance folks first on public statements, and if it's a no, no worries at all.
 
-## Explicit approval items
+## Remaining owner input
 
-1. Approve sending the 4 send-now review requests (Garrett, Jose, Cody, Alex) and the 2 held ones at launch.
-2. Approve the Clutch and DesignRush corrections above; both need owner/admin access.
-3. Approve the Agency List correction request.
-4. Confirm real business hours so the Google Business Profile can be fixed.
-5. Decide on the GoodFirms free application.
-6. Decide whether to pitch Web Tonic's advisor and wealth lists (their site was unreachable 8/20; process unverified) and Bethany Works' RIA roundup.
+1. Confirm TMN's exact public business hours so Google Business and the site can be reconciled once owner access is restored.
+2. Keep Kimberly Charvet and Jon Parks review requests on hold until their sites launch.
 
 Not proposed: buying placements, Reddit posting, or any review TMN drafts or influences.

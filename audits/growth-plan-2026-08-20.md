@@ -66,7 +66,7 @@ Three patterns recur across these observed answers (a sample of 4 prompts on one
 2. A named case study in that vertical with a real client and a result.
 3. Presence on a third-party "best agencies for X 2026" list. Web Tonic alone supplied 3 of the competitor citations above.
 
-TMN has pattern 1 in many verticals. It has pattern 2 only for healthcare (Smitha Reddy MD) and an archived showcase (Walnut Ventures). It has pattern 3 nowhere.
+TMN has pattern 1 in many verticals. At the time of the 8/20 tests it had pattern 2 only for healthcare; 7 case studies now exist. Correction, verified live 8/21: pattern 3 is no longer empty. Web Tonic (webtonic.io; the earlier "unreachable" note used the wrong domain, webtonic.com) published 3 comparisons listing TMN: #1 in "Mobile First or Nothing: 20 HVAC Website Design Agencies (2026)" (Aug 11), #3 in "Ask Who Owns the Compliance Review: 21 Advisor Web Design Agencies (2026)" (Aug 11, updated Aug 19), and #21 in "One Page Per Treatment: 21 Med Spa Page Agencies in 2026" (Aug 10). These are the publisher's own editorial rankings.
 
 ### The positioning trade-off
 
@@ -143,6 +143,10 @@ Nothing here changes in 30 days. Execute the authority roadmap's Tier 1 and Tier
 ### Release and baseline record (August 20 late evening)
 
 The 8 new pages deployed to production in Netlify deploy 6a87cf3b (commit c74e2ab, published 2026-08-21T04:08 UTC). All 8 live URLs verified: 200, correct canonicals, indexable, in the live sitemap and llms.txt, valid JSON-LD, assets loading. IndexNow accepted 8 URLs (HTTP 200). Search Console sitemap resubmitted with visible confirmation. The ChatGPT recommendation baseline is recorded in `chatgpt-baseline-2026-08-20.md`: 0 of 6 high-intent prompts surfaced TMN that evening, against 3 verified AI-sourced leads earlier in the month. First re-test on or after September 3.
+
+### Verification page shipped (August 21)
+
+`/verify` is live (Netlify deploy 6a88042f, commits 067026b and 8f0282a): a calm buyer verification resource listing clients' live sites whose published HTML carried a TMN credit when checked on 8/21 (SunCraft, Tony's, Ramon Design Group, Training Wheels, Smitha Reddy), third-party profiles with dated status (including Clutch's "Not yet reviewed" and "Founded 2024" as it stood on 8/21), the 3 Web Tonic editorial rankings with dates and positions, current discrepancies with status, and TMN's standing no-claim policies. Grounding: ChatGPT's verbatim caveat to Jon Parks that TMN's strongest claims were self-sourced, plus the observed fact-checking behavior in the 8/20 baseline. This is a durability play, not a ranking claim. Linked from the homepage and studio footers, the Trevor page ("Buyer verification"), llms.txt, and the sitemap; /verify plus the 2 changed pages were submitted through IndexNow (HTTP 200).
 
 ## 3. How to measure it
 
