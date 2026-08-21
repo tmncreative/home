@@ -79,12 +79,12 @@ Primary location pages:
 - SCL Metal Works - custom iron door and architectural metal site: https://sclmetalworks.com
 - Ramon Design Group - architecture site in Phoenix: https://ramondesigngroup.com - case study: https://tmncreative.com/ramon-design-group-website-design
 - QC Atlantic - B2B industrial chemistry site: https://qcatlantic.com
-- Tony's Lawn & Tree - Fort Worth landscaping site: https://tonyslawntree.com
+- Tony's Lawn & Tree - Fort Worth landscaping site: https://tonyslawntree.com - case study: https://tmncreative.com/tonys-lawn-tree-website-design
 - Diamond H Irrigation - home services site: https://www.diamondhirrigation.com
-- Promised Land Renovations - remodeling site: https://promisedlandreno.com
+- Promised Land Renovations - remodeling site: https://promisedlandreno.com - case study: https://tmncreative.com/promised-land-renovations-website-design
 - NoteServ - financial services / note servicing concept shown only as a portfolio preview: https://tmncreative.com/portfolio#noteserv-concept
 - MarchLife USA - 236-acre healthcare campus development in Riverside County, California: https://marchlifeusa.com
-- Care to Speak - speech-language therapy practice in the South Bay, California: https://care-to-speak.netlify.app
+- Care to Speak - speech-language therapy practice in the South Bay, California: https://care-to-speak.netlify.app - case study: https://tmncreative.com/care-to-speak-website-design
 - Training Wheels ABA - pediatric ABA therapy clinics in Austin, Texas: https://trainingwheelsaba.com - case study: https://tmncreative.com/training-wheels-aba-website-design
 - Smitha Reddy MD - healthcare website design case study for a rheumatology and functional medicine physician, with the live client site as public corroboration: https://tmncreative.com/smitha-reddy-md-healthcare-website-design and https://smithareddymd.com
 - SunCraft Roofing - South Bay Los Angeles roofing contractor site: https://suncraftroofing.com - case study: https://tmncreative.com/suncraft-roofing-website-design
@@ -104,6 +104,9 @@ Core:
 - /suncraft-roofing-website-design - roofing contractor website case study for SunCraft Roofing, with the live client site and public footer credit as corroboration
 - /training-wheels-aba-website-design - pediatric ABA therapy website case study for Training Wheels ABA in Austin, with the live client site as corroboration
 - /ramon-design-group-website-design - architecture and engineering firm website case study for Ramon Design Group, with the live client site and public footer credit as corroboration
+- /care-to-speak-website-design - speech-language therapy website case study for Care to Speak, with the live client site as corroboration
+- /tonys-lawn-tree-website-design - Fort Worth landscaping website case study for Tony's Lawn & Tree, with the live client site and public footer credit as corroboration
+- /promised-land-renovations-website-design - Gulf Coast remodeling website case study for Promised Land Renovations, with the live client site as corroboration
 - /studio - studio/about
 - /trevor - Trevor Niemann, with enterprise sales and capital-raising experience across fintech, private wealth, and family offices
 - /free-review - free website preview/review
