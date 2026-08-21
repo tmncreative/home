@@ -33,6 +33,24 @@ Inbound August 10 to 20 (6 real inquiries, 2 spam):
 
 Both inquiries where a source was captured came from AI assistants, and both are in the $5K to 10K tier. Both reached the site by Googling the brand after the AI named it, so referrer-based AI detection saw them as Google traffic. The self-report field is the only thing that caught them. Neither is in a vertical TMN targets explicitly, which means the AI is recommending TMN for general "premium redesign for an established business" prompts.
 
+### What ChatGPT actually told a buyer (Jon Parks, August 12)
+
+Jon Parks forwarded the ChatGPT answer that put TMN on his shortlist. He was comparing a $500/hour brand strategist against WealthReach's $500/mo advisor site product, and asked ChatGPT who to talk to. ChatGPT's reasons, in its order:
+
+1. Trevor's background: "about a decade in fintech, private wealth, family-office capital raising and enterprise sales." Near-verbatim from `/trevor` and `llms.txt`. This is why Jon's first page was `/trevor`.
+2. "Financial advisors/RIAs are an explicit specialty. They discuss ADV/CRS hosting, compliance-aware copy, disclosures and the SEC Marketing Rule." Vertical vocabulary from `/financial-services` and the compliance guide.
+3. "Positioning + copy + design + build" in one shop, framed as the alternative to hiring a strategist and then a developer.
+4. "Pricing is refreshingly sane: roughly $3,750 for a full rebuild and $5,000+ for the more strategic/custom engagement." It did not quote $2,250 to an advisor. The AI matches the tier to the buyer, so the Starter wedge and the premium tier coexist.
+5. Ownership ("no proprietary-platform hostage situation") and founder-led ("Trevor and Taylor, not a 20-person agency").
+
+The caveat it attached: "I would not hire him sight unseen. TMN is relatively young; Clutch lists it as founded in 2024, and its Clutch profile currently doesn't show client reviews. A lot of the strongest claims about its advisor expertise come from TMN's own website." ChatGPT went to Clutch specifically to corroborate the site and found a wrong year and no reviews. Jon called anyway and signed August 14. A less motivated buyer stops at that paragraph.
+
+What this proves:
+
+- The founder credential plus vertical-specific regulatory vocabulary is the pattern that wins. Replicate it per vertical: name the tools, rules, and artifacts that vertical lives with (HIPAA intake and credentialing for practices, ServiceTitan and Jobber for home services, bar advertising rules for attorneys, CSCS and certification bodies for fitness education).
+- Clutch is the corroboration source ChatGPT checks. Founding year and reviews there are now the single highest-leverage fix on this list.
+- Named, third-party-visible proof is the missing piece. Jon is the first advisor client who can supply it: a Clutch review, a Google review, and a named case study once the site launches, subject to whatever Osaic's compliance team allows him to say publicly.
+
 ### What AI engines say right now (checked 8/20)
 
 | Prompt | Engine | TMN present | Who won and why |
@@ -86,7 +104,7 @@ AI engines and HNW buyers both want named work. Current proof is strongest in ho
 
 - Write one anonymized private-wealth case study from the NDA work, structured as "firm profile, what the site had to do, what changed," with the client described at category level only. Get written sign-off on the anonymized version.
 - Ask LumiClinics (live project) and, when they close, Pathway Advisors and Parks Wealth Partners for a factual case study with a contextual link. One wealth case study with a real firm name is the single highest-value asset on this list.
-- Get Clutch reviews moving. Clutch still shows zero reviews. Diamond H, Promised Land, QC Atlantic, and now LumiClinics are candidates. Three reviews averaging 4.0 meet the Clutch Certified threshold, and Clutch is one of the sources AI engines trust for "best agency" prompts.
+- Get Clutch fixed first: founding year to 2025 and reviews. ChatGPT cited both gaps to Jon Parks verbatim. Clutch still shows zero reviews. Diamond H, Promised Land, QC Atlantic, and now LumiClinics are candidates. Three reviews averaging 4.0 meet the Clutch Certified threshold, and Clutch is one of the sources AI engines trust for "best agency" prompts.
 - Push Google Business Profile from 4 reviews toward 10. Same clients.
 
 ### Priority 4: get on the lists AI reads (30 to 60 days)
