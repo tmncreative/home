@@ -48,7 +48,7 @@ The caveat it attached: "I would not hire him sight unseen. TMN is relatively yo
 What this proves:
 
 - The founder credential plus vertical-specific regulatory vocabulary is the pattern that wins. Replicate it per vertical: name the tools, rules, and artifacts that vertical lives with (HIPAA intake and credentialing for practices, ServiceTitan and Jobber for home services, bar advertising rules for attorneys, CSCS and certification bodies for fitness education).
-- Clutch is the corroboration source ChatGPT checks. Founding year and reviews there are now the single highest-leverage fix on this list.
+- Clutch was the corroboration source ChatGPT checked in this observed answer. Founding year and reviews there are the highest-leverage external fix suggested by this evidence.
 - Named, third-party-visible proof is the missing piece. Jon is the first advisor client who can supply it: a Clutch review, a Google review, and a named case study once the site launches, subject to whatever Osaic's compliance team allows him to say publicly.
 
 ### What AI engines say right now (checked 8/20)
@@ -60,7 +60,7 @@ What this proves:
 | Premium website for a high-end self-pay mobile IV business | Google AI Mode | No | Marceline Studios, Aesthetic Brand Marketing, Vaylo Studios, Web Tonic. Every winner has a dedicated IV-therapy web design service page. |
 | Established fitness education company rebrand and navigation overhaul | ChatGPT (web search) | No | Huemor (ABC Fitness case study), Ramotion, Huge (Planet Fitness). Every winner has a named fitness case study. |
 
-Three patterns decide who gets named:
+Three patterns recur across these observed answers (a sample of 4 prompts on one day, not a proven general mechanism):
 
 1. A dedicated page that matches the buyer's exact vertical and situation.
 2. A named case study in that vertical with a real client and a result.
@@ -73,6 +73,11 @@ TMN has pattern 1 in many verticals. It has pattern 2 only for healthcare (Smith
 The AI has learned "$2,250 and 72 hours" as TMN's identity. That is accurate for Starter, and it is what the site repeats most: the homepage mentions 72 hours 44 times, pricing 22, financial-services 18. The homepage testimonial ("Every one quoted 8 to 12 weeks and $10K+. Trevor had something in my inbox in 48 hours") positions TMN as the faster, more accessible alternative to $10K agencies.
 
 That framing is why TMN gets named at all, and Trevor reports the $2,250 to $2,500 builds close at a very high rate. It also slots TMN into the "solos / fast launches" bucket in every AI comparison table, so a wealth-firm principal or managing partner reads that row and picks AltaStreet or Fahrenheit. The answer is not to flip the site. It is to keep the price-led front door exactly as it is and give assistants a second, clearly labeled Custom Studio Build story to cite on the pages HNW buyers reach.
+
+
+### Crawler facts (primary source, checked August 20, 2026)
+
+Per OpenAI's official crawler documentation (developers.openai.com/api/docs/bots): OAI-SearchBot is what surfaces sites in ChatGPT search results, and OpenAI says robots.txt changes can take about 24 hours to be reflected; GPTBot is a separate crawler for model training; ChatGPT-User fetches pages for user-initiated actions and does not determine search inclusion. OpenAI publishes IP ranges for each bot (openai.com/searchbot.json and related files). TMN's robots.txt allows all three. Anything beyond these statements about how ChatGPT selects or ranks agencies is inference from observed answers, not documented mechanism. IndexNow submissions notify participating search engines (Bing, Seznam, Naver, Yandex); they are search-engine discovery work and carry no documented guarantee about ChatGPT.
 
 ## 2. The plan, in priority order
 
