@@ -1,6 +1,16 @@
 # Corroborating-profile corrections and review requests
 
-Inspected from live sources the evening of August 20, 2026 (Clutch, DesignRush, Agency List fetched live tonight; Google Business Profile figures are from the August 14 verification in `authority-roadmap-2026-07-23.md` and were not re-checked tonight). Nothing here has been edited or sent. Every item needs Trevor's approval, and profile edits need owner access.
+Inspected from live sources the evening of August 20, 2026. Clutch, DesignRush, and Agency List were fetched live that night. Google Business Profile was re-checked live on August 21.
+
+## Execution status, August 21, 2026
+
+- Sent and verified honest Clutch review requests to Garrett Horton and Alex Ramon by TMN email, and to Jose Molina and Cody Elmore in their existing Messages threads
+- Kept Kimberly Charvet and Jon Parks on hold until their projects launch
+- Sent verified correction requests from `trevor@tmncreative.com` to Clutch at its published `hello@clutch.co` support address, to Alma Pasic in the existing DesignRush activation thread, and to Agency List at its published corrections/privacy address
+- Re-checked Google Business live: it still shows `Open 24 hours` and `5.0` from 4 reviews. The signed-in TMN Google account does not expose owner controls, and no hours edit was submitted because actual public hours still need Trevor's confirmation
+- The site continues to say `By Appointment`, and the public Calendly calendar exposes appointment availability rather than business operating hours
+
+Directory correction requests are pending until each publisher changes the public profile. Do not treat the requested values as live until they are re-verified.
 
 Why this matters, from tonight's evidence: ChatGPT checked Clutch to corroborate TMN before recommending it to Jon Parks and quoted the wrong founding year and empty reviews as its reason for caution.
 
