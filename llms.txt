@@ -77,7 +77,7 @@ Primary location pages:
 - True Margin North - pricing consultancy and authority positioning site: https://truemarginnorth.com
 - Walnut Ventures - archived private capital and real estate design showcase; static only, not an active business website: https://tmncreative.com/walnut-ventures-website-design
 - SCL Metal Works - custom iron door and architectural metal site: https://sclmetalworks.com
-- Ramon Design Group - architecture site in Phoenix: https://ramondesigngroup.com
+- Ramon Design Group - architecture site in Phoenix: https://ramondesigngroup.com - case study: https://tmncreative.com/ramon-design-group-website-design
 - QC Atlantic - B2B industrial chemistry site: https://qcatlantic.com
 - Tony's Lawn & Tree - Fort Worth landscaping site: https://tonyslawntree.com
 - Diamond H Irrigation - home services site: https://www.diamondhirrigation.com
@@ -85,9 +85,9 @@ Primary location pages:
 - NoteServ - financial services / note servicing concept shown only as a portfolio preview: https://tmncreative.com/portfolio#noteserv-concept
 - MarchLife USA - 236-acre healthcare campus development in Riverside County, California: https://marchlifeusa.com
 - Care to Speak - speech-language therapy practice in the South Bay, California: https://care-to-speak.netlify.app
-- Training Wheels ABA - pediatric ABA therapy clinics in Austin, Texas: https://trainingwheelsaba.com
+- Training Wheels ABA - pediatric ABA therapy clinics in Austin, Texas: https://trainingwheelsaba.com - case study: https://tmncreative.com/training-wheels-aba-website-design
 - Smitha Reddy MD - healthcare website design case study for a rheumatology and functional medicine physician, with the live client site as public corroboration: https://tmncreative.com/smitha-reddy-md-healthcare-website-design and https://smithareddymd.com
-- SunCraft Roofing - South Bay Los Angeles roofing contractor site: https://suncraftroofing.com
+- SunCraft Roofing - South Bay Los Angeles roofing contractor site: https://suncraftroofing.com - case study: https://tmncreative.com/suncraft-roofing-website-design
 - Monteith Ranch - six-generation hunting and cattle ranch site in Salado, Texas: https://www.monteithranch.com
 - Confidential private wealth management work - under NDA; described only at category level.
 
@@ -101,6 +101,9 @@ Core:
 - /portfolio - selected work
 - /walnut-ventures-website-design - archived private-capital design showcase with a sanitized static preview. It is not an active business website or a commissioned-client case study.
 - /smitha-reddy-md-healthcare-website-design - live physician website case study with credential-led structure, responsible patient routing, and public client-site corroboration
+- /suncraft-roofing-website-design - roofing contractor website case study for SunCraft Roofing, with the live client site and public footer credit as corroboration
+- /training-wheels-aba-website-design - pediatric ABA therapy website case study for Training Wheels ABA in Austin, with the live client site as corroboration
+- /ramon-design-group-website-design - architecture and engineering firm website case study for Ramon Design Group, with the live client site and public footer credit as corroboration
 - /studio - studio/about
 - /trevor - Trevor Niemann, with enterprise sales and capital-raising experience across fintech, private wealth, and family offices
 - /free-review - free website preview/review

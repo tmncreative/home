@@ -102,6 +102,8 @@ Recommended next:
 
 AI engines and HNW buyers both want named work. Current proof is strongest in home services and B2B, weakest in wealth and legal.
 
+Executed August 20: three named case study pages are live in the repo: `/suncraft-roofing-website-design`, `/training-wheels-aba-website-design`, and `/ramon-design-group-website-design`, each built strictly from publicly verifiable facts, wired into the portfolio, the matching vertical pages, sitemap, llms.txt, and redirects. A "Best for / Not a fit / Investment & timing" block now sits near the top of all 12 industry pages. Remaining proof work below.
+
 - Write one anonymized private-wealth case study from the NDA work, structured as "firm profile, what the site had to do, what changed," with the client described at category level only. Get written sign-off on the anonymized version.
 - Ask LumiClinics (live project) and, when they close, Pathway Advisors and Parks Wealth Partners for a factual case study with a contextual link. One wealth case study with a real firm name is the single highest-value asset on this list.
 - Get Clutch fixed first: founding year to 2025 and reviews. ChatGPT cited both gaps to Jon Parks verbatim. Clutch still shows zero reviews. Diamond H, Promised Land, QC Atlantic, and now LumiClinics are candidates. Three reviews averaging 4.0 meet the Clutch Certified threshold, and Clutch is one of the sources AI engines trust for "best agency" prompts.
