@@ -1,0 +1,14 @@
+Use case: ui-mockup
+Asset type: high-fidelity desktop website composition reference, 1536x1024 landscape
+Primary request: Design a TMN Creative website page for an interactive 12-point business website credibility scorecard. It must be a real web interface comp, not a poster or scene.
+Structure: restrained one-line navigation; a compact left-aligned opening with the exact headline and support text; immediately below, a full-width audit sheet split into a wide left question column and a narrow sticky right result column. The result column shows a large 0/12, a concise diagnosis, and one next action. The audit sheet groups 12 square checkboxes into six paired categories using negative space and sparse dividers, never card tiles. Show enough of the page to reveal the first 3 categories and a real project screenshot strip beginning lower on the page.
+Exact headline text: "Website credibility scorecard."
+Exact support text: "Score the visible proof a buyer can check before the first call."
+Style/medium: TMN Creative Proof Ledger, high-fidelity website UI
+Composition/framing: desktop browser-width composition with compact hero and the scorecard as the dominant first-viewport object; reading-oriented, structured, calm
+Color palette: cool near-white paper, deep navy text, one restrained muted-gold accent, cool gray rules
+Typography: IBM Plex Sans visual character; Geist Mono only for score, point values, and brief labels
+Materials/textures: flat print-like paper, crisp rules, almost-square corners, no glossy effects
+Controls: accessible native square checkboxes, dark navy primary action, underlined secondary link; score expressed as a large number without a filled progress track
+Constraints: serious B2B due-diligence tool for established business owners; one light theme; no fabricated reviews, results, awards, client names, or metrics; no decorative icons; no pills; no status dots; no section numbers; no em dash or en dash; no gradients; no dark theme section; no oversized centered type; no three equal cards; no playful quiz look; no watermark
+Avoid: dashboard, SaaS analytics UI, poster, brochure, heavy table grid, excess borders, glass, purple, neon, warm beige, fake browser chrome, illegible microcopy

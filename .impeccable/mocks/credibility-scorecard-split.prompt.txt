@@ -1,0 +1,14 @@
+Use case: ui-mockup
+Asset type: high-fidelity desktop website composition reference, 1536x1024 landscape
+Primary request: Design a TMN Creative website page for an interactive 12-point business website credibility scorecard. This must read as a real web interface comp, not a poster, photograph, or abstract scene.
+Structure: restrained single-line navigation; first viewport split 40/60 with headline and a short explanation on the left, and a working-paper style scorecard preview on the right showing 0/12 and six credibility categories; the next fold begins with paired audit questions arranged as a sober evidence ledger. Keep the primary action visible in the first viewport.
+Exact headline text: "Website credibility scorecard."
+Exact support text: "Score the visible proof a buyer can check before the first call."
+Style/medium: TMN Creative Proof Ledger visual system, high-fidelity website UI mockup
+Composition/framing: desktop browser-width composition showing the full first viewport and enough of the second fold to prove the layout; proof-dominant scorecard panel, strong left alignment, clear information hierarchy
+Color palette: near-white cool paper, deep navy ink, restrained muted gold accent, soft cool gray dividers
+Typography: restrained IBM Plex Sans character, Geist Mono only for the numerical score and compact evidence labels
+Materials/textures: flat paper fields, crisp 1px rules, almost-square 2px to 5px corners, no shadows except the slightest paper separation
+Controls: native-looking square checkboxes with clear labels, one dark navy primary button, one quiet text link; no pills and no filled progress bar
+Constraints: serious B2B credibility tool for established business owners; accessible spacing; one light theme across the whole page; no fabricated testimonials, metrics, logos, awards, or client claims; no decorative status dots; no section numbers; no em dash or en dash; no glassmorphism; no gradients; no oversized headline; no centered hero; no three equal feature cards; no overlay labels; no fake browser chrome; no watermark
+Avoid: poster composition, lifestyle scene, dark tech, neon, AI purple, warm beige and brass, excessive cards, dashboard clutter, tiny illegible text, playful quiz styling

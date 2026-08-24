@@ -1,0 +1,15 @@
+Use case: ui-mockup
+Asset type: high-fidelity desktop website composition reference, 1536x1024 landscape
+Primary request: Design a TMN Creative website page for an interactive 12-point business website credibility scorecard. It must read as a real production web interface, not a poster or photograph.
+Structure: restrained one-line navigation; left-aligned compact introduction; below it, a 6-stage vertical credibility sequence occupying the wide left side while a quiet score rail remains visible on the right. Each stage has a strong category heading, exactly 2 square checkboxes, and one concise sentence describing acceptable public evidence. The first viewport shows the introduction, score rail, and first 3 categories. A lower evidence section begins with 4 real-work image slots of different proportions, kept clearly separate from the scorecard.
+Exact headline text: "Website credibility scorecard."
+Exact support text: "Score the visible proof a buyer can check before the first call."
+Categories in order: Position, Proof, People, Process, Ownership, Next step.
+Style/medium: TMN Creative Proof Ledger system, high-fidelity website UI comp
+Composition/framing: desktop browser-width, strong reading order, score rail subordinate but persistent, generous space around the large score, categories connected as one sequence rather than cards
+Color palette: near-white cool paper, deep navy ink, one muted gold accent, cool-gray separators
+Typography: IBM Plex Sans character, Geist Mono only for score and point notation
+Materials/textures: flat paper fields, crisp single rules, 2px to 5px corners, no surface shadows
+Controls: accessible square checkboxes, a dark navy primary action beneath the final score, quiet underlined links; no filled progress bar
+Constraints: trust-first B2B tool for established businesses; one light theme across entire page; no fake testimonials, rankings, metrics, awards, or client claims; no decorative icons, dots, section numbering, pills, or badges; no em dash or en dash; no glass, gradients, purple, neon, warm craft palette, huge headline, centered hero, equal three-card layout, playful quiz treatment, or watermark
+Avoid: dashboard chrome, SaaS analytics, poster, generic card grid, dense technical table, fake browser frame, tiny text, excessive borders
