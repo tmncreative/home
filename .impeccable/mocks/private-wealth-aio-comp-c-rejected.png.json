@@ -1,0 +1,8 @@
+{
+  "surface": "websites-for-private-wealth-firms.html",
+  "composition": "Image-led proof record with side rails",
+  "source_asset": "images/private-wealth-confidential.jpg",
+  "approved": false,
+  "rejected_reason": "The generated comp introduced unsupported experience copy and a sidebar pattern that weakens the established navigation.",
+  "prompt": "TMN Creative private wealth landing page composition C: image-led proof record with side rails. Rejected because the generated comp introduced unsupported experience copy."
+}
