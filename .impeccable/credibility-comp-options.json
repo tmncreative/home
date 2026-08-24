@@ -1,0 +1,36 @@
+{
+  "title": "Choose the credibility landing page composition",
+  "question": "Which structure should TMN use to make the cross-industry credibility offer clearest?",
+  "options": [
+    {
+      "id": "credibility-chain",
+      "label": "Credibility Chain",
+      "kicker": "PROOF FIRST",
+      "thesis": "Offer and real cross-industry work share the first viewport.",
+      "viewport": "A split hero pairs the promise with a four-project mosaic, then carries the visitor through one evidence chain.",
+      "risk": "The mosaic needs careful mobile sequencing to keep the copy first.",
+      "sketch": ".impeccable/mocks/credibility-chain.png"
+    },
+    {
+      "id": "annotated-proof-wall",
+      "label": "Annotated Proof Wall",
+      "kicker": "SHOW THE JUDGMENT",
+      "thesis": "Real project surfaces become an inspectable record of TMN decisions.",
+      "viewport": "The headline sits inside a wide proof wall with restrained annotations, then opens into a buyer-question ledger.",
+      "risk": "Annotations can become visual noise if they are not tightly edited.",
+      "sketch": ".impeccable/mocks/annotated-proof-wall.png"
+    },
+    {
+      "id": "referral-confirmation-path",
+      "label": "Referral Confirmation Path",
+      "kicker": "BUYER JOURNEY",
+      "thesis": "The page mirrors what a referred prospect needs to confirm before contacting a business.",
+      "viewport": "A clear offer leads into a connected confidence path, a cross-industry project filmstrip, and a deep proof ledger.",
+      "risk": "The path must stay evidentiary and avoid reading like a generic process diagram.",
+      "sketch": ".impeccable/mocks/referral-confirmation-path.png"
+    }
+  ],
+  "reroll": false,
+  "canon": false,
+  "steer": true
+}

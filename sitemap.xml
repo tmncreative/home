@@ -3,9 +3,15 @@
   <!-- Core pages -->
   <url>
     <loc>https://tmncreative.com/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tmncreative.com/website-design-that-builds-credibility</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
   </url>
   <url>
     <loc>https://tmncreative.com/start-a-project</loc>

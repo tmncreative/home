@@ -36,6 +36,7 @@
 /websites-for-fitness-brands.html /websites-for-fitness-brands 301!
 /websites-for-iv-therapy-clinics.html /websites-for-iv-therapy-clinics 301!
 /websites-for-private-wealth-firms.html /websites-for-private-wealth-firms 301!
+/website-design-that-builds-credibility.html /website-design-that-builds-credibility 301!
 /verify.html /verify 301!
 /pricing.html                    /pricing               301!
 /start-a-project.html            /start-a-project       301!
@@ -144,6 +145,10 @@
 /custom-website-vs-squarespace /custom-website-vs-wix-squarespace 301
 /trustworthy-professional-services-website /professional-services-website-trust 301
 /website-trust-signals /professional-services-website-trust 301
+/credibility-first-web-design /website-design-that-builds-credibility 301
+/credibility-website-design /website-design-that-builds-credibility 301
+/trust-building-website-design /website-design-that-builds-credibility 301
+/website-design-for-business-credibility /website-design-that-builds-credibility 301
 /financial-advisor-website-design /financial-services 301
 /ria-website-design /financial-services 301
 /wealth-management-website-design /websites-for-private-wealth-firms 301
@@ -202,5 +207,6 @@
 # Ensure trailing slashes don't break anything
 /pricing/     /pricing    301
 /portfolio/   /portfolio  301
+/website-design-that-builds-credibility/ /website-design-that-builds-credibility 301
 /smitha-reddy-md-healthcare-website-design/ /smitha-reddy-md-healthcare-website-design 301
 /care/        /care       301
