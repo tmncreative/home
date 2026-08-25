@@ -20,6 +20,13 @@ Web Tonic update, verified live August 21: the earlier "unreachable" note used t
 
 Why this matters, from tonight's evidence: ChatGPT checked Clutch to corroborate TMN before recommending it to Jon Parks and quoted the wrong founding year and empty reviews as its reason for caution.
 
+## Public-profile follow-up, August 25, 2026
+
+- Clutch now has 1 published verified client review, dated August 21. Its profile still shows a 2024 founding year and a $1,000+ minimum project size.
+- DesignRush now shows the correct 2025 founding year. Its team size, budget range, and delivery language still need publisher-side qualification before the profile fully matches TMN's published terms.
+- Agency List still shows a 2024 founding year, retains a 2023 founding-year record, and includes unsupported or unqualified claims such as “trusted by over 40 operators” and a blanket 72-hour first-draft statement. The publisher correction remains outstanding.
+- Google Business Profile now shows a 5.0 rating from 8 reviews. It still displays “Open 24 hours,” so the appointment-only hours correction remains pending.
+
 ## Correction matrix
 
 | Profile | Field | Currently shows (live, 8/20) | Should say | Priority |

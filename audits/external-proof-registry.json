@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-24",
+  "updatedAt": "2026-08-25",
   "purpose": "Private source of truth for the independent evidence cited on https://tmncreative.com/verify. A reachable link is not proof that the claim is still true; substantive facts require a human check before public copy changes.",
   "settings": {
     "staleAfterDays": 30,
@@ -82,8 +82,8 @@
       "sourceOwner": "third-party platform",
       "whatBuyerCanCheck": "The public business listing, including the rating and review count shown by Google at the time of inspection.",
       "manualChecks": ["Profile points to TMN Creative", "Rating and count match dated public copy", "Hours do not contradict TMN's current operating model"],
-      "lastVerified": "2026-08-21",
-      "nextCheck": "2026-09-21"
+      "lastVerified": "2026-08-25",
+      "nextCheck": "2026-09-25"
     },
     {
       "id": "profile-clutch",
@@ -95,8 +95,8 @@
       "sourceOwner": "third-party platform",
       "whatBuyerCanCheck": "The public agency profile and independently submitted client reviews, if any are published.",
       "manualChecks": ["Profile points to TMN Creative", "Founding year and descriptive facts are accurate", "Published review count is reflected only after direct inspection"],
-      "lastVerified": "2026-08-21",
-      "nextCheck": "2026-09-21"
+      "lastVerified": "2026-08-25",
+      "nextCheck": "2026-09-25"
     },
     {
       "id": "profile-designrush",
@@ -108,8 +108,8 @@
       "sourceOwner": "third-party platform",
       "whatBuyerCanCheck": "The public agency profile and portfolio entries hosted by DesignRush.",
       "manualChecks": ["Founding year is accurate", "Team size, pricing, timing, and ownership language remain qualified", "Showcase work is labeled accurately"],
-      "lastVerified": "2026-08-21",
-      "nextCheck": "2026-09-21"
+      "lastVerified": "2026-08-25",
+      "nextCheck": "2026-09-25"
     },
     {
       "id": "profile-agency-list",
@@ -121,8 +121,8 @@
       "sourceOwner": "third-party platform",
       "whatBuyerCanCheck": "The owner-verified public listing and its link to TMN's website.",
       "manualChecks": ["Listing points to TMN Creative", "Founding year is accurate", "72-hour language remains package-specific"],
-      "lastVerified": "2026-08-21",
-      "nextCheck": "2026-09-21"
+      "lastVerified": "2026-08-25",
+      "nextCheck": "2026-09-25"
     },
     {
       "id": "profile-github",
@@ -208,9 +208,9 @@
       "id": "directory-founding-year",
       "surfaces": ["Clutch", "DesignRush", "Agency List"],
       "requiredFact": "TMN Creative was founded in 2025.",
-      "status": "awaiting-publisher",
-      "recordedAsOf": "2026-08-21",
-      "nextAction": "Inspect each public profile. Update owned-site discrepancy copy only after the page itself changes."
+      "status": "partially-resolved",
+      "recordedAsOf": "2026-08-25",
+      "nextAction": "DesignRush now shows 2025. Recheck Clutch and Agency List, which still display an incorrect founding-year record, before updating the owned-site discrepancy copy."
     },
     {
       "id": "directory-profile-qualification",
