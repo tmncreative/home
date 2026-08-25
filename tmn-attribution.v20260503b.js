@@ -498,6 +498,25 @@
     return String(name || 'TMN Event').toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
   }
 
+  function analyticsEventParameters(props){
+    var parameters = {
+      event_category: 'tmn_growth',
+      event_label: cleanTrackingValue(props.label || props.form || props.href || cleanPath())
+    };
+
+    var provider = cleanSlug(props.provider || '');
+    var landingPath = cleanTrackingValue(props.landing_path || '');
+    var leadForm = cleanSlug(props.form || '');
+    var selfReportedSource = cleanSlug(props.self_reported_source || '');
+
+    if(provider) parameters.ai_provider = provider;
+    if(landingPath) parameters.landing_path = landingPath;
+    if(leadForm) parameters.lead_form = leadForm;
+    if(selfReportedSource) parameters.self_reported_source = selfReportedSource;
+
+    return parameters;
+  }
+
   function sendEvent(name, props, options){
     props = props || {};
     options = options || {};
@@ -511,14 +530,17 @@
       if(window.fathom) window.fathom.trackEvent(name);
     } catch(e){}
 
-    if(options.ads !== false){
-      try {
-        if(window.gtag) window.gtag('event', eventName(name), {
-          event_category: 'tmn_growth',
-          event_label: props.label || props.form || props.href || cleanPath()
-        });
-      } catch(e){}
+    try {
+      if(window.gtag){
+        var googleParameters = analyticsEventParameters(props);
+        if(options.ads === false && window.__TMN_GA4_MEASUREMENT_ID__){
+          googleParameters.send_to = window.__TMN_GA4_MEASUREMENT_ID__;
+        }
+        window.gtag('event', eventName(name), googleParameters);
+      }
+    } catch(e){}
 
+    if(options.ads !== false){
       try {
         if(window.fbq) window.fbq('trackCustom', name.replace(/\s+/g, ''), props);
       } catch(e){}
