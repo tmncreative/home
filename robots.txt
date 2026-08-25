@@ -3,6 +3,9 @@
 
 User-agent: *
 Allow: /
+Disallow: /success
+Disallow: /pay
+Disallow: /404.html
 Disallow: /new%20landing%20stuff/
 
 # OpenAI: search inclusion, training crawler, and user-triggered visits.
