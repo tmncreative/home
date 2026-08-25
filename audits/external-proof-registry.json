@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-24",
+  "purpose": "Private source of truth for the independent evidence cited on https://tmncreative.com/verify. A reachable link is not proof that the claim is still true; substantive facts require a human check before public copy changes.",
+  "settings": {
+    "staleAfterDays": 30,
+    "maximumLiveChecks": 20
+  },
+  "evidence": [
+    {
+      "id": "client-suncraft-roofing",
+      "kind": "client-credit",
+      "name": "SunCraft Roofing",
+      "publicUrl": "https://suncraftroofing.com/",
+      "publiclyLinked": true,
+      "status": "active",
+      "sourceOwner": "client",
+      "whatBuyerCanCheck": "A live client website and the TMN Creative credit in its published footer or page code.",
+      "manualChecks": ["Site is live", "TMN credit remains visible or present in published page code"],
+      "lastVerified": "2026-08-21",
+      "nextCheck": "2026-09-21"
+    },
+    {
+      "id": "client-tonys-lawn-tree",
+      "kind": "client-credit",
+      "name": "Tony's Lawn & Tree",
+      "publicUrl": "https://tonyslawntree.com/",
+      "publiclyLinked": true,
+      "status": "active",
+      "sourceOwner": "client",
+      "whatBuyerCanCheck": "A live client website and the TMN Creative credit in its published footer or page code.",
+      "manualChecks": ["Site is live", "TMN credit remains visible or present in published page code"],
+      "lastVerified": "2026-08-21",
+      "nextCheck": "2026-09-21"
+    },
+    {
+      "id": "client-ramon-design-group",
+      "kind": "client-credit",
+      "name": "Ramon Design Group",
+      "publicUrl": "https://ramondesigngroup.com/",
+      "publiclyLinked": true,
+      "status": "active",
+      "sourceOwner": "client",
+      "whatBuyerCanCheck": "A live client website and the TMN Creative credit in its published footer or page code.",
+      "manualChecks": ["Site is live", "TMN credit remains visible or present in published page code"],
+      "lastVerified": "2026-08-21",
+      "nextCheck": "2026-09-21"
+    },
+    {
+      "id": "client-training-wheels-aba",
+      "kind": "client-credit",
+      "name": "Training Wheels ABA",
+      "publicUrl": "https://trainingwheelsaba.com/",
+      "publiclyLinked": true,
+      "status": "active",
+      "sourceOwner": "client",
+      "whatBuyerCanCheck": "A live client website and the TMN Creative credit in its published footer or page code.",
+      "manualChecks": ["Site is live", "TMN credit remains visible or present in published page code"],
+      "lastVerified": "2026-08-21",
+      "nextCheck": "2026-09-21"
+    },
+    {
+      "id": "client-smitha-reddy-md",
+      "kind": "client-credit",
+      "name": "Smitha Reddy MD",
+      "publicUrl": "https://smithareddymd.com/",
+      "publiclyLinked": true,
+      "status": "active",
+      "sourceOwner": "client",
+      "whatBuyerCanCheck": "A live client website and the TMN Creative credit in its published footer or page code.",
+      "manualChecks": ["Site is live", "TMN credit remains visible or present in published page code"],
+      "lastVerified": "2026-08-21",
+      "nextCheck": "2026-09-21"
+    },
+    {
+      "id": "profile-google-business",
+      "kind": "platform-profile",
+      "name": "Google Business Profile",
+      "publicUrl": "https://www.google.com/maps?cid=546421792563016260",
+      "publiclyLinked": true,
+      "status": "active",
+      "sourceOwner": "third-party platform",
+      "whatBuyerCanCheck": "The public business listing, including the rating and review count shown by Google at the time of inspection.",
+      "manualChecks": ["Profile points to TMN Creative", "Rating and count match dated public copy", "Hours do not contradict TMN's current operating model"],
+      "lastVerified": "2026-08-21",
+      "nextCheck": "2026-09-21"
+    },
+    {
+      "id": "profile-clutch",
+      "kind": "platform-profile",
+      "name": "Clutch",
+      "publicUrl": "https://clutch.co/profile/tmn-creative",
+      "publiclyLinked": true,
+      "status": "active",
+      "sourceOwner": "third-party platform",
+      "whatBuyerCanCheck": "The public agency profile and independently submitted client reviews, if any are published.",
+      "manualChecks": ["Profile points to TMN Creative", "Founding year and descriptive facts are accurate", "Published review count is reflected only after direct inspection"],
+      "lastVerified": "2026-08-21",
+      "nextCheck": "2026-09-21"
+    },
+    {
+      "id": "profile-designrush",
+      "kind": "platform-profile",
+      "name": "DesignRush",
+      "publicUrl": "https://www.designrush.com/agency/profile/tmn-creative",
+      "publiclyLinked": true,
+      "status": "active",
+      "sourceOwner": "third-party platform",
+      "whatBuyerCanCheck": "The public agency profile and portfolio entries hosted by DesignRush.",
+      "manualChecks": ["Founding year is accurate", "Team size, pricing, timing, and ownership language remain qualified", "Showcase work is labeled accurately"],
+      "lastVerified": "2026-08-21",
+      "nextCheck": "2026-09-21"
+    },
+    {
+      "id": "profile-agency-list",
+      "kind": "platform-profile",
+      "name": "Agency List",
+      "publicUrl": "https://agencylist.com/agencies/tmn-creative/",
+      "publiclyLinked": true,
+      "status": "active",
+      "sourceOwner": "third-party platform",
+      "whatBuyerCanCheck": "The owner-verified public listing and its link to TMN's website.",
+      "manualChecks": ["Listing points to TMN Creative", "Founding year is accurate", "72-hour language remains package-specific"],
+      "lastVerified": "2026-08-21",
+      "nextCheck": "2026-09-21"
+    },
+    {
+      "id": "profile-github",
+      "kind": "founder-profile",
+      "name": "TMN Creative on GitHub",
+      "publicUrl": "https://github.com/tmncreative",
+      "publiclyLinked": true,
+      "status": "active",
+      "sourceOwner": "TMN Creative",
+      "whatBuyerCanCheck": "The studio's public GitHub account.",
+      "manualChecks": ["Public account remains reachable", "No private client information is exposed"],
+      "lastVerified": "2026-08-21",
+      "nextCheck": "2026-09-21"
+    },
+    {
+      "id": "profile-trevor-linkedin",
+      "kind": "founder-profile",
+      "name": "Trevor Niemann on LinkedIn",
+      "publicUrl": "https://www.linkedin.com/in/niemann29/",
+      "publiclyLinked": true,
+      "status": "active",
+      "sourceOwner": "Trevor Niemann",
+      "whatBuyerCanCheck": "Trevor's public professional profile.",
+      "manualChecks": ["Profile is publicly reachable", "Owned-site biographical summary stays category-level and consistent with the profile"],
+      "lastVerified": "2026-08-21",
+      "nextCheck": "2026-09-21"
+    },
+    {
+      "id": "profile-taylor-linkedin",
+      "kind": "founder-profile",
+      "name": "Taylor Niemann on LinkedIn",
+      "publicUrl": "https://www.linkedin.com/in/taylor-niemann-ab86033aa/",
+      "publiclyLinked": true,
+      "status": "active",
+      "sourceOwner": "Taylor Niemann",
+      "whatBuyerCanCheck": "Taylor's public professional profile.",
+      "manualChecks": ["Profile is publicly reachable", "Owned-site role description remains accurate"],
+      "lastVerified": "2026-08-21",
+      "nextCheck": "2026-09-21"
+    },
+    {
+      "id": "editorial-web-tonic-hvac",
+      "kind": "editorial-mention",
+      "name": "Web Tonic HVAC comparison",
+      "publicUrl": "https://www.webtonic.io/blog/best-web-design-ui-ux-agencies-for-hvac",
+      "publiclyLinked": true,
+      "status": "active",
+      "sourceOwner": "third-party publisher",
+      "whatBuyerCanCheck": "The publisher's comparison, publication date, and its own positioning of TMN Creative.",
+      "manualChecks": ["Article remains published", "TMN's placement and title match the dated public copy", "Do not infer editorial endorsement beyond the article"],
+      "lastVerified": "2026-08-21",
+      "nextCheck": "2026-09-21"
+    },
+    {
+      "id": "editorial-web-tonic-advisor",
+      "kind": "editorial-mention",
+      "name": "Web Tonic advisor comparison",
+      "publicUrl": "https://www.webtonic.io/blog/best-web-design-ui-ux-agencies-for-financial-advisory",
+      "publiclyLinked": true,
+      "status": "active",
+      "sourceOwner": "third-party publisher",
+      "whatBuyerCanCheck": "The publisher's comparison, publication date, and its own positioning of TMN Creative.",
+      "manualChecks": ["Article remains published", "TMN's placement and title match the dated public copy", "Do not infer editorial endorsement beyond the article"],
+      "lastVerified": "2026-08-21",
+      "nextCheck": "2026-09-21"
+    },
+    {
+      "id": "editorial-web-tonic-med-spa",
+      "kind": "editorial-mention",
+      "name": "Web Tonic med spa comparison",
+      "publicUrl": "https://www.webtonic.io/blog/best-landing-page-design-agencies-for-medical-spa-aesthetics",
+      "publiclyLinked": true,
+      "status": "active",
+      "sourceOwner": "third-party publisher",
+      "whatBuyerCanCheck": "The publisher's comparison, publication date, and its own positioning of TMN Creative.",
+      "manualChecks": ["Article remains published", "TMN's placement and title match the dated public copy", "Do not infer editorial endorsement beyond the article"],
+      "lastVerified": "2026-08-21",
+      "nextCheck": "2026-09-21"
+    }
+  ],
+  "profileCorrections": [
+    {
+      "id": "directory-founding-year",
+      "surfaces": ["Clutch", "DesignRush", "Agency List"],
+      "requiredFact": "TMN Creative was founded in 2025.",
+      "status": "awaiting-publisher",
+      "recordedAsOf": "2026-08-21",
+      "nextAction": "Inspect each public profile. Update owned-site discrepancy copy only after the page itself changes."
+    },
+    {
+      "id": "directory-profile-qualification",
+      "surfaces": ["Clutch", "DesignRush", "Agency List"],
+      "requiredFact": "Pricing, first-draft timing, ownership, team size, and showcase labels must match TMN's published terms and include relevant qualifications.",
+      "status": "awaiting-publisher",
+      "recordedAsOf": "2026-08-21",
+      "nextAction": "Inspect actual public copy before changing any source or buyer-facing claim."
+    },
+    {
+      "id": "google-hours",
+      "surfaces": ["Google Business Profile"],
+      "requiredFact": "TMN operates by appointment and should not be represented as open 24 hours.",
+      "status": "pending-google-review",
+      "recordedAsOf": "2026-08-21",
+      "nextAction": "Check whether Google's public listing has changed. Do not change business hours without owner confirmation."
+    }
+  ],
+  "reviewRequests": [
+    {
+      "id": "review-garrett-horton",
+      "company": "SunCraft Roofing",
+      "targetPlatforms": ["Clutch", "Google Business Profile"],
+      "status": "requested",
+      "recordedAsOf": "2026-08-21",
+      "source": "audits/profile-corrections-2026-08-20.md",
+      "nextAction": "Check for an independently published review. Do not draft, incentivize, or ask the client to change review content."
+    },
+    {
+      "id": "review-jose-molina",
+      "company": "Tony's Lawn & Tree",
+      "targetPlatforms": ["Clutch"],
+      "status": "requested",
+      "recordedAsOf": "2026-08-21",
+      "source": "audits/profile-corrections-2026-08-20.md",
+      "nextAction": "Check for an independently published review. Do not draft, incentivize, or ask the client to change review content."
+    },
+    {
+      "id": "review-cody-elmore",
+      "company": "Promised Land Renovations",
+      "targetPlatforms": ["Clutch"],
+      "status": "requested",
+      "recordedAsOf": "2026-08-21",
+      "source": "audits/profile-corrections-2026-08-20.md",
+      "nextAction": "Check for an independently published review. Do not draft, incentivize, or ask the client to change review content."
+    },
+    {
+      "id": "review-alex-ramon",
+      "company": "Ramon Design Group",
+      "targetPlatforms": ["Clutch"],
+      "status": "requested",
+      "recordedAsOf": "2026-08-21",
+      "source": "audits/profile-corrections-2026-08-20.md",
+      "nextAction": "Check for an independently published review. Do not draft, incentivize, or ask the client to change review content."
+    },
+    {
+      "id": "review-kimberly-charvet",
+      "company": "LumiClinics",
+      "targetPlatforms": ["Clutch"],
+      "status": "hold-until-launch",
+      "recordedAsOf": "2026-08-21",
+      "source": "audits/profile-corrections-2026-08-20.md",
+      "nextAction": "Reassess only after launch and with explicit approval for outreach."
+    },
+    {
+      "id": "review-jon-parks",
+      "company": "Parks Wealth Partners",
+      "targetPlatforms": ["Clutch"],
+      "status": "hold-until-launch-and-compliance",
+      "recordedAsOf": "2026-08-21",
+      "source": "audits/profile-corrections-2026-08-20.md",
+      "nextAction": "Reassess only after launch, compliance clearance, and explicit approval for outreach."
+    }
+  ],
+  "measurement": {
+    "chatgptBaseline": "audits/chatgpt-baseline-2026-08-20.md",
+    "monthlyMethod": "Re-run the established prompt set in the same modes, append results with the test date, and keep screenshots or transcripts outside the public site.",
+    "leadAttribution": "Use the existing form self-report and first-external-referrer fields. Confirm source verbally on calls when the answer would change the attribution record."
+  }
+}
