@@ -137,11 +137,21 @@ if (registry.schemaVersion !== 1) errors.push('Unsupported or missing registry s
 if (!registry.settings || !Number.isInteger(registry.settings.staleAfterDays)) {
   errors.push('settings.staleAfterDays must be an integer.');
 }
+if (!registry.settings || !Number.isInteger(registry.settings.maximumLiveChecks)) {
+  errors.push('settings.maximumLiveChecks must be an integer.');
+}
 if (!Array.isArray(registry.evidence) || registry.evidence.length === 0) {
   errors.push('evidence must be a non-empty array.');
 }
 if (!Array.isArray(registry.reviewRequests)) errors.push('reviewRequests must be an array.');
 if (!Array.isArray(registry.profileCorrections)) errors.push('profileCorrections must be an array.');
+
+const staleAfterDays = Number.isInteger(registry.settings?.staleAfterDays)
+  ? registry.settings.staleAfterDays
+  : 30;
+const maximumLiveChecks = Number.isInteger(registry.settings?.maximumLiveChecks)
+  ? registry.settings.maximumLiveChecks
+  : 20;
 
 const evidence = Array.isArray(registry.evidence) ? registry.evidence : [];
 const publicEvidence = evidence.filter((item) => item.publiclyLinked);
@@ -164,7 +174,7 @@ for (const item of evidence) {
   if (lastVerified !== null) {
     const age = ageInDays(lastVerified);
     if (age < 0) warnings.push(`${label} has a future lastVerified date.`);
-    if (age > registry.settings.staleAfterDays) staleEvidence.push({ id: item.id, age });
+    if (age > staleAfterDays) staleEvidence.push({ id: item.id, age });
   }
   if (nextCheck !== null && nextCheck < Date.now()) dueEvidence.push(item.id);
   if (!Array.isArray(item.manualChecks) || item.manualChecks.length === 0) {
@@ -191,7 +201,7 @@ for (const item of registry.reviewRequests || []) {
 
 let liveResults = [];
 if (live) {
-  const maximum = registry.settings.maximumLiveChecks;
+  const maximum = maximumLiveChecks;
   if (publicEvidence.length > maximum) {
     errors.push(`Registry has ${publicEvidence.length} public sources, exceeding the maximum live check count of ${maximum}.`);
   } else {
