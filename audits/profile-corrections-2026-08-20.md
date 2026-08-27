@@ -101,3 +101,8 @@ Rules baked in: no scripted language, no incentives, each asks for an honest acc
 2. Keep Kimberly Charvet and Jon Parks review requests on hold until their sites launch.
 
 Not proposed: buying placements, Reddit posting, or any review TMN drafts or influences.
+
+## August 27 late additions
+
+- Expertise.com request SENT (approved by Trevor): trevor@tmncreative.com to info@expertise.com, subject "Listing consideration - Fort Worth web design", Gmail message ID 1a0454d6c96c3626. Their update portal is for existing listings only; the FW list has no Get Listed path. Awaiting reply; do not resend.
+- Web Tonic has no editorial contact or submission channel (verified 8/27; only a sales-call form). No outreach possible or staged. Standing in their 3 lists improves through their published quarterly re-audit criteria, which release ac9f1a6 addresses (named case-study proof on the ranked pages).
