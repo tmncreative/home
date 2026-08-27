@@ -148,6 +148,18 @@ The 8 new pages deployed to production in Netlify deploy 6a87cf3b (commit c74e2a
 
 `/verify` is live (Netlify deploy 6a88042f, commits 067026b and 8f0282a): a calm buyer verification resource listing clients' live sites whose published HTML carried a TMN credit when checked on 8/21 (SunCraft, Tony's, Ramon Design Group, Training Wheels, Smitha Reddy), third-party profiles with dated status (including Clutch's "Not yet reviewed" and "Founded 2024" as it stood on 8/21), the 3 Web Tonic editorial rankings with dates and positions, current discrepancies with status, and TMN's standing no-claim policies. Grounding: ChatGPT's verbatim caveat to Jon Parks that TMN's strongest claims were self-sourced, plus the observed fact-checking behavior in the 8/20 baseline. This is a durability play, not a ranking claim. Linked from the homepage and studio footers, the Trevor page ("Buyer verification"), llms.txt, the sitemap, and (as of Aug 21) each of the 7 client case studies' verify sections; /verify plus the 2 changed pages were submitted through IndexNow (HTTP 200).
 
+### SE Ranking read, August 27 (source-level AI intelligence)
+
+Weekly report (Aug 21-27): Google flat-to-up (17 up / 14 down, top-10 count up to 5, Weatherford holding #9 with a touch of #6; the Arlington "drops" were an Aug 25-26 flux that recovered by Aug 27). The falling number is the AI Results Tracker: mention presence 0 percent and link presence 22 to 27 percent (down ~13) across 15 tracked ChatGPT prompts, all of them Fort Worth local prompts, none of them the vertical prompts that produce TMN's actual leads.
+
+The tracker's source table for those FW prompts, checked in-app on Aug 27:
+
+- clutch.co: cited in 29 AI answers, 48.3 percent coverage, 0 TMN mentions. The cited page is clutch.co/web-designers/fort-worth, where TMN does not appear; ordering is driven by verified review volume and rating, and a firm with only 2 reviews holds a top-4 slot. TMN has 1 review. This is the third independent confirmation (Jon transcript, 8/20 baseline, source-frequency data) that Clutch reviews are the highest-leverage external fix.
+- designrush.com: 25 answers, 41.7 percent, 4 TMN mentions at a 100 percent mention rate. DesignRush's Fort Worth list already carries TMN into answers and explains the good-day 40 percent link presence.
+- expertise.com: 19 answers, 31.7 percent, 0 TMN mentions ("17 Best Fort Worth, TX Web Designers"). goodfirms.co: 8 answers, blocked by its 2-year rule until 2027.
+- Competitors' own homepages and self-published "best in Fort Worth" pages are cited too (p2ldigitalstudio 30 percent, smithwebco 25 percent, wrightagency 25 percent). TMN's own /fort-worth page is cited in 21.7 percent of answers with a 100 percent mention rate.
+
+Decisions this creates: (1) keep routing every willing client to Clutch reviews until TMN appears on the Fort Worth directory page; (2) ask Expertise.com for listing consideration on its Fort Worth page (approval item); (3) decide whether TMN publishes its own honest Fort Worth agency comparison page, the format competitors are being cited for (approval item, names competitors); (4) add the 6 vertical baseline prompts to SE Ranking's tracker so Sept 3 measurement is automated (account change, and the Core Plan access Phil Gagnon extended appears to run only through late August, so renewal is a prerequisite).
 ## 3. How to measure it
 
 Monthly, 15 minutes:
