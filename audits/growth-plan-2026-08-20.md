@@ -160,6 +160,10 @@ The tracker's source table for those FW prompts, checked in-app on Aug 27:
 - Competitors' own homepages and self-published "best in Fort Worth" pages are cited too (p2ldigitalstudio 30 percent, smithwebco 25 percent, wrightagency 25 percent). TMN's own /fort-worth page is cited in 21.7 percent of answers with a 100 percent mention rate.
 
 Decisions this creates: (1) keep routing every willing client to Clutch reviews until TMN appears on the Fort Worth directory page; (2) ask Expertise.com for listing consideration on its Fort Worth page (approval item); (3) decide whether TMN publishes its own honest Fort Worth agency comparison page, the format competitors are being cited for (approval item, names competitors); (4) add the 6 vertical baseline prompts to SE Ranking's tracker so Sept 3 measurement is automated (account change, and the Core Plan access Phil Gagnon extended appears to run only through late August, so renewal is a prerequisite).
+### AIO package shipped August 27 (deploy 868efda)
+
+LumiClinics launched on its own domain with a public TMN credit, unlocking the deferred mental-health vertical: /lumiclinics-website-design (8th case study, provider/insurance/regulated-content evidence) and /websites-for-mental-health-clinics (vertical page with LumiClinics as named proof) are live. Fit blocks extended to the 4 AI-cited city pages (/fort-worth is TMN's most-cited own page in the FW prompt source data). The attributed Web Tonic rankings now appear in context on /hvac (#1) and /financial-services (#3), and llms.txt carries a dated third-party corroboration section. All URLs live-verified; IndexNow accepted 8 URLs (HTTP 200). DVRT has not closed (call 8/28), so the fitness case study remains locked.
+
 ## 3. How to measure it
 
 Monthly, 15 minutes:

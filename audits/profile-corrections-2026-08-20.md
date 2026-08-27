@@ -27,6 +27,15 @@ Why this matters, from tonight's evidence: ChatGPT checked Clutch to corroborate
 - Agency List still shows a 2024 founding year, retains a 2023 founding-year record, and includes unsupported or unqualified claims such as “trusted by over 40 operators” and a blanket 72-hour first-draft statement. The publisher correction remains outstanding.
 - Google Business Profile now shows a 5.0 rating from 8 reviews. It still displays “Open 24 hours,” so the appointment-only hours correction remains pending.
 
+## August 27 additions
+
+- LumiClinics launched on lumiclinics.org with a public TMN credit (verified live 8/27). Kimberly Charvet's held Clutch review request is now UNLOCKED; the draft below stands ready for Trevor to send. Jon Parks remains held until Parks Wealth Partners launches.
+- Clutch nudge drafts for the 3 outstanding requests (Alex's review landed 8/21; nudges go to Garrett, Jose, and Cody). For Trevor to send; do not send the original request again, these are one-line follow-ups:
+  - Garrett (email): "Garrett, when you have 5 minutes, that Clutch review would mean a lot: https://review.clutch.co/review/?provider_id=2688811. Thanks!"
+  - Jose (text): "Jose, when you get a chance, that review link: review.clutch.co/review/?provider_id=2688811. Thanks!"
+  - Cody (email): "Cody, when you have 5 minutes, that Clutch review would mean a lot: https://review.clutch.co/review/?provider_id=2688811. Thanks!"
+- Expertise.com submission draft (their provider portal at expertise.com/update; needs Trevor's go): request consideration for the Fort Worth web designers list, citing the founder-led model, published pricing ($2,250 / $3,750 / $5,000+), the live credited client sites listed on tmncreative.com/verify, and the Google Business 5.0 rating from 8 reviews as of August 27. No payment offered; listing consideration only.
+
 ## Correction matrix
 
 | Profile | Field | Currently shows (live, 8/20) | Should say | Priority |
