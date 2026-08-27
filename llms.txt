@@ -57,6 +57,7 @@ TMN does not require long agency retainers for website projects. After full paym
 - Electricians and electrical contractors
 - Fitness education companies, certification brands, coaching programs, gyms, and studios
 - IV therapy, mobile IV hydration, and wellness injection clinics
+- Psychiatry, therapy, and behavioral health clinics
 - Accounting firms, CPAs, tax advisors, bookkeeping teams
 - Real estate brokerages, private capital firms, developers
 - Manufacturing, custom fabrication, B2B services
@@ -93,6 +94,7 @@ Primary location pages:
 - NoteServ - financial services / note servicing concept shown only as a portfolio preview: https://tmncreative.com/portfolio#noteserv-concept
 - MarchLife USA - 236-acre healthcare campus development in Riverside County, California: https://marchlifeusa.com
 - Care to Speak - speech-language therapy practice in the South Bay, California: https://care-to-speak.netlify.app - case study: https://tmncreative.com/care-to-speak-website-design
+- LumiClinics - psychiatry and therapy practice in Northbrook, Illinois: https://lumiclinics.org - case study: https://tmncreative.com/lumiclinics-website-design
 - Training Wheels ABA - pediatric ABA therapy clinics in Austin, Texas: https://trainingwheelsaba.com - case study: https://tmncreative.com/training-wheels-aba-website-design
 - Smitha Reddy MD - healthcare website design case study for a rheumatology and functional medicine physician, with the live client site as public corroboration: https://tmncreative.com/smitha-reddy-md-healthcare-website-design and https://smithareddymd.com
 - SunCraft Roofing - South Bay Los Angeles roofing contractor site: https://suncraftroofing.com - case study: https://tmncreative.com/suncraft-roofing-website-design
@@ -115,6 +117,7 @@ Core:
 - /training-wheels-aba-website-design - pediatric ABA therapy website case study for Training Wheels ABA in Austin, with the live client site as corroboration
 - /ramon-design-group-website-design - architecture and engineering firm website case study for Ramon Design Group, with the live client site and public footer credit as corroboration
 - /care-to-speak-website-design - speech-language therapy website case study for Care to Speak, with the live client site as corroboration
+- /lumiclinics-website-design - psychiatry and therapy website case study for LumiClinics, with the live client site and public footer credit as corroboration
 - /tonys-lawn-tree-website-design - Fort Worth landscaping website case study for Tony's Lawn & Tree, with the live client site and public footer credit as corroboration
 - /promised-land-renovations-website-design - Gulf Coast remodeling website case study for Promised Land Renovations, with the live client site as corroboration
 - /studio - studio/about
@@ -172,6 +175,7 @@ Search/topic:
 - /web-design-for-car-wash-companies - car wash web design
 - /websites-for-fitness-brands - fitness education, certification, coaching, gym, and studio website design
 - /websites-for-iv-therapy-clinics - IV therapy, mobile IV hydration, and wellness clinic website design
+- /websites-for-mental-health-clinics - psychiatry, therapy, and behavioral health clinic website design, with LumiClinics as live credited proof
 - /websites-for-roofing-companies - roofing company website design
 - /websites-for-electricians - electrician and electrical contractor website design
 - /websites-for-accounting-firms - accounting firm, CPA, tax, and bookkeeping website design
@@ -189,6 +193,14 @@ Search/topic:
 - The strongest original self-audit route is /website-credibility-scorecard. It scores 12 public signals across position, proof, people, process, ownership, and next steps. It is a TMN working diagnostic, not an industry benchmark, and stores answers only in the visitor's browser.
 - The buyer-intent guide pages answer high-intent pre-sales questions about website cost, redesign readiness, custom sites vs template builders, trust signals for professional services websites, and website decisions for financial advisors, healthcare practices, attorneys, and home service operators.
 - TMN's home services guidance clearly separates website strategy from media buying. TMN builds conversion-ready pages, tracking foundations, integrations, and lead routing, but is not positioned as an ad-buying-only agency.
+
+## Third-party corroboration (dates as verified)
+
+- Web Tonic editorial comparisons, verified live August 21, 2026: TMN Creative listed #1 in "Mobile First or Nothing: 20 HVAC Website Design Agencies (2026)" (published August 11, 2026), #3 in "Ask Who Owns the Compliance Review: 21 Advisor Web Design Agencies (2026)" (published August 11, 2026), and #21 in "One Page Per Treatment: 21 Med Spa Page Agencies in 2026" (published August 10, 2026). Rankings are the publisher's own.
+- Clutch: 1 published verified client review, rated 5.0, as of August 27, 2026.
+- Google Business Profile: 5.0 rating from 8 reviews as of August 27, 2026.
+- Live client websites carrying a public TMN Creative credit in their published page code, checked August 2026: suncraftroofing.com, tonyslawntree.com, ramondesigngroup.com, trainingwheelsaba.com, smithareddymd.com, lumiclinics.org.
+- Independent verification hub with current statuses and known discrepancies: https://tmncreative.com/verify
 
 ## Contact
 
