@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-25",
+  "updatedAt": "2026-08-27",
   "purpose": "Private source of truth for the independent evidence cited on https://tmncreative.com/verify. A reachable link is not proof that the claim is still true; substantive facts require a human check before public copy changes.",
   "settings": {
     "staleAfterDays": 30,
@@ -73,6 +73,19 @@
       "nextCheck": "2026-09-21"
     },
     {
+      "id": "client-lumiclinics",
+      "kind": "client-credit",
+      "name": "LumiClinics",
+      "publicUrl": "https://lumiclinics.org/",
+      "publiclyLinked": true,
+      "status": "active",
+      "sourceOwner": "client",
+      "whatBuyerCanCheck": "A live psychiatry and therapy practice website with a public TMN Creative footer credit.",
+      "manualChecks": ["Site is live", "TMN Creative footer credit remains visible in the published site"],
+      "lastVerified": "2026-08-27",
+      "nextCheck": "2026-09-27"
+    },
+    {
       "id": "profile-google-business",
       "kind": "platform-profile",
       "name": "Google Business Profile",
@@ -82,8 +95,8 @@
       "sourceOwner": "third-party platform",
       "whatBuyerCanCheck": "The public business listing, including the rating and review count shown by Google at the time of inspection.",
       "manualChecks": ["Profile points to TMN Creative", "Rating and count match dated public copy", "Hours do not contradict TMN's current operating model"],
-      "lastVerified": "2026-08-25",
-      "nextCheck": "2026-09-25"
+      "lastVerified": "2026-08-27",
+      "nextCheck": "2026-09-27"
     },
     {
       "id": "profile-clutch",
@@ -224,9 +237,9 @@
       "id": "google-hours",
       "surfaces": ["Google Business Profile"],
       "requiredFact": "TMN operates by appointment and should not be represented as open 24 hours.",
-      "status": "pending-google-review",
-      "recordedAsOf": "2026-08-21",
-      "nextAction": "Check whether Google's public listing has changed. Do not change business hours without owner confirmation."
+      "status": "resolved",
+      "recordedAsOf": "2026-08-27",
+      "nextAction": "Recheck during monthly proof monitoring. Do not change business hours unless TMN's operating model changes and an owner requests it."
     }
   ],
   "reviewRequests": [
@@ -270,10 +283,10 @@
       "id": "review-kimberly-charvet",
       "company": "LumiClinics",
       "targetPlatforms": ["Clutch"],
-      "status": "hold-until-launch",
-      "recordedAsOf": "2026-08-21",
+      "status": "ready-for-trevor-approval",
+      "recordedAsOf": "2026-08-27",
       "source": "audits/profile-corrections-2026-08-20.md",
-      "nextAction": "Reassess only after launch and with explicit approval for outreach."
+      "nextAction": "LumiClinics is live with a public TMN credit. Send the existing honest-review request only with Trevor's explicit approval."
     },
     {
       "id": "review-jon-parks",

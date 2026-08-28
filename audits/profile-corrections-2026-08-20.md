@@ -30,6 +30,7 @@ Why this matters, from tonight's evidence: ChatGPT checked Clutch to corroborate
 ## August 27 additions
 
 - LumiClinics launched on lumiclinics.org with a public TMN credit (verified live 8/27). Kimberly Charvet's held Clutch review request is now UNLOCKED; the draft below stands ready for Trevor to send. Jon Parks remains held until Parks Wealth Partners launches.
+- Google Business Profile was rechecked live 8/27: it shows TMN Creative, a 5.0 rating from 8 reviews, and no regular business hours. The previous “Open 24 hours” issue is resolved and the listing now matches TMN's appointment-only operating model.
 - Clutch nudge drafts for the 3 outstanding requests (Alex's review landed 8/21; nudges go to Garrett, Jose, and Cody). For Trevor to send; do not send the original request again, these are one-line follow-ups:
   - Garrett (email): "Garrett, when you have 5 minutes, that Clutch review would mean a lot: https://review.clutch.co/review/?provider_id=2688811. Thanks!"
   - Jose (text): "Jose, when you get a chance, that review link: review.clutch.co/review/?provider_id=2688811. Thanks!"
@@ -87,7 +88,7 @@ Rules baked in: no scripted language, no incentives, each asks for an honest acc
 >
 > Would you please leave an honest review of working with us on Clutch? https://review.clutch.co/review/?provider_id=2688811. Happy to adjust anything in the case study if you'd like.
 
-**Kimberly Charvet, LumiClinics (hold until launch)**
+**Kimberly Charvet, LumiClinics (ready for Trevor approval)**
 
 > Kimberly, congrats on the launch. When things settle, would you please leave an honest review of the project on Clutch? https://review.clutch.co/review/?provider_id=2688811
 
@@ -97,8 +98,8 @@ Rules baked in: no scripted language, no incentives, each asks for an honest acc
 
 ## Remaining owner input
 
-1. Restore Google Business owner access and set `Open with no main hours`, the appointment-required attribute, and TMN's booking link if the public correction does not resolve the profile.
-2. Keep Kimberly Charvet and Jon Parks review requests on hold until their sites launch.
+1. Google Business hours are complete. Do not change them unless TMN's operating model changes.
+2. Kimberly Charvet's review request is now eligible after the LumiClinics launch, but it still requires Trevor's explicit approval to send. Jon Parks remains on hold until launch and compliance clearance.
 
 Not proposed: buying placements, Reddit posting, or any review TMN drafts or influences.
 
