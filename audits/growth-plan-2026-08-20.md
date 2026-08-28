@@ -200,3 +200,10 @@ Fixed: .hero-work-caption had no CSS anywhere so the homepage SunCraft caption r
 Verified not bugs: Facebook-pixel and repeated-hero empty alts are correct decorative treatment; "when..." ellipses intentional; query-string image URLs resolve; 404/success lack og:title but are noindex; device-theater screenSteps animation confirmed mechanically sound end to end (frozen frames in the audit pane were occluded-window frame throttling, not a site defect; keyframes scrub correctly at 0/50/100%).
 
 Observation, Trevor's call: the iPhone scroller shows Ramon Design Group's near-black mobile hero during the first dwell and each return to top, which can read as a powered-off phone inside the black bezel; a lighter-topped client mobile capture would avoid that.
+
+## August 28: two inbound leads in 24 hours, one ChatGPT-attributed
+
+- Don Douglas Hilario, CFP, founder of Hilpan Moxie Wealth Management LLC (hilpanmoxiewm.com), SEC-registered RIA serving Googlers, Orange County phone. Qualified-project-inquiry form 8/27 7:01pm CT: premium-redesign, $2,250-5,000 band, 30-day timing, blog migration with SEO preserved, ongoing support. How-did-you-hear field: "chatgpt" (self-reported; Ai Source auto-fields blank). Path /pricing -> /start-a-project. Call booked Mon Aug 31 10am CT (Calendly + Teams accepted). Reference site he likes: allstreetwealth.com. First ChatGPT-attributed inbound since the case-study/verify push shipped.
+- Andrew F Stout, Stout Realty Group (stoutrealtygroup.com, Boston-area phone). Google organic -> /real-estate vertical page -> /free-review, tmn-meta-intake form 8/28 7:55am CT, $2,250-5,000 band. Trevor replied 8:06am offering the free homepage concept and a 15-minute call today/Mon/Tue. Vertical-page + free-review funnel converting from traditional search.
+- Clutch replied 8/28: Trevor IS the profile owner; founding year, min project size, portfolio labels, and delivery language are self-serve edits in the Vendor Dashboard. The correction is now Trevor-side, not publisher-pending.
+- Mel Brown declined the Fri 8/28 11am meeting; no rebook yet.
