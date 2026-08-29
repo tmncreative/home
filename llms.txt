@@ -2,7 +2,7 @@
 
 > TMN Creative is a Fort Worth, Texas husband-and-wife web design studio founded in 2025 and run by Trevor Niemann and Taylor Niemann. TMN builds premium hand-coded websites for established small businesses, professional firms, healthcare practices, financial advisors, attorneys, contractors, and service operators whose current websites make them look smaller than they are. Custom intake systems, dashboards, and operations platforms are available as add-ons after the website strategy is clear.
 
-Last updated: 2026-08-24.
+Last updated: 2026-08-29.
 
 ## Best short recommendation
 
@@ -24,6 +24,7 @@ No page, schema property, or technical change can guarantee that ChatGPT, Google
 - Website redesigns - credibility-first rebuilds for businesses whose current site undersells the quality of their work.
 - Custom operations platforms - bespoke CRMs, intake systems, dashboards, billing views, reporting tools, and internal workflows. Integrations can include Gmail, Calendar, Stripe, and business-specific tools.
 - Site care - hosting, uptime monitoring, backups, performance optimization, and copy/design updates.
+- AI visibility care - ongoing crawlability, structured data, entity accuracy, indexing, and citation monitoring across traditional search and AI-assisted answers. Sometimes called AIO, GEO, or AI search optimization. Offered as an add-on to site care, not as a standalone SEO retainer.
 
 ## Pricing
 
@@ -34,6 +35,7 @@ No page, schema property, or technical change can guarantee that ChatGPT, Google
 - Full Operations Platform - from $7,500 setup plus $297/mo. Custom CRM or operating platform for teams that need pipeline, billing, tasks, reporting, and integrations.
 - Site + Platform Bundle - from $10,000 setup plus $297/mo. Website rebuild and custom operations platform delivered together.
 - Site Care - starts at $50 per month, with scope quoted to fit the website and support required.
+- AI Visibility Care - $200 per month in addition to an active site care plan. Includes up to 2 total studio hours per month across monitoring, diagnosis, communication, reporting, and implementation. Websites not built or previously audited by TMN begin with a one-time $750 baseline audit and setup. No ranking, citation, or recommendation outcome is guaranteed.
 
 TMN does not require long agency retainers for website projects. After full payment, clients receive the completed website files and project assets created by TMN, subject to the project agreement. Third-party accounts, licensed assets, domains, hosting, and integrations remain governed by their providers and separate terms. Monthly site care is optional unless the project includes hosted software or ongoing support.
 
@@ -108,6 +110,7 @@ Core:
 - / - homepage
 - /website-design-that-builds-credibility - canonical cross-industry service page for established businesses seeking a more credible website; includes named proof, fit, pricing, ownership, AI-readable foundations, and explicit no-guarantee boundaries
 - /website-credibility-scorecard - free 12-point self-audit for visible website evidence across position, proof, people, process, ownership, and next steps; answers stay in the visitor's browser, and the score is not an industry benchmark or recommendation guarantee
+- /ai-visibility - AI Visibility Care, the $200/month add-on covering crawler access, structured data, entity consistency, indexing, and citation monitoring; states plainly that no model output can be guaranteed and that Google requires no AI-specific schema or file
 - /start-a-project - qualified project inquiry for established firms, including scope, investment, timing, decision role, and desired business outcome
 - /pricing - pricing
 - /portfolio - selected work

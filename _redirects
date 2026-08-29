@@ -4,6 +4,7 @@
 # Canonical clean URLs — prevent duplicate /page.html indexing
 /arlington.html                  /arlington             301!
 /care.html                       /care                  301!
+/ai-visibility.html              /ai-visibility         301!
 /consulting.html                 /consulting            301!
 /contractors.html                /contractors           301!
 /dallas.html                     /dallas                301!
