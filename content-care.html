@@ -986,6 +986,9 @@
       .bcta-p,.bcta-s{justify-content:center}
     }
 
+
+    .skip{position:fixed;left:1rem;top:1rem;z-index:1000;padding:.65rem 1rem;background:var(--ink);color:#fff;transform:translateY(-160%);transition:transform .2s;border-radius:6px;text-decoration:none;font-size:.85rem}
+    .skip:focus{transform:translateY(0)}
   </style>
 
 <script type="application/ld+json">
@@ -1035,6 +1038,8 @@
 </head>
 
 <body>
+
+  <a class="skip" href="#main">Skip to content</a>
 
 
 
@@ -1101,7 +1106,7 @@
 
 
 
-  <main>
+  <main id="main">
 
     <section class="hero">
 
@@ -1191,7 +1196,7 @@
 
         <div class="why-head">
 
-          <h2>Slow, compounding work, done properly.</h2>
+          <h2>A useful publishing rhythm, without the content mill.</h2>
 
           <p>An article earns attention for years if it is specific, honest, and technically reachable. All 3 conditions are part of the job.</p>
 
@@ -1211,7 +1216,7 @@
 
             <h3>Published as real pages</h3>
 
-            <p>Each article gets its own URL on your domain with Article schema, internal links, and the full text present in the raw HTML. Blog widgets that inject content with JavaScript leave nothing for most AI crawlers to read. I have audited live blogs that publish steadily and are invisible to every assistant.</p>
+            <p>Each article gets its own URL on your domain with Article schema, internal links, and the full text present in the raw HTML. Some blog widgets inject their article text only after JavaScript runs. If a crawler does not render that script, it never sees the copy. I have audited live blogs where the visible articles were missing from the raw HTML.</p>
 
           </div>
 
@@ -1227,7 +1232,7 @@
 
             <h3>A cadence that holds up</h3>
 
-            <p>1 to 2 good articles beat 30 generated ones. Google's spam policies name scaled content abuse, and a daily autopilot blog fits the pattern they describe. Volume is not the product here. Usefulness is.</p>
+            <p>I would rather publish 1 to 2 useful articles than 30 generated ones. Google's spam policy focuses on large amounts of unoriginal content created to manipulate rankings, no matter how it is produced. Volume is not the product here. Usefulness is.</p>
 
           </div>
 
@@ -1249,7 +1254,7 @@
 
             <h2>Sources get quoted. Become one.</h2>
 
-            <p>When an assistant answers a buyer's question, it reads pages and cites them. The firms that appear wrote something specific enough to cite. This studio's own advisor inquiries have arrived through exactly that path, and the pattern each time was a real article library on the firm's own domain.</p>
+            <p>Assistants and search engines need a source before they can surface or cite it. TMN has received an advisor inquiry after ChatGPT surfaced the studio. The buyer still needed a real site with specific work, clear service pages, and something worth checking.</p>
 
           </div>
 
@@ -1317,7 +1322,7 @@
 
         <ul class="meas">
 
-          <li><span class="w2">Built</span><p><strong>A real URL on your domain</strong> with the full text in the raw HTML, so every crawler and assistant can read it without executing anything.</p></li>
+          <li><span class="w2">Built</span><p><strong>A real URL on your domain</strong> with the full text in the raw HTML, so crawlers can read it without executing JavaScript.</p></li>
 
           <li><span class="w2">Marked up</span><p><strong>Article schema</strong> with headline, dates, and your practice as author and publisher, plus internal links to the service pages the article supports.</p></li>
 
@@ -1395,7 +1400,7 @@
 
       </div>
 
-      <div class="foot-col"><h3>Services</h3><a href="/pricing">Pricing</a><a href="/portfolio">Portfolio</a><a href="/pricing#crm">CRM Add-Ons</a><a href="/care">Site Care</a><a href="/ai-visibility">AI Visibility</a></div>
+      <div class="foot-col"><h3>Services</h3><a href="/pricing">Pricing</a><a href="/portfolio">Portfolio</a><a href="/pricing#crm">CRM Add-Ons</a><a href="/care">Site Care</a><a href="/ai-visibility">AI Visibility</a><a href="/compliance-care">Compliance Care</a><a href="/content-care">Content Care</a></div>
 
       <div class="foot-col"><h3>Studio</h3><a href="/">Home</a><a href="/studio">About</a><a href="/pay">Client Portal</a><a href="/free-review">Free Preview</a></div>
 

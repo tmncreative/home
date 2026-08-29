@@ -8,9 +8,9 @@ Verified live on August 29 against lumiclinics.org/our-journal/:
 
 - The page loads articles through Soro's embed script (`app.trysoro.com/api/embed/...`). The raw HTML contains no article content, only "Loading articles... JavaScript is required to view the article library."
 - Individual articles have no URLs on lumiclinics.org. The sitemap contains exactly 1 blog URL, the empty shell page, out of 28 total URLs.
-- OAI-SearchBot, ClaudeBot, PerplexityBot, and most non-Google crawlers do not execute JavaScript. To them the practice publishes zero articles. Google can render JavaScript but the articles still have no URLs to index.
+- A crawler that does not render the embed script sees no article text. Google can render JavaScript, but the articles still have no individual URLs on the practice domain to index or cite.
 
-Consequence: any blog delivered through a JS embed earns approximately nothing in search or AI-assisted answers. Content Care must publish real pages.
+Consequence: this embed materially limits article-level discovery in search and AI-assisted answers. Content Care must publish real pages.
 
 ## Target architecture
 

@@ -532,7 +532,7 @@
 
 
 
-    
+
 
     /* Scroll progress bar + cursor-follow light */
 
@@ -544,7 +544,7 @@
 
 
 
-    
+
 
     /* === TYPE-V3 === */
 
@@ -1035,6 +1035,9 @@
       .bcta-p,.bcta-s{justify-content:center}
     }
 
+
+    .skip{position:fixed;left:1rem;top:1rem;z-index:1000;padding:.65rem 1rem;background:var(--ink);color:#fff;transform:translateY(-160%);transition:transform .2s;border-radius:6px;text-decoration:none;font-size:.85rem}
+    .skip:focus{transform:translateY(0)}
   </style>
 
 <script type="application/ld+json">
@@ -1111,6 +1114,8 @@
 
 <body>
 
+  <a class="skip" href="#main">Skip to content</a>
+
 
 
 
@@ -1176,7 +1181,7 @@
 
 
 
-  <main>
+  <main id="main">
 
 
 
@@ -1474,7 +1479,7 @@
 
       </div>
 
-      <div class="foot-col"><h3>Services</h3><a href="/pricing">Pricing</a><a href="/portfolio">Portfolio</a><a href="/pricing#crm">CRM Add-Ons</a><a href="/care">Site Care</a><a href="/ai-visibility">AI Visibility</a></div>
+      <div class="foot-col"><h3>Services</h3><a href="/pricing">Pricing</a><a href="/portfolio">Portfolio</a><a href="/pricing#crm">CRM Add-Ons</a><a href="/care">Site Care</a><a href="/ai-visibility">AI Visibility</a><a href="/compliance-care">Compliance Care</a><a href="/content-care">Content Care</a></div>
 
       <div class="foot-col"><h3>Studio</h3><a href="/">Home</a><a href="/studio">About</a><a href="/pay">Client Portal</a><a href="/free-review">Free Preview</a></div>
 

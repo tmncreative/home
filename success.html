@@ -244,10 +244,10 @@
     </div>
 
     <div class="next">
-      <div class="next-label">If the project is a fit</div>
-      <h2>15 minutes. <em>A clear next step.</em></h2>
-      <p class="next-pitch">A short conversation lets us confirm the buyer, the business goal, the right scope, and the decision timeline. We handle the strategy, copy, design, development, and launch under one roof.</p>
-      <div class="perks">
+      <div class="next-label" id="next-label">If the project is a fit</div>
+      <h2 id="next-title">15 minutes. <em>A clear next step.</em></h2>
+      <p class="next-pitch" id="next-pitch">A short conversation lets us confirm the buyer, the business goal, the right scope, and the decision timeline. We handle the strategy, copy, design, development, and launch under one roof.</p>
+      <div class="perks" id="next-perks">
         <div class="perk"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg>We write all the content for you</div>
         <div class="perk"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg>Starter and Full first drafts typically target 72 hours</div>
         <div class="perk"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg>Project-file ownership after full payment, subject to the agreement.</div>
@@ -264,6 +264,27 @@
   </main>
 
   <footer class="foot">© 2026 True Margin North, LLC · <a href="mailto:hello@tmncreative.com">hello@tmncreative.com</a></footer>
+  <script>
+  (function(){
+    var care = ['ai-visibility','compliance-care','content-care'];
+    var type = new URLSearchParams(window.location.search).get('type');
+    if(care.indexOf(type) === -1) return;
+    var names = {'ai-visibility':'AI Visibility Care','compliance-care':'Compliance Site Care','content-care':'Content Care'};
+    var label = document.getElementById('next-label');
+    var title = document.getElementById('next-title');
+    var pitch = document.getElementById('next-pitch');
+    var perks = document.getElementById('next-perks');
+    if(label) label.textContent = 'If ' + names[type] + ' is a fit';
+    if(title) title.innerHTML = '15 minutes. <em>A clear answer.</em>';
+    if(pitch) pitch.textContent = 'A short conversation covers the site, its current care arrangement, and whether this add-on earns its fee for your situation.';
+    if(perks){
+      var svg = '<svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg>';
+      perks.innerHTML = '<div class="perk">' + svg + 'Available alongside an active TMN Site Care plan</div>'
+        + '<div class="perk">' + svg + 'Scope and monthly price confirmed before care begins</div>'
+        + '<div class="perk">' + svg + 'Direct support from Trevor or Taylor</div>';
+    }
+  })();
+  </script>
   <script src="/tmn-attribution.v20260503b.js?v=20260814e" defer></script>
 <!-- Fathom - beautiful, simple website analytics -->
 <script src="https://cdn.usefathom.com/script.js" data-site="TBWMZHLW" defer></script>

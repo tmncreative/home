@@ -172,7 +172,7 @@
               <div class="field"><label for="project-website" id="website-label">Current website <span>(optional)</span></label><input id="project-website" name="website" type="text" inputmode="url" placeholder="company.com" /></div>
             </div>
             <div class="two">
-              <div class="field"><label for="project-scope">Primary need</label><select id="project-scope" name="project_scope" required><option value="" selected disabled>Select one</option><option value="ai-visibility">AI Visibility Care</option><option value="premium-redesign">Premium website redesign</option><option value="lead-generation">Lead-generation website</option><option value="multi-location">Multi-location website strategy</option><option value="site-and-platform">Website + operations platform</option><option value="custom-platform">Custom platform / internal tool</option><option value="recommendation">Not sure—need a recommendation</option></select></div>
+              <div class="field"><label for="project-scope">Primary need</label><select id="project-scope" name="project_scope" required><option value="" selected disabled>Select one</option><option value="ai-visibility">AI Visibility Care</option><option value="compliance-care">Compliance Site Care</option><option value="content-care">Content Care</option><option value="premium-redesign">Premium website redesign</option><option value="lead-generation">Lead-generation website</option><option value="multi-location">Multi-location website strategy</option><option value="site-and-platform">Website + operations platform</option><option value="custom-platform">Custom platform / internal tool</option><option value="recommendation">Not sure—need a recommendation</option></select></div>
               <div class="field project-only" id="investment-field"><label for="investment">Planned investment</label><select id="investment" name="project_investment" required><option value="" selected disabled>Select a range</option><option value="2250-5000">$2,250–$5,000 · Starter / focused build</option><option value="5000-10000">$5,000–$10,000 · full firm build</option><option value="10000-20000">$10,000–$20,000 · website + strategy</option><option value="20000-plus">$20,000+ · custom site / platform</option><option value="not-approved">Budget is not approved yet</option></select></div>
             </div>
             <div class="two ai-only">
@@ -318,7 +318,10 @@
     if(websiteLabel) websiteLabel.textContent = 'Current website';
     if(outcome) outcome.placeholder = svc.placeholder;
     if(submit) submit.textContent = svc.submit;
-    if(inquiryType) inquiryType.value = svcKey;
+    if(inquiryType){
+      inquiryType.value = svcKey;
+      inquiryType.setAttribute('value',svcKey);
+    }
 
     ['site-care-status','prior-audit','regulated-industry'].forEach(function(id){
       var field = document.getElementById(id);
