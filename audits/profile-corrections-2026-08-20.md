@@ -27,6 +27,16 @@ Why this matters, from tonight's evidence: ChatGPT checked Clutch to corroborate
 - Agency List still shows a 2024 founding year, retains a 2023 founding-year record, and includes unsupported or unqualified claims such as “trusted by over 40 operators” and a blanket 72-hour first-draft statement. The publisher correction remains outstanding.
 - Google Business Profile now shows a 5.0 rating from 8 reviews. It still displays “Open 24 hours,” so the appointment-only hours correction remains pending.
 
+## August 28 correction
+
+Alex Ramon did NOT leave the Clutch review despite 2 asks on 8/21 (verified live on Clutch 8/28: the profile's 1 review is from Scott H, President of an unnamed engineering firm, Riverside CA — a different client entirely). The "Alex's review landed 8/21" note in the August 25 section above was a misattribution and should be disregarded. A third nudge draft is queued in Trevor's Gmail drafts, unsent.
+
+Clutch self-serve corrections completed 8/28 by Trevor directly in the Vendor Dashboard (Company Information tab): Founding Year set to 2025; description rewritten to qualify delivery timing by tier (Starter/Full 72-hour first-draft target, Custom 7-to-10-day first review) instead of a flat unqualified claim. Both saved and confirmed live in the editor.
+
+Left unchanged, flagged as Trevor's call: Minimum Project Size still shows $1,000+. Clutch's dropdown has no bucket matching the site's actual $2,250 floor (options jump $1,000+ / $5,000+ / $10,000+). Setting it to $5,000+ would be more accurate to the top of the range but risks Clutch's buyer-matching filtering TMN out of searches for the $2,250-3,750 tier, which Trevor has identified as the highest-converting price band. Not changed pending Trevor's decision.
+
+Not attempted 8/28: relabeling the Walnut Ventures portfolio item as an archived showcase. The Clutch portfolio editor page (vendor.clutch.co/portfolio) reliably hung the browser tab's script execution across repeated attempts (both direct URL navigation and in-app link clicks from a fresh tab). Remains open, priority 2.
+
 ## August 27 additions
 
 - LumiClinics launched on lumiclinics.org with a public TMN credit (verified live 8/27). Kimberly Charvet's held Clutch review request is now UNLOCKED; the draft below stands ready for Trevor to send. Jon Parks remains held until Parks Wealth Partners launches.
