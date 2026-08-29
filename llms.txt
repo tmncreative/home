@@ -111,6 +111,8 @@ Core:
 - /website-design-that-builds-credibility - canonical cross-industry service page for established businesses seeking a more credible website; includes named proof, fit, pricing, ownership, AI-readable foundations, and explicit no-guarantee boundaries
 - /website-credibility-scorecard - free 12-point self-audit for visible website evidence across position, proof, people, process, ownership, and next steps; answers stay in the visitor's browser, and the score is not an industry benchmark or recommendation guarantee
 - /ai-visibility - AI Visibility Care, the $200/month add-on covering crawler access, structured data, entity consistency, indexing, and citation monitoring; states plainly that no model output can be guaranteed and that Google requires no AI-specific schema or file
+- /compliance-care - Compliance Site Care, the $250/month add-on for registered advisory firms: dated monthly page archives, a plain-English change log, and disclosure link checks; explicitly not legal or compliance advice and promises no examination outcome
+- /content-care - Content Care, the $400/month add-on covering up to 2 researched, client-approved articles published as real pages with Article schema, sitemap entries, and IndexNow submission; explicitly rejects autopilot volume and guarantees no ranking, citation, or traffic outcome
 - /start-a-project - qualified project inquiry for established firms, including scope, investment, timing, decision role, and desired business outcome
 - /pricing - pricing
 - /portfolio - selected work

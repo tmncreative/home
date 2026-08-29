@@ -236,23 +236,67 @@
   <script>
   (function(){
     var params = new URLSearchParams(window.location.search);
-    if(params.get('service') !== 'ai-visibility') return;
+    var services = {
+      'ai-visibility': {
+        title: 'AI Visibility Care Inquiry | TMN Creative',
+        success: '/success?type=ai-visibility',
+        submit: 'Request an AI visibility review',
+        placeholder: 'Tell us which buyer questions matter, what assistants currently say, or what you want checked first.',
+        copy: {
+          'inquiry-eyebrow':'AI Visibility Care · Founder reviewed',
+          'inquiry-title':'Keep your firm findable when buyers ask an assistant.',
+          'inquiry-lead':'AI Visibility Care pairs monthly monitoring with up to 2 studio hours to correct the highest-priority issue. It is available alongside an active TMN Site Care plan.',
+          'form-kicker':'AI Visibility Care inquiry',
+          'form-title':'Ask about AI visibility.',
+          'form-intro':'Tell us about the site, its current care arrangement, and any regulated review requirements.',
+          'inquiry-nav-cta':'AI visibility inquiry',
+          'outcome-label':'What are you seeing or trying to improve?',
+          'form-fine':'Founder reviewed. Usually answered the same business day.'
+        }
+      },
+      'compliance-care': {
+        title: 'Compliance Site Care Inquiry | TMN Creative',
+        success: '/success?type=compliance-care',
+        submit: 'Request a compliance care review',
+        placeholder: 'Tell us how site changes get reviewed today, and what your reviewer or an examiner has asked for before.',
+        copy: {
+          'inquiry-eyebrow':'Compliance Site Care · Founder reviewed',
+          'inquiry-title':'Keep the website record before anyone asks for it.',
+          'inquiry-lead':'Compliance Site Care pairs a dated monthly archive and change log with disclosure link checks. It is available alongside an active TMN Site Care plan. Not legal or compliance advice.',
+          'form-kicker':'Compliance Site Care inquiry',
+          'form-title':'Ask about compliance care.',
+          'form-intro':'Tell us about the site, its current care arrangement, and your compliance review process.',
+          'inquiry-nav-cta':'Compliance care inquiry',
+          'outcome-label':'What does your reviewer need from the website record?',
+          'form-fine':'Founder reviewed. Usually answered the same business day.'
+        }
+      },
+      'content-care': {
+        title: 'Content Care Inquiry | TMN Creative',
+        success: '/success?type=content-care',
+        submit: 'Request a content care review',
+        placeholder: 'Tell us the question clients keep asking, where your articles live now, and who reviews copy before it publishes.',
+        copy: {
+          'inquiry-eyebrow':'Content Care · Founder reviewed',
+          'inquiry-title':'Publish real articles buyers and assistants can read.',
+          'inquiry-lead':'Content Care covers up to 2 researched, client-approved articles each month, published as real pages on your domain. It is available alongside an active TMN Site Care plan.',
+          'form-kicker':'Content Care inquiry',
+          'form-title':'Ask about content care.',
+          'form-intro':'Tell us about the site, where your blog lives today, and the questions clients keep asking you.',
+          'inquiry-nav-cta':'Content care inquiry',
+          'outcome-label':'What should the first article answer?',
+          'form-fine':'Founder reviewed. Usually answered the same business day.'
+        }
+      }
+    };
+    var svcKey = params.get('service');
+    var svc = services[svcKey];
+    if(!svc) return;
 
     document.body.classList.add('ai-visibility-inquiry');
-    document.title = 'AI Visibility Care Inquiry | TMN Creative';
+    document.title = svc.title;
 
-    var copy = {
-      'inquiry-eyebrow':'AI Visibility Care · Founder reviewed',
-      'inquiry-title':'Keep your firm findable when buyers ask an assistant.',
-      'inquiry-lead':'AI Visibility Care pairs monthly monitoring with up to 2 studio hours to correct the highest-priority issue. It is available alongside an active TMN Site Care plan.',
-      'form-kicker':'AI Visibility Care inquiry',
-      'form-title':'Ask about AI visibility.',
-      'form-intro':'Tell us about the site, its current care arrangement, and any regulated review requirements.',
-      'inquiry-nav-cta':'AI visibility inquiry',
-      'outcome-label':'What are you seeing or trying to improve?',
-      'form-fine':'Founder reviewed. Usually answered the same business day.'
-    };
-
+    var copy = svc.copy;
     Object.keys(copy).forEach(function(id){
       var el = document.getElementById(id);
       if(el) el.textContent = copy[id];
@@ -267,14 +311,14 @@
     var submit = document.querySelector('#form-submit span');
     var inquiryType = document.getElementById('inquiry-type');
 
-    if(form) form.action = '/success?type=ai-visibility';
-    if(scope) scope.value = 'ai-visibility';
+    if(form) form.action = svc.success;
+    if(scope) scope.value = svcKey;
     if(investment) investment.required = false;
     if(website) website.required = true;
     if(websiteLabel) websiteLabel.textContent = 'Current website';
-    if(outcome) outcome.placeholder = 'Tell us which buyer questions matter, what assistants currently say, or what you want checked first.';
-    if(submit) submit.textContent = 'Request an AI visibility review';
-    if(inquiryType) inquiryType.value = 'ai-visibility';
+    if(outcome) outcome.placeholder = svc.placeholder;
+    if(submit) submit.textContent = svc.submit;
+    if(inquiryType) inquiryType.value = svcKey;
 
     ['site-care-status','prior-audit','regulated-industry'].forEach(function(id){
       var field = document.getElementById(id);

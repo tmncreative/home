@@ -122,6 +122,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://tmncreative.com/compliance-care</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tmncreative.com/content-care</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://tmncreative.com/privacy</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>yearly</changefreq>
