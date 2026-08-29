@@ -363,7 +363,38 @@
       border-radius: 3px !important;
     }
     /* === TYPE-V3 === */
-</style>
+
+    /* --- AI Visibility page components (DESIGN.md tokens) --- */
+    .ask-q{margin:1.6rem auto 0;max-width:52ch;border-left:2px solid var(--accent);
+      padding-left:1.1rem;text-align:left;font-size:clamp(1.02rem,.96rem + .5vw,1.3rem);
+      line-height:1.42;font-weight:500;color:var(--ink)}
+    .ask-q span{display:block;margin-top:.55rem;font-size:.86rem;font-weight:400;color:var(--ink-soft)}
+    .aiv{padding:var(--sec-y) var(--rail)}
+    .aiv-inner{max-width:1060px;margin:0 auto}
+    .aiv .sub{margin:2.6rem 0 1.1rem;font-size:1.12rem;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.5rem}
+    .pane{background:var(--bg-elev);border:1px solid var(--line);border-radius:var(--r-xs);
+      padding:1.3rem 1.4rem}
+    .pane .pk{font-size:.82rem;font-weight:600;display:block;margin-bottom:.85rem;color:var(--accent-deep)}
+    .pane.b .pk{color:var(--ink-mid)}
+    .pane ul{margin:0;padding-left:1.1rem;display:grid;gap:.5rem;list-style:disc}
+    .pane li{font-size:.95rem;color:var(--ink-2);line-height:1.5}
+    .meas{margin:0;padding:0;list-style:none;display:grid;gap:.85rem}
+    .meas li{display:grid;grid-template-columns:auto 1fr;gap:.95rem;align-items:baseline;
+      padding-bottom:.85rem;border-bottom:1px solid var(--line-soft)}
+    .meas li:last-child{border-bottom:0;padding-bottom:0}
+    .meas .w2{font-size:.78rem;font-weight:600;white-space:nowrap;color:var(--accent-deep)}
+    .meas .w2.d{color:var(--ink-mid)}
+    .meas p{font-size:.95rem;color:var(--ink-2);margin:0;max-width:64ch;line-height:1.55}
+    .aiv .why-head{margin-left:0;text-align:left}
+    .aiv .why-head p{margin-left:0}
+    @media (max-width:760px){.two{grid-template-columns:1fr}}
+    @media (max-width:600px){.meas li{grid-template-columns:1fr;gap:.2rem}}
+
+    /* The eyebrow dot reads as a generated-template tell. Removed sitewide on
+       this page; the gold label alone carries the annotation. */
+    .eye::before{display:none}
+  </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
