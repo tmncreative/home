@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>AI Visibility Care from $200/mo | TMN Creative</title>
+  <title>AI Visibility Care: $200/mo Add-On | TMN Creative</title>
 
   <meta name="description" content="AI Visibility Care from TMN Creative, $200/month alongside Site Care. Crawlability, structured data, entity accuracy, and citation monitoring so your firm stays findable in AI-assisted answers. Also called AIO, GEO, or AI search optimization." />
 
@@ -18,7 +18,7 @@
 
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
-  <meta property="og:title" content="AI Visibility Care from $200/mo | TMN Creative" />
+  <meta property="og:title" content="AI Visibility Care: $200/mo Add-On | TMN Creative" />
 
   <meta property="og:description" content="A monthly check plus up to 2 hours of work to keep your firm crawlable, accurate, and easier to verify across traditional search and AI-assisted answers." />
 
@@ -40,7 +40,7 @@
 
   <meta name="twitter:card" content="summary_large_image" />
 
-  <meta name="twitter:title" content="AI Visibility Care from $200/mo | TMN Creative" />
+  <meta name="twitter:title" content="AI Visibility Care: $200/mo Add-On | TMN Creative" />
 
   <meta name="twitter:description" content="A monthly check plus up to 2 hours of work to keep your firm crawlable, accurate, and easier to verify." />
 
@@ -68,15 +68,15 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'" />
 
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet" /></noscript>
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" /></noscript>
 
 
 
   <!-- LCP preloads -->
 
-  <link rel="preload" as="image" href="images/logo-dark.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="images/trevor-headshot.jpg" fetchpriority="high" />
 
 
 
@@ -96,7 +96,7 @@
 
       "url": "https://tmncreative.com/ai-visibility",
 
-      "name": "AI Visibility Care from $200/mo | TMN Creative",
+      "name": "AI Visibility Care: $200/mo Add-On | TMN Creative",
 
       "description": "AI Visibility Care from TMN Creative, $200/month alongside Site Care. Crawlability, structured data, entity accuracy, and citation monitoring for AI-assisted answers.",
 
@@ -228,7 +228,7 @@
 
       --sans:'Hanken Grotesk',system-ui,-apple-system,sans-serif;
 
-      --mono:'Geist Mono',ui-monospace,Menlo,monospace;
+      --mono:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
 
       --serif:var(--serif);
 
@@ -536,17 +536,13 @@
 
     /* Scroll progress bar + cursor-follow light */
 
-    .scroll-prog{position:fixed;top:0;left:0;right:0;height:2px;z-index:200;background:linear-gradient(90deg,var(--accent-deep),var(--accent) 50%,var(--accent-2));transform:scaleX(var(--p,0));transform-origin:left;box-shadow:0 0 14px oklch(70% 0.107 85 / 0.35)}
-
-    .cursor-light{position:fixed;top:0;left:0;width:480px;height:480px;pointer-events:none;z-index:0;background:radial-gradient(circle, oklch(70% 0.107 85 / 0.06), transparent 60%);transform:translate(calc(var(--cx,50vw) - 240px), calc(var(--cy,50vh) - 240px));transition:transform 350ms var(--e);will-change:transform;mix-blend-mode:multiply}
-
     .mag{transition:transform 300ms var(--e)}
 
 
 
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms !important;transition-duration:0.01ms !important}.r{opacity:1;transform:none}}
 
-  
+
 
     
 
@@ -554,7 +550,7 @@
 
     /* Source Serif 4 (editorial serif) + IBM Plex Sans (neutral UI).
 
-       Geist Mono retained only for tabular dashboard data.
+       IBM Plex Sans carries both service headlines and compact labels.
 
        padding-bottom on h1/h2 + .stagger .w reserves room for deep
 
@@ -784,11 +780,260 @@
 
 
 
-    /* The eyebrow dot reads as a generated-template tell. Removed sitewide on
+    /* AI Visibility visual refinement. The page stays inside the TMN paper,
+       ink, and gold system while using a quieter editorial composition. */
 
-       this page; the gold label alone carries the annotation. */
+    .hero-caustic{display:none}
 
-    .eye::before{display:none}
+    body{font-size:16px}
+
+    h1,h2,h3,h1 em,h2 em{
+      font-family:var(--sans) !important;
+      font-style:normal !important;
+      color:inherit !important;
+    }
+
+    h1,h2{padding-bottom:0 !important}
+
+    .hero{
+      min-height:calc(100dvh - var(--nav-h));
+      padding:calc(var(--nav-h) + clamp(2.5rem,6vh,4.75rem)) var(--rail) clamp(2.5rem,6vh,4.75rem);
+      text-align:left;
+      display:grid;
+      align-items:center;
+      background:var(--bg);
+    }
+
+    .hero::before{display:none}
+
+    .hero-inner{
+      width:100%;
+      max-width:1240px;
+      display:grid;
+      grid-template-columns:minmax(0,1.12fr) minmax(320px,.72fr);
+      gap:clamp(2rem,6vw,6.5rem);
+      align-items:center;
+    }
+
+    .hero-copy{max-width:720px}
+
+    .hero h1{
+      max-width:13ch;
+      margin:0 0 1.35rem;
+      font-size:clamp(3.25rem,5.1vw,5.5rem);
+      font-weight:400 !important;
+      line-height:.98 !important;
+      letter-spacing:-.04em !important;
+      text-wrap:balance;
+    }
+
+    .hero .lead{
+      margin:0;
+      max-width:53ch;
+      font-size:clamp(1.05rem,.3vw + 1rem,1.18rem);
+      line-height:1.58;
+      color:var(--ink-mid);
+    }
+
+    .hero-actions{display:flex;align-items:center;gap:1rem;margin-top:1.8rem;flex-wrap:wrap}
+
+    .hero-primary,.hero-secondary{
+      min-height:46px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:.78rem 1.05rem;
+      border-radius:3px;
+      font-size:.9rem;
+      font-weight:600;
+      text-decoration:none;
+      transition:background-color 180ms var(--e),border-color 180ms var(--e),color 180ms var(--e);
+    }
+
+    .hero-primary{background:var(--ink);border:1px solid var(--ink);color:var(--bg)}
+    .hero-primary:hover{background:var(--ink-2);border-color:var(--ink-2)}
+    .hero-secondary{border-bottom:1px solid var(--ink-faint);border-radius:0;color:var(--ink);padding-left:0;padding-right:0}
+    .hero-secondary:hover{border-color:var(--ink)}
+
+    .hero-figure{margin:0;align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+
+    .hero-figure img{
+      width:100%;
+      max-height:520px;
+      aspect-ratio:4 / 5;
+      object-fit:cover;
+      object-position:50% 35%;
+      border:1px solid var(--line);
+      border-radius:2px;
+    }
+
+    .hero-caption{
+      display:grid;
+      grid-template-columns:auto 1fr;
+      gap:.85rem;
+      margin-top:.85rem;
+      padding-top:.85rem;
+      border-top:1px solid var(--line);
+      color:var(--ink-mid);
+      font-size:.82rem;
+      line-height:1.45;
+    }
+
+    .hero-caption strong{color:var(--ink);font-weight:600;white-space:nowrap}
+
+    .plan{padding:0 var(--rail);background:var(--bg);border-bottom:1px solid var(--line)}
+
+    .plan-inner{
+      max-width:1240px;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:minmax(250px,.65fr) minmax(0,1.35fr);
+      background:var(--ink);
+      color:oklch(84% 0.014 245);
+    }
+
+    .plan-summary,.plan-details{padding:clamp(2rem,4vw,3.5rem)}
+    .plan-summary{border-right:1px solid oklch(100% 0 0 / .12);display:flex;flex-direction:column;justify-content:space-between;gap:2rem}
+    .plan-name{font-size:.82rem;font-weight:600;color:var(--accent);margin:0}
+    .plan-price{font-size:clamp(3rem,5vw,5rem);font-weight:400;letter-spacing:-.04em;line-height:.9;color:var(--bg)}
+    .plan-price span{font-size:.9rem;font-weight:500;letter-spacing:0;color:oklch(72% 0.016 245);margin-left:.35rem}
+    .plan-summary p:last-child{font-size:.9rem;line-height:1.55;color:oklch(72% 0.016 245);margin:0;max-width:32ch}
+
+    .plan-details h2{
+      max-width:18ch;
+      color:var(--bg);
+      font-size:clamp(2rem,3vw,3.15rem);
+      font-weight:400 !important;
+      letter-spacing:-.035em !important;
+      line-height:1.04 !important;
+      margin:0 0 1rem;
+    }
+
+    .plan-details>p{max-width:60ch;color:oklch(78% 0.014 245);line-height:1.62;margin:0}
+    .plan-list{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem 1.5rem;margin:1.75rem 0 0;padding:1.5rem 0 0;border-top:1px solid oklch(100% 0 0 / .12)}
+    .plan-list li{font-size:.9rem;line-height:1.5;color:oklch(86% 0.014 245);padding-left:1rem;position:relative}
+    .plan-list li::before{content:'';position:absolute;left:0;top:.62rem;width:6px;height:1px;background:var(--accent)}
+    .plan-baseline{margin-top:1.5rem !important;padding-top:1.5rem;border-top:1px solid oklch(100% 0 0 / .12);font-size:.9rem}
+    .plan-baseline strong{color:var(--bg)}
+    .plan-cta{display:inline-flex;align-items:center;justify-content:center;min-height:46px;margin-top:1.6rem;padding:.78rem 1.05rem;border-radius:3px;background:var(--accent);color:var(--ink);font-size:.9rem;font-weight:600;text-decoration:none}
+    .plan-cta:hover{background:var(--accent-2)}
+
+    .why{padding:var(--sec-y) var(--rail);background:var(--bg-alt)}
+    .why-head{max-width:760px;margin:0 0 clamp(2.5rem,4vw,3.5rem);text-align:left}
+    .why-head h2{font-size:clamp(2.25rem,4vw,4rem);font-weight:400 !important;line-height:1 !important;letter-spacing:-.04em !important;margin:0 0 1rem;text-wrap:balance}
+    .why-head p{margin:0;max-width:62ch;font-size:1rem;line-height:1.65}
+    .why-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
+    .why-card{min-height:210px;padding:1.75rem 2rem 2rem 0;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;gap:.65rem;overflow:visible}
+    .why-card:nth-child(odd){border-right:1px solid var(--line)}
+    .why-card:nth-child(even){padding-left:2rem}
+    .why-card::before{display:none}
+    .why-card:hover{transform:none;box-shadow:none}
+    .why-card h3{font-size:1.1rem !important;line-height:1.3;margin:0}
+    .why-card p{font-size:.92rem;line-height:1.62;max-width:52ch}
+
+    .aiv{padding:var(--sec-y) var(--rail);background:var(--bg)}
+    .aiv-inner{max-width:1120px}
+
+    .proof-intro{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) minmax(280px,.72fr);
+      gap:clamp(2rem,6vw,6rem);
+      align-items:end;
+      padding-bottom:clamp(3rem,6vw,5rem);
+      border-bottom:1px solid var(--line);
+    }
+
+    .proof-intro h2,.honest h2,.regulated h2{
+      margin:0;
+      font-size:clamp(2.25rem,4vw,4.25rem);
+      font-weight:400 !important;
+      letter-spacing:-.04em !important;
+      line-height:1 !important;
+      text-wrap:balance;
+    }
+
+    .proof-intro-copy p{font-size:1rem;color:var(--ink-mid);line-height:1.65;margin:1.25rem 0 0;max-width:58ch}
+
+    .proof-quote{margin:0;padding:1.5rem 0 0;border-top:1px solid var(--accent);font-size:1.08rem;line-height:1.5;color:var(--ink)}
+    .proof-quote span{display:block;margin-top:.75rem;font-size:.82rem;color:var(--ink-soft)}
+
+    .honest{padding:clamp(3rem,6vw,5rem) 0 0;max-width:820px}
+    .honest p{font-size:1rem;line-height:1.65;color:var(--ink-mid);margin:1.25rem 0 0;max-width:62ch}
+
+    .two{margin-top:2.25rem;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .pane{border:0;border-radius:0;background:transparent;padding:1.75rem 2rem 1.9rem 0}
+    .pane+.pane{border-left:1px solid var(--line);padding-left:2rem}
+    .pane .pk{font-size:.86rem;margin-bottom:1rem;color:var(--ink)}
+    .pane ul{list-style:none;padding:0;gap:.65rem}
+    .pane li{padding-left:1rem;position:relative}
+    .pane li::before{content:'';position:absolute;left:0;top:.68rem;width:5px;height:1px;background:var(--accent-deep)}
+
+    .aiv .sub{font-size:clamp(1.45rem,2vw,2rem) !important;font-weight:500 !important;margin:clamp(3rem,6vw,5rem) 0 1.25rem}
+    .meas{gap:0;border-top:1px solid var(--line)}
+    .meas li{grid-template-columns:120px 1fr;gap:1.5rem;padding:1.15rem 0;border-bottom:1px solid var(--line-soft)}
+    .meas .w2{font-size:.78rem;color:var(--ink-soft)}
+    .meas p{font-size:.93rem;line-height:1.62}
+
+    .plain-note{max-width:760px;margin-top:2.75rem;padding:1.5rem 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--line)}
+    .plain-note h3{font-size:1rem !important;margin:0 0 .75rem}
+    .plain-note p{font-size:.94rem;color:var(--ink-2);line-height:1.65;margin:0}
+
+    .regulated{margin-top:clamp(3.5rem,7vw,6rem);padding-top:clamp(2.5rem,5vw,4rem);border-top:1px solid var(--line);max-width:860px}
+    .regulated p{max-width:66ch;color:var(--ink-mid);font-size:1rem;line-height:1.65;margin:1.25rem 0 0}
+
+    .bcta{background:var(--ink);text-align:left}
+    .bcta::before{display:none}
+    .bcta-inner{max-width:1120px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2rem 4rem;align-items:end}
+    .bcta-copy{max-width:720px}
+    .bcta h2{font-size:clamp(2.25rem,4vw,4rem);font-weight:400 !important;line-height:1 !important;letter-spacing:-.04em !important;margin:0 0 1rem}
+    .bcta p{margin:0;max-width:62ch;font-size:1rem;line-height:1.65}
+    .bcta-btns{justify-content:flex-start;white-space:nowrap}
+    .bcta-p,.bcta-s{min-height:46px;display:inline-flex;align-items:center;border-radius:3px;box-shadow:none}
+    .bcta-p:hover{transform:none}
+
+    .r{opacity:1;transform:none;transition:none}
+
+    .mob-menu{visibility:hidden}
+    .mob-menu.open{visibility:visible}
+
+    @media(max-width:420px){.nav-cta{display:none !important}}
+
+    @media(max-width:900px){
+      .hero{min-height:auto}
+      .hero-inner{grid-template-columns:1fr;gap:2.25rem}
+      .hero-copy{max-width:760px}
+      .hero h1{max-width:14ch}
+      .hero-figure{display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,.7fr);gap:1rem;align-items:end}
+      .hero-figure img{max-height:290px;aspect-ratio:16 / 9}
+      .hero-caption{display:block;margin:0;padding:0 0 .25rem;border-top:0}
+      .hero-caption strong{display:block;margin-bottom:.35rem}
+      .plan-inner{grid-template-columns:1fr}
+      .plan-summary{border-right:0;border-bottom:1px solid oklch(100% 0 0 / .12)}
+      .proof-intro{grid-template-columns:1fr}
+      .bcta-inner{grid-template-columns:1fr}
+    }
+
+    @media(max-width:640px){
+      .hero{padding-top:calc(var(--nav-h) + 2rem);padding-bottom:2.5rem}
+      .hero h1{font-size:clamp(2.65rem,13vw,3.6rem);line-height:1 !important}
+      .hero-actions{align-items:stretch;flex-direction:column}
+      .hero-primary{width:100%}
+      .hero-secondary{align-self:flex-start}
+      .hero-figure{display:block}
+      .hero-figure img{max-height:250px;aspect-ratio:16 / 9}
+      .hero-caption{margin-top:.75rem;padding-top:.75rem;border-top:1px solid var(--line)}
+      .plan{padding:0}
+      .plan-summary,.plan-details{padding:2rem var(--rail)}
+      .plan-list{grid-template-columns:1fr}
+      .why-grid{grid-template-columns:1fr}
+      .why-card,.why-card:nth-child(even){min-height:auto;padding:1.4rem 0;border-right:0}
+      .two{grid-template-columns:1fr}
+      .pane,.pane+.pane{padding:1.4rem 0;border-left:0}
+      .pane+.pane{border-top:1px solid var(--line)}
+      .meas li{grid-template-columns:1fr;gap:.35rem}
+      .bcta-btns{display:flex;width:100%;flex-direction:column}
+      .bcta-p,.bcta-s{justify-content:center}
+    }
 
   </style>
 
@@ -868,13 +1113,6 @@
 
 
 
-  <div class="cursor-light" id="cursorLight" aria-hidden="true"></div>
-
-  <div class="scroll-prog" id="scrollProg" aria-hidden="true"></div>
-
-
-
-
 
   <nav class="nav" id="nav" aria-label="Primary">
 
@@ -910,7 +1148,7 @@
 
         <a href="/free-review" class="nav-cta">Request a Free Preview <svg viewBox="0 0 12 8" fill="none"><path d="M1 4h10m0 0L7 1m4 3L7 7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 
-        <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span></button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobMenu"><span></span></button>
 
       </div>
 
@@ -918,7 +1156,7 @@
 
   </nav>
 
-  <div class="mob-menu" id="mobMenu" role="navigation" aria-label="Mobile menu">
+  <div class="mob-menu" id="mobMenu" role="navigation" aria-label="Mobile menu" aria-hidden="true">
 
     <a href="/#work">Work</a>
 
@@ -944,27 +1182,31 @@
 
     <section class="hero">
 
-      <div class="hero-caustic" aria-hidden="true">
-
-        <picture>
-
-          <source srcset="images/hero-caustic.webp" type="image/webp">
-
-          <img src="images/hero-caustic.webp" alt="" width="1600" height="893" loading="eager" decoding="async">
-
-        </picture>
-
-      </div>
-
       <div class="hero-inner">
 
-        <div class="eye">Site Care Add-On</div>
+        <div class="hero-copy">
 
-        <h1>Your next client asks an assistant <em>first.</em></h1>
+          <h1>Your next client asks an assistant first.</h1>
 
-        <p class="lead">Assistants do not hand back a page of links. They read sources, cross-check them, and write an answer. A monthly check plus up to 2 hours of work to keep your firm crawlable, accurate, and easier to verify.</p>
+          <p class="lead">Monthly monitoring and focused implementation keep your firm crawlable, accurate, and easier for assistants to verify.</p>
 
-        <p class="ask-q">&ldquo;Who is a good financial advisor for Google employees with a lot of RSUs?&rdquo;<span>Typed into an assistant, not a search box</span></p>
+          <div class="hero-actions">
+
+            <a href="/start-a-project?service=ai-visibility#project-form" class="hero-primary">Ask about AI visibility</a>
+
+            <a href="#plan" class="hero-secondary">Review the service</a>
+
+          </div>
+
+        </div>
+
+        <figure class="hero-figure">
+
+          <img src="images/trevor-headshot.jpg" alt="Trevor Niemann, founder of TMN Creative" width="896" height="1088" fetchpriority="high" decoding="async" />
+
+          <figcaption class="hero-caption"><strong>Trevor Niemann</strong><span>Founder-led monitoring, diagnosis, reporting, and implementation.</span></figcaption>
+
+        </figure>
 
       </div>
 
@@ -972,23 +1214,31 @@
 
 
 
-    <section class="cards-sec">
+    <section class="plan" id="plan">
 
-      <h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">AI Visibility Care at $200 per month</h2>
+      <div class="plan-inner">
 
-      <div class="cards" style="grid-template-columns:minmax(0,1fr);max-width:920px">
+        <div class="plan-summary">
 
-        <div class="card pop r">
+          <div>
 
-          <div class="card-label">AI Visibility Care</div>
+            <p class="plan-name">AI Visibility Care</p>
 
-          <h3>A monthly check, and the hours to act on it.</h3>
+            <div class="plan-price">$200<span>/mo</span></div>
 
-          <div class="card-price">$200 <span class="unit">/mo</span></div>
+          </div>
 
-          <p class="card-desc">In addition to an active TMN Site Care plan. It includes up to 2 total studio hours across monitoring, diagnosis, communication, reporting, and implementation. I use that time on the highest-priority issue or improvement.</p>
+          <p>Available with an active TMN Site Care plan. Site Care starts at $50 per month.</p>
 
-          <ul class="card-list">
+        </div>
+
+        <div class="plan-details">
+
+          <h2>A monthly check, with time to act.</h2>
+
+          <p>The plan includes up to 2 total studio hours across monitoring, diagnosis, communication, reporting, and implementation. I use that time on the highest-priority issue or improvement.</p>
+
+          <ul class="plan-list">
 
             <li>Up to 2 total studio hours each month</li>
 
@@ -1000,7 +1250,9 @@
 
           </ul>
 
-          <p class="card-desc" style="margin-top:1rem">Existing websites not built or previously audited by TMN begin with a one-time <strong>$750 baseline audit and setup</strong>.</p>
+          <p class="plan-baseline">Existing websites not built or previously audited by TMN begin with a one-time <strong>$750 baseline audit and setup</strong>.</p>
+
+          <a href="/start-a-project?service=ai-visibility#project-form" class="plan-cta">Ask about AI visibility</a>
 
         </div>
 
@@ -1016,9 +1268,7 @@
 
         <div class="why-head">
 
-          <div class="eye">What the hours go to</div>
-
-          <h2>Boring fundamentals, <em>done properly.</em></h2>
+          <h2>Boring fundamentals, done properly.</h2>
 
           <p>There is no secret file and no magic markup. The firms that get cited are the ones a machine can reach, parse, and corroborate. Below is what the allowance can be spent on. It is a menu of possible work, not a checklist run every month.</p>
 
@@ -1070,25 +1320,27 @@
 
       <div class="aiv-inner">
 
-        <div class="why-head" style="margin-bottom:2rem">
+        <div class="proof-intro">
 
-          <div class="eye">Why I can speak to this</div>
+          <div class="proof-intro-copy">
 
-          <h2>A prospect found this studio <em>through ChatGPT.</em></h2>
+            <h2>A prospect found this studio through ChatGPT.</h2>
 
-          <p>A recent prospect told me they found TMN through ChatGPT and arrived with the published pricing already in hand. That is the whole mechanism this service is about, and it happened here before I ever sold it to anyone.</p>
+            <p>A recent prospect told me they found TMN through ChatGPT and arrived with the published pricing already in hand. That happened here before I ever sold this service to anyone.</p>
+
+          </div>
+
+          <blockquote class="proof-quote">&ldquo;Who is a good financial advisor for Google employees with a lot of RSUs?&rdquo;<span>A real kind of buyer question, asked inside an assistant.</span></blockquote>
 
         </div>
 
 
 
-        <div class="why-head" style="margin-bottom:1.5rem">
+        <div class="honest">
 
-          <div class="eye">The honest part</div>
+          <h2>I cannot make a model recommend you.</h2>
 
-          <h2>I cannot make a model <em>recommend you.</em></h2>
-
-          <p>Anyone promising a ranking inside an assistant is selling something they do not control. Outputs vary by model, prompt, index, location, and day. I would rather draw the line now than in month three.</p>
+          <p>Anyone promising a ranking inside an assistant is selling something they do not control. Outputs vary by model, prompt, index, location, and day. I would rather draw the line now than in month 3.</p>
 
         </div>
 
@@ -1154,27 +1406,25 @@
 
 
 
-        <div class="pane" style="margin-top:1.6rem;max-width:66ch">
+        <div class="plain-note">
 
-          <span class="pk" style="color:var(--ink-mid)">What I will not sell you</span>
+          <h3>What I will not sell you</h3>
 
-          <p style="font-size:.95rem;color:var(--ink-2)">Google states there is no AI-specific schema type and no special machine-readable file required for its AI features. Anyone charging for &ldquo;AI schema&rdquo; is charging for something that does not exist. I will publish an llms.txt because it is cheap and some tools read it, but it belongs in housekeeping, not on an invoice.</p>
-
-        </div>
-
-
-
-        <div class="why-head" style="margin-top:3rem;margin-bottom:1rem">
-
-          <div class="eye">Regulated firms</div>
-
-          <h2>Your compliance reviewer <em>stays in the workflow.</em></h2>
-
-          <p>Much of an adviser's public website can fall within the SEC Marketing Rule, so firm review belongs in the process rather than after it. A generic content shop will hand you language that creates a problem instead of a client.</p>
+          <p>Google does not require a special AI schema type or machine-readable file for its AI features. I maintain accurate standard structured data and will not repackage it as a separate invention. I will publish an llms.txt because it is cheap and some tools read it, but it belongs in housekeeping, not on an invoice.</p>
 
         </div>
 
-        <p style="max-width:66ch;color:var(--ink-2);font-size:.98rem">I build inside that constraint. On a recent engagement a compliance consultant returned eleven items and every one went in verbatim, with the required disclosures placed where he asked for them. I do not give compliance advice and I do not replace your reviewer. Approved copy comes from your firm.</p>
+
+
+        <div class="regulated">
+
+          <h2>Your compliance reviewer stays in the workflow.</h2>
+
+          <p>Much of an adviser's public website can fall within the SEC Marketing Rule. Regulated copy remains subject to the firm's reviewer throughout the process.</p>
+
+          <p>I build inside that constraint. On a recent financial-services engagement, a compliance consultant returned 11 items and every one went in verbatim, with the required disclosures placed where requested. I do not give compliance advice and I do not replace your reviewer. Approved copy comes from your firm.</p>
+
+        </div>
 
       </div>
 
@@ -1186,13 +1436,17 @@
 
       <div class="bcta-inner">
 
-        <h2>Start with <em>the audit.</em></h2>
+        <div class="bcta-copy">
 
-        <p>I will tell you what assistants can currently reach, what the platforms report is already being cited, and whether any of it is worth paying to change. If the answer is no, I will say so.</p>
+          <h2>Start with the audit.</h2>
+
+          <p>I will tell you what assistants can currently reach, what the platforms report is already being cited, and whether any of it is worth paying to change. If the answer is no, I will say so.</p>
+
+        </div>
 
         <div class="bcta-btns">
 
-          <a href="/start-a-project" class="bcta-p">Ask About AI Visibility</a>
+          <a href="/start-a-project?service=ai-visibility#project-form" class="bcta-p">Ask about AI visibility</a>
 
           <a href="/care" class="bcta-s">See Site Care</a>
 
@@ -1220,7 +1474,7 @@
 
       </div>
 
-      <div class="foot-col"><h3>Services</h3><a href="/pricing">Pricing</a><a href="/portfolio">Portfolio</a><a href="/pricing#crm">CRM Add-Ons</a><a href="/care">Site Care</a></div>
+      <div class="foot-col"><h3>Services</h3><a href="/pricing">Pricing</a><a href="/portfolio">Portfolio</a><a href="/pricing#crm">CRM Add-Ons</a><a href="/care">Site Care</a><a href="/ai-visibility">AI Visibility</a></div>
 
       <div class="foot-col"><h3>Studio</h3><a href="/">Home</a><a href="/studio">About</a><a href="/pay">Client Portal</a><a href="/free-review">Free Preview</a></div>
 
@@ -1254,9 +1508,27 @@
 
     var menuBtn=document.getElementById('menuBtn'),mobMenu=document.getElementById('mobMenu');
 
-    menuBtn.addEventListener('click',function(){menuBtn.classList.toggle('open');mobMenu.classList.toggle('open');document.body.style.overflow=mobMenu.classList.contains('open')?'hidden':'';});
+    function setMenu(open){
 
-    document.querySelectorAll('.mob-menu a').forEach(function(a){a.addEventListener('click',function(){menuBtn.classList.remove('open');mobMenu.classList.remove('open');document.body.style.overflow='';});});
+      menuBtn.classList.toggle('open',open);
+
+      mobMenu.classList.toggle('open',open);
+
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+
+      menuBtn.setAttribute('aria-label',open?'Close menu':'Open menu');
+
+      mobMenu.setAttribute('aria-hidden',open?'false':'true');
+
+      document.body.style.overflow=open?'hidden':'';
+
+    }
+
+    menuBtn.addEventListener('click',function(){setMenu(!mobMenu.classList.contains('open'));});
+
+    document.querySelectorAll('.mob-menu a').forEach(function(a){a.addEventListener('click',function(){setMenu(false);});});
+
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mobMenu.classList.contains('open')){setMenu(false);menuBtn.focus();}});
 
     if('IntersectionObserver' in window){
 
@@ -1265,28 +1537,6 @@
       document.querySelectorAll('.r').forEach(function(el){io.observe(el);});
 
     } else { document.querySelectorAll('.r').forEach(function(el){el.classList.add('vis');}); }
-
-  
-
-    // Scroll progress + cursor-follow gold light
-
-    var prog=document.getElementById('scrollProg');
-
-    window.addEventListener('scroll',function(){if(prog){var h=document.documentElement.scrollHeight-window.innerHeight;prog.style.setProperty('--p',(h>0?window.scrollY/h:0).toFixed(3));}},{passive:true});
-
-    if(window.matchMedia('(pointer: fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-
-      var cl=document.getElementById('cursorLight');
-
-      if(cl){var lx=window.innerWidth/2,ly=window.innerHeight/2,tx=lx,ty=ly;
-
-        window.addEventListener('mousemove',function(e){tx=e.clientX;ty=e.clientY;},{passive:true});
-
-        (function raf(){lx+=(tx-lx)*0.10;ly+=(ty-ly)*0.10;cl.style.setProperty('--cx',lx+'px');cl.style.setProperty('--cy',ly+'px');requestAnimationFrame(raf);})();
-
-      }
-
-    }
 
 
 
