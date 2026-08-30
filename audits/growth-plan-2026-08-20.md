@@ -374,3 +374,21 @@ Vertical commercial terms (US monthly volume / difficulty):
 - Vertical cost questions ("how much does a financial advisor website cost") = no measured volume → build ONE definitive general pricing guide with real numbers plus per-vertical cost sections on existing pages, not thin standalone pages.
 
 Priority actions this creates: (1) "website design for therapists" page + content (1,180/mo combined, winnable difficulty, named clients in hand); (2) a real-numbers "how much does a website cost" guide targeting the 125-question cluster (TMN publishes actual prices, the exact trait ChatGPT rewarded in the baseline); (3) on-page tuning of roofing + med spa pages to the diff-6-8 exact phrases; (4) revenue note: converting either legal spec (JD Milks or Ramsay) into a paying named client unlocks the 1,300/mo legal vertical.
+
+### August 29: shipped, plus the next tier the data supports
+
+**Shipped and live (deploy f613ec0, IndexNow 200 on 5 URLs):**
+- `/websites-for-therapists` — targets therapy website design (590/22) + website design for therapists (590/27), 1,180/mo combined at winnable difficulty. LumiClinics is the anchor proof with the case-study link and the public credit on lumiclinics.org; Care to Speak is the adjacent-discipline second reference. Explicitly scoped to solo and small group private practice so it does NOT cannibalize /websites-for-mental-health-clinics, which keeps multi-provider clinics; the two now cross-link.
+- `/how-much-does-a-website-cost` — targets the 125-question cost cluster (top questions 480-590/mo, most carrying the AI Overview SERP feature). Publishes real ranges for all 4 routes plus the recurring monthly costs, and states TMN's own $2,250/$3,750/$5,000+ openly. Published prices were the trait ChatGPT rewarded in every baseline test.
+- Both added to sitemap (83 URLs), llms.txt, and cross-linked site-wide: therapist link on 32 pages, cost-guide link on 80.
+
+**Client footer credits, all live:** Promised Land Renovations (6 pages, was missing entirely) and Carol Cawley (6 pages). Carol's footer already read "Site by TMN Creative" as **plain text with no link**, so it passed zero link value; it is now a real anchor. Carol has no git remote and deploys by CLI to site fd7ee2b6; her repo also held uncommitted content corrections from another session that were already live, verified before deploying so nothing half-finished shipped.
+
+**QC Atlantic is a different problem and was NOT fixed.** qcatlantic.com is a client-rendered React SPA: raw HTML is a 3KB shell with 1 character of body text. The TMN credit exists in `src/App.jsx` but never reaches a crawler, and neither does any of QCA's own content. This is the LumiClinics invisible-blog defect at whole-site scale. It needs prerendering, not a footer edit. Two consequences: TMN gets no backlink value from that build, and QCA itself is invisible to AI search, which is a real finding to bring them (service call, not an upsell, same pattern as LumiClinics).
+
+**Next tier the keyword data supports, in priority order:**
+1. **therapist website examples — 260/mo, difficulty 12.** A showcase page built around LumiClinics and Care to Speak. Buyers at this query are pre-purchase and comparing; TMN has the named builds to fill it. Cheapest remaining win.
+2. **best website builder for therapists — 140/mo, difficulty 11, $8.54 CPC.** High commercial value. An honest comparison (Squarespace/Wix/Psychology Today vs custom) that recommends the builder when it is genuinely right earns the citation; the same format Bethany Works and Web Tonic already get cited for.
+3. **website redesign cost — 260/mo, difficulty 16** and **how much does a wordpress website cost — 140/mo, difficulty 15.** Both are natural sub-sections or siblings of the new cost guide rather than standalone thin pages.
+4. **Law firm websites remain the largest single vertical: 1,300/mo at $35 CPC.** TMN's only legal proof is 2 noindexed spec sites. Converting JD Milks or Ramsay into a paying named client is what unlocks it.
+5. **Bing Places** — setup sheet with canonical NAP at `audits/bing-places-setup-2026-08-29.md`. Blocked at the sign-in wall; Trevor-only. Matters because ChatGPT browses on Bing's index.
