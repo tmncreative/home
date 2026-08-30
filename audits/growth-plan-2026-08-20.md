@@ -512,3 +512,19 @@ Verified state across all six: FAQPage schema present (6 to 9 questions each; th
 **New instrument found: Bing Webmaster Tools has an AI Performance report (beta)** at `/webmasters/aiperformance`, showing citations in Microsoft Copilot and partner AI surfaces. It is free, direct, and measures actual AI citations rather than prompt sampling, which makes it a useful complement to SE Ranking's prompt tracker.
 
 **The baseline it gives is stark and worth stating plainly: 2 total citations across 3 months.** A single spike of 2 citations on 1 page on July 15, 2026, and zero on all 88 other days. No grounding queries recorded at all. That is the honest starting point for TMN's AI citation visibility, measured rather than estimated, and it is the number the entire content program should be judged against. Check monthly alongside the SE Ranking prompt tracker and the Sept 3 manual ChatGPT re-test.
+
+### August 30: two showcase landing pages against confirmed veins
+
+Both use a checklist format rather than a screenshot gallery, which is deliberate. The queries are "show me examples," but the pages that get cited by AI assistants are the ones that define criteria and then demonstrate them, because criteria are quotable and screenshots are not. Each page anchors on live builds that credit TMN publicly, so the examples are verifiable rather than borrowed.
+
+**`/best-law-firm-websites`** targets best law firm websites (590/mo), best websites for law firms (590/mo), law firm website examples (70/mo, $6.94), and attorney website examples. Eight checkable traits, then The Ramsay Law Firm scored against them with the live site linked. The framing is that pretty is not the variable: first-screen clarity, independently verifiable credentials, practice areas as real pages, the law explained plainly, one obvious next step, visible bar compliance, mobile speed, and nothing invented.
+
+**`/therapist-website-examples`** targets therapist website examples (260/mo, difficulty 12) and best website builder for therapists (140/mo, $8.54 CPC, difficulty 11). Same eight-trait structure adapted to private practice, with LumiClinics and Care to Speak as the worked examples. It takes a clear position on the question therapists actually argue about: publish your fee. Hiding it filters out good-fit clients who assume it is out of reach and wastes calls on people for whom it genuinely is.
+
+Both carry 6-question FAQPage schema, `/verify`, `/free-review`, the $2,250 floor, and site-wide footer links (52 pages for the law page, 36 for the therapist page). Sitemap now 89 URLs.
+
+**Distribution:** IndexNow accepted all 89 URLs. Bing URL Submission accepted both new pages (92 of 100 daily quota left). Google Search Console could not take manual indexing requests because the session expired to a signed-out account chooser, and signing back in requires Trevor. This is an accelerator rather than a blocker: the sitemap was resubmitted to GSC earlier the same day, so Google will discover both through it. Worth doing the manual request on the next GSC visit.
+
+6 more terms added to SE Ranking tracking, bringing the money-term set to 30 with target URLs.
+
+**Page count from this push: 7 new landing pages** (therapists, website cost, law firm cost, HIPAA, Ramsay case study, best law firm websites, therapist website examples), every one targeting a term verified against real CPC and difficulty rather than intuition.
