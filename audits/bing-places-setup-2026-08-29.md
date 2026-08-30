@@ -69,3 +69,29 @@ Bing states: "If you already have an account with Bing Places for Business, we w
 **Alternative if the Google click stays impractical:** switch the listing to a real deliverable street address, request the postcard, verify, then hide the address as a service-area business. That publishes a home address to Microsoft during the interim, so it is Trevor's call, not a default.
 
 **After verification, remaining work (Claude can do all of it):** add the 430-character description from this file, set hours to appointment-only (never "Open 24 hours", the original GBP error), add photos matching the Google profile, then record the live listing URL in `audits/profile-corrections-2026-08-20.md` and add it to /verify as a new corroboration surface.
+
+## PIN requested — listing rebuilt at the street address (Aug 29, later)
+
+Trevor instructed: mail the PIN to 6451 Ridglea Crest Dr.
+
+**Why the listing had to be rebuilt.** The mailing address on the verification screen is `readOnly` (confirmed in the DOM) and simply mirrors the listing address. The listing address itself sits in Basic details, which is locked until the listing is verified. That is circular: the address cannot be corrected before verification, and verification cannot reach a non-deliverable address. The address is only editable during initial creation, so the fix was to delete the unverified, unpublished listing and create it again with the street address from the start. Nothing of value was lost, since everything past Basic details was still locked.
+
+**Current listing.** New business id `fbc79cd9-c03d-4904-9944-fb5cce6040c1`
+https://www.bing.com/forbusiness/singleEntity?bizid=fbc79cd9-c03d-4904-9944-fb5cce6040c1
+(The earlier id ff2da227… is deleted. Ignore it.)
+
+- Name: TMN Creative
+- Address: **6451 Ridglea Crest Dr, Fort Worth, TX 76116, United States**
+- Phone: (682) 250-0533 · Website: https://tmncreative.com
+- Categories: Web designer (primary), Marketing agency, Graphic designer
+- Status: **Verification in progress.** PIN requested by mail, quoted at 5-6 business days, so expect it roughly Sept 5-8.
+
+**When the postcard arrives:** enter the PIN at the listing URL above (the field is on the listing page) and press Submit. Claude can do this the moment Trevor relays the number.
+
+**Then, immediately after verification, Claude finishes:**
+1. Description (500-char limit, the ~430-char version in this file).
+2. Hours set to appointment-only. Never "Open 24 hours", which was the original GBP error.
+3. **Hide the street address / set service-area display.** This is the important one: 6451 Ridglea Crest Dr is a home address and was published only to make postcard verification possible. Bing exposes the address-hiding control for service-area businesses after verification, and the Basic details form carries a "Do you deliver goods and services to your customers at their location?" question. Set that to Yes and hide the address so the public listing shows the service area rather than the house.
+4. Photos matching the Google profile, then record the live listing on /verify as a new corroboration surface.
+
+**Note on the GBP import.** It remains the faster route and would have verified instantly, but it needs a real human click that no permission grant can substitute for. If Trevor runs it later, Bing states it updates the existing listing rather than duplicating, so it would verify this listing early and add weekly Google sync. The postcard clock and that option are not mutually exclusive.
