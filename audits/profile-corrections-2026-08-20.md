@@ -127,3 +127,11 @@ Not proposed: buying placements, Reddit posting, or any review TMN drafts or inf
 - All three saves confirmed with "Changes saved!" toasts.
 
 DesignRush: not logged in on this machine's Chrome, and Alma Pasic's Aug 17 reply already established the profile is self-serve through TMN's own DesignRush account. Direct edit pending Trevor's login; the equivalent changes are the description add-on sentence and any available SEO/AI service categories.
+
+## August 29 late: DesignRush updated (Trevor logged in, saved and confirmed)
+
+- Services (designrush.com/user/profile/services): TMN's list was already Web Design, Website Development, SEO, AEO. Added Content Marketing as #5 for the new Content Care service. Saved with "SERVICES SAVED SUCCESSFULLY". DesignRush's Marketing taxonomy has AEO but no separate GEO or AIO category, so AEO remains the closest match for AI Search Optimization and it was already selected.
+- Agency Overview description rewritten (2,000-char field, now 1,421): the old copy said "AI visibility" mid-paragraph and "AI Visibility Care" in the add-on line. Both now read AI Search Optimization, matching today's rename. The add-on sentence also names all 3 products with what each does: "Monthly add-ons include AI Search Optimization for AI-assisted search, Compliance Site Care for advisory-firm website records, and Content Care for researched article publishing." No-guarantee line retained.
+- Founding year 2025 confirmed correct on the profile. Still showing "Number of Employees: Under 49" and "Minimal Budget $1,000 - $10,000", which are DesignRush's own bucket options rather than free-text fields; the earlier correction request to Alma Pasic covered these and no narrower buckets appear to exist.
+
+Both corroboration profiles now name the add-on ladder with current naming. Remaining open on Clutch: Walnut Ventures portfolio relabel (the portfolio editor page hangs), and Minimum Project Size still $1,000+ pending Trevor's call.
