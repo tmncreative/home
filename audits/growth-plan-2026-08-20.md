@@ -262,3 +262,48 @@ The one genuine exception is Andrew Stout, and he is instructive rather than con
 - Never judge the AI channel by referrer data or by Fathom/GA source reports. They will always show Google and Direct. The self-report dropdown is the only working instrument, which makes keeping it on every form non-negotiable.
 - This independently supports the Aug 29 decision not to buy Clutch directory placement: zero captured leads came from a Fort Worth local directory query, while the vertical and national AI path produced nearly all of them.
 - The Sept 3 ChatGPT re-test is the right measurement for the channel that is actually producing revenue.
+
+## August 29: the spend plan — recurring revenue from big spenders
+
+Trevor authorized spending money on whatever is optimal. Written against tonight's verified facts: ChatGPT produces 4 of 5 captured leads, the Clutch FW directory is pay-gated and off-thesis, the 6-prompt vertical baseline sits at 0/6, and ChatGPT's stated reason for every winner in that baseline was a named vertical client with a measurable outcome.
+
+### Who the big spender actually is (from the lead data, not theory)
+
+Established firms in regulated or credentialed verticals: RIAs and advisor practices (Jon Parks, Don Hilario), psychiatry/behavioral health (LumiClinics), multi-location clinic groups (Training Wheels, 3 locations), construction firms facing vendor qualification (Synergized). Josh Henkin self-reported a $5-10K planned investment. The defining trait: **these buyers already pay monthly retainers as a habit** — advisors pay compliance consultants, LumiClinics pays Soro, Training Wheels paid SE Ranking until it lapsed. The add-on stack ($200 AI Search + $250 Compliance + $400 Content Care on $50 care, max $900/mo) sells into an existing spending habit rather than creating a new one.
+
+### The plan, in order of expected dollars
+
+**1. Sell the stack to the current roster first ($0 spend, largest near-term recurring).**
+- LumiClinics → Content Care $400/mo. The invisible-blog finding is documented, the pitch draft is staged in Gmail. Their journal is invisible to crawlers today; they already pay for content.
+- Don Hilario (call Mon 8/31 10am) → include the stack in the proposal: $50 care + $200 AI Search + $250 Compliance = $500/mo. He is an RIA who found TMN through ChatGPT; both products are literally his profile.
+- Jon Parks → Compliance Site Care $250/mo at site launch. The product page was built from his engagement's 11-item compliance pass.
+- Training Wheels → AI Search Optimization $200/mo. Their own SE Ranking subscription expired: proven appetite for this spend category, current vendor gap, and the roadmap already calls for location pages + AI visibility.
+- DVRT (if closed) → Content Care later via Soro's native WordPress connector.
+
+Realistic 60-day target if 4 of 5 land: ~$1,350/mo (~$16K/yr run rate) with no ad spend.
+
+**2. The one spend to make now: SE Ranking renewal, repointed (~$103-175/mo class).**
+Retail 2026 pricing: Core plan ~$103.20/mo annual; the AI Search add-on ~$71.20/mo (200 prompts); SE Visible standalone $189/mo. Confirm the real number with Phil Gagnon since the current access was his extension and lapses ~now. Justification is triple:
+- It is the **targeting map**: repoint the AI tracker from the 15 Fort Worth local prompts (a market producing zero leads) to the 6 vertical baseline prompts + the 2 Google AI Mode prompts. The resulting source table tells us which surfaces ChatGPT actually cites for the queries that pay, i.e., where placement money should go.
+- It is the **delivery engine for the $200/mo product**: every AI Search Optimization subscriber needs a monthly evidence report. 3 subscribers = $600/mo revenue against ~$175/mo tool cost; margin holds and improves with each subscriber. This reframes the tool from analytics expense to COGS on a recurring product.
+- It is the **sales asset**: once the repointed tracker has 2+ weeks of data, TMN's own movement graph goes on /ai-visibility as dogfooded proof.
+Note: an `se-ranking` MCP connector is already configured in Claude but unauthorized. Authorizing it lets the monthly subscriber reports be automated.
+
+**3. The free work that outranks any spend: metrics into case studies.**
+ChatGPT's cited basis for every baseline winner was numbers (WISE +208% traffic; Cardinal's BCBA recruiting metrics; "the VitaLuxx work makes them the most directly analogous portfolio match"). TMN has named clients in the right verticals and zero published metrics. Christi Horton's Clutch review already states "a significant increase in website traffic and leads" — third-party-verified and quotable today with attribution. Fathom runs on client sites with per-client IDs: pull before/afters for SunCraft, LumiClinics, Training Wheels, get written client permission, publish the numbers into the 3 case studies. Training Wheels doubles as the multi-location clinic-group story, the profile behind baseline test #5's winners.
+
+**4. The reserved spend: $500-1,500/yr for placement, deployed only where the map says (~Sept 10-15).**
+After the repointed tracker produces a vertical source table and the Sept 3 re-test lands, buy presence on whichever surface is actually cited for vertical prompts. Candidates that may earn it: Clutch national or vertical service pages, DesignRush (already a 100% mention rate when cited; check its paid model), Expertise.com (listing request already queued). The Fort Worth Clutch $499 stays dead unless FW local ever becomes a target market.
+
+**5. Conditional COGS, never speculative:** the Soro per-site subscription is incurred only when a Content Care client signs, inside the client's $400/mo (margin gate ~$50-150/site/mo per the pipeline spec).
+
+### Explicitly not spending on
+- Clutch Fort Worth Verified ($499): wrong market, documented Aug 29.
+- Meta or Google ads: zero captured leads from paid; the working channel is free and compounding.
+- Review incentives of any kind: violates platform rules and /verify's own language.
+
+### Checkpoints
+- Mon 8/31: Don call carries the first live stack proposal.
+- Sept 3: 6-prompt ChatGPT re-test vs the 0/6 baseline.
+- ~Sept 10: vertical source table read; placement reserve deployed or held on evidence.
+- Oct 1: recurring run-rate review against the ~$1,350/mo roster target.
