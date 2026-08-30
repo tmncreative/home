@@ -324,3 +324,28 @@ The clone path for the next $1,500/mo account, using what already exists:
 - Training Wheels case study **with numbers, pending their permission**: 62 real leads Jul 1-Aug 7, 860 uniques, 60 five-star reviews at 92%, WordPress replaced Jul 1 — all server-verified in the Aug management report. This is exactly the evidence class ChatGPT cited for every winner on baseline prompt #5 (multi-location ABA group), where Cardinal won partly on recruiting metrics — and TW's 28 careers applications ARE recruiting metrics.
 - The multi-location clinic-group story (location pages roadmap) becomes a vertical page once the case study carries numbers.
 - Revised 60-day recurring target: Don ~$500 + LumiClinics $400 + DVRT care attach at launch + stack-by-default on every new proposal, with the real prize being 1 new multi-location group at the TW retainer shape ($1,500/mo).
+
+### August 29: SE Ranking purchase spec and usage plan (Trevor approved the spend)
+
+**The package: Core Plan, annual billing, no add-ons.** Verified against seranking.com/pricing.html on Aug 29 (not review-site summaries, which wrongly claim an AI add-on is required):
+
+- Core annual: $103.20/mo ($1,238.40/yr); monthly $129.
+- Includes: 10 projects, 2,000 keywords tracked daily, **AI visibility tracking with 100 prompts daily**, 25K API credits/mo, **MCP access**.
+- The AI Search add-on ($71.20/mo, SE Visible dashboard, 200-1,000 prompts) is scale TMN does not need: current requirement is ~23 prompts (15 FW continuity + 6 vertical + 2 AI Mode) against a 100/day allowance.
+- Agency Pack ($69/mo, white-label + extra projects): skip until subscriber count approaches the 10-project ceiling. TW's report pipeline is already custom-built and better than white-label.
+
+**Why Core clears the ROI bar 4 ways:**
+1. Training Wheels ($1,500/mo) September management report requires the rank/keyword data. The tool costs 7% of that one account's monthly retainer.
+2. It is the delivery engine for AI Search Optimization at $200/mo: 10 projects = TMN + TW + 8 subscriber slots. 8 subscribers = $1,600/mo against $103 COGS. Break-even is 1 subscriber for ~6 months.
+3. The repointed AI tracker produces the vertical source table that gates the $500-1,500 placement reserve (~Sept 10 read).
+4. Dogfood: TMN's own tracker movement goes on /ai-visibility as sales proof once 2+ weeks of data exist.
+
+**Purchase path:** Phil Gagnon's Aug 17 email grants Core access through Aug 31 and explicitly offers annual-subscription discounts. Reply draft staged UNSENT (draft r-7198254205111006414, thread "Trevor, your time just ran out"): asks for his best annual rate on the existing account, preserving projects and history. Fallback if Phil is silent by Monday morning: self-serve annual checkout inside the current account at $103.20/mo, which preserves history either way. Claude never enters payment; Trevor checks out.
+
+**Day-1 setup (mechanical once access is live):**
+1. AI Results Tracker: ADD the 6 vertical baseline prompts (verbatim from audits/chatgpt-baseline-2026-08-20.md) + the 2 Google AI Mode prompts. Keep the 15 FW prompts for continuity; 23 of 100 daily used.
+2. Training Wheels project: revive keyword tracking (South Austin, Pflugerville, Dripping Springs, in-home ABA, brand terms), backlinks watch. Feeds the September report against the August baseline table.
+3. TMN project: confirm the keyword set covers the 12 industry pages and 8 vertical pages.
+4. Define the subscriber template (this IS the $200/mo deliverable spec): ~10 prompts + ~50 keywords + monthly evidence report per client. Don becomes project #3 if Monday's proposal lands.
+5. Trevor authorizes the se-ranking MCP connector in claude.ai connector settings so weekly pulls and monthly reports are automated.
+6. Cadence: Monday tracker pull appended to this audit; source-table read ~Sept 10 gates placement spend; client reports first week of each month.
