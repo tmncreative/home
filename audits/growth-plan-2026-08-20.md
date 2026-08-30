@@ -418,3 +418,32 @@ Open follow-ups: Kris's domain has no Google Search Console or Bing Webmaster pr
 The law firms page tile now links the case study instead of the bare client domain, and the page is in the sitemap (84 URLs), llms.txt, and IndexNow.
 
 **Open finding: Care to Speak has no TMN credit.** caretospeak.com is live and returns 200 but contains zero references to tmncreative.com. TMN publishes a Care to Speak case study and now cites it as proof on the new therapist page, yet gets no backlink or public corroboration from the client's own domain, unlike SunCraft, LumiClinics, Training Wheels, Ramsay, Promised Land, and Carol Cawley. Worth fixing: locate the current repo (memory says the build was pending Siobhain's review before DNS cutover, so the live site may be a later or client-managed deployment), add the standard footer credit, and redeploy. If the client now controls the site, it becomes a short ask rather than a code change.
+
+### August 29: CPC-first keyword scan — where the expensive clients actually are
+
+Ran CPC as a proxy for client value across 50 vertical terms before the comped SE Ranking units expire Aug 31. CPC is what competitors pay per click, so it prices the client, not the traffic. The result reorders TMN's priorities.
+
+**Legal is worth 4 to 8 times every other vertical TMN serves:**
+
+| Keyword | Volume/mo | CPC | Difficulty |
+| --- | --- | --- | --- |
+| **law firm web design company** | 140 | **$49.37** | **8** |
+| law firm website design | 1,300 | $35.00 | 65 |
+| web design for law firms | 50 | $35.00 | 29 |
+| law firm seo company | 480 | $34.76 | 23 |
+| dental web design company | 320 | $30.00 | 37 |
+| attorney website design | 140 | $28.71 | 41 |
+| veterinary website design | 170 | $28.61 | 9 |
+| chiropractor website design | 390 | $15.64 | 8 |
+| med spa website design | 260 | $12.00 | 6 |
+| cpa website design | 140 | $11.73 | 18 |
+
+**The standout: "law firm web design company" at $49.37 CPC and difficulty 8.** Highest CPC in the entire set and near-zero competition, which almost never happens together. The page used that exact phrase **zero times** while using the difficulty-65 phrase "law firm website design" 11 times. Fixed the same session: the phrase now appears in the title, the proof-section h2, a new FAQ, and FAQPage schema. This is the cheapest high-value ranking available to TMN right now, and Ramsay supplies the proof that makes it credible.
+
+**Also worth building, in order:**
+1. **"best law firm websites" — 590/mo, difficulty 29.** A showcase/inspiration query, which is the exact format AI assistants cite (it is why Web Tonic's lists get cited). Firm owners search this while deciding whom to hire. Ramsay is the worked example.
+2. **"law firm seo company" — 480/mo, $34.76.** Adjacent to the AI Search Optimization add-on but do NOT chase it until TMN can honestly describe ongoing legal SEO work; claiming it now would outrun the evidence.
+3. **Dental at $30 CPC and 320/mo** is the best-paying vertical where TMN has a page but no named client. Converting one dental client unlocks it the way Ramsay unlocked legal.
+4. **Veterinary ($28.61, difficulty 9) and chiropractic ($15.64, difficulty 8)** are high-CPC, near-zero-competition verticals with no TMN page and no proof. Worth building only behind a real client, on the Ramsay pattern: proof first, page second.
+
+12 of these money terms were added to the SE Ranking project (site 12654824) with target URLs so movement is measurable from here.
