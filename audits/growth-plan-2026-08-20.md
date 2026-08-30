@@ -349,3 +349,14 @@ The clone path for the next $1,500/mo account, using what already exists:
 4. Define the subscriber template (this IS the $200/mo deliverable spec): ~10 prompts + ~50 keywords + monthly evidence report per client. Don becomes project #3 if Monday's proposal lands.
 5. Trevor authorizes the se-ranking MCP connector in claude.ai connector settings so weekly pulls and monthly reports are automated.
 6. Cadence: Monday tracker pull appended to this audit; source-table read ~Sept 10 gates placement spend; client reports first week of each month.
+
+### August 29: SE Ranking MCP connected — day-1 setup executed
+
+Trevor authorized the connector; setup ran the same hour via API. Account verified: trevor@tmncreative.com, subscription active through Aug 31 21:08 (Phil's comp), 16,560 of 25,000 API units left. 4 projects exist: tmncreative.com (70 kw), Training Wheels ABA (40 kw), Truck Stop Trader (10 kw), Eagle Nest PG (84 kw) — so TW never needed creating, and 6 subscriber slots remain on Core's 10.
+
+Done:
+- **Prompt group "Vertical buyer prompts" (id 58315) created** on the tmncreative.com project and loaded with the 7 vertical prompts on BOTH the ChatGPT engine (103459) and the Google AI Mode engine (103465) — 14 prompt-engine pairs. The 15 Fort Worth prompts stay for continuity; ~29 of the 100-prompt daily allowance now in use. The project already had all 5 engines configured (ChatGPT, AI Overviews, AI Mode, Perplexity, Gemini).
+- **One documented deviation from verbatim:** baseline prompt #1 (the WealthReach reconstruction) exceeds the tracker's 255-char prompt limit; the tracked version is trimmed ("I'm a financial advisor launching a practice. One vendor builds advisor websites for $500/mo...") and drops the WealthReach name. The Sept 3 MANUAL re-test still uses the full verbatim baseline; the tracker version is directional. Prompts 2-6 and the boutique-HNW AI Mode prompt are verbatim.
+- **Training Wheels: 4 recruiting keywords added** (rbt jobs austin, bcba jobs austin, aba therapist jobs austin, rbt jobs pflugerville), each targeted at /careers. The roadmap's location/Medicaid set (aba therapy south austin / pflugerville / dripping springs, in-home, etc.) was already loaded on 2 engines but shows first_check_date null — checks stalled when the trial lapsed and resume once billing is live.
+
+Still gated on the purchase (draft to Phil staged; self-serve fallback Monday): position checks resuming account-wide, and the first vertical-prompt tracker run. Once the first AI check completes, pull PROJECT_getPromptsRankings + listAirtSourceDomains for group 58315 — that's the vertical source table that gates the placement reserve.
