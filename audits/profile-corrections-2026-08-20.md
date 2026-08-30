@@ -235,3 +235,19 @@ Codex confirmed clean: canonicals, og:url, JSON-LD parsing, breadcrumbs, H1 coun
 - `/lead-generation-websites` placed the archived Walnut showcase under "Built by us. Selected proof." with no qualifier. The tile itself was honestly labeled, but the section intro now states plainly that one tile is an archived design showcase rather than a client engagement. `/financial-services` already handled this correctly and needed no change.
 
 **Still open**, and mostly owned by the parallel session's in-flight work: MarchLife cited on `/healthcare` without a credit on its own domain; the breakaway-advisor guide's categorical legal sequencing; unsourced cost tables on the healthcare and med-spa guides; systemic "booked calls" outcome language; the 3 cannibalization pairs, which are structural decisions for Trevor rather than copy edits; and vertical pages whose proof grids do not match their category promise, which resolves as TMN wins clients in those categories rather than by editing.
+
+### August 30: MarchLife credit added, lender rooms closed
+
+**MarchLife public credit (Trevor approved).** Added a subtle "Site by TMN Creative" link at 55% opacity in the footer legal row of `dist/index.html` at `~/marchlife-site`, deployed to Netlify site `c8b232b3`, and verified live at marchlifeusa.com. Before deploying, all 25 local asset references in the file were checked to exist, because a parallel session had 64 uncommitted lines of new "MarchLife South" content with hero video in the same file. Nothing was missing, so the deploy was safe.
+
+This closes Codex's finding #4: `/healthcare` cited MarchLife as a healthcare launch while its domain carried no TMN credit. With the credit live, MarchLife qualifies under the public-credit rule and has been restored to the healthcare proof paragraph, which now reads 4 live healthcare sites.
+
+**No backlink anywhere in the lender rooms.** Verified before and after: `tmncreative` appears in exactly 1 file, `dist/index.html`, the public marketing homepage. All 9 gated directories contain zero references.
+
+**All lender data rooms closed at Trevor's instruction.** The rooms are not in active use. Each of the 9 edge-function gates (`gate.ts` plus abco, arinaga, bridge, broughton, cp, kennedy, lenders, silverarch) now carries a `ROOM_CLOSED = true` constant and short-circuits every request to a branded closed notice returning HTTP 403, regardless of password. Each `SALT` was also rotated so any existing 14-day session cookie is invalidated and cannot resume if a room is reopened.
+
+**Deliberately reversible: nothing was deleted.** All documents and room content remain in place. Reopening a room is a single flag change, `ROOM_CLOSED = false`, then redeploy. The rotated salt means everyone re-authenticates at that point, which is the correct posture after a closure.
+
+Verified live across all 9 rooms: HTTP 403, the closed notice served, and no TMN backlink. Deep links were checked too, including `/dataroom/index.html`, `/bridge/index.html`, and the `/dataroom/__unlock-financials` path, all 403. The public marketing site still returns 200 with the credit intact.
+
+**A build failure caught a real bug before it shipped.** The first deploy was rejected because a salt-rotation edit dropped a closing quote in `gate-lenders.ts`, producing an unterminated string. Netlify's edge bundler refused to build, so the broken gate never reached production. Fixed and redeployed clean. Worth noting as evidence that the edge-function build step is a genuine safety gate on this site.
