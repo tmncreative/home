@@ -447,3 +447,26 @@ Ran CPC as a proxy for client value across 50 vertical terms before the comped S
 4. **Veterinary ($28.61, difficulty 9) and chiropractic ($15.64, difficulty 8)** are high-CPC, near-zero-competition verticals with no TMN page and no proof. Worth building only behind a real client, on the Ramsay pattern: proof first, page second.
 
 12 of these money terms were added to the SE Ranking project (site 12654824) with target URLs so movement is measurable from here.
+
+### August 29: second CPC pass — the buying-intent vein, and a 40x demand trend
+
+**Best find of the session: "law firm website design cost" at $27.73 CPC and difficulty 5.** Near-zero competition on a query with explicit buying intent, and TMN's actual differentiator is the answer to it, since almost no legal web vendor publishes prices. Paired with "how much does a law firm website cost" at difficulty 6.
+
+Shipped `/law-firm-website-design-cost` the same session: real ranges for all 4 routes (template legal platform, freelancer, independent studio, legal marketing agency), the legal-specific price drivers that separate a $3,000 quote from a $30,000 one (bar advertising compliance, practice-area depth, who writes the legal copy, results disclaimers, intake integrations, new-firm versus established), TMN's published tiers, and 6 FAQs with matching FAQPage schema. Cross-linked from the law firms page and the general cost guide, and it uses Ramsay as the worked example for the new-firm case.
+
+Other terms from this pass:
+
+| Keyword | Volume/mo | CPC | Difficulty | Note |
+| --- | --- | --- | --- | --- |
+| small law firm website design | 170 | **$39.85** | 29 | second-highest CPC found |
+| law firm marketing agency | 260 | $29.88 | 41 | agency-tier query |
+| dental marketing agency | 150 | $20.14 | 33 | |
+| financial advisor marketing agency | 70 | $16.95 | 19 | winnable, TMN has advisor pages |
+| medical spa marketing agency | 320 | $15.00 | 18 | winnable |
+| **healthcare marketing agency** | **4,400** | $11.28 | 52 | see trend note |
+| best websites for law firms | 590 | $7.00 | 31 | showcase format |
+| law firm website examples | 70 | $6.94 | 20 | |
+
+**The trend worth watching: "healthcare marketing agency" went from 110 to 4,400 searches per month over 12 months.** The monthly sparkline reads 110, 90, 205, 320, 540, 590, 360, 1800, 1500, 2400, 2400, 4400. That is a 40x rise and still climbing, the steepest demand curve in anything scanned. Difficulty 52 puts it out of reach today, and TMN is a web studio rather than a full marketing agency, so the honest play is not to chase the head term but to keep building the healthcare cluster underneath it while demand rises. Re-check this term monthly.
+
+7 more terms added to SE Ranking tracking, bringing the money-term set to 19 with target URLs attached.
