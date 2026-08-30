@@ -11,6 +11,9 @@ a{color:inherit}
   --ink-2:oklch(31% 0.032 258);
   --muted:oklch(49% 0.024 252);
   --soft:oklch(68% 0.018 248);
+  --ink-mid:var(--muted);
+  --ink-soft:var(--muted);
+  --ink-faint:var(--soft);
   --line:oklch(89% 0.012 248);
   --line-2:oklch(92.5% 0.009 248);
   --accent:oklch(70% 0.107 85);
@@ -19,6 +22,8 @@ a{color:inherit}
   --sans:'IBM Plex Sans',system-ui,-apple-system,sans-serif;
   --mono:'Geist Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
   --rail:clamp(1rem,3vw,2.5rem);
+  --r-md:8px;
+  --e:cubic-bezier(.25,1,.5,1);
 }
 .skip{position:absolute;left:1rem;top:1rem;z-index:100;transform:translateY(-160%);background:var(--ink);color:var(--paper);padding:.7rem 1rem;border-radius:4px;text-decoration:none}
 .skip:focus{transform:none}
