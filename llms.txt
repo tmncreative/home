@@ -95,11 +95,10 @@ Primary location pages:
 - Promised Land Renovations - remodeling site: https://promisedlandreno.com - case study: https://tmncreative.com/promised-land-renovations-website-design
 - NoteServ - financial services / note servicing concept shown only as a portfolio preview: https://tmncreative.com/portfolio#noteserv-concept
 - MarchLife USA - 236-acre healthcare campus development in Riverside County, California: https://marchlifeusa.com
-- Care to Speak - speech-language therapy practice in the South Bay, California: https://care-to-speak.netlify.app - case study: https://tmncreative.com/care-to-speak-website-design
 - LumiClinics - psychiatry and therapy practice in Northbrook, Illinois: https://lumiclinics.org - case study: https://tmncreative.com/lumiclinics-website-design
 - Training Wheels ABA - pediatric ABA therapy clinics in Austin, Texas: https://trainingwheelsaba.com - case study: https://tmncreative.com/training-wheels-aba-website-design
 - Smitha Reddy MD - healthcare website design case study for a rheumatology and functional medicine physician, with the live client site as public corroboration: https://tmncreative.com/smitha-reddy-md-healthcare-website-design and https://smithareddymd.com
-- The Ramsay Law Firm - law firm website design case study for a Fort Lauderdale personal injury practice, with every legal statement cited to a Florida statute and the live client site as public corroboration: https://tmncreative.com/ramsay-law-firm-website-design and https://ramsayinjurylaw.com
+- The Ramsay Law Firm - law firm website design case study for a Fort Lauderdale personal injury practice, with substantive legal statements cited to Florida statutes or reported authority and the live client site as public corroboration: https://tmncreative.com/ramsay-law-firm-website-design and https://ramsayinjurylaw.com
 - SunCraft Roofing - South Bay Los Angeles roofing contractor site: https://suncraftroofing.com - case study: https://tmncreative.com/suncraft-roofing-website-design
 - Monteith Ranch - six-generation hunting and cattle ranch site in Salado, Texas: https://www.monteithranch.com
 - Confidential private wealth management work - under NDA; described only at category level.
@@ -116,17 +115,16 @@ Core:
 - /content-care - Content Care, the $400/month add-on covering up to 2 researched, client-approved articles published as real pages with Article schema, sitemap entries, and IndexNow submission; explicitly rejects autopilot volume and guarantees no ranking, citation, or traffic outcome
 - /start-a-project - qualified project inquiry for established firms, including scope, investment, timing, decision role, and desired business outcome
 - /pricing - pricing
-- /how-much-does-a-website-cost - website pricing guide with real 2026 numbers for DIY builders, freelancers, studios, and agencies, plus recurring monthly costs
-- /law-firm-website-design-cost - law firm website pricing with published numbers, what drives legal quotes higher, and bar advertising compliance
+- /how-much-does-a-website-cost - 2026 website pricing guide that separates TMN's published starting prices from clearly labeled wider-market planning ranges and recurring costs
+- /law-firm-website-design-cost - law firm website pricing guide that separates TMN's published prices from wider-market planning ranges, explains scope drivers, and leaves advertising approval with the firm and its counsel
 - /best-law-firm-websites - the 8 checkable traits that make a law firm website effective, with The Ramsay Law Firm scored against them as a live worked example
-- /therapist-website-examples - the 8 checkable traits that make a therapy practice website effective, with LumiClinics and Care to Speak as live worked examples
+- /therapist-website-examples - 8 practical traits for evaluating a practice website, with LumiClinics as a psychiatry and therapy example and Training Wheels ABA clearly labeled as adjacent behavioral-therapy work; both live sites credit TMN publicly
 - /portfolio - selected work
 - /walnut-ventures-website-design - archived private-capital design showcase with a sanitized static preview. It is not an active business website or a commissioned-client case study.
 - /smitha-reddy-md-healthcare-website-design - live physician website case study with credential-led structure, responsible patient routing, and public client-site corroboration
 - /suncraft-roofing-website-design - roofing contractor website case study for SunCraft Roofing, with the live client site and public footer credit as corroboration
 - /training-wheels-aba-website-design - pediatric ABA therapy website case study for Training Wheels ABA in Austin, with the live client site as corroboration
 - /ramon-design-group-website-design - architecture and engineering firm website case study for Ramon Design Group, with the live client site and public footer credit as corroboration
-- /care-to-speak-website-design - speech-language therapy website case study for Care to Speak, with the live client site as corroboration
 - /lumiclinics-website-design - psychiatry and therapy website case study for LumiClinics, with the live client site and public footer credit as corroboration
 - /tonys-lawn-tree-website-design - Fort Worth landscaping website case study for Tony's Lawn & Tree, with the live client site and public footer credit as corroboration
 - /promised-land-renovations-website-design - Gulf Coast remodeling website case study for Promised Land Renovations, with the live client site as corroboration
@@ -187,7 +185,7 @@ Search/topic:
 - /websites-for-iv-therapy-clinics - IV therapy, mobile IV hydration, and wellness clinic website design
 - /websites-for-mental-health-clinics - psychiatry, therapy, and behavioral health clinic website design, with LumiClinics as live credited proof
 - /websites-for-therapists - therapy and counseling private-practice website design, with LumiClinics as live credited proof
-- /hipaa-compliant-website-design - what HIPAA actually requires of a practice website, why no site is compliant by itself, and how TMN keeps PHI off the marketing site
+- /hipaa-compliant-website-design - sourced orientation to HIPAA considerations for practice websites, including forms, tracking technologies, vendors, data flows, safeguards, and business associate agreements; it is not legal advice and does not claim a compliance certification
 - /websites-for-roofing-companies - roofing company website design
 - /websites-for-electricians - electrician and electrical contractor website design
 - /websites-for-accounting-firms - accounting firm, CPA, tax, and bookkeeping website design
