@@ -360,3 +360,17 @@ Done:
 - **Training Wheels: 4 recruiting keywords added** (rbt jobs austin, bcba jobs austin, aba therapist jobs austin, rbt jobs pflugerville), each targeted at /careers. The roadmap's location/Medicaid set (aba therapy south austin / pflugerville / dripping springs, in-home, etc.) was already loaded on 2 engines but shows first_check_date null — checks stalled when the trial lapsed and resume once billing is live.
 
 Still gated on the purchase (draft to Phil staged; self-serve fallback Monday): position checks resuming account-wide, and the first vertical-prompt tracker run. Once the first AI check completes, pull PROJECT_getPromptsRankings + listAirtSourceDomains for group 58315 — that's the vertical source table that gates the placement reserve.
+
+### August 29: keyword-demand scan through the SE Ranking connector (comped units, expiring Aug 31)
+
+Question inventory: vertical question seeds ("financial advisor website," "roofing website," "medical practice website") return ZERO question keywords — the buyer questions live in AI chats, not Google's question data, consistent with the attribution audit. But the generic "website cost" cluster carries 125 question keywords at 320-590 searches/mo each ("how much does it cost to have a website" 590/mo, "how much does a website cost per month" 480/mo), most showing the SGE/AI Overview SERP feature — i.e., this cluster feeds AI answers.
+
+Vertical commercial terms (US monthly volume / difficulty):
+- law firm website design: 1,300 / 65, $35 CPC — biggest vertical by far; TMN's only legal proof is 2 noindexed spec sites (JD Milks, Ramsay). The $35 CPC also prices what a law-firm CLIENT is worth.
+- therapy website design 590/22 + website design for therapists 590/27 — LOW difficulty, real volume, and TMN holds named proof (Care to Speak, LumiClinics). Strongest content gap.
+- medical website design 590/23 and healthcare website design 390/29, both spiking in recent months.
+- roofing website design 320/**8** and med spa website design 260/**6** — near-zero difficulty where TMN already has proof (SunCraft; Web Tonic med spa #21). Existing pages should be tuned to these exact phrases.
+- financial advisor website design 90/18, ria website design 20 — tiny Google volume for TMN's best AI vertical, confirming again that AI demand is invisible in keyword tools.
+- Vertical cost questions ("how much does a financial advisor website cost") = no measured volume → build ONE definitive general pricing guide with real numbers plus per-vertical cost sections on existing pages, not thin standalone pages.
+
+Priority actions this creates: (1) "website design for therapists" page + content (1,180/mo combined, winnable difficulty, named clients in hand); (2) a real-numbers "how much does a website cost" guide targeting the 125-question cluster (TMN publishes actual prices, the exact trait ChatGPT rewarded in the baseline); (3) on-page tuning of roofing + med spa pages to the diff-6-8 exact phrases; (4) revenue note: converting either legal spec (JD Milks or Ramsay) into a paying named client unlocks the 1,300/mo legal vertical.
