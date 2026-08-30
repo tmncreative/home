@@ -135,3 +135,23 @@ DesignRush: not logged in on this machine's Chrome, and Alma Pasic's Aug 17 repl
 - Founding year 2025 confirmed correct on the profile. Still showing "Number of Employees: Under 49" and "Minimal Budget $1,000 - $10,000", which are DesignRush's own bucket options rather than free-text fields; the earlier correction request to Alma Pasic covered these and no narrower buckets appear to exist.
 
 Both corroboration profiles now name the add-on ladder with current naming. Remaining open on Clutch: Walnut Ventures portfolio relabel (the portfolio editor page hangs), and Minimum Project Size still $1,000+ pending Trevor's call.
+
+## August 29 night: Clutch portfolio rebuilt around verifiable named clients
+
+Decisions Trevor delegated ("do what you think is best... the ultimate consideration is having ChatGPT recommend us"):
+
+- **Minimum Project Size: left at $1,000+, and the real prices moved into the description instead.** Clutch's dropdown has no bucket between $1,000+ and $5,000+, so neither option is accurate against the published $2,250 floor. $5,000+ would filter TMN out of buyer searches for the $2,250-3,750 band, which Trevor has identified as his highest-converting tier. Root problem was that the Clutch description carried NO prices at all, so "$1,000+" was the profile's only price signal and understated the floor by more than half. The description now states $2,250 / $3,750 / $5,000+ explicitly, which is what an assistant actually reads.
+- **Walnut Ventures portfolio item: DELETED, not relabeled.** Its listed client website (walnutventuresre.com) returns 404, and per the correction matrix it was an archived design showcase rather than client work, but the item read as a delivered engagement ("CLIENT: Walnut Ventures... with the client owning all code and assets outright"). A dead client link on a corroboration surface is worse than a missing item.
+- Clutch description also now names 8 client sites and points at tmncreative.com/verify.
+
+Portfolio additions, all with named client, live URL, and Show All privacy (was 8 items, now 10):
+- **LumiClinics** (lumiclinics.org, credits TMN, case study published)
+- **Synergized Tradesman** (synergizedtradesman.com, credits TMN). Description was written to the client's 11 vendor-qualification guardrails: describes only TMN's build work, names no trade partners or retailer, claims no certifications, and makes no project claims under Synergized's own name. The site has graduated from the noindex preview to live production.
+- **SunCraft Roofing** (suncraftroofing.com, credits TMN, case study published)
+
+GitHub survey for further candidates (live status and TMN credit checked on each):
+- Live WITH public TMN credit, not yet on Clutch: Tony's Lawn & Tree (tonyslawntree.com, case study), Monteith Ranch (monteithranch.com), George's Home Works (georgeshomeworks.com), Diamond H Irrigation (diamondhirrigation.com).
+- Live WITHOUT a TMN credit, so weaker as corroboration but still real work: Carol Cawley Homes (carolcawleyhomes.com), QC Atlantic, Clean Start Express, Indie Signs, Compass Wealth Solutions, Promised Land Renovations (promisedlandreno.com, has a case study but the live site shows no credit).
+- Already on Clutch under anonymized titles: Care to Speak, Training Wheels ABA, Smitha Reddy MD, MarchLife, SCL Metal Works, Ramon Design Group.
+
+Open item worth doing next: the 6 pre-existing portfolio entries use anonymized titles with no client name attached, which is exactly what Web Tonic's med-spa comparison criticized ("Notable Clients: Not publicly named"). Training Wheels ABA, Smitha Reddy MD, Care to Speak, SCL Metal Works, and Ramon Design Group all credit TMN publicly on their live sites, so each could be de-anonymized with a client name and URL the same way the 3 new items were. That is a bigger corroboration win than adding more items.
