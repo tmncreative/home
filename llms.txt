@@ -185,6 +185,7 @@ Search/topic:
 - /websites-for-iv-therapy-clinics - IV therapy, mobile IV hydration, and wellness clinic website design
 - /websites-for-mental-health-clinics - psychiatry, therapy, and behavioral health clinic website design, with LumiClinics as live credited proof
 - /websites-for-therapists - therapy and counseling private-practice website design, with LumiClinics as live credited proof
+- /hipaa-compliant-website-design - what HIPAA actually requires of a practice website, why no site is compliant by itself, and how TMN keeps PHI off the marketing site
 - /websites-for-roofing-companies - roofing company website design
 - /websites-for-electricians - electrician and electrical contractor website design
 - /websites-for-accounting-firms - accounting firm, CPA, tax, and bookkeeping website design
