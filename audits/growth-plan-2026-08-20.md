@@ -392,3 +392,19 @@ Priority actions this creates: (1) "website design for therapists" page + conten
 3. **website redesign cost — 260/mo, difficulty 16** and **how much does a wordpress website cost — 140/mo, difficulty 15.** Both are natural sub-sections or siblings of the new cost guide rather than standalone thin pages.
 4. **Law firm websites remain the largest single vertical: 1,300/mo at $35 CPC.** TMN's only legal proof is 2 noindexed spec sites. Converting JD Milks or Ramsay into a paying named client is what unlocks it.
 5. **Bing Places** — setup sheet with canonical NAP at `audits/bing-places-setup-2026-08-29.md`. Blocked at the sign-in wall; Trevor-only. Matters because ChatGPT browses on Bing's index.
+
+### August 29 (later): Ramsay converted, and his launched site was blocked from search
+
+Trevor reported Kris Ramsay converted, paid, and launched. Verification found a live problem worth recording as a process lesson.
+
+**ramsayinjurylaw.com was live, credited TMN, and was invisible to every search engine.** The build's `PREVIEW = True` launch toggle in `build_pages.py` had never been flipped, so the production site served `<meta name="robots" content="noindex, nofollow">` on all 18 pages plus a `robots.txt` reading `Disallow: /`. A paying client's brand-new firm site could not be indexed or found, and TMN's backlink from it counted for nothing.
+
+Fixed the same session: flipped `PREVIEW = False`, rebuilt (102 files), deployed to Netlify site 97687072 per DELIVERY.md, and verified live: robots.txt now `Allow: /` with the sitemap declared, 0 noindex tags on the homepage, 16 URLs in the sitemap.
+
+**Backlink verified at Trevor's request:** `<a href="https://tmncreative.com/">TMN Creative</a>` on the firm's own domain, **no nofollow**, present on **18 of 18** pages. Now that indexing is open, it is a real followable backlink rather than a dead one.
+
+**Process lesson worth keeping:** any build that ships behind a preview flag needs the flag flip verified against the LIVE production URL at launch, not assumed from the deploy succeeding. The same pattern applies to JD Milks and any future spec-to-client conversion. Check `curl <domain>/robots.txt` and grep the live HTML for noindex as the last launch step.
+
+**TMN payoff, shipped:** `/websites-for-law-firms` now leads its proof section with The Ramsay Law Firm, P.A. (Fort Lauderdale personal injury), replacing the SCL Metal Works tile, which was iron doors on a legal page. Added a full-page screenshot tile linking to the live firm site, rewrote the proof headline to "Built by us. Including a live law firm.", and added a "Have you actually built a law firm website?" FAQ with a matching FAQPage schema entry. This is the unlock for the largest vertical in the keyword scan: **law firm website design, 1,300/mo at a $35 CPC**, where TMN previously had only 2 noindexed spec sites and now has named, checkable, live proof.
+
+Open follow-ups: Kris's domain has no Google Search Console or Bing Webmaster property yet, so discovery relies on the sitemap alone (worth setting up, Trevor/Kris side). The law firms page also carries 3 pre-existing em dashes in body copy that violate the marketing voice rules; a site-wide sweep is a separate decision, none were introduced by this change.
