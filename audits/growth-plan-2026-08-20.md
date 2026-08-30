@@ -470,3 +470,28 @@ Other terms from this pass:
 **The trend worth watching: "healthcare marketing agency" went from 110 to 4,400 searches per month over 12 months.** The monthly sparkline reads 110, 90, 205, 320, 540, 590, 360, 1800, 1500, 2400, 2400, 4400. That is a 40x rise and still climbing, the steepest demand curve in anything scanned. Difficulty 52 puts it out of reach today, and TMN is a web studio rather than a full marketing agency, so the honest play is not to chase the head term but to keep building the healthcare cluster underneath it while demand rises. Re-check this term monthly.
 
 7 more terms added to SE Ranking tracking, bringing the money-term set to 19 with target URLs attached.
+
+### August 29: the compliance vein — a difficulty-0 keyword with real commercial value
+
+Long-tail mining on "law firm website" returned 147 terms at $10+ CPC and difficulty under 30, and surfaced a theme worth chasing on its own: compliance. Testing it produced the least-contested valuable keyword found all session.
+
+| Keyword | Volume/mo | CPC | Difficulty |
+| --- | --- | --- | --- |
+| **hipaa compliant website** | 260 | $7.34 | **0** |
+| hipaa compliant website design | 70 | $11.15 | **6** |
+| website accessibility audit | 390 | $8.43 | 52 |
+| website accessibility remediation | 50 | $7.98 | **6** |
+| ada compliant website design | 480 | $4.39 | 31 |
+| is my website ada compliant | 210 | $4.25 | 43 |
+| ada website lawsuit | 210 | $3.70 | 23 |
+| ada compliant website | 1,300 | $2.27 | 73 |
+
+**"hipaa compliant website" is difficulty 0 with 260 searches a month, and demand jumped roughly 26x in-year** (sparkline 20, 20, 15, 10, 20, 10, 10, 480, 390, 320, 320, 260). Difficulty 0 on a commercially valuable term is close to unheard of, and TMN has 4 healthcare builds plus genuine practice in this area, so the page is honest rather than opportunistic.
+
+Shipped `/hipaa-compliant-website-design`, and the angle matters: **the page leads by correcting the premise.** No website is "HIPAA compliant" by itself, because compliance belongs to the covered entity. Anyone selling a compliance badge is selling a badge. That correction is the most useful thing a practice owner can read, and it is the kind of restraint ChatGPT rewarded in every baseline test where overclaims got discounted.
+
+The page covers what the rule actually governs (entities not files, PHI as the line, business associate agreements, tracking-technology scrutiny), how TMN builds around it (no PHI collected, intake routed to the practice's own platform, privacy-friendly analytics by default, clinical content published only after client approval), names LumiClinics, Training Wheels, and Smitha Reddy as credited proof, and carries 6 FAQs with schema. It states plainly that it is not legal advice and that the privacy officer and counsel govern.
+
+**Also note "ada compliant website": 1,300/mo and the steepest curve after healthcare marketing agency** (160 to 4,400 in 12 months). Difficulty 73 puts the head term out of reach, but "website accessibility remediation" at difficulty 6 and "ada website lawsuit" at 23 are reachable entries into the same demand if TMN wants the accessibility angle later.
+
+Money-term tracking set now 24 keywords with target URLs.
