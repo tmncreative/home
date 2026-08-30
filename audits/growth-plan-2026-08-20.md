@@ -236,3 +236,29 @@ Shipped live (commit 4ded146, IndexNow 200 for 8 URLs): primary name AI Search O
 New 6-question owner FAQ on /ai-visibility in literal buyer phrasings (what is it / how do I get ChatGPT to recommend my business / why don't I show up / does ChatGPT read my site / how do you optimize / can you guarantee, answered No-first), claim-disciplined per primary sources, with matching FAQPage schema carried for semantics only - Google removed FAQ rich results in 2026 and no engine documents preferential FAQPage treatment, so no benefit is forecast from the markup itself. OAI-SearchBot claim tightened to OpenAI's own wording (eligible to appear in ChatGPT search answers, not "cited"). Proof block now cites only documented evidence: one forwarded ChatGPT conversation and one form self-attribution ("chatgpt" typed into how-did-you-hear). Contextual links added: care page body, financial-services AI FAQ answer, credibility page AI FAQ answer, plus reciprocal links from the FAQ to /verify and 3 vertical pages. Service schema now points provider at the canonical #org entity with WebPage mainEntity wired, on all 3 add-on pages.
 
 Deferred by design: a standalone owner-question guide page waits for GSC informational-query impressions to justify it. Trevor-side when next in the dashboards: add the service to the Clutch and DesignRush service descriptions, since audit evidence shows assistants corroborate TMN through those profiles.
+
+## August 29: attribution audit of every captured TMN inquiry — ChatGPT is 4 of 5, and the tracking undercounts it
+
+Pulled the raw Netlify form submissions and compared each lead's machine-captured attribution against its self-reported source:
+
+| Lead | Date | Machine "Lead Source" | Ai Source field | First landing | Self-reported |
+| --- | --- | --- | --- | --- | --- |
+| Josh Henkin, DVRT Fitness ($5-10K) | Aug 18 | www.google.com | **blank** | `/` (homepage) | **chatgpt** |
+| Don Hilario, Hilpan Moxie | Aug 27 | Direct / unknown | **blank** | `/pricing` | **chatgpt** |
+| Andrew Stout, Stout Realty | Aug 28 | www.google.com | blank | `/real-estate` | google-search |
+| Jon Parks, Parks Wealth | Aug | n/a (email intro) | n/a | n/a | **forwarded the actual ChatGPT transcript** |
+| Mel Brown | Aug | Google brand search | blank | n/a | chatgpt / other AI |
+
+**The automated AI detection captured zero of them.** Every single ChatGPT-sourced lead has a blank `Ai Source` and `First Ai Source`. The only reason any of this is known is the optional "How did you hear about TMN?" dropdown. Two distinct blind spots cause it:
+
+1. **Brand search laundering.** Josh Henkin heard about TMN through ChatGPT, then Googled "TMN Creative" and landed on the homepage. Analytics recorded him as Google organic. Without his self-report he would be filed as a Google lead. Mel Brown followed the same path.
+2. **Referrer stripping.** Don Hilario came in as "Direct / unknown" because the ChatGPT app and mobile clients strip the referrer. No `utm_source=chatgpt.com` ever arrived.
+
+So the honest read is not "some leads are from ChatGPT." It is: **4 of 5 captured inquiries trace to ChatGPT, and the analytics stack attributes exactly 0 of them to it.** Trevor's instinct is correct and the dashboards are wrong.
+
+The one genuine exception is Andrew Stout, and he is instructive rather than contradictory: he landed on `/real-estate`, a vertical page, from a non-brand Google query, and selected google-search. That is the vertical-page SEO strategy working on its own merits, which is worth protecting as a second channel rather than treating everything as AI.
+
+**Consequences:**
+- Never judge the AI channel by referrer data or by Fathom/GA source reports. They will always show Google and Direct. The self-report dropdown is the only working instrument, which makes keeping it on every form non-negotiable.
+- This independently supports the Aug 29 decision not to buy Clutch directory placement: zero captured leads came from a Fort Worth local directory query, while the vertical and national AI path produced nearly all of them.
+- The Sept 3 ChatGPT re-test is the right measurement for the channel that is actually producing revenue.
