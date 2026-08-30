@@ -318,9 +318,9 @@ Two facts that re-aim the plan:
 What survives unchanged:
 - **Don, Monday**: the stack in the initial proposal (a proposal line, not an upsell) — $450-500/mo.
 - **LumiClinics**: the $400/mo Content Care approach stands because it is not a re-sell — it is a new, documented defect discovered after purchase (their journal is invisible to crawlers). Coming back with a finding is service; coming back with a price sheet is an upsell.
-- The SE Ranking renewal gains a 4th justification: Training Wheels' own September management report needs rank/keyword data, and their trial expired 8/6 with ~80K of 100K units unused. The tool now serves the $1,600/mo account's deliverable, the $200/mo product's delivery, the targeting map, and dogfood proof.
+- The SE Ranking renewal gains a 4th justification: Training Wheels' own September management report needs rank/keyword data, and their trial expired 8/6 with ~80K of 100K units unused. The tool now serves the $1,500/mo account's deliverable, the $200/mo product's delivery, the targeting map, and dogfood proof.
 
-The clone path for the next $1,600/mo account, using what already exists:
+The clone path for the next $1,500/mo account, using what already exists:
 - Training Wheels case study **with numbers, pending their permission**: 62 real leads Jul 1-Aug 7, 860 uniques, 60 five-star reviews at 92%, WordPress replaced Jul 1 — all server-verified in the Aug management report. This is exactly the evidence class ChatGPT cited for every winner on baseline prompt #5 (multi-location ABA group), where Cardinal won partly on recruiting metrics — and TW's 28 careers applications ARE recruiting metrics.
 - The multi-location clinic-group story (location pages roadmap) becomes a vertical page once the case study carries numbers.
 - Revised 60-day recurring target: Don ~$500 + LumiClinics $400 + DVRT care attach at launch + stack-by-default on every new proposal, with the real prize being 1 new multi-location group at the TW retainer shape ($1,500/mo).
