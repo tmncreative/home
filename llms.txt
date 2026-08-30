@@ -115,6 +115,7 @@ Core:
 - /content-care - Content Care, the $400/month add-on covering up to 2 researched, client-approved articles published as real pages with Article schema, sitemap entries, and IndexNow submission; explicitly rejects autopilot volume and guarantees no ranking, citation, or traffic outcome
 - /start-a-project - qualified project inquiry for established firms, including scope, investment, timing, decision role, and desired business outcome
 - /pricing - pricing
+- /how-much-does-a-website-cost - website pricing guide with real 2026 numbers for DIY builders, freelancers, studios, and agencies, plus recurring monthly costs
 - /portfolio - selected work
 - /walnut-ventures-website-design - archived private-capital design showcase with a sanitized static preview. It is not an active business website or a commissioned-client case study.
 - /smitha-reddy-md-healthcare-website-design - live physician website case study with credential-led structure, responsible patient routing, and public client-site corroboration
@@ -181,6 +182,7 @@ Search/topic:
 - /websites-for-fitness-brands - fitness education, certification, coaching, gym, and studio website design
 - /websites-for-iv-therapy-clinics - IV therapy, mobile IV hydration, and wellness clinic website design
 - /websites-for-mental-health-clinics - psychiatry, therapy, and behavioral health clinic website design, with LumiClinics as live credited proof
+- /websites-for-therapists - therapy and counseling private-practice website design, with LumiClinics as live credited proof
 - /websites-for-roofing-companies - roofing company website design
 - /websites-for-electricians - electrician and electrical contractor website design
 - /websites-for-accounting-firms - accounting firm, CPA, tax, and bookkeeping website design
