@@ -495,3 +495,20 @@ The page covers what the rule actually governs (entities not files, PHI as the l
 **Also note "ada compliant website": 1,300/mo and the steepest curve after healthcare marketing agency** (160 to 4,400 in 12 months). Difficulty 73 puts the head term out of reach, but "website accessibility remediation" at difficulty 6 and "ada website lawsuit" at 23 are reachable entries into the same demand if TMN wants the accessibility angle later.
 
 Money-term tracking set now 24 keywords with target URLs.
+
+### August 29: conversion pass, full indexing sweep, and the Bing AI citation baseline
+
+**A negative finding worth recording so nobody re-runs it:** the pain-point keyword vein is thin. "my website is slow", "outdated website", "website not converting", "do i need a new website", "signs you need a new website" all sit at 10 to 110 searches per month with little commercial value. The one exception is "website conversion rate optimization" at 390/mo and $28.96 CPC, but difficulty 48 and it is a service TMN does not sell standalone. Compliance, legal, and cost were the productive veins; problem-awareness queries are not.
+
+**Conversion pass across the 6 new and updated pages.** The free 48-hour homepage preview is TMN's lowest-friction offer and it was missing from three hero paths, so it is now a hero CTA on the therapist, HIPAA, and law-firm-cost pages. `/verify` was absent from three pages and is now on all six, which matters specifically for AI-referred buyers, since the Jon Parks transcript showed ChatGPT prompting a buyer to corroborate TMN before recommending it. Pricing now appears on the Ramsay case study, which previously ended without a number.
+
+Verified state across all six: FAQPage schema present (6 to 9 questions each; the Ramsay case study correctly uses CreativeWork instead), in sitemap, in llms.txt, `/verify` linked, `/free-review` linked, and the $2,250 floor visible.
+
+**Indexing sweep completed:**
+- **IndexNow: all 86 sitemap URLs** submitted in one call, HTTP 200. This reaches Bing, Yandex, and other participants.
+- **Google Search Console:** sitemap resubmitted (it had last been read at 77 pages, predating the 9 new URLs). Note for next time: a domain property rejects a relative path such as `sitemap.xml` with "Invalid sitemap address" and requires the full `https://tmncreative.com/sitemap.xml`. Then requested priority indexing on all 5 new pages via URL Inspection; each returned "URL was added to a priority crawl queue." All 5 showed "Discovered, currently not indexed", meaning Google had found them through the sitemap but had not crawled them yet, which is exactly what the manual request accelerates.
+- **Bing Webmaster URL Submission:** 6 URLs accepted, 94 of the 100 daily quota remaining.
+
+**New instrument found: Bing Webmaster Tools has an AI Performance report (beta)** at `/webmasters/aiperformance`, showing citations in Microsoft Copilot and partner AI surfaces. It is free, direct, and measures actual AI citations rather than prompt sampling, which makes it a useful complement to SE Ranking's prompt tracker.
+
+**The baseline it gives is stark and worth stating plainly: 2 total citations across 3 months.** A single spike of 2 citations on 1 page on July 15, 2026, and zero on all 88 other days. No grounding queries recorded at all. That is the honest starting point for TMN's AI citation visibility, measured rather than estimated, and it is the number the entire content program should be judged against. Check monthly alongside the SE Ranking prompt tracker and the Sept 3 manual ChatGPT re-test.
