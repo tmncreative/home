@@ -66,6 +66,7 @@
     .ai-only{display:none}
     body.ai-visibility-inquiry .project-only{display:none!important}
     body.ai-visibility-inquiry .ai-only{display:grid}
+    body.ai-visibility-inquiry #scope-row{grid-template-columns:1fr}
     body.ai-visibility-inquiry .hero::before{display:none}
     body.ai-visibility-inquiry h1,
     body.ai-visibility-inquiry h2{font-family:var(--sans);font-style:normal;font-weight:400;letter-spacing:-.04em}
@@ -81,13 +82,13 @@
     .proof{padding:clamp(4rem,7vw,6.5rem) var(--rail);background:var(--ink);color:white}.section-inner{width:min(1180px,100%);margin:auto}.section-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-bottom:2rem}.section-head h2{font-size:clamp(2.4rem,4vw,4.1rem);max-width:14ch}.section-head p{max-width:46ch;color:oklch(76% .014 245)}
     .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.work{background:oklch(22% .03 260);border:1px solid oklch(100% 0 0/.09);border-radius:14px;overflow:hidden;text-decoration:none}.work img{width:100%;aspect-ratio:1.45;object-fit:cover;object-position:top}.work-copy{padding:1rem 1.1rem 1.2rem}.work-copy strong{display:block}.work-copy span{font-size:.79rem;color:oklch(70% .015 245)}
     .process{padding:clamp(4rem,7vw,6.5rem) var(--rail)}.process h2{font-size:clamp(2.4rem,4vw,4rem);margin-bottom:2rem}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.step{padding:1.45rem;border:1px solid var(--line);border-radius:14px;background:var(--paper)}.step-num{font-family:var(--mono);color:var(--gold-deep);font-size:.68rem;letter-spacing:.1em;margin-bottom:.8rem}.step h3{font-size:1.1rem;margin-bottom:.45rem}.step p{font-size:.91rem;color:var(--mid)}
-    .faq{padding:0 var(--rail) clamp(4rem,7vw,6.5rem)}.faq-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(2rem,6vw,6rem)}.faq h2{font-size:clamp(2.3rem,4vw,3.8rem)}details{border-top:1px solid var(--line);padding:1rem 0}details:last-child{border-bottom:1px solid var(--line)}summary{font-weight:600;cursor:pointer;list-style:none;padding-right:2rem;position:relative}summary::after{content:'+';position:absolute;right:.2rem;color:var(--gold-deep)}details[open] summary::after{content:'–'}details p{color:var(--mid);font-size:.92rem;padding-top:.7rem;max-width:64ch}
+    .faq{padding:0 var(--rail) clamp(4rem,7vw,6.5rem)}.faq-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(2rem,6vw,6rem)}.faq h2{font-size:clamp(2.3rem,4vw,3.8rem)}details{border-top:1px solid var(--line);padding:1rem 0}details:last-child{border-bottom:1px solid var(--line)}summary{font-weight:600;cursor:pointer;list-style:none;padding-right:2rem;position:relative}summary::before,summary::after{content:'';position:absolute;right:.2rem;top:50%;background:var(--gold-deep);transform:translateY(-50%);transition:transform .2s var(--ease)}summary::before{width:1px;height:11px;right:.53rem}summary::after{width:11px;height:1px}details[open] summary::before{transform:translateY(-50%) scaleY(0)}details p{color:var(--mid);font-size:.92rem;padding-top:.7rem;max-width:64ch}
     footer{padding:2.2rem var(--rail);background:oklch(13% .03 262);color:oklch(70% .014 245)}.foot-inner{width:min(1180px,100%);margin:auto;display:flex;justify-content:space-between;gap:1rem;align-items:center;font-size:.78rem}.foot-inner a{color:var(--gold)}
     @media(max-width:900px){.hero-inner{grid-template-columns:1fr}.hero-copy{max-width:760px}.form-card{max-width:720px}.section-head{display:block}.section-head p{margin-top:1rem}.work-grid,.steps{grid-template-columns:1fr 1fr}.faq-grid{grid-template-columns:1fr}}
     @media(max-width:640px){.nav-links a:not(.nav-primary){display:none}.hero{padding-top:3.25rem}h1{font-size:clamp(2.75rem,14vw,4.5rem)}.fit-line{grid-template-columns:1fr}.metric{padding:.75rem 0}.two,.work-grid,.steps{grid-template-columns:1fr}.section-head h2{max-width:none}.foot-inner{display:grid;text-align:center;justify-content:center}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important}}
   </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://tmncreative.com/start-a-project#faq","url":"https://tmncreative.com/start-a-project","mainEntity":[{"@type":"Question","name":"What kinds of clients are the strongest fit?","acceptedAnswer":{"@type":"Answer","text":"Established professional firms, healthcare practices, advisors, attorneys, consultants, multi-location operators, and home-service companies with real expertise and proof\u2014but a website that no longer reflects the caliber of the business."}},{"@type":"Question","name":"What should we expect to invest?","acceptedAnswer":{"@type":"Answer","text":"Website packages begin at $2,250 for a Starter Refresh and $3,750 for a Full Site Rebuild. Most full professional-firm or Custom Studio Build engagements begin around $5,000. Website plus custom operations-platform projects typically begin at $10,000. We confirm scope and investment before work begins."}},{"@type":"Question","name":"Do you work with early-stage companies?","acceptedAnswer":{"@type":"Answer","text":"Yes, when the offer is clear, a decision-maker is involved, and the company is prepared to invest in a professional foundation. We are usually not the right fit for speculative projects looking for the lowest-cost template."}},{"@type":"Question","name":"Can we see your thinking before committing?","acceptedAnswer":{"@type":"Answer","text":"Yes. The free homepage preview remains available as a lower-friction way to judge taste and direction. For established firms with an approved project, the project inquiry is faster because it lets us recommend the correct scope immediately."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://tmncreative.com/start-a-project#faq","url":"https://tmncreative.com/start-a-project","mainEntity":[{"@type":"Question","name":"What kinds of clients are the strongest fit?","acceptedAnswer":{"@type":"Answer","text":"Established professional firms, healthcare practices, advisors, attorneys, consultants, multi-location operators, and home-service companies with real expertise and proof, but a website that no longer reflects the caliber of the business."}},{"@type":"Question","name":"What should we expect to invest?","acceptedAnswer":{"@type":"Answer","text":"Website packages begin at $2,250 for a Starter Refresh and $3,750 for a Full Site Rebuild. Most full professional-firm or Custom Studio Build engagements begin around $5,000. Website plus custom operations-platform projects typically begin at $10,000. We confirm scope and investment before work begins."}},{"@type":"Question","name":"Do you work with early-stage companies?","acceptedAnswer":{"@type":"Answer","text":"Yes, when the offer is clear, a decision-maker is involved, and the company is prepared to invest in a professional foundation. We are usually not the right fit for speculative projects looking for the lowest-cost template."}},{"@type":"Question","name":"Can we see your thinking before committing?","acceptedAnswer":{"@type":"Answer","text":"Yes. The free homepage preview remains available as a lower-friction way to judge taste and direction. For established firms with an approved project, the project inquiry is faster because it lets us recommend the correct scope immediately."}}]}</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -109,7 +110,7 @@
         <div class="hero-copy">
           <div class="eyebrow" id="inquiry-eyebrow">Qualified project inquiry · Founder reviewed</div>
           <h1 id="inquiry-title">Build the site your <em>best buyers</em> expect to find.</h1>
-          <p class="lead" id="inquiry-lead"><strong>TMN Creative works with established firms and operators</strong> whose website is underselling the business behind it. We sharpen the positioning, proof, buyer path, design, and technical foundation—then build it by hand.</p>
+          <p class="lead" id="inquiry-lead"><strong>TMN Creative works with established firms and operators</strong> whose website is underselling the business behind it. We sharpen the positioning, proof, buyer path, design, and technical foundation. Then we build it by hand.</p>
           <div class="fit-line project-only" aria-label="Project facts">
             <div class="metric"><strong>$5k+</strong><span>Typical professional-firm engagement</span></div>
             <div class="metric"><strong>72-hour target</strong><span>Starter + Full first draft</span></div>
@@ -171,9 +172,9 @@
               <div class="field"><label for="company">Firm / company</label><input id="company" name="company" type="text" required autocomplete="organization" /></div>
               <div class="field"><label for="project-website" id="website-label">Current website <span>(optional)</span></label><input id="project-website" name="website" type="text" inputmode="url" placeholder="company.com" /></div>
             </div>
-            <div class="two">
-              <div class="field"><label for="project-scope">Primary need</label><select id="project-scope" name="project_scope" required><option value="" selected disabled>Select one</option><option value="ai-visibility">AI Search Optimization</option><option value="compliance-care">Compliance Site Care</option><option value="content-care">Content Care</option><option value="premium-redesign">Premium website redesign</option><option value="lead-generation">Lead-generation website</option><option value="multi-location">Multi-location website strategy</option><option value="site-and-platform">Website + operations platform</option><option value="custom-platform">Custom platform / internal tool</option><option value="recommendation">Not sure—need a recommendation</option></select></div>
-              <div class="field project-only" id="investment-field"><label for="investment">Planned investment</label><select id="investment" name="project_investment" required><option value="" selected disabled>Select a range</option><option value="2250-5000">$2,250–$5,000 · Starter / focused build</option><option value="5000-10000">$5,000–$10,000 · full firm build</option><option value="10000-20000">$10,000–$20,000 · website + strategy</option><option value="20000-plus">$20,000+ · custom site / platform</option><option value="not-approved">Budget is not approved yet</option></select></div>
+            <div class="two" id="scope-row">
+              <div class="field"><label for="project-scope">Primary need</label><select id="project-scope" name="project_scope" required><option value="" selected disabled>Select one</option><option value="ai-visibility">AI Search Optimization</option><option value="compliance-care">Compliance Site Care</option><option value="content-care">Content Care</option><option value="premium-redesign">Premium website redesign</option><option value="lead-generation">Lead-generation website</option><option value="multi-location">Multi-location website strategy</option><option value="site-and-platform">Website + operations platform</option><option value="custom-platform">Custom platform / internal tool</option><option value="recommendation">Not sure, need a recommendation</option></select></div>
+              <div class="field project-only" id="investment-field"><label for="investment">Planned investment</label><select id="investment" name="project_investment" required><option value="" selected disabled>Select a range</option><option value="2250-5000">$2,250 to $5,000 · Starter / focused build</option><option value="5000-10000">$5,000 to $10,000 · full firm build</option><option value="10000-20000">$10,000 to $20,000 · website + strategy</option><option value="20000-plus">$20,000+ · custom site / platform</option><option value="not-approved">Budget is not approved yet</option></select></div>
             </div>
             <div class="two ai-only">
               <div class="field"><label for="site-care-status">Current site care</label><select id="site-care-status" name="site_care_status"><option value="" selected disabled>Select one</option><option value="active-tmn">Active TMN Site Care client</option><option value="care-elsewhere">Care is handled elsewhere</option><option value="no-care">No active care plan</option><option value="not-sure">Not sure</option></select></div>
@@ -183,7 +184,7 @@
               <div class="field"><label for="regulated-industry">Regulated industry?</label><select id="regulated-industry" name="regulated_industry"><option value="" selected disabled>Select one</option><option value="yes">Yes</option><option value="no">No</option><option value="not-sure">Not sure</option></select></div>
             </div>
             <div class="two">
-              <div class="field"><label for="timeline">Target timing</label><select id="timeline" name="timeline" required><option value="" selected disabled>Select timing</option><option value="30-days">Ready to begin within 30 days</option><option value="1-3-months">1–3 months</option><option value="3-6-months">3–6 months</option><option value="researching">Researching options</option></select></div>
+              <div class="field"><label for="timeline">Target timing</label><select id="timeline" name="timeline" required><option value="" selected disabled>Select timing</option><option value="30-days">Ready to begin within 30 days</option><option value="1-3-months">1 to 3 months</option><option value="3-6-months">3 to 6 months</option><option value="researching">Researching options</option></select></div>
               <div class="field"><label for="role">Your role</label><select id="role" name="decision_role" required><option value="" selected disabled>Select role</option><option value="owner-founder">Owner / founder</option><option value="partner-executive">Partner / executive</option><option value="marketing-operations">Marketing / operations lead</option><option value="external-consultant">External consultant / researching for a client</option></select></div>
             </div>
             <div class="field"><label for="outcome" id="outcome-label">What must the new site help accomplish?</label><textarea id="outcome" name="desired_outcome" required placeholder="Tell us what is changing in the business, which buyers you want more of, and what the current site is failing to communicate."></textarea></div>
@@ -212,7 +213,7 @@
         <div class="eyebrow">A direct, professional process</div>
         <h2>Clear fit first. <em>Then we build.</em></h2>
         <div class="steps">
-          <article class="step"><div class="step-num">01 · REVIEW</div><h3>We assess the business and buyer</h3><p>Trevor or Taylor reviews the current site, desired buyer, proof, scope, timing, and investment. You receive a candid fit assessment—not a generic sales sequence.</p></article>
+          <article class="step"><div class="step-num">01 · REVIEW</div><h3>We assess the business and buyer</h3><p>Trevor or Taylor reviews the current site, desired buyer, proof, scope, timing, and investment. You receive a candid fit assessment, not a generic sales sequence.</p></article>
           <article class="step"><div class="step-num">02 · DIRECTION</div><h3>We define the job the site must do</h3><p>We agree on the message, conversion path, content, integrations, search foundation, and success criteria before design work begins.</p></article>
           <article class="step"><div class="step-num">03 · BUILD</div><h3>You work directly with the founders</h3><p>No account-manager relay. Strategy, copy, design, development, QA, and launch stay with the two people responsible for the outcome.</p></article>
         </div>
@@ -223,8 +224,8 @@
       <div class="section-inner faq-grid">
         <div><div class="eyebrow">Fit questions</div><h2>Before you <em>reach out.</em></h2></div>
         <div>
-          <details><summary>What kinds of clients are the strongest fit?</summary><p>Established professional firms, healthcare practices, advisors, attorneys, consultants, multi-location operators, and home-service companies with real expertise and proof—but a website that no longer reflects the caliber of the business.</p></details>
-          <details><summary>What should we expect to invest?</summary><p>Website packages begin at $2,250 for a Starter Refresh and $3,750 for a Full Site Rebuild. Most full professional-firm or Custom Studio Build engagements begin around $5,000. Website plus custom operations-platform projects typically begin at $10,000. We confirm scope and investment before work begins.</p></details>
+          <details><summary>What kinds of clients are the strongest fit?</summary><p>Established professional firms, healthcare practices, advisors, attorneys, consultants, multi-location operators, and home-service companies with real expertise and proof, but a website that no longer reflects the caliber of the business.</p></details>
+          <details id="faq-investment"><summary>What should we expect to invest?</summary><p>Website packages begin at $2,250 for a Starter Refresh and $3,750 for a Full Site Rebuild. Most full professional-firm or Custom Studio Build engagements begin around $5,000. Website plus custom operations-platform projects typically begin at $10,000. We confirm scope and investment before work begins.</p></details>
           <details><summary>Do you work with early-stage companies?</summary><p>Yes, when the offer is clear, a decision-maker is involved, and the company is prepared to invest in a professional foundation. We are usually not the right fit for speculative projects looking for the lowest-cost template.</p></details>
           <details><summary>Can we see your thinking before committing?</summary><p>Yes. The free homepage preview remains available as a lower-friction way to judge taste and direction. For established firms with an approved project, the project inquiry is faster because it lets us recommend the correct scope immediately.</p></details>
         </div>
@@ -242,14 +243,18 @@
         success: '/success?type=ai-visibility',
         submit: 'Request an AI search review',
         placeholder: 'Tell us which buyer questions matter, what assistants currently say, or what you want checked first.',
+        faq: {
+          summary: 'What does this cost?',
+          answer: 'AI Search Optimization is $200 per month alongside active TMN Site Care, which starts at $50 per month. Combined care starts at $250 per month. Websites not built or previously audited by TMN begin with a one-time $750 baseline audit and setup.'
+        },
         copy: {
           'inquiry-eyebrow':'AI Search Optimization · Founder reviewed',
-          'inquiry-title':'Keep your firm findable when buyers ask an assistant.',
-          'inquiry-lead':'AI Search Optimization pairs monthly monitoring with up to 2 studio hours to correct the highest-priority issue. It is available alongside an active TMN Site Care plan.',
+          'inquiry-title':'Request an AI search review.',
+          'inquiry-lead':'AI Search Optimization is $200/month alongside Site Care, which starts at $50/month. The plan includes monthly monitoring and up to 2 studio hours.',
           'form-kicker':'AI Search Optimization inquiry',
-          'form-title':'Ask about AI search.',
+          'form-title':'Tell us what AI search can find.',
           'form-intro':'Tell us about the site, its current care arrangement, and any regulated review requirements.',
-          'inquiry-nav-cta':'AI search inquiry',
+          'inquiry-nav-cta':'AI search',
           'outcome-label':'What are you seeing or trying to improve?',
           'form-fine':'Founder reviewed. Usually answered the same business day.'
         }
@@ -259,6 +264,10 @@
         success: '/success?type=compliance-care',
         submit: 'Request a compliance care review',
         placeholder: 'Tell us how site changes get reviewed today, and what your reviewer or an examiner has asked for before.',
+        faq: {
+          summary: 'What does this cost?',
+          answer: 'Compliance Site Care is $250 per month alongside active TMN Site Care, which starts at $50 per month. Combined care starts at $300 per month. A one-time $750 baseline archive and disclosure audit applies when required.'
+        },
         copy: {
           'inquiry-eyebrow':'Compliance Site Care · Founder reviewed',
           'inquiry-title':'Keep the website record before anyone asks for it.',
@@ -266,7 +275,7 @@
           'form-kicker':'Compliance Site Care inquiry',
           'form-title':'Ask about compliance care.',
           'form-intro':'Tell us about the site, its current care arrangement, and your compliance review process.',
-          'inquiry-nav-cta':'Compliance care inquiry',
+          'inquiry-nav-cta':'Compliance care',
           'outcome-label':'What does your reviewer need from the website record?',
           'form-fine':'Founder reviewed. Usually answered the same business day.'
         }
@@ -276,6 +285,10 @@
         success: '/success?type=content-care',
         submit: 'Request a content care review',
         placeholder: 'Tell us the question clients keep asking, where your articles live now, and who reviews copy before it publishes.',
+        faq: {
+          summary: 'What does this cost?',
+          answer: 'Content Care is $400 per month alongside active TMN Site Care, which starts at $50 per month. Combined care starts at $450 per month. A one-time $750 blog audit and pipeline setup applies on non-TMN platforms.'
+        },
         copy: {
           'inquiry-eyebrow':'Content Care · Founder reviewed',
           'inquiry-title':'Publish real articles buyers and assistants can read.',
@@ -283,7 +296,7 @@
           'form-kicker':'Content Care inquiry',
           'form-title':'Ask about content care.',
           'form-intro':'Tell us about the site, where your blog lives today, and the questions clients keep asking you.',
-          'inquiry-nav-cta':'Content care inquiry',
+          'inquiry-nav-cta':'Content care',
           'outcome-label':'What should the first article answer?',
           'form-fine':'Founder reviewed. Usually answered the same business day.'
         }
@@ -301,6 +314,12 @@
       var el = document.getElementById(id);
       if(el) el.textContent = copy[id];
     });
+
+    var faqInv = document.getElementById('faq-investment');
+    if(svc.faq && faqInv){
+      faqInv.querySelector('summary').textContent = svc.faq.summary;
+      faqInv.querySelector('p').textContent = svc.faq.answer;
+    }
 
     var form = document.getElementById('qualified-project-form');
     var scope = document.getElementById('project-scope');

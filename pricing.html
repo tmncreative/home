@@ -73,7 +73,7 @@
           {"@type": "Offer", "name": "Starter Dashboard Add-On", "description": "Custom intake dashboard add-on. $3,500 setup + $150/mo.", "price": "3500", "priceCurrency": "USD", "availability": "https://schema.org/InStock"},
           {"@type": "Offer", "name": "Full Operations Platform Add-On", "description": "Custom CRM and intake platform add-on. $7,500 setup + $297/mo.", "price": "7500", "priceCurrency": "USD", "availability": "https://schema.org/InStock"},
           {"@type": "Offer", "name": "Flexible Site Care", "price": "50", "priceCurrency": "USD", "description": "Site care starts at $50 per month. Final scope and monthly price depend on the website and support required.", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "50", "priceCurrency": "USD", "unitText": "MONTH"}},
-          {"@type": "Offer", "name": "AI Search Optimization", "price": "200", "priceCurrency": "USD", "description": "Also called AI Visibility Care. Monthly monitoring and up to 2 studio hours for active Site Care clients. A $750 baseline audit and setup applies when required.", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "200", "priceCurrency": "USD", "unitText": "MONTH"}},
+          {"@type": "Offer", "@id": "https://tmncreative.com/ai-visibility#offer", "url": "https://tmncreative.com/ai-visibility", "name": "AI Search Optimization", "price": "200", "priceCurrency": "USD", "description": "A $200 monthly add-on to active TMN Site Care. Site Care starts at $50 per month, so combined care starts at $250 per month. Includes monthly monitoring and up to 2 studio hours. A $750 baseline audit and setup applies when required.", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "200", "priceCurrency": "USD", "unitCode": "MON"}},
           {"@type": "Offer", "name": "Compliance Site Care", "price": "250", "priceCurrency": "USD", "description": "Monthly website archives, a plain-English change log, disclosure link checks, and up to 2 studio hours for active Site Care clients.", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "250", "priceCurrency": "USD", "unitText": "MONTH"}},
           {"@type": "Offer", "name": "Content Care", "price": "400", "priceCurrency": "USD", "description": "Up to 2 researched, client-approved articles per month, published as real pages for active Site Care clients.", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "400", "priceCurrency": "USD", "unitText": "MONTH"}}
         ]
@@ -909,6 +909,7 @@
     }
     /* === TYPE-V3 === */
 </style>
+  <noscript><style>.psec{display:block!important}.tab-bar-wrap{display:none!important}</style></noscript>
 </head>
 <body>
 
@@ -972,16 +973,15 @@
   <section class="ai-pricing-feature" aria-labelledby="ai-pricing-title">
     <div class="ai-pricing-feature-inner">
       <div>
-        <p class="ai-pricing-kicker">AI Search Optimization</p>
-        <h2 id="ai-pricing-title">Your next client may ask an assistant first.</h2>
-        <p>Monthly monitoring and hands-on improvements for crawlability, entity accuracy, structured data, indexing, and citation gaps. Also called AIO or GEO. No ranking, citation, or recommendation outcome is guaranteed.</p>
+        <h2 id="ai-pricing-title">AI Search Optimization for established firms.</h2>
+        <p>Monthly monitoring and hands-on improvements to crawler access, business facts, structured data, indexing, and pages worth citing. No AI ranking or recommendation can be guaranteed.</p>
       </div>
       <div class="ai-pricing-offer">
         <div class="ai-pricing-price">$200<span>/mo</span></div>
-        <p class="ai-pricing-note">With active TMN Site Care. A $750 baseline applies when required.</p>
+        <p class="ai-pricing-note">Requires active Site Care. Site Care starts at $50/mo, so combined care starts at $250/mo. A one-time $750 baseline applies when required.</p>
         <div class="ai-pricing-actions">
-          <a href="/ai-visibility" class="ai-pricing-primary">Review the service</a>
-          <a href="/start-a-project?service=ai-visibility#project-form" class="ai-pricing-secondary">Ask about it</a>
+          <a href="/ai-visibility" class="ai-pricing-primary">See AI search service</a>
+          <a href="/start-a-project?service=ai-visibility#project-form" class="ai-pricing-secondary">Request a review</a>
         </div>
       </div>
     </div>
@@ -1243,18 +1243,18 @@
       </article>
       <article class="care-panel care-ai" id="pricing-ai-visibility">
         <div class="card-label">AI Search Optimization</div>
-        <h3>Stay findable when buyers ask an assistant.</h3>
+        <h3>Make your firm easier to find and verify.</h3>
         <div class="card-price">$200 <span class="unit">/mo</span></div>
-        <p class="card-desc">Available with active TMN Site Care. Up to 2 total studio hours each month cover monitoring, diagnosis, communication, reporting, and implementation.</p>
+        <p class="card-desc">Requires active TMN Site Care. Site Care starts at $50/mo, so combined care starts at $250/mo.</p>
         <ul class="card-list">
+          <li>Up to 2 total studio hours each month</li>
           <li>Highest-priority issue or improvement handled first</li>
           <li>Clear monthly findings and work completed</li>
           <li>$750 baseline audit and setup when required</li>
-          <li>No ranking, citation, or recommendation guarantee</li>
         </ul>
         <div class="care-links">
-          <a href="/start-a-project?service=ai-visibility#project-form" class="cbtn cbtn-g">Ask about AI search</a>
-          <a href="/ai-visibility" class="care-text-link">See what it covers</a>
+          <a href="/start-a-project?service=ai-visibility#project-form" class="cbtn cbtn-g">Request an AI search review</a>
+          <a href="/ai-visibility" class="care-text-link">See pricing and scope</a>
         </div>
       </article>
       <article class="care-panel" id="pricing-compliance-care">
