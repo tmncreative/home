@@ -118,6 +118,8 @@ Core:
 - /pricing - pricing
 - /how-much-does-a-website-cost - website pricing guide with real 2026 numbers for DIY builders, freelancers, studios, and agencies, plus recurring monthly costs
 - /law-firm-website-design-cost - law firm website pricing with published numbers, what drives legal quotes higher, and bar advertising compliance
+- /best-law-firm-websites - the 8 checkable traits that make a law firm website effective, with The Ramsay Law Firm scored against them as a live worked example
+- /therapist-website-examples - the 8 checkable traits that make a therapy practice website effective, with LumiClinics and Care to Speak as live worked examples
 - /portfolio - selected work
 - /walnut-ventures-website-design - archived private-capital design showcase with a sanitized static preview. It is not an active business website or a commissioned-client case study.
 - /smitha-reddy-md-healthcare-website-design - live physician website case study with credential-led structure, responsible patient routing, and public client-site corroboration
