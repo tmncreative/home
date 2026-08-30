@@ -185,3 +185,36 @@ Checked the live directory (clutch.co/web-designers/fort-worth, "Ratings Updated
 **This supersedes the earlier note in this file that the directory is "ordered by review count" and that going from 4 to 6 reviews was the highest-leverage available move.** Reviews still matter for buyer trust and for what an assistant reads on the profile itself, but they will not by themselves place TMN in this directory. The decision in front of Trevor is whether Clutch directory placement is worth $499/year, which is a spend decision, not a task. Reviews remain worth collecting on their own merits; directory ranking is not the reason.
 
 Note the second-order point for the AIO thesis: SE Ranking showed this directory page cited in 48.3% of Fort Worth AI answers. If assistants cite the directory page and TMN is not on it, review count alone does not fix that citation gap. What TMN can control without paying is its own profile (now materially stronger: 4 reviews, 10 named-client portfolio items, real pricing, SEO service line) which is what an assistant reads when it visits the profile directly rather than the directory listing.
+
+## August 30: Codex adversarial review of the full industry page set
+
+Trevor asked Claude and Codex to collaborate. Codex reviewed read-only and reported; Claude applied fixes. Two rounds: the 7 new pages, then every industry, category, guide, and city page.
+
+### Production breakage caught (round 1)
+
+`authority-pages.css` was referenced by 7 pages and **returned 404 in production**. A parallel session had created the stylesheet, added `<link>` tags and `class="authority-page"` to those pages, and left the CSS untracked; Claude's `git add -u` swept the HTML edits into a commit without the new file.
+
+The fix was not to track it. That override re-applied the restrained "evidence-led" treatment **Trevor explicitly rejected on Aug 27** (it hides the caustic hero, cursor-light, scroll-prog, and `.eye` eyebrows, and forces sans over the serif display face). Standing instruction is "never re-add it; the original design system is canon." So the `<link>` and body class were removed from all 7 pages, which eliminates the 404 and restores canon in one move. Codex has been told not to re-add it and to raise it with Trevor first if it disagrees.
+
+**Lesson: `git add -u` stages other sessions' edits to files you touched. When another session is active, review `git status` for new untracked dependencies before committing, not just modified files.**
+
+### Client-proof integrity: the most serious finding
+
+**Care to Speak was presented as a live, completed client website. It is not.** The case study called it a "Live client website" and a "completed healthcare build," and `/healthcare` listed it among "recent healthcare launches." Verified reality: Siobhain McHale is a genuine client ($2,000 build agreed Jul 13), but the site exists only at `care-to-speak.netlify.app`, carries no TMN credit, and is pending her review and DNS cutover to her own domain, `caretospeakspeech.com`. Separately, `caretospeak.com` is an unrelated organization ("Care For Caregivers"), so that domain must never be cited as hers.
+
+This is exactly what Trevor's rule prohibits: presenting a preview build as a completed engagement. Corrected the status to "Built, pending client launch," rewrote the verification copy to say the build is published for review and moves to the practice's domain at launch, and changed `/healthcare` to state the build is complete and awaiting the practice's domain launch rather than listing it as a launch.
+
+The case study also carried a **circular verification claim**: "The work appears in TMN's public portfolio" cited TMN's own portfolio as corroboration. Replaced with a "What is not claimed here" item stating plainly that the build has not launched on the practice's domain and therefore carries no public TMN credit yet, pointing to `/verify` for work that does.
+
+### Regulatory fixes applied
+
+- **IV therapy, the highest-risk page in the set.** Advice to build the service menu around "the problem they want fixed: hangover relief, fatigue, immunity" now reads as describing the terms clients search, followed by an explicit boundary: what a treatment is described as doing is the clinic's claim to make, must be substantiated and reviewed under applicable advertising rules, and TMN does not write medical or efficacy claims.
+- **Blanket HIPAA platform assertions removed** from the IV page in 2 places. "Medical intake stays in your secure, HIPAA-compliant systems" naming IntakeQ, Jane, Acuity, Vagaro, and Hydreight asserted compliance TMN cannot establish. Now framed as the platform the clinic already uses and has a business associate agreement with, with compliance depending on plan, agreement, and configuration governed by the clinic's privacy officer and vendors.
+- **Consulting page ranking guarantee removed.** The FAQ asked "Can you build thought leadership and case study pages that rank?" and answered "Yes." Question and answer rewritten, with an explicit statement that no ranking outcome is guaranteed.
+- Unsupported conversion and market assertions hedged on the therapist and law showcase pages; Fla. Stat. 768.0755 corrected to the transitory-substance knowledge standard.
+
+### Accepted, not yet fixed
+
+Ranked by Codex severity, all still open: MarchLife cited on `/healthcare` without a TMN credit on its own domain; med-spa "compliant before-and-after proof" and normalized GLP-1/exosome promotion; the breakaway-advisor guide's categorical legal sequencing; Fort Worth's superiority, conversion, and ADA-lawsuit assertions; the city-page doorway pattern with city-center geo metadata on non-local pages; unsourced cost tables on healthcare and med-spa guides; roofing and electrician licensing overgeneralization (Texas has no statewide roofing-contractor license); systemic "booked calls" outcome language; 3 direct cannibalization pairs; vertical pages whose proof grids do not match their category promise; and template QC issues including duplicated geo metadata on Arlington and a reversed AVIF/WebP fallback claim.
+
+Codex confirmed clean: canonicals, og:url, JSON-LD parsing, breadcrumbs, H1 counts, robots metadata, and no cloned template leakage. It also independently verified that SunCraft, Tony's, Ramon, SCL, QC Atlantic, Promised Land, Diamond H, Smitha Reddy, Training Wheels, LumiClinics, and True Margin North are live own-domain sites with visible TMN credit, and that the Ramsay $50M figure appears nowhere.
