@@ -172,7 +172,7 @@
               <div class="field"><label for="project-website" id="website-label">Current website <span>(optional)</span></label><input id="project-website" name="website" type="text" inputmode="url" placeholder="company.com" /></div>
             </div>
             <div class="two">
-              <div class="field"><label for="project-scope">Primary need</label><select id="project-scope" name="project_scope" required><option value="" selected disabled>Select one</option><option value="ai-visibility">AI Visibility Care</option><option value="compliance-care">Compliance Site Care</option><option value="content-care">Content Care</option><option value="premium-redesign">Premium website redesign</option><option value="lead-generation">Lead-generation website</option><option value="multi-location">Multi-location website strategy</option><option value="site-and-platform">Website + operations platform</option><option value="custom-platform">Custom platform / internal tool</option><option value="recommendation">Not sure—need a recommendation</option></select></div>
+              <div class="field"><label for="project-scope">Primary need</label><select id="project-scope" name="project_scope" required><option value="" selected disabled>Select one</option><option value="ai-visibility">AI Search Optimization</option><option value="compliance-care">Compliance Site Care</option><option value="content-care">Content Care</option><option value="premium-redesign">Premium website redesign</option><option value="lead-generation">Lead-generation website</option><option value="multi-location">Multi-location website strategy</option><option value="site-and-platform">Website + operations platform</option><option value="custom-platform">Custom platform / internal tool</option><option value="recommendation">Not sure—need a recommendation</option></select></div>
               <div class="field project-only" id="investment-field"><label for="investment">Planned investment</label><select id="investment" name="project_investment" required><option value="" selected disabled>Select a range</option><option value="2250-5000">$2,250–$5,000 · Starter / focused build</option><option value="5000-10000">$5,000–$10,000 · full firm build</option><option value="10000-20000">$10,000–$20,000 · website + strategy</option><option value="20000-plus">$20,000+ · custom site / platform</option><option value="not-approved">Budget is not approved yet</option></select></div>
             </div>
             <div class="two ai-only">
@@ -238,18 +238,18 @@
     var params = new URLSearchParams(window.location.search);
     var services = {
       'ai-visibility': {
-        title: 'AI Visibility Care Inquiry | TMN Creative',
+        title: 'AI Search Optimization Inquiry | TMN Creative',
         success: '/success?type=ai-visibility',
-        submit: 'Request an AI visibility review',
+        submit: 'Request an AI search review',
         placeholder: 'Tell us which buyer questions matter, what assistants currently say, or what you want checked first.',
         copy: {
-          'inquiry-eyebrow':'AI Visibility Care · Founder reviewed',
+          'inquiry-eyebrow':'AI Search Optimization · Founder reviewed',
           'inquiry-title':'Keep your firm findable when buyers ask an assistant.',
-          'inquiry-lead':'AI Visibility Care pairs monthly monitoring with up to 2 studio hours to correct the highest-priority issue. It is available alongside an active TMN Site Care plan.',
-          'form-kicker':'AI Visibility Care inquiry',
-          'form-title':'Ask about AI visibility.',
+          'inquiry-lead':'AI Search Optimization pairs monthly monitoring with up to 2 studio hours to correct the highest-priority issue. It is available alongside an active TMN Site Care plan.',
+          'form-kicker':'AI Search Optimization inquiry',
+          'form-title':'Ask about AI search.',
           'form-intro':'Tell us about the site, its current care arrangement, and any regulated review requirements.',
-          'inquiry-nav-cta':'AI visibility inquiry',
+          'inquiry-nav-cta':'AI search inquiry',
           'outcome-label':'What are you seeing or trying to improve?',
           'form-fine':'Founder reviewed. Usually answered the same business day.'
         }
