@@ -117,3 +117,13 @@ Not proposed: buying placements, Reddit posting, or any review TMN drafts or inf
 
 - Expertise.com request SENT (approved by Trevor): trevor@tmncreative.com to info@expertise.com, subject "Listing consideration - Fort Worth web design", Gmail message ID 1a0454d6c96c3626. Their update portal is for existing listings only; the FW list has no Get Listed path. Awaiting reply; do not resend.
 - Web Tonic has no editorial contact or submission channel (verified 8/27; only a sales-call form). No outreach possible or staged. Standing in their 3 lists improves through their published quarterly re-audit criteria, which release ac9f1a6 addresses (named case-study proof on the ranked pages).
+
+## August 29 late: Clutch service updates for the add-on launch (Trevor's session, saved and confirmed)
+
+- Company description now ends: "Monthly add-ons for active Site Care clients include AI Search Optimization for AI-assisted search, website compliance records for advisory firms, and researched article publishing." (655/2000 chars, verified persisted after reload)
+- Service lines rebalanced to add Search Engine Optimization at the 10% directory threshold: Web Design 55, Web Development 25, Custom Software Development 10, SEO 10. TMN now qualifies for Clutch's SEO directories in addition to web design.
+- SEO Focus allocated 100%: On-site optimization 25, Technical SEO 25, Generative Engine Optimization 20, Content development 15, Local search 15. Clutch has a literal GEO focus category and TMN is now allocated in it.
+- Platform SEO Focus: WordPress SEO 100 (the honest platform fit via the WooCommerce/replatforming work).
+- All three saves confirmed with "Changes saved!" toasts.
+
+DesignRush: not logged in on this machine's Chrome, and Alma Pasic's Aug 17 reply already established the profile is self-serve through TMN's own DesignRush account. Direct edit pending Trevor's login; the equivalent changes are the description add-on sentence and any available SEO/AI service categories.
