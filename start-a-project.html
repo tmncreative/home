@@ -174,7 +174,7 @@
               <div class="field"><label for="project-website" id="website-label">Current website <span>(optional)</span></label><input id="project-website" name="website" type="text" inputmode="url" placeholder="company.com" /></div>
             </div>
             <div class="two" id="scope-row">
-              <div class="field"><label for="project-scope">Primary need</label><select id="project-scope" name="project_scope" required><option value="" selected disabled>Select one</option><option value="ai-visibility">AI Search Optimization</option><option value="compliance-care">Compliance Site Care</option><option value="content-care">Content Care</option><option value="premium-redesign">Premium website redesign</option><option value="lead-generation">Lead-generation website</option><option value="multi-location">Multi-location website strategy</option><option value="site-and-platform">Website + operations platform</option><option value="custom-platform">Custom platform / internal tool</option><option value="recommendation">Not sure, need a recommendation</option></select></div>
+              <div class="field"><label for="project-scope">Primary need</label><select id="project-scope" name="project_scope" required><option value="" selected disabled>Select one</option><option value="ria-site-care">RIA Site Care</option><option value="publishing-portal">Managed Publishing Portal</option><option value="ai-visibility">AI Search Optimization</option><option value="compliance-care">Compliance Site Care</option><option value="content-care">Content Care</option><option value="premium-redesign">Premium website redesign</option><option value="lead-generation">Lead-generation website</option><option value="multi-location">Multi-location website strategy</option><option value="site-and-platform">Website + operations platform</option><option value="custom-platform">Custom platform / internal tool</option><option value="recommendation">Not sure, need a recommendation</option></select></div>
               <div class="field project-only" id="investment-field"><label for="investment">Planned investment</label><select id="investment" name="project_investment" required><option value="" selected disabled>Select a range</option><option value="2250-5000">$2,250 to $5,000 · Starter / focused build</option><option value="5000-10000">$5,000 to $10,000 · full firm build</option><option value="10000-20000">$10,000 to $20,000 · website + strategy</option><option value="20000-plus">$20,000+ · custom site / platform</option><option value="not-approved">Budget is not approved yet</option></select></div>
             </div>
             <div class="two ai-only">
@@ -299,6 +299,48 @@
           'form-intro':'Tell us about the site, where your blog lives today, and the questions clients keep asking you.',
           'inquiry-nav-cta':'Content care',
           'outcome-label':'What should the first article answer?',
+          'form-fine':'Founder reviewed. Usually answered the same business day.'
+        }
+      },
+      'ria-site-care': {
+        title: 'RIA Site Care Inquiry | TMN Creative',
+        success: '/success?type=ria-site-care',
+        submit: 'Ask about RIA Site Care',
+        placeholder: 'Tell us about the site, the updates your team expects after launch, and the response standard you need.',
+        faq: {
+          summary: 'What does this cost?',
+          answer: 'RIA Site Care is $100 per month, month to month. It includes managed hosting, monitoring, direct support from Trevor with a target response within 1 business day, and routine approved changes to existing pages typically deployed within 2 business days of approved copy.'
+        },
+        copy: {
+          'inquiry-eyebrow':'RIA Site Care · Founder supported',
+          'inquiry-title':'Put the post-launch terms in writing.',
+          'inquiry-lead':'RIA Site Care is $100 per month, month to month, with direct support from Trevor and stated response and routine-change targets.',
+          'form-kicker':'RIA Site Care inquiry',
+          'form-title':'Tell us what the site needs after launch.',
+          'form-intro':'Tell us about the site, its current hosting, and the updates your team expects to make.',
+          'inquiry-nav-cta':'RIA Site Care',
+          'outcome-label':'What support does the firm need after launch?',
+          'form-fine':'Founder reviewed. Usually answered the same business day.'
+        }
+      },
+      'publishing-portal': {
+        title: 'Managed Publishing Portal Inquiry | TMN Creative',
+        success: '/success?type=publishing-portal',
+        submit: 'Ask about the portal',
+        placeholder: 'Tell us who publishes, how often, what content types you use, and who approves each item before it goes live.',
+        faq: {
+          summary: 'What does this cost?',
+          answer: 'The Managed Publishing Portal is a $150 monthly add-on to active Site Care. It is month to month. With RIA Site Care at $100 per month, the recommended combined operating setup is $250 per month.'
+        },
+        copy: {
+          'inquiry-eyebrow':'Managed Publishing Portal · Founder supported',
+          'inquiry-title':'Publish without opening a support ticket.',
+          'inquiry-lead':'Your team publishes approved articles and updates through a browser editor while TMN maintains the site and publishing system.',
+          'form-kicker':'Managed Publishing Portal inquiry',
+          'form-title':'Tell us how your team publishes.',
+          'form-intro':'Tell us about the website, publishing cadence, content types, and approval process.',
+          'inquiry-nav-cta':'Publishing portal',
+          'outcome-label':'What should your team be able to publish directly?',
           'form-fine':'Founder reviewed. Usually answered the same business day.'
         }
       }
