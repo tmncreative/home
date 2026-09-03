@@ -66,6 +66,9 @@ User-agent: msnbot
 User-agent: msnbot-media
 User-agent: adidxbot
 Allow: /
+Disallow: /success
+Disallow: /pay
+Disallow: /404.html
 Disallow: /new%20landing%20stuff/
 
 # Other reputable AI/indexing crawlers.
