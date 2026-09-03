@@ -504,10 +504,6 @@
     props.page = cleanPath();
 
     try {
-      if(window.plausible) window.plausible(name, { props: props });
-    } catch(e){}
-
-    try {
       if(window.fathom) window.fathom.trackEvent(name);
     } catch(e){}
 

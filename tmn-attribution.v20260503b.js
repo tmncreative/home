@@ -33,6 +33,108 @@
     'already-knew-tmn': true,
     'other': true
   };
+  var VERTICAL_SOURCES = {
+    'accounting': true,
+    'architecture': true,
+    'contractors': true,
+    'dental': true,
+    'financial-services': true,
+    'fitness': true,
+    'healthcare': true,
+    'landscaping': true,
+    'legal': true,
+    'private-wealth': true,
+    'real-estate': true,
+    'roofing': true
+  };
+  var BOOKING_SOURCES = {
+    'chatgpt': true,
+    'perplexity': true,
+    'claude': true,
+    'gemini': true,
+    'microsoft-copilot': true,
+    'you-com': true,
+    'poe': true,
+    'deepseek': true,
+    'grok': true,
+    'meta-ai': true,
+    'mistral': true,
+    'kimi': true,
+    'qwen': true,
+    'other-ai': true,
+    'google-ads': true,
+    'microsoft-ads': true,
+    'meta-ads': true,
+    'google-campaign': true,
+    'microsoft-campaign': true,
+    'linkedin-campaign': true,
+    'meta-campaign': true,
+    'clutch': true,
+    'designrush': true,
+    'agency-list': true,
+    'campaign': true,
+    'google-organic': true,
+    'bing-organic': true,
+    'linkedin-referral': true,
+    'external-referral': true,
+    'direct-unknown': true
+  };
+  var PAGE_VERTICALS = {
+    '/best-law-firm-websites': 'legal',
+    '/best-website-design-for-financial-advisors': 'financial-services',
+    '/breakaway-advisor-website-guide': 'financial-services',
+    '/care-to-speak-website-design': 'healthcare',
+    '/compliance-care': 'financial-services',
+    '/contractors': 'contractors',
+    '/custom-vs-template-law-firm-website': 'legal',
+    '/dental': 'dental',
+    '/dental-website-redesign': 'dental',
+    '/financial-advisor-website-cost': 'financial-services',
+    '/financial-services': 'financial-services',
+    '/healthcare': 'healthcare',
+    '/healthcare-website-hipaa-boundaries': 'healthcare',
+    '/hilpan-moxie-wealth-management-website-design': 'financial-services',
+    '/hipaa-compliant-website-design': 'healthcare',
+    '/home-services': 'contractors',
+    '/how-to-choose-a-home-services-web-design-company': 'contractors',
+    '/hvac': 'contractors',
+    '/hvac-branding-and-website-guide': 'contractors',
+    '/landscaping': 'landscaping',
+    '/law-firm-website-advertising-rules': 'legal',
+    '/law-firm-website-design-cost': 'legal',
+    '/lumiclinics-website-design': 'healthcare',
+    '/managed-publishing-portal': 'financial-services',
+    '/med-spa': 'healthcare',
+    '/med-spa-website-design-guide': 'healthcare',
+    '/multi-location-home-services-website-strategy': 'contractors',
+    '/plumbing': 'contractors',
+    '/plumbing-lead-generation-website-guide': 'contractors',
+    '/promised-land-renovations-website-design': 'contractors',
+    '/ramon-design-group-website-design': 'architecture',
+    '/ramsay-law-firm-website-design': 'legal',
+    '/real-estate': 'real-estate',
+    '/ria-site-care': 'financial-services',
+    '/ria-website-compliance-guide': 'financial-services',
+    '/roofing-ppc-landing-page-guide': 'roofing',
+    '/smitha-reddy-md-healthcare-website-design': 'healthcare',
+    '/suncraft-roofing-website-design': 'roofing',
+    '/therapist-website-examples': 'healthcare',
+    '/tonys-lawn-tree-website-design': 'landscaping',
+    '/training-wheels-aba-website-design': 'healthcare',
+    '/walnut-ventures-website-design': 'financial-services',
+    '/web-design-for-attorneys': 'legal',
+    '/web-design-for-service-businesses': 'contractors',
+    '/website-design-for-healthcare-practices': 'healthcare',
+    '/websites-for-accounting-firms': 'accounting',
+    '/websites-for-electricians': 'contractors',
+    '/websites-for-fitness-brands': 'fitness',
+    '/websites-for-iv-therapy-clinics': 'healthcare',
+    '/websites-for-law-firms': 'legal',
+    '/websites-for-mental-health-clinics': 'healthcare',
+    '/websites-for-private-wealth-firms': 'private-wealth',
+    '/websites-for-roofing-companies': 'roofing',
+    '/websites-for-therapists': 'healthcare'
+  };
   var AI_SOURCES = [
     ['chatgpt', 'ChatGPT'],
     ['openai', 'ChatGPT'],
@@ -133,6 +235,27 @@
   function cleanSlug(value, fallback){
     var slug = cleanTrackingValue(value).toLowerCase().replace(/[^a-z0-9_-]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80);
     return slug || fallback || '';
+  }
+
+  function cleanVerticalSource(value){
+    var vertical = cleanSlug(value);
+    return Object.prototype.hasOwnProperty.call(VERTICAL_SOURCES, vertical) ? vertical : '';
+  }
+
+  function cleanBookingSource(value){
+    var source = cleanSlug(value);
+    return Object.prototype.hasOwnProperty.call(BOOKING_SOURCES, source) ? source : '';
+  }
+
+  function cleanFirstLandingPath(value){
+    var path = cleanTrackingValue(value);
+    if(!path || path.charAt(0) !== '/' || path.indexOf('//') === 0) return '';
+    return path.split('?')[0].split('#')[0].slice(0, 254);
+  }
+
+  function pageVertical(value){
+    var path = cleanFirstLandingPath(value).replace(/\.html$/, '').replace(/\/$/, '') || '/';
+    return cleanVerticalSource(PAGE_VERTICALS[path]);
   }
 
   function safeSiteUrl(value){
@@ -271,7 +394,7 @@
     var serviceVertical = requestedService === 'ria-site-care' || requestedService === 'compliance-care'
       ? 'financial-services'
       : '';
-    var vertical = cleanSlug(qs.get('vertical') || qs.get('vertical_source') || serviceVertical);
+    var vertical = cleanVerticalSource(qs.get('vertical') || qs.get('vertical_source') || serviceVertical) || pageVertical(cleanPath());
     var isNewAcquisition = Boolean(currentExternalReferrer || detectedAiSource || PARAMS.some(function(key){ return Boolean(qs.get(key)); }));
     if(vertical){
       writeSessionValue(SESSION_VERTICAL_KEY, vertical);
@@ -393,7 +516,7 @@
     hidden(form, 'last_landing_url', data.last_landing_url || safeSiteUrl(window.location.href));
     hidden(form, 'last_landing_path', data.last_landing_path || cleanPath());
     hidden(form, 'source_page', cleanPath());
-    hidden(form, 'vertical_source', cleanSlug(qs.get('vertical') || qs.get('vertical_source')) || readSessionValue(SESSION_VERTICAL_KEY));
+    hidden(form, 'vertical_source', cleanVerticalSource(qs.get('vertical') || qs.get('vertical_source')) || cleanVerticalSource(readSessionValue(SESSION_VERTICAL_KEY)) || pageVertical(cleanPath()));
     hidden(form, 'referrer', data.first_external_referrer || data.referrer || '');
     hidden(form, 'first_external_referrer', data.first_external_referrer || '');
     hidden(form, 'ai_source', readSessionValue(SESSION_AI_KEY));
@@ -406,10 +529,17 @@
     try {
       var sourceField = form.querySelector('[name="self_reported_source"]');
       var source = sourceField ? cleanSlug(sourceField.value) : '';
-      if(!SELF_REPORTED_SOURCES[source]) source = '';
+      var verticalField = form.querySelector('[name="vertical_source"]');
+      var currentAiSource = readSessionValue(SESSION_AI_KEY);
+      var attribution = readStore();
+      if(!Object.prototype.hasOwnProperty.call(SELF_REPORTED_SOURCES, source)) source = '';
       window.sessionStorage.setItem('tmn_pending_form', JSON.stringify({
         form: form.getAttribute('name') || form.getAttribute('id') || 'netlify-form',
         self_reported_source: source,
+        vertical_source: cleanVerticalSource(verticalField ? verticalField.value : ''),
+        booking_source: cleanBookingSource(readSessionValue(SESSION_BOOKING_SOURCE_KEY)),
+        ai_provider: currentAiSource ? aiSourceSlug(currentAiSource) : '',
+        first_landing_path: cleanFirstLandingPath(attribution.first_landing_path || ''),
         at: Date.now()
       }));
     } catch(e){}
@@ -512,11 +642,17 @@
     var landingPath = cleanTrackingValue(props.landing_path || '');
     var leadForm = cleanSlug(props.form || '');
     var selfReportedSource = cleanSlug(props.self_reported_source || '');
+    var verticalSource = cleanVerticalSource(props.vertical_source || '');
+    var bookingSourceValue = cleanBookingSource(props.booking_source || '');
+    var firstLandingPath = cleanFirstLandingPath(props.first_landing_path || '');
 
     if(provider) parameters.ai_provider = provider;
     if(landingPath) parameters.landing_path = landingPath;
     if(leadForm) parameters.lead_form = leadForm;
     if(selfReportedSource) parameters.self_reported_source = selfReportedSource;
+    if(verticalSource) parameters.vertical_source = verticalSource;
+    if(bookingSourceValue) parameters.booking_source = bookingSourceValue;
+    if(firstLandingPath) parameters.first_landing_path = firstLandingPath;
 
     return parameters;
   }
@@ -525,10 +661,6 @@
     props = props || {};
     options = options || {};
     props.page = cleanPath();
-
-    try {
-      if(window.plausible) window.plausible(name, { props: props });
-    } catch(e){}
 
     try {
       if(window.fathom) window.fathom.trackEvent(name);
@@ -551,13 +683,13 @@
     }
   }
 
-  function sendConfirmedAdConversions(pending){
+  function sendConfirmedAdConversions(pending, confirmedProps){
     try {
       if(window.gtag){
-        window.gtag('event', 'generate_lead', {
-          event_category: 'lead',
-          event_label: pending.form
-        });
+        var googleParameters = analyticsEventParameters(confirmedProps || {});
+        googleParameters.event_category = 'lead';
+        if(window.__TMN_GA4_MEASUREMENT_ID__) googleParameters.send_to = window.__TMN_GA4_MEASUREMENT_ID__;
+        window.gtag('event', 'generate_lead', googleParameters);
         window.gtag('event', 'conversion', {
           send_to: 'AW-18041747908/lead'
         });
@@ -620,7 +752,11 @@
           var confirmedProps = {
             label: pending.form,
             form: pending.form,
-            self_reported_source: pending.self_reported_source || 'not-provided'
+            self_reported_source: pending.self_reported_source || 'not-provided',
+            vertical_source: pending.vertical_source || '',
+            booking_source: pending.booking_source || '',
+            provider: pending.ai_provider || '',
+            first_landing_path: pending.first_landing_path || ''
           };
           sendEvent('Lead Confirmed', confirmedProps, { ads: false });
           var specificEvent = confirmedEvent(pending.form);
@@ -634,7 +770,7 @@
               sendEvent('Self-Reported ChatGPT Lead', confirmedProps, { ads: false });
             }
           }
-          sendConfirmedAdConversions(pending);
+          sendConfirmedAdConversions(pending, confirmedProps);
         }, 500);
       }
     }

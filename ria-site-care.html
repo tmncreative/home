@@ -83,8 +83,6 @@
 
     img,svg{max-width:100%;display:block}
 
-
-
     h1,h2,h3,h4{font-family:var(--sans);color:var(--ink);letter-spacing:-0.018em}
 
     h1{font-size:clamp(2.5rem,3vw + 1rem,4.5rem);line-height:1.03;font-weight:500;letter-spacing:-0.032em}
@@ -95,13 +93,9 @@
 
     h1 em,h2 em{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--accent-deep);letter-spacing:-0.02em}
 
-
-
     .eye{font-family:var(--mono);font-size:0.72rem;font-weight:600;color:var(--accent-deep);display:inline-flex;align-items:center;gap:0.5rem}
 
     .eye::before{content:'';width:0.4rem;height:0.4rem;background:var(--accent-deep);border-radius:50%}
-
-
 
     .nav{position:fixed;top:0;left:0;right:0;z-index:80;height:var(--nav-h);display:flex;align-items:center;padding:0 var(--rail);background:oklch(99% 0.004 240 / 0.72);backdrop-filter:blur(14px) saturate(140%);border-bottom:1px solid transparent;transition:background 300ms var(--e),border-color 300ms var(--e)}
 
@@ -165,8 +159,6 @@
 
     @media(max-width:900px){.nav-links,.nav-ghost{display:none}.menu-btn{display:flex}}
 
-
-
     .hero{padding:calc(var(--nav-h) + 4rem) var(--rail) clamp(3rem,5vw,5rem);text-align:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
 
     .hero::before{content:'';position:absolute;inset:0;pointer-events:none;z-index:0;background:radial-gradient(ellipse 60% 40% at 50% 0%, var(--accent-soft), transparent 65%);opacity:0.7}
@@ -183,11 +175,7 @@
 
     .hero .lead{font-size:clamp(1.05rem,0.4vw + 1rem,1.2rem);color:var(--ink-mid);line-height:1.55;margin:0 auto;max-width:58ch}
 
-
-
     main{flex:1}
-
-
 
     .cards-sec{padding:var(--sec-y) var(--rail)}
 
@@ -247,8 +235,6 @@
 
     @media(max-width:960px){.cards{grid-template-columns:1fr;max-width:540px}}
 
-
-
     .adhoc{max-width:1080px;margin:clamp(3rem,5vw,4rem) auto 0;padding:1.5rem 2rem;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--bg-elev);display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap}
 
     .adhoc h4{font-size:1.1rem;font-weight:600;margin-bottom:0.2rem}
@@ -260,8 +246,6 @@
     .adhoc-price{font-size:2rem;font-weight:600;color:var(--ink);letter-spacing:-0.02em;line-height:1;font-feature-settings:"tnum"}
 
     .adhoc-unit{font-family:var(--mono);font-size:0.78rem;color:var(--ink-soft)}
-
-
 
     .why{padding:var(--sec-y) var(--rail);background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 
@@ -291,8 +275,6 @@
 
     @media(max-width:900px){.why-grid{grid-template-columns:1fr;max-width:540px;margin:0 auto}}
 
-
-
     .bcta{padding:var(--sec-y) var(--rail);background:var(--ink);color:oklch(85% 0.014 245);text-align:center;position:relative;overflow:hidden}
 
     .bcta::before{content:'';position:absolute;top:-20%;left:50%;transform:translateX(-50%);width:70%;height:120%;background:radial-gradient(ellipse at center, oklch(70% 0.107 85 / 0.15), transparent 60%);pointer-events:none}
@@ -314,8 +296,6 @@
     .bcta-s{background:transparent;color:var(--bg);padding:0.95rem 1.5rem;border-radius:var(--r-sm);text-decoration:none;font-weight:500;font-size:0.95rem;border:1px solid oklch(100% 0 0 / 0.14);transition:all 250ms var(--e)}
 
     .bcta-s:hover{border-color:var(--accent);color:var(--accent)}
-
-
 
     .foot{background:oklch(14% 0.035 262);color:oklch(72% 0.016 245);padding:clamp(3rem,5vw,4.5rem) var(--rail) 1.5rem}
 
@@ -353,27 +333,15 @@
 
     @media(max-width:520px){.foot-grid{grid-template-columns:1fr 1fr;gap:1.2rem}.foot-brand{grid-column:1/-1;max-width:none}.foot-col a{font-size:0.84rem;line-height:1.45}}
 
-
-
     .r{opacity:0;transform:translateY(14px);transition:opacity 700ms var(--e),transform 700ms var(--e)}
 
     .r.vis{opacity:1;transform:translateY(0)}
-
-
-
-
 
     /* Scroll progress bar + cursor-follow light */
 
     .mag{transition:transform 300ms var(--e)}
 
-
-
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms !important;transition-duration:0.01ms !important}.r{opacity:1;transform:none}}
-
-
-
-
 
     /* === TYPE-V3 === */
 
@@ -553,8 +521,6 @@
 
     /* === TYPE-V3 === */
 
-
-
     /* --- Shared guide components --- */
 
     .ask-q{margin:1.6rem auto 0;max-width:52ch;border-left:2px solid var(--accent);
@@ -606,8 +572,6 @@
     @media (max-width:760px){.two{grid-template-columns:1fr}}
 
     @media (max-width:600px){.meas li{grid-template-columns:1fr;gap:.2rem}}
-
-
 
     /* AI Visibility visual refinement. The page stays inside the TMN paper,
        ink, and gold system while using a quieter editorial composition. */
@@ -864,7 +828,6 @@
       .bcta-btns{display:flex;width:100%;flex-direction:column}
       .bcta-p,.bcta-s{justify-content:center}
     }
-
 
     .skip{position:fixed;left:1rem;top:1rem;z-index:1000;padding:.65rem 1rem;background:var(--ink);color:#fff;transform:translateY(-160%);transition:transform .2s;border-radius:6px;text-decoration:none;font-size:.85rem}
     .skip:focus{transform:translateY(0)}
@@ -1199,7 +1162,7 @@
 
   </script>
 
-  <script src="/tmn-attribution.v20260503b.js?v=20260814e" defer></script>
+  <script src="/tmn-attribution.v20260503b.js?v=20260903b" defer></script>
 
 <!-- Fathom - beautiful, simple website analytics -->
 

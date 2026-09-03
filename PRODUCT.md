@@ -28,7 +28,7 @@ Prospects compare TMN Creative with freelancers, template platforms, industry-sp
 
 - Static HTML, CSS, and JavaScript site deployed through Netlify
 - Netlify Forms for project inquiries and free-preview requests
-- Fathom and Plausible analytics plus first-party attribution logic
+- Fathom and GA4 analytics plus first-party attribution logic
 - Search and AI-readable foundations including semantic HTML, metadata, structured data, sitemaps, internal links, and `llms.txt`
 - Website projects start at $2,250, with larger rebuild and custom studio tiers published on the pricing page
 - Do not invent client outcomes, rankings, conversion gains, revenue, testimonials, credentials, or compliance claims
