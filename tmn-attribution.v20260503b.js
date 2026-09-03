@@ -267,7 +267,11 @@
   }
 
   function rememberSessionContext(qs, currentExternalReferrer, detectedAiSource){
-    var vertical = cleanSlug(qs.get('vertical') || qs.get('vertical_source'));
+    var requestedService = cleanSlug(qs.get('service'));
+    var serviceVertical = requestedService === 'ria-site-care' || requestedService === 'compliance-care'
+      ? 'financial-services'
+      : '';
+    var vertical = cleanSlug(qs.get('vertical') || qs.get('vertical_source') || serviceVertical);
     var isNewAcquisition = Boolean(currentExternalReferrer || detectedAiSource || PARAMS.some(function(key){ return Boolean(qs.get(key)); }));
     if(vertical){
       writeSessionValue(SESSION_VERTICAL_KEY, vertical);
