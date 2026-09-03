@@ -121,6 +121,7 @@ Core:
 - /how-much-does-a-website-cost - sourced 2026 website pricing guide that separates TMN's published starting prices from Clutch's dated broad-agency benchmark and current vendor-plan costs
 - /law-firm-website-design-cost - law firm website pricing guide that separates TMN's published prices from Clutch's dated general web-design benchmark, explains legal scope drivers, and leaves advertising approval with the firm and its counsel
 - /best-law-firm-websites - 8 checkable law firm website traits, with a transparent public-site review of The Ramsay Law Firm and clear boundaries on what cannot be verified externally
+- /law-firm-website-advertising-rules - attorney advertising rules applied to law firm websites: responsible-lawyer disclosure, specialist language, results, testimonials, stock imagery, intake forms, and filing differences between Florida and Texas, with a bounded review of The Ramsay Law Firm build and a clear statement that TMN prepares content for firm review and does not approve or file
 - /therapist-website-examples - 8 practical traits for evaluating a practice website, with LumiClinics as a psychiatry and therapy example and Training Wheels ABA clearly labeled as adjacent behavioral-therapy work; both live sites credit TMN publicly
 - /portfolio - selected work
 - /walnut-ventures-website-design - archived private-capital design showcase with a sanitized static preview. It is not an active business website or a commissioned-client case study.

@@ -39,6 +39,7 @@
 
 .proof-figure img {
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 10;
   border: 1px solid var(--line);
   border-radius: var(--r-md);
@@ -224,6 +225,7 @@
   }
 
   .evidence-table,
+  .evidence-table caption,
   .evidence-table tbody,
   .evidence-table tr,
   .evidence-table td {
