@@ -762,29 +762,6 @@
     .bundle{border-radius:4px;box-shadow:none}
     .faq-item{border-radius:4px}
 
-    .ai-pricing-feature{padding:clamp(1.5rem,3vw,2.5rem) var(--rail);background:var(--bg);border-bottom:1px solid var(--line)}
-    .ai-pricing-feature-inner{
-      max-width:1240px;
-      margin:0 auto;
-      display:grid;
-      grid-template-columns:minmax(0,1fr) auto;
-      gap:2rem clamp(2rem,6vw,6rem);
-      align-items:end;
-      padding:clamp(2rem,4vw,3.5rem);
-      background:var(--ink);
-      color:oklch(84% 0.014 245);
-    }
-    .ai-pricing-kicker{margin:0 0 .8rem;font-size:.78rem;font-weight:600;color:var(--accent)}
-    .ai-pricing-feature h2{max-width:19ch;margin:0 0 1rem;font-family:var(--sans)!important;font-size:clamp(2rem,3.7vw,3.75rem);font-weight:400;letter-spacing:-.04em;line-height:1;color:var(--bg)}
-    .ai-pricing-feature p{max-width:62ch;margin:0;color:oklch(76% 0.014 245);font-size:.98rem;line-height:1.65}
-    .ai-pricing-offer{min-width:230px;padding-left:2rem;border-left:1px solid oklch(100% 0 0 / .14)}
-    .ai-pricing-price{font-size:clamp(2.6rem,4.5vw,4rem);line-height:1;letter-spacing:-.04em;color:var(--bg)}
-    .ai-pricing-price span{margin-left:.35rem;font-size:.82rem;letter-spacing:0;color:oklch(70% 0.014 245)}
-    .ai-pricing-note{margin-top:.7rem!important;font-size:.8rem!important;color:oklch(68% 0.014 245)!important}
-    .ai-pricing-actions{display:flex;gap:.75rem;margin-top:1.25rem;flex-wrap:wrap}
-    .ai-pricing-actions a{min-height:44px;display:inline-flex;align-items:center;justify-content:center;padding:.72rem .9rem;border-radius:3px;font-size:.84rem;font-weight:600;text-decoration:none}
-    .ai-pricing-primary{background:var(--accent);color:var(--ink)}
-    .ai-pricing-secondary{border-bottom:1px solid oklch(100% 0 0 / .28);border-radius:0!important;color:var(--bg);padding-left:0!important;padding-right:0!important}
 
     .care-grid{max-width:1080px;margin:0 auto clamp(2.5rem,4vw,3.5rem);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border:1px solid var(--line)}
     .care-panel{padding:clamp(1.75rem,3.5vw,3rem);display:flex;flex-direction:column;align-items:flex-start}
@@ -808,9 +785,6 @@
     .mob-menu.open{visibility:visible}
 
     @media(max-width:760px){
-      .ai-pricing-feature{padding-left:0;padding-right:0}
-      .ai-pricing-feature-inner{grid-template-columns:1fr}
-      .ai-pricing-offer{padding:1.5rem 0 0;border-left:0;border-top:1px solid oklch(100% 0 0 / .14)}
       .care-grid{grid-template-columns:1fr}
       .care-grid .care-panel:nth-child(even){border-left:0}
       .care-grid .care-panel+.care-panel{border-top:1px solid var(--line)}
@@ -819,8 +793,6 @@
       .nav-cta{display:none!important}
       .tab-bar-wrap{padding-left:.75rem;padding-right:.75rem}
       .tab{padding:.52rem .62rem;font-size:.74rem}
-      .ai-pricing-actions{flex-direction:column;align-items:stretch}
-      .ai-pricing-secondary{align-self:flex-start}
     }
     /* Source Serif 4 (editorial serif) + IBM Plex Sans (neutral UI).
        IBM Plex Sans carries both service headlines and compact labels.
@@ -973,23 +945,6 @@
     <p><span class="stars">★★★★★</span>5.0 on Google &nbsp;·&nbsp; Published pricing &nbsp;·&nbsp; Website files after full payment &nbsp;·&nbsp; <a href="https://www.google.com/maps?cid=546421792563016260" target="_blank" rel="noopener">Read reviews</a></p>
   </div>
 
-  <section class="ai-pricing-feature" aria-labelledby="ai-pricing-title">
-    <div class="ai-pricing-feature-inner">
-      <div>
-        <h2 id="ai-pricing-title">AI Search Optimization for established firms.</h2>
-        <p>Monthly monitoring and hands-on improvements to crawler access, business facts, structured data, indexing, and pages worth citing. No AI ranking or recommendation can be guaranteed.</p>
-      </div>
-      <div class="ai-pricing-offer">
-        <div class="ai-pricing-price">$350<span>/mo</span></div>
-        <p class="ai-pricing-note">Requires active Site Care. Site Care starts at $50/mo, so combined care starts at $400/mo, or $450/mo with RIA Site Care. A one-time $750 baseline applies when required.</p>
-        <div class="ai-pricing-actions">
-          <a href="/ai-visibility" class="ai-pricing-primary">See AI search service</a>
-          <a href="/start-a-project?service=ai-visibility#project-form" class="ai-pricing-secondary">Request a review</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- TAB BAR -->
   <div class="tab-bar-wrap" id="tabWrap">
     <div class="tab-bar" id="tabBar" role="tablist">
@@ -1056,7 +1011,7 @@
       </div>
     </div>
 
-    <p class="cards-note r">Optional website support starts at $50/mo. <a href="#care" data-sec="care">Learn more →</a> See the <a href="/hilpan-moxie-wealth-management-website-design">Hilpan Moxie Wealth Management case study</a> for a live RIA example.</p>
+    <p class="cards-note r">Optional website support starts at $50/mo. Advisory firms start with <a href="/ria-site-care">RIA Site Care</a> at $100/mo. <a href="#care" data-sec="care">Learn more →</a> See the <a href="/hilpan-moxie-wealth-management-website-design">Hilpan Moxie Wealth Management case study</a> for a live RIA example.</p>
 
     <div class="cmp website-cmp r">
       <div class="sh"><h2>Side by <em>side.</em></h2><p>See exactly what each package includes.</p></div>
@@ -1344,7 +1299,7 @@
       <div class="faq-head r"><h2>Common <em>questions.</em></h2><p>What people ask before saying yes.</p></div>
       <div class="faq-list">
         <div class="faq-item r"><div class="faq-q"><h3>How do you build sites this fast?</h3><div class="faq-tog"><svg viewBox="0 0 12 12"><line x1="6" y1="0" x2="6" y2="12"/><line x1="0" y1="6" x2="12" y2="6"/></svg></div></div><div class="faq-a"><div><p>Starter Refresh and Full Site Rebuild projects typically target a first full draft within 72 hours of kickoff. Custom Studio Build projects typically target a first review within 7 to 10 days. Final launch timing depends on content, integrations, compliance review, and approvals, and is confirmed in the project agreement.</p></div></div></div>
-        <div class="faq-item r"><div class="faq-q"><h3>What if my site just needs a refresh, not a full rebuild?</h3><div class="faq-tog"><svg viewBox="0 0 12 12"><line x1="6" y1="0" x2="6" y2="12"/><line x1="0" y1="6" x2="12" y2="6"/></svg></div></div><div class="faq-a"><div><p>That is what the $2,250 Starter Refresh is for. We redesign your homepage, clean up the copy and CTAs, and make it look sharp on mobile. If you later want a full rebuild, everything carries forward.</p></div></div></div>
+        <div class="faq-item r"><div class="faq-q"><h3>What if my site just needs a refresh, not a full rebuild?</h3><div class="faq-tog"><svg viewBox="0 0 12 12"><line x1="6" y1="0" x2="6" y2="12"/><line x1="0" y1="6" x2="12" y2="6"/></svg></div></div><div class="faq-a"><div><p>That is what the $2,250 Starter Refresh is for: a focused scope when the homepage is the main problem. We redesign it, clean up the copy and CTAs, and make it look sharp on mobile. If you later want a full rebuild, everything carries forward.</p></div></div></div>
         <div class="faq-item r"><div class="faq-q"><h3>What do the CRM add-ons actually do?</h3><div class="faq-tog"><svg viewBox="0 0 12 12"><line x1="6" y1="0" x2="6" y2="12"/><line x1="0" y1="6" x2="12" y2="6"/></svg></div></div><div class="faq-a"><div><p>We build a custom pipeline, tasks, billing view, and reporting dashboard around the approved workflow. Gmail, Calendar, and Stripe connections are included only when supported by provider APIs, client accounts and permissions, and the confirmed scope. Client data remains yours. Code, hosting, third-party service rights, and transition terms follow the project agreement.</p></div></div></div>
         <div class="faq-item r"><div class="faq-q"><h3>Do I need the CRM add-on to buy a website?</h3><div class="faq-tog"><svg viewBox="0 0 12 12"><line x1="6" y1="0" x2="6" y2="12"/><line x1="0" y1="6" x2="12" y2="6"/></svg></div></div><div class="faq-a"><div><p>No. Most clients should start with the website. The CRM add-on is there when new leads need a cleaner handoff into pipeline, billing, reporting, or follow-up.</p></div></div></div>
         <div class="faq-item r"><div class="faq-q"><h3>What is the monthly fee for?</h3><div class="faq-tog"><svg viewBox="0 0 12 12"><line x1="6" y1="0" x2="6" y2="12"/><line x1="0" y1="6" x2="12" y2="6"/></svg></div></div><div class="faq-a"><div><p>Site care starts at $50 per month and can include hosting, uptime monitoring, backups, ongoing optimization, and updates. We confirm the scope and monthly price before care begins.</p></div></div></div>
