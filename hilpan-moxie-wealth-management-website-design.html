@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wealth Management Website Design Case Study | Hilpan Moxie</title>
+  <meta name="description" content="How TMN Creative built the Hilpan Moxie Wealth Management website: an SEC-registered RIA for technology professionals, from inquiry to live site in 4 days, with compliance-reviewed disclosures placed exactly as written." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="TMN Creative, Trevor Niemann and Taylor Niemann" />
+  <meta property="og:title" content="Hilpan Moxie Wealth Management Website Design | TMN Creative" />
+  <meta property="og:description" content="An independent RIA site for technology professionals, built around RSUs and concentrated stock, reviewed by the firm's compliance consultant, live 4 days after the first inquiry." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://tmncreative.com/hilpan-moxie-wealth-management-website-design" />
+  <meta property="og:image" content="https://tmncreative.com/images/hilpan-moxie.jpg" />
+  <meta property="og:image:width" content="1800" />
+  <meta property="og:image:height" content="1125" />
+  <meta property="og:image:alt" content="Hilpan Moxie Wealth Management homepage with the headline Stop guessing, Start building, a line about half your net worth in 1 ticker, and the intro call button" />
+  <meta property="og:site_name" content="TMN Creative" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hilpan Moxie Wealth Management Website Design | TMN Creative" />
+  <meta name="twitter:description" content="An independent RIA site for technology professionals, compliance-reviewed and live 4 days after the first inquiry." />
+  <meta name="twitter:image" content="https://tmncreative.com/images/hilpan-moxie.jpg" />
+  <link rel="canonical" href="https://tmncreative.com/hilpan-moxie-wealth-management-website-design" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet" /></noscript>
+  <link rel="preload" as="image" href="images/hilpan-moxie.jpg" fetchpriority="high" />
+  <link rel="stylesheet" href="growth-guides.css" />
+  <style>
+    .case-hero{padding-top:clamp(2.4rem,4vw,4rem);padding-bottom:clamp(2.4rem,4vw,3.8rem)}
+    .case-hero .hero-inner{grid-template-columns:minmax(0,.88fr) minmax(420px,1.12fr);align-items:center;gap:clamp(2rem,4vw,4.2rem)}
+    .case-hero h1{font-size:clamp(3.6rem,5vw,5rem);max-width:100%;line-height:.9;letter-spacing:-.04em;margin-bottom:1.15rem}
+    .case-hero .lead{max-width:50ch;margin-bottom:1.25rem}
+    .hero-proof{margin:0}
+    .hero-proof__frame{overflow:hidden;border:1px solid var(--line);border-radius:8px;background:var(--paper)}
+    .hero-proof img{width:100%;height:auto}
+    .hero-proof figcaption{font-size:.78rem;line-height:1.5;color:var(--muted);margin-top:.7rem}
+    .case-facts{max-width:1220px;margin:0 auto;display:grid;grid-template-columns:1.05fr 1fr .9fr .8fr;background:var(--ink);color:var(--paper);border-radius:8px;overflow:hidden}
+    .case-fact{padding:1.15rem 1.25rem;border-right:1px solid oklch(100% 0 0 / .11)}
+    .case-fact:last-child{border-right:0}
+    .case-fact span{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin-bottom:.34rem}
+    .case-fact strong{font-size:.9rem;line-height:1.45;font-weight:550}
+    .problem-layout{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr);gap:clamp(2rem,6vw,6rem);align-items:start}
+    .problem-copy{position:sticky;top:92px}
+    .problem-copy h2,.build-copy h2,.verify-copy h2,.words-copy h2{font-family:var(--serif);font-size:clamp(2.4rem,4vw,4.8rem);line-height:.95;letter-spacing:-.04em;font-weight:520;margin-bottom:1rem}
+    .problem-copy p,.build-copy>p,.verify-copy>p,.words-copy>p{color:var(--muted);line-height:1.65;max-width:60ch}
+    .problem-list{border-top:1px solid var(--line)}
+    .problem-row{display:grid;grid-template-columns:minmax(110px,.28fr) 1fr;gap:1.25rem;padding:1.45rem 0;border-bottom:1px solid var(--line)}
+    .problem-row h3{font-family:var(--mono);font-size:.72rem;line-height:1.5;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep);margin:0}
+    .problem-row p{color:var(--ink-2);line-height:1.65;margin:0;max-width:64ch}
+    .timeline-row{padding:1.05rem 0}
+    .timeline-row h3{color:var(--ink);font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;text-transform:none}
+    .build-layout{display:grid;grid-template-columns:minmax(0,1.16fr) minmax(320px,.84fr);gap:clamp(2rem,5vw,4.5rem);align-items:start}
+    .build-visual{margin:0}
+    .build-visual__frame{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--paper)}
+    .build-visual img{width:100%;height:auto}
+    .build-visual figcaption{font-size:.78rem;line-height:1.5;color:var(--muted);margin-top:.7rem}
+    .build-copy{position:sticky;top:92px}
+    .decision-list{list-style:none;margin:1.4rem 0 0;padding:0;border-top:1px solid var(--line)}
+    .decision-list li{padding:1rem 0;border-bottom:1px solid var(--line);color:var(--muted);font-size:.92rem;line-height:1.6}
+    .decision-list strong{display:block;color:var(--ink);font-size:.98rem;margin-bottom:.2rem}
+    .words-layout{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr);gap:clamp(2rem,6vw,6rem);align-items:start}
+    .words-copy{position:sticky;top:92px}
+    .words-list{border-top:1px solid var(--line);margin:0;padding:0;list-style:none}
+    .words-list li{padding:1.35rem 0;border-bottom:1px solid var(--line)}
+    .words-list blockquote{margin:0;font-family:var(--serif);font-size:clamp(1.25rem,1.9vw,1.6rem);line-height:1.32;letter-spacing:-.015em;color:var(--ink);font-weight:450}
+    .words-list cite{display:block;margin-top:.6rem;font-style:normal;font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+    .verify{background:var(--ink);color:var(--paper)}
+    .verify-inner{display:grid;grid-template-columns:minmax(280px,.8fr) minmax(0,1.2fr);gap:clamp(2rem,6vw,6rem);align-items:start}
+    .verify-copy h2{color:var(--paper)}
+    .verify-copy>p{color:oklch(82% 0.012 248)}
+    .verify-copy .v-more{display:inline-block;margin-top:1.1rem;font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:var(--accent);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+    .verify-list{border-top:1px solid oklch(100% 0 0 / .14)}
+    .verify-item{padding:1.25rem 0;border-bottom:1px solid oklch(100% 0 0 / .14)}
+    .verify-item h3{color:var(--paper);font-size:1.02rem;margin-bottom:.35rem}
+    .verify-item p{color:oklch(80% 0.012 248);line-height:1.62;margin-bottom:.55rem}
+    .verify-item a{font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:var(--accent);text-decoration-thickness:1px;text-underline-offset:4px}
+    .closing{background:var(--ink);color:var(--paper);padding:0 var(--rail) clamp(3.5rem,7vw,6rem)}
+    .closing-inner{max-width:1220px;margin:0 auto;padding-top:clamp(2.8rem,5vw,4.5rem);border-top:1px solid oklch(100% 0 0 / .14);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2rem;align-items:end}
+    .closing h2{font-family:var(--serif);font-size:clamp(2.5rem,4.3vw,5rem);line-height:.94;letter-spacing:-.04em;font-weight:520;max-width:20ch;margin-bottom:0;color:var(--paper)}
+    .closing .btn-primary{background:var(--accent);border-color:var(--accent);color:var(--ink);white-space:nowrap}
+    @media(max-width:900px){
+      .case-hero .hero-inner,.problem-layout,.build-layout,.words-layout,.verify-inner,.closing-inner{grid-template-columns:1fr}
+      .case-hero h1{font-size:clamp(3.4rem,12vw,5.2rem);max-width:8.5ch}
+      .problem-copy,.build-copy,.words-copy{position:relative;top:auto}
+      .case-facts{grid-template-columns:1fr 1fr}
+      .case-fact:nth-child(2){border-right:0}
+      .case-fact:nth-child(-n+2){border-bottom:1px solid oklch(100% 0 0 / .11)}
+      .closing-inner{align-items:start}
+    }
+    @media(max-width:560px){
+      .case-hero h1{max-width:100%;font-size:clamp(3.25rem,15vw,4.3rem)}
+      .case-hero .hero-inner{gap:1.8rem}
+      .case-facts{grid-template-columns:1fr}
+      .case-fact{border-right:0;border-bottom:1px solid oklch(100% 0 0 / .11)}
+      .case-fact:last-child{border-bottom:0}
+      .problem-row{grid-template-columns:1fr;gap:.45rem}
+      .closing .btn-primary{width:100%;white-space:normal;text-align:center;line-height:1.25}
+    }
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://tmncreative.com/hilpan-moxie-wealth-management-website-design","url":"https://tmncreative.com/hilpan-moxie-wealth-management-website-design","name":"Wealth Management Website Design Case Study · Hilpan Moxie Wealth Management","description":"A wealth management website design case study: an SEC-registered RIA for technology professionals, built around RSUs and concentrated stock, compliance-reviewed, and live 4 days after the first inquiry.","isPartOf":{"@id":"https://tmncreative.com/#website"},"about":{"@id":"https://tmncreative.com/hilpan-moxie-wealth-management-website-design#project"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://tmncreative.com/images/hilpan-moxie.jpg","width":1800,"height":1125},"datePublished":"2026-09-03","dateModified":"2026-09-03","inLanguage":"en-US","breadcrumb":{"@id":"https://tmncreative.com/hilpan-moxie-wealth-management-website-design#breadcrumb"}},{"@type":"CreativeWork","@id":"https://tmncreative.com/hilpan-moxie-wealth-management-website-design#project","name":"Hilpan Moxie Wealth Management Website","description":"An independent RIA website for technology professionals with RSUs and concentrated stock, with interactive planning illustrations, 29 migrated articles, a founder publishing portal, and compliance-reviewed disclosures.","image":"https://tmncreative.com/images/hilpan-moxie.jpg","url":"https://tmncreative.com/hilpan-moxie-wealth-management-website-design","sameAs":"https://www.hilpanmoxiewm.com/","creator":{"@id":"https://tmncreative.com/#org"},"genre":["Wealth Management Website Design","RIA Website Design","Financial Advisor Website Design","Professional Services Website"]},{"@type":"BreadcrumbList","@id":"https://tmncreative.com/hilpan-moxie-wealth-management-website-design#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tmncreative.com/"},{"@type":"ListItem","position":2,"name":"Portfolio","item":"https://tmncreative.com/portfolio"},{"@type":"ListItem","position":3,"name":"Hilpan Moxie Wealth Management Website Case Study","item":"https://tmncreative.com/hilpan-moxie-wealth-management-website-design"}]}]}
+  </script>
+  <script async src="https://plausible.io/js/pa-qenXucgzJOGY_zAczSQ6m.js"></script>
+  <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
+</head>
+<body class="tmn-guide">
+  <!--
+  THESIS: Treat the project as a public proof record, with the live work and the client's own dated words ahead of agency claims.
+  OWN-WORLD: TMN's near-white paper, dark ink, restrained gold accent, editorial serif, square controls, and real client imagery.
+  STORY: An advisory-firm principal sees the finished site, understands why a template could not show the practice, reviews the decisions and the timeline, reads what the founder said, verifies the public evidence, and discusses a project.
+  FIRST VIEWPORT: Short proof-led copy on the left, the live firm-site screenshot on the right, and direct routes to the client site and the advisor service.
+  FORM: Grounded proof record, same family as the Ramsay case study.
+  FINISH: unreviewed and undocumented is unfinished; desktop and 390px verification before publish.
+  -->
+  <a class="skip" href="#main">Skip to content</a>
+  <nav class="nav" aria-label="Primary">
+    <div class="nav-inner">
+      <a href="/" class="logo" aria-label="TMN Creative home"><img src="images/logo-dark.webp" alt="TMN Creative" width="120" height="68" decoding="async" /><span>Creative</span></a>
+      <div class="nav-links"><a href="/portfolio">Work</a><a href="/pricing">Pricing</a>
+        <a href="/financial-services">Financial Advisors</a><a href="/websites-for-private-wealth-firms">Private Wealth</a>
+        <a href="/ria-website-compliance-guide">Compliance Guide</a><a href="/free-review">Free Preview</a></div>
+      <div class="nav-actions"><a class="btn btn-secondary" href="/portfolio">View Portfolio</a><a class="btn btn-primary" href="/start-a-project?vertical=financial-services">Discuss an Advisor Project</a></div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="hero case-hero">
+      <div class="hero-inner">
+        <div>
+          <h1>An RIA site that <em>shows the work.</em></h1>
+          <p class="lead">An SEC-registered investment adviser in Irvine, California, serving technology professionals with RSUs and concentrated stock. First inquiry Aug 27, 2026. Live on the firm&apos;s domain Aug 31, with the firm&apos;s compliance consultant&apos;s disclosures placed exactly as written.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="https://www.hilpanmoxiewm.com/" target="_blank" rel="noopener">View Live Website</a><a class="btn btn-secondary" href="/financial-services">Financial Advisor Website Design</a></div>
+        </div>
+        <figure class="hero-proof">
+          <div class="hero-proof__frame"><img src="images/hilpan-moxie.jpg" alt="Hilpan Moxie Wealth Management homepage with the headline Stop guessing, Start building, a line about half your net worth in 1 ticker, and the intro call button" width="1800" height="1125" loading="eager" fetchpriority="high" decoding="async" /></div>
+          <figcaption>Live client website. The public footer credits TMN Creative.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Project facts">
+      <div class="case-facts">
+        <div class="case-fact"><span>Project</span><strong>Hilpan Moxie Wealth Management, LLC</strong></div>
+        <div class="case-fact"><span>Sector</span><strong>Independent RIA, Irvine, California</strong></div>
+        <div class="case-fact"><span>Founder</span><strong>Don Hilario, CFP&reg; professional</strong></div>
+        <div class="case-fact"><span>Status</span><strong>Live Aug 31, 2026</strong></div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="section-inner problem-layout">
+        <div class="problem-copy">
+          <h2>A 14-year practice, described by a template.</h2>
+          <p>Don Hilario founded the firm in 2012 and has worked with Google employees since 2008. The practice is specific: RSU vest schedules, concentrated employer stock, the tax and retirement decisions that follow. The previous site came from a subscription advisor platform. It could describe that specialty. It could not show it.</p>
+        </div>
+        <div class="problem-list">
+          <article class="problem-row"><h3>Found through ChatGPT</h3><p>Don asked an AI assistant for a new website with financial-advisor infrastructure, then narrowed the shortlist on speed, support, RIA fluency, and boutique service. His summary of the final comparison, in his words: the platform option was &ldquo;much more of a platform,&rdquo; and TMN was &ldquo;much more of a boutique design relationship.&rdquo;</p></article>
+          <article class="problem-row"><h3>Compliance is part of the build</h3><p>The firm is an SEC-registered adviser. Don&apos;s compliance consultant reviewed the preview, supplied the required disclosures, and confirmed the language for each planning illustration. The firm kept final approval of every page. TMN does not approve or certify advertising for any adviser.</p></article>
+          <article class="problem-row"><h3>29 articles with URLs to keep</h3><p>The firm had 29 published insights on the old platform. A redesign that broke those addresses would throw away 14 years of writing and the search history attached to it.</p></article>
+          <article class="problem-row"><h3>The founder publishes</h3><p>Don writes practice updates himself. A site he could not update without a vendor in the loop would have recreated the platform dependency the redesign was meant to end.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner build-layout">
+        <figure class="build-visual">
+          <div class="build-visual__frame"><img src="images/hilpan-moxie-work.jpg" alt="Hilpan Moxie homepage illustration titled Keep it on purpose, showing a hypothetical portfolio built around a concentrated Google position with a slider and an illustration-only disclosure" width="1800" height="1125" loading="lazy" decoding="async" /></div>
+          <figcaption>One of 4 interactive illustrations on the homepage. Each carries the compliance consultant&apos;s disclosure that it is a hypothetical example, not a recommendation.</figcaption>
+        </figure>
+        <div class="build-copy">
+          <h2>What TMN built into the site.</h2>
+          <p>The answer to a specialty that a template could only describe was to show it. The site draws the decisions a technology professional actually faces, states the firm&apos;s role in its own words, and keeps everything the firm had already published.</p>
+          <ul class="decision-list">
+            <li><strong>Planning illustrations, disclosed</strong>An RSU grant mapped across 16 vest dates, a concentration slider that shows what the rest of a portfolio has to do around one large position, a bond ladder and retirement income timeline with a Roth window, and a coverage gap graphic. Each is labeled as an illustration and carries the hypothetical-example disclosure the compliance consultant confirmed.</li>
+            <li><strong>Wealth management first</strong>The first preview led with planning. Don corrected the emphasis: more than 90% of the practice is wealth management with planning included, so the site was rebuilt around that, with planning-only and flat-fee engagement paths kept visible.</li>
+            <li><strong>The firm&apos;s words, verbatim</strong>Don&apos;s 2 sentences describing what the firm is responsible for went in as written. The compliance consultant&apos;s 3 disclosures went in exactly as written. TMN drafted around the firm&apos;s language rather than over it.</li>
+            <li><strong>29 articles migrated, addresses preserved</strong>Every published insight moved to the new site at its original URL, with an Insights search and 8 topic pages added so the archive is browsable rather than buried.</li>
+            <li><strong>A founder publishing portal</strong>A private portal at the firm&apos;s own address lets Don publish updates without a vendor in the loop. The firm&apos;s standing disclosure is appended to every post automatically. Don published his first update himself on Sep 1, the day after launch. The firm continues on month-to-month <a href="/ria-site-care">site care</a> with <a href="/managed-publishing-portal">the managed publishing portal</a>.</li>
+            <li><strong>Search foundation on day 1</strong>Google Search Console and Bing verified, a 53-URL sitemap submitted, redirects and canonicals in place, and structured data for the firm, the founder, 8 services, and all 29 articles. <a href="/ria-website-compliance-guide">The RIA website compliance guide</a> covers the disclosure structure.</li>
+            <li><strong>Hand-coded, no page builder</strong>Static pages on the firm&apos;s domain with 1 third-party script, a privacy-respecting analytics tag. Anyone can confirm that by viewing the source.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="section-inner problem-layout">
+        <div class="problem-copy">
+          <h2>Inquiry to live in 4 days.</h2>
+          <p>The dates below come from the project correspondence. The site went live the same day the agreement was signed, and the founder was publishing on it the next day.</p>
+        </div>
+        <div class="problem-list">
+          <article class="problem-row timeline-row"><h3>Aug 27, 7:01pm CT</h3><p>Inquiry arrives through TMN&apos;s project form.</p></article>
+          <article class="problem-row timeline-row"><h3>Aug 28, 3:27pm CT</h3><p>First homepage preview delivered. The firm&apos;s compliance consultant reviews it the same day.</p></article>
+          <article class="problem-row timeline-row"><h3>Aug 29</h3><p>Morning pass places the firm&apos;s language and the 3 disclosures verbatim. Afternoon pass adds the concentration, bond ladder, retirement income, and coverage gap illustrations.</p></article>
+          <article class="problem-row timeline-row"><h3>Aug 30</h3><p>Compliance consultant confirms the disclosure language for the new illustrations.</p></article>
+          <article class="problem-row timeline-row"><h3>Aug 31</h3><p>10am call, agreement signed, site live on the firm&apos;s domain at 12:03pm CT with all 29 articles at their original URLs. Publishing portal live that evening.</p></article>
+          <article class="problem-row timeline-row"><h3>Sep 1</h3><p>Search Console and Bing verified, sitemap submitted, structured data confirmed. Don publishes his first update through the portal. Portal guide and launch archive handed off.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner words-layout">
+        <div class="words-copy">
+          <h2>In the founder&apos;s words.</h2>
+          <p>Quoted from Don Hilario&apos;s emails to TMN during the project, Aug 28 to Sep 2, 2026. Published with the firm&apos;s permission to be named. Nothing here is a paid or solicited review.</p>
+        </div>
+        <ul class="words-list">
+          <li><blockquote>&ldquo;You moved incredibly fast, and more importantly, you got surprisingly close to the practice on the first pass.&rdquo;</blockquote><cite>Aug 28, 2026, after the first preview</cite></li>
+          <li><blockquote>&ldquo;Part of what landed so strongly for me is that this doesn&apos;t feel like a templated financial advisor site.&rdquo;</blockquote><cite>Aug 28, 2026</cite></li>
+          <li><blockquote>&ldquo;You&apos;ve taken a lot of information and turned it into something that feels like the practice I&apos;ve actually built.&rdquo;</blockquote><cite>Aug 30, 2026, on the third revision</cite></li>
+          <li><blockquote>&ldquo;I really appreciate how thoroughly you&apos;ve handled all of this, especially the important pieces behind the scenes.&rdquo;</blockquote><cite>Sep 1, 2026, after search setup and handoff</cite></li>
+          <li><blockquote>&ldquo;Overall, I&apos;m very pleased Trevor and looking fwd to working this new chapter for my practice together.&rdquo;</blockquote><cite>Sep 2, 2026, at close of project</cite></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section verify">
+      <div class="section-inner verify-inner">
+        <div class="verify-copy">
+          <h2>What is public and verifiable today.</h2>
+          <p>This case study stays inside the evidence. It claims no rankings, lead volume, or client outcomes for the firm. The site launched Aug 31, 2026 and there is no performance history to report yet. Assets under management and household counts on the firm&apos;s site are the firm&apos;s own statements. Page reviewed Sep 3, 2026.</p>
+          <a class="v-more" href="/verify">How to verify TMN Creative itself</a>
+        </div>
+        <div class="verify-list">
+          <article class="verify-item"><h3>The firm site is live</h3><p>The published site presents the firm&apos;s services, who it serves, how to work together, the Insights archive, and an intro call path on the firm&apos;s own domain.</p><a href="https://www.hilpanmoxiewm.com/" target="_blank" rel="noopener">View Live Website</a></article>
+          <article class="verify-item"><h3>TMN&apos;s role is credited publicly</h3><p>The live site&apos;s footer reads &ldquo;Site by TMN Creative&rdquo; beside the firm&apos;s Disclosures, Privacy, and Form CRS links, providing corroboration outside tmncreative.com.</p><a href="https://www.hilpanmoxiewm.com/" target="_blank" rel="noopener">Review the Public Credit</a></article>
+          <article class="verify-item"><h3>The adviser is checkable</h3><p>The firm links its Form CRS from its own footer, and its registration can be looked up on the SEC&apos;s Investment Adviser Public Disclosure database, which is maintained by the SEC rather than by the firm or by TMN.</p><a href="https://adviserinfo.sec.gov/" target="_blank" rel="noopener">Open the SEC Adviser Search</a></article>
+          <article class="verify-item"><h3>The founder publishes on it</h3><p>The first post-launch update was published by the firm through its own portal on Sep 1, 2026, with the standing disclosure appended.</p><a href="https://www.hilpanmoxiewm.com/updates/the-practice-keeps-evolving/" target="_blank" rel="noopener">Read the Firm&apos;s First Update</a></article>
+          <article class="verify-item"><h3>The build is inspectable</h3><p>The sitemap lists 53 URLs, including all 29 migrated articles and 8 topic pages (checked Sep 3, 2026). View source on any page shows hand-written markup, JSON-LD for the firm and its services, and a single third-party script.</p><a href="https://www.hilpanmoxiewm.com/sitemap.xml" target="_blank" rel="noopener">Open the Sitemap</a></article>
+          <article class="verify-item"><h3>The disclosure structure is documented</h3><p>How adviser sites handle the SEC Marketing Rule, testimonials, hypothetical illustrations, and Form CRS placement is written up in TMN&apos;s compliance guide. It is a build reference, not legal or compliance advice.</p><a href="/ria-website-compliance-guide">Read the RIA Compliance Guide</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-inner">
+        <h2>Does the firm website show the practice the way you actually run it?</h2>
+        <p style="max-width:52ch;margin:0 auto 1.5rem;opacity:.85">Advisor sites start at $2,250, with a free homepage preview in 48 hours before you commit. <a href="/financial-advisor-website-cost">See what financial advisor websites cost.</a></p>
+        <a class="btn btn-primary" href="/start-a-project?vertical=financial-services">Discuss an Advisor Project</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-inner">
+      <div class="foot-brand"><img src="images/logo-dark.webp" width="120" height="68" alt="TMN Creative" decoding="async" /><p>Premium hand-coded websites for serious firms. Husband-and-wife studio in Fort Worth, Texas.</p></div>
+      <div><h3>Financial</h3><a href="/financial-services">Financial Advisor Web Design</a><a href="/websites-for-private-wealth-firms">Private Wealth Firms</a><a href="/ria-site-care">RIA Site Care</a><a href="/pricing">Pricing</a></div>
+      <div><h3>Proof</h3><a href="/portfolio">Portfolio</a><a href="/verify">Verify TMN</a><a href="/ria-website-compliance-guide">RIA Compliance Guide</a></div>
+      <div><h3>Contact</h3><a href="mailto:hello@tmncreative.com">hello@tmncreative.com</a><a href="tel:6822500533">(682) 250-0533</a></div>
+    </div>
+  </footer>
+  <script src="/tmn-attribution.v20260503b.js?v=20260814e" defer></script>
+  <!-- Fathom - beautiful, simple website analytics -->
+  <script src="https://cdn.usefathom.com/script.js" data-site="TBWMZHLW" defer></script>
+  <!-- / Fathom -->
+</body>
+</html>
