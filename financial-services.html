@@ -33,8 +33,8 @@
   <meta name="ICBM" content="32.7555, -97.3308" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet" /></noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet" /></noscript>
   <link rel="stylesheet" href="evidence-ui.css" />
   <link rel="preload" as="image" href="images/logo-dark.webp" fetchpriority="high" />
 
@@ -233,7 +233,7 @@
     @media(max-width:640px){.cursor-light{display:none!important}.logo{width:max-content!important;max-width:calc(100vw - 5.5rem);flex-shrink:0}.logo-word{white-space:nowrap}.nav-cta{display:none!important}}
 
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms !important;transition-duration:0.01ms !important}[data-r]{opacity:1;transform:none}.cursor-light{display:none}}
-  
+
     /* === TYPE-V3 === */
     /* Source Serif 4 (editorial serif) + IBM Plex Sans (neutral UI).
        Geist Mono retained only for tabular dashboard data.
@@ -335,7 +335,7 @@
         "name": "How much does a financial advisor website cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Financial advisor and RIA web design at TMN Creative starts at $2,250 for a Starter Refresh, $3,750 for a Full Site Rebuild, and $5,000 for a Custom Studio Build. Each tier has a different scope, with advisor bios, client-review copy and disclosures, and deeper industry-specific work included only when listed in the confirmed package or signed agreement. Flat website-build fees, no retainers. Advisory firms start with RIA Site Care at $100/month."
+          "text": "Financial advisor and RIA web design at TMN Creative starts at $2,250 for a Starter Refresh, $3,750 for a Full Site Rebuild, and $5,000 for a Custom Studio Build. Each tier has a different scope, with advisor bios, client-review copy and disclosures, and deeper industry-specific work included only when listed in the confirmed package or signed agreement. Website builds use flat project fees. Ongoing support is optional, with RIA Site Care at $100/month."
         }
       },
       {
@@ -389,8 +389,9 @@
     ,{"@type": "Question", "name": "Can you migrate an advisor blog without losing its SEO value?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, when migration is in scope. Advisory firms often have years of articles that bring in search traffic and buyer trust. We keep or 301-map each supported URL, preserve titles and metadata where practical, and rebuild the posts in the new design with their disclosures intact. No ranking outcome is guaranteed."}},{"@type": "Question", "name": "What does ongoing support look like after launch?", "acceptedAnswer": {"@type": "Answer", "text": "TMN Creative's RIA Site Care is $100 per month, month to month. It includes managed hosting, SSL, uptime monitoring, monthly form and disclosure-link checks, routine technical maintenance, direct email support from Trevor Niemann with a target response within 1 business day, and routine approved changes to existing pages typically deployed within 2 business days of approved copy. A Managed Publishing Portal is available as a $150 monthly add-on when the firm's own team needs to publish directly. Compliance Site Care is a separate $250 monthly add-on for dated public-page archives, a plain-English change log, and disclosure-link checks."}}]
   }
   </script>
+  <link rel="stylesheet" href="buyer-clarity.css" />
 </head>
-<body>
+<body class="bc-page">
 
   <div class="cursor-light" id="cursorLight" aria-hidden="true"></div>
   <div class="scroll-prog" id="scrollProg" aria-hidden="true"></div>
@@ -429,17 +430,9 @@
   <main>
 
     <section class="hero">
-      <div class="hero-caustic" aria-hidden="true">
-        <picture>
-          <source srcset="images/hero-caustic.webp" type="image/webp">
-          <img src="images/hero-caustic.webp" alt="Abstract gold light texture" width="1600" height="893" loading="eager" decoding="async">
-        </picture>
-      </div>
       <div class="hero-inner">
-        <div class="eye">Financial Advisor &amp; RIA Web Design Agency</div>
-        <h1>Web design for RIAs and advisors who need clients to <em>trust them before the first meeting.</em></h1>
-        <p class="lead">TMN Creative builds premium hand-coded websites for Registered Investment Advisors, financial advisors, wealth managers, broker-dealers, lenders, and CPAs. Copy and disclosure paths are prepared for the firm's review under the rules that apply, including FINRA Rule 2210 or the SEC Marketing Rule when relevant. Trust-forward design. Mobile-first. Starter Refresh and Full Site Rebuild first drafts typically target 72 hours after kickoff. Published website tiers are Starter Refresh from $2,250, Full Site Rebuild from $3,750, and Custom Studio Build from $5,000.</p>
-        <p class="authority-meta"><span>Reviewed Sep 3, 2026</span><span>By Trevor and Taylor Niemann</span><span>Sources: SEC and FINRA</span></p>
+        <h1>Custom websites for financial advisors and RIAs.</h1>
+        <p class="lead">TMN Creative designs and builds your site, with direct founder access and a clear process for your firm's review.</p>
         <div class="hero-ctas">
           <a href="/start-a-project?vertical=financial-services" class="btn btn-p">Discuss an Advisor Project <svg viewBox="0 0 14 10"><path d="M1 5h12m0 0L9 1m4 4L9 9"/></svg></a>
           <a href="/free-review?vertical=financial-services" class="btn btn-s">Request a Free Preview</a>
@@ -447,9 +440,26 @@
       </div>
     </section>
 
+    <nav class="bc-jump" aria-label="On this page"><a href="#advisor-project-pricing">Builds from $2,250</a><a href="#hilpan-proof-title">Live RIA work</a><a href="#advisor-ongoing-care">Monthly support</a></nav>
+
+    <section class="sec" aria-labelledby="hilpan-proof-title">
+      <div class="bc-proof">
+        <figure>
+          <a href="/hilpan-moxie-wealth-management-website-design"><img src="images/hilpan-moxie-portfolio.jpg" alt="Hilpan Moxie Wealth Management website designed and built by TMN Creative" width="1100" height="471" loading="eager" fetchpriority="high" decoding="async" /></a>
+          <figcaption>Live client site. Its public footer credits TMN Creative.</figcaption>
+        </figure>
+        <div class="bc-proof-copy">
+          <h2 id="hilpan-proof-title">Hilpan Moxie Wealth Management</h2>
+          <p>An independent RIA serving technology professionals. TMN rebuilt the website, migrated 29 articles at their original addresses, and added a portal for the founder to publish updates.</p>
+          <p>The firm's compliance consultant supplied the disclosures. The firm retained final approval. Don published his first update through the portal on Sep 1, 2026, the day after launch.</p>
+          <div class="bc-links"><a href="/hilpan-moxie-wealth-management-website-design">Read the case study</a><a href="https://www.hilpanmoxiewm.com/" target="_blank" rel="noopener">Visit the client site</a><a href="https://www.hilpanmoxiewm.com/updates/the-practice-keeps-evolving/" target="_blank" rel="noopener">Read the founder's update</a></div>
+        </div>
+      </div>
+    </section>
+
     <section class="stats">
       <div class="stats-inner">
-        <div class="stat"><div class="stat-k">72<span class="u">h</span></div><div class="stat-l">Starter / Full target</div></div>
+        <div class="stat"><div class="stat-k">72<span class="u">h</span></div><div class="stat-l">Starter / Full first-draft target</div></div>
         <div class="stat"><div class="stat-k">50<span class="u">+</span></div><div class="stat-l">Sites shipped</div></div>
         <div class="stat"><div class="stat-k">5.0<span class="u">★</span></div><div class="stat-l">Google rating</div></div>
         <div class="stat"><div class="stat-k">Hand-coded</div><div class="stat-l">No template builder</div></div>
@@ -458,54 +468,53 @@
 
     <section class="sec" aria-label="Fit check">
       <div class="sec-head">
-        <div class="eye">Fit Check</div>
+
         <h2>Where TMN fits. <em>And where it does not.</em></h2>
         <p>TMN is a founder-led custom studio for firms that need a serious public presence and a clean review process. Third-party context: Web Tonic's August 11, 2026 comparison, <a href="https://www.webtonic.io/blog/best-web-design-ui-ux-agencies-for-financial-advisory" target="_blank" rel="noopener" style="color:var(--accent-deep);font-weight:600">"Ask Who Owns the Compliance Review: 21 Advisor Web Design Agencies"</a>, lists TMN Creative third. The ranking is the publisher's own.</p>
       </div>
       <div class="cards">
-        <div class="card"><h3>Best for: RIAs, advisors, and wealth firms</h3><p>Independent RIAs, breakaway advisors, wealth managers, CPAs, and lenders whose clients and prospects vet the firm online before a first meeting. Copy is prepared for firm and compliance review, with disclosures, ADV and Form CRS links, and SEC Marketing Rule-aware layouts built in from the start. Trevor's background across fintech, private wealth, and family offices is part of the fit.</p></div>
+        <div class="card"><h3>RIAs, advisors, and wealth firms</h3><p>Independent RIAs, breakaway advisors, wealth managers, CPAs, and lenders whose prospects research the firm before a meeting. Copy, disclosure paths, ADV and Form CRS links, and reviewer handoff are included when listed in the confirmed scope. Trevor brings experience across fintech, private wealth, and family offices.</p></div>
         <div class="card"><h3>Not a fit: Compliance approval and enterprise builds</h3><p>TMN does not provide legal or compliance approval, interpret recordkeeping duties, or give investment advice. Compliance Site Care can preserve dated website snapshots and change records when separately scoped, while the firm and its reviewers remain responsible for the records they must keep. Wirehouse-scale enterprise sites and $99-per-month advisor templates are also not what this studio builds.</p></div>
-        <div class="card"><h3>Investment &amp; timing: $3,750 to $5,000+ for most advisor builds</h3><p>Most advisor and RIA builds are a Full Site Rebuild from $3,750 or a Custom Studio Build from $5,000, with Custom first reviews typically targeting 7 to 10 days. A focused Starter Refresh from $2,250 fits genuinely small scopes.</p></div>
+        <div class="card"><h3>Published project options</h3><p>A Full Site Rebuild starts at $3,750, and a Custom Studio Build starts at $5,000. Custom first reviews typically target 7 to 10 days. A focused Starter Refresh starts at $2,250. Choose by pages, copy, migration, integrations, and review requirements.</p></div>
       </div>
     </section>
 
     <section class="sec sec-alt">
       <div class="sec-head">
-        <div class="eye">Quick Answer</div>
+
         <h2>What should an advisor website make clear?</h2>
         <p><strong>A financial advisor or RIA website should quickly explain who the firm serves, how the advisor is paid, why the team is credible, and what the next step is.</strong> TMN Creative builds advisor websites around the confirmed scope, with mobile-first design and a direct inquiry path included, and advisor bios, disclosure structure, CRM handoff, search foundations, and copy prepared for firm review added when listed in the package or signed agreement. Prospects can start with a <a href="/free-review?vertical=financial-services" style="color:var(--accent-deep);font-weight:600;text-decoration:none;border-bottom:1px solid var(--accent)">free website preview</a> or review what makes a <a href="/professional-services-website-trust" style="color:var(--accent-deep);font-weight:600;text-decoration:none;border-bottom:1px solid var(--accent)">professional services website trustworthy</a>.</p>
       </div>
       <div class="cards">
-        <a class="card" href="/pricing" style="text-decoration:none;color:inherit" data-r><div class="card-num">01</div><h3>Published starting prices</h3><p>TMN's published starting prices are $2,250, $3,750, and $5,000, with package scope confirmed in writing.</p></a>
-        <a class="card" href="/hilpan-moxie-wealth-management-website-design" style="text-decoration:none;color:inherit" data-r><div class="card-num">02</div><h3>Named RIA proof</h3><p>See how TMN built the live Hilpan Moxie Wealth Management site, including 29 migrated articles and a documented compliance-review path.</p></a>
-        <a class="card" href="/best-website-design-for-financial-advisors" style="text-decoration:none;color:inherit" data-r><div class="card-num">03</div><h3>Advisor website options</h3><p>A practical comparison of templates, advisor platforms, agencies, and custom builds for RIAs and wealth firms.</p></a>
-        <a class="card" href="/ria-website-compliance-guide" style="text-decoration:none;color:inherit" data-r><div class="card-num">04</div><h3>RIA website compliance</h3><p>A rule-by-rule guide to SEC, FINRA, Form CRS, BrokerCheck, testimonials, performance, and recordkeeping.</p></a>
-        <a class="card" href="/breakaway-advisor-website-guide" style="text-decoration:none;color:inherit" data-r><div class="card-num">05</div><h3>Breakaway launch plan</h3><p>How to build privately, settle the firm's identity, coordinate review, and launch in step with the transition.</p></a>
-        <a class="card" href="/financial-advisor-website-cost" style="text-decoration:none;color:inherit" data-r><div class="card-num">06</div><h3>Advisor website cost</h3><p>Published TMN starting prices, common cost drivers, ownership questions, and the 3-year subscription comparison.</p></a>
+        <a class="card" href="/pricing" style="text-decoration:none;color:inherit" data-r><h3>Published starting prices</h3><p>TMN's published starting prices are $2,250, $3,750, and $5,000, with package scope confirmed in writing.</p></a>
+        <a class="card" href="/hilpan-moxie-wealth-management-website-design" style="text-decoration:none;color:inherit" data-r><h3>Named RIA proof</h3><p>See how TMN built the live Hilpan Moxie Wealth Management site, including 29 migrated articles and a documented compliance-review path.</p></a>
+        <a class="card" href="/best-website-design-for-financial-advisors" style="text-decoration:none;color:inherit" data-r><h3>Advisor website options</h3><p>A practical comparison of templates, advisor platforms, agencies, and custom builds for RIAs and wealth firms.</p></a>
+        <a class="card" href="/ria-website-compliance-guide" style="text-decoration:none;color:inherit" data-r><h3>RIA website compliance</h3><p>A rule-by-rule guide to SEC, FINRA, Form CRS, BrokerCheck, testimonials, performance, and recordkeeping.</p></a>
+        <a class="card" href="/breakaway-advisor-website-guide" style="text-decoration:none;color:inherit" data-r><h3>Breakaway launch plan</h3><p>How to build privately, settle the firm's identity, coordinate review, and launch in step with the transition.</p></a>
+        <a class="card" href="/financial-advisor-website-cost" style="text-decoration:none;color:inherit" data-r><h3>Advisor website cost</h3><p>Published TMN starting prices, common cost drivers, ownership questions, and the 3-year subscription comparison.</p></a>
       </div>
     </section>
 
     <section class="sec">
       <div class="sec-head">
-        <div class="eye">Why TMN</div>
+
         <h2>Built by people who know <em>the financial-services buyer.</em></h2>
         <p><a href="/trevor" style="color:var(--accent-deep);font-weight:600;text-decoration:none;border-bottom:1px solid var(--accent)">Trevor Niemann</a> spent a decade in enterprise sales and capital raising across fintech, private wealth, and family offices before starting TMN Creative. Advisors work directly with Trevor and Taylor from positioning through launch.</p>
       </div>
       <div class="cards">
-        <div class="card" data-r><div class="card-num">01</div><h3>Financial context</h3><p>We understand advisor positioning, referral trust, client qualification, disclosure review, and the difference between fee-only and fee-based firms.</p></div>
-        <div class="card" data-r><div class="card-num">02</div><h3>Direct founder access</h3><p>No sales handoff or junior account layer. The people who scope the work also write, design, build, and launch it.</p></div>
-        <div class="card" data-r><div class="card-num">03</div><h3>Project-file ownership</h3><p>After full payment, the client owns the completed project files created by TMN for the website, subject to the signed agreement. Third-party accounts, licensed assets, domains, hosting, and integrations are governed separately and are not promised as transferable. Site care is optional.</p></div>
+        <div class="card" data-r><h3>Financial context</h3><p>We understand advisor positioning, referral trust, client qualification, disclosure review, and the difference between fee-only and fee-based firms.</p></div>
+        <div class="card" data-r><h3>Direct founder access</h3><p>No sales handoff or junior account layer. The people who scope the work also write, design, build, and launch it.</p></div>
+        <div class="card" data-r><h3>Project-file ownership</h3><p>After full payment, the client owns the completed project files created by TMN for the website, subject to the signed agreement. Third-party accounts, licensed assets, domains, hosting, and integrations are governed separately and are not promised as transferable. Site care is optional.</p></div>
       </div>
     </section>
 
     <section class="sec sec-alt">
       <div class="sec-head">
-        <div class="eye">Selected Work</div>
-        <h2>Built by us. <em>Selected proof.</em></h2>
-        <p>A live RIA build, an archived private-capital design, and a clearly labeled concept, with each status stated plainly.</p>
+        <h2>More financial-sector design work.</h2>
+        <p>Alongside the live Hilpan Moxie site above, these records show an archived private-capital design and a financial-services concept.</p>
       </div>
       <div class="work-preview">
-        <div class="work-grid">
+        <div class="work-grid" style="grid-template-columns:repeat(2,1fr)">
           <a href="/portfolio#noteserv-concept" class="work-item" data-r>
             <div class="work-img"><img src="images/ns.jpg" alt="NoteServ financial services website concept by TMN Creative" width="900" height="562" loading="lazy" decoding="async" /></div>
             <div class="work-meta"><div><div class="work-name">NoteServ</div><div class="work-cat">Financial Services · Concept</div></div><div class="work-arrow">View concept →</div></div>
@@ -514,10 +523,6 @@
             <div class="work-img"><img src="images/walnut-archive-showcase-v2.jpg" alt="Archived Walnut Ventures private-capital design showcase by TMN Creative" width="1586" height="992" loading="lazy" decoding="async" /></div>
             <div class="work-meta"><div><div class="work-name">Walnut Ventures</div><div class="work-cat">Private Capital · Archived Design Showcase</div></div><div class="work-arrow">View archive →</div></div>
           </a>
-          <a href="/hilpan-moxie-wealth-management-website-design" class="work-item" data-r>
-            <div class="work-img"><img src="images/hilpan-moxie-portfolio.jpg" alt="Hilpan Moxie Wealth Management RIA website built by TMN Creative" width="1100" height="471" loading="lazy" decoding="async" /></div>
-            <div class="work-meta"><div><div class="work-name">Hilpan Moxie Wealth Management</div><div class="work-cat">RIA · Live Client Site</div></div><div class="work-arrow">Read case study →</div></div>
-          </a>
         </div>
         <div class="work-footer"><a href="/portfolio">See full portfolio <svg viewBox="0 0 14 10" fill="none"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
       </div>
@@ -525,39 +530,38 @@
 
     <section class="sec">
       <div class="sec-head">
-        <div class="eye">Who We Serve</div>
+
         <h2>Financial firms we <em>build for.</em></h2>
         <p>Our financial-services offering is designed for established firms across the United States, including fee-only firms, hybrid advisors, broker-dealer reps, family offices, lenders, and CPAs. We organize the information prospects need to understand the firm's services, credentials, disclosures, and next step.</p>
       </div>
       <div class="cards" style="grid-template-columns:repeat(3,1fr);gap:1rem;max-width:1240px;margin:0 auto">
-        <div class="card" data-r><div class="card-num">01</div><h3>RIAs &amp; fee-only advisors</h3><p>State-registered and SEC-registered RIAs, fee-only fiduciaries, NAPFA members. Solo practitioners and multi-advisor firms.</p></div>
-        <a class="card" href="/websites-for-private-wealth-firms" style="text-decoration:none;color:inherit" data-r><div class="card-num">02</div><h3>Wealth managers &amp; family offices</h3><p>HNW and UHNW wealth managers, multi-family offices, single-family offices, private wealth groups, fiduciary trust companies. Review the dedicated fit and commissioning brief.</p></a>
-        <div class="card" data-r><div class="card-num">03</div><h3>Broker-dealer reps</h3><p>Hybrid advisors, registered reps, OSJ branch managers. We build around the broker-dealer's required review and disclosure process.</p></div>
-        <div class="card" data-r><div class="card-num">04</div><h3>CPAs &amp; tax advisors</h3><p>Tax-focused CPA firms, EAs, tax-planning specialists, business advisory CPAs, estate planning practices.</p></div>
-        <div class="card" data-r><div class="card-num">05</div><h3>Lenders &amp; brokers</h3><p>Mortgage brokers, commercial lenders, hard-money lenders, SBA lenders, business loan brokers.</p></div>
-        <div class="card" data-r><div class="card-num">06</div><h3>Specialty financial</h3><p>Retirement specialists, 401(k) consultants, insurance-licensed advisors, fee-based planners, divorce financial analysts, fiduciary trust companies.</p></div>
+        <div class="card" data-r><h3>RIAs &amp; fee-only advisors</h3><p>State-registered and SEC-registered RIAs, fee-only fiduciaries, NAPFA members. Solo practitioners and multi-advisor firms.</p></div>
+        <a class="card" href="/websites-for-private-wealth-firms" style="text-decoration:none;color:inherit" data-r><h3>Wealth managers &amp; family offices</h3><p>HNW and UHNW wealth managers, multi-family offices, single-family offices, private wealth groups, fiduciary trust companies. Review the dedicated fit and commissioning brief.</p></a>
+        <div class="card" data-r><h3>Broker-dealer reps</h3><p>Hybrid advisors, registered reps, OSJ branch managers. We build around the broker-dealer's required review and disclosure process.</p></div>
+        <div class="card" data-r><h3>CPAs &amp; tax advisors</h3><p>Tax-focused CPA firms, EAs, tax-planning specialists, business advisory CPAs, estate planning practices.</p></div>
+        <div class="card" data-r><h3>Lenders &amp; brokers</h3><p>Mortgage brokers, commercial lenders, hard-money lenders, SBA lenders, business loan brokers.</p></div>
+        <div class="card" data-r><h3>Specialty financial</h3><p>Retirement specialists, 401(k) consultants, insurance-licensed advisors, fee-based planners, divorce financial analysts, fiduciary trust companies.</p></div>
       </div>
     </section>
 
     <section class="sec sec-alt">
       <div class="sec-head">
-        <div class="eye">What's Built In</div>
-        <h2>Built for firm review. <em>Conversion-focused.</em></h2>
-        <p>Financial websites have unique constraints. Our approach respects them with clear disclosure paths, conservative claims, fee transparency where appropriate, and CRM integrations configured around the client's privacy and retention requirements.</p>
+        <h2>Plan the pages and review process.</h2>
+        <p>Confirm which of these requirements belong in your project before kickoff. Copy, disclosure pages, integrations, and deeper search work depend on the selected package and signed scope. The firm retains legal and compliance review and approval.</p>
       </div>
       <div class="cards" style="grid-template-columns:repeat(3,1fr);gap:1rem;max-width:1240px;margin:0 auto">
-        <div class="card" data-r><div class="card-num">01</div><h3>FINRA Rule 2210 &amp; SEC Marketing Rule</h3><p>We draft for fair, balanced, non-misleading presentation and organize testimonials, endorsements, performance content, and disclosures for the client's review under <a href="https://www.finra.org/rules-guidance/rulebooks/finra-rules/2210">FINRA Rule 2210</a> or the <a href="https://www.sec.gov/resources-small-businesses/small-business-compliance-guides/investment-adviser-marketing">SEC Marketing Rule</a> when applicable. The firm's CCO or counsel determines what is permitted and approves the final content.</p></div>
-        <div class="card" data-r><div class="card-num">02</div><h3>Disclosure paths &amp; Form CRS</h3><p>When applicable, we can publish firm-supplied ADV brochures, <a href="https://www.sec.gov/files/formcrs.pdf">Form CRS</a>, privacy notices, and state-required notices on a dedicated disclosures page. Placement is directed by the firm's compliance team.</p></div>
-        <div class="card" data-r><div class="card-num">03</div><h3>Advisor &amp; team bios</h3><p>Each advisor can have a clear bio page with firm-approved credentials, education, designations, and registrations. Structured data identifies the advisor as a <a href="https://schema.org/Person">Person</a> and the firm as an Organization, with more specific types used only when the visible facts support them.</p></div>
-        <div class="card" data-r><div class="card-num">04</div><h3>Fee &amp; service transparency</h3><p>Clear services pages with engagement options, fee structure (% of AUM, flat fee, hourly, retainer, hybrid), minimums where applicable, and what's included. These details help prospects understand fit before they inquire.</p></div>
-        <div class="card" data-r><div class="card-num">05</div><h3>CRM &amp; intake workflows</h3><p>Forms and scheduling paths can route into the client's approved CRM or workflow. Collection, retention, and disclosure follow the client's selected tools, privacy notice, and configuration.</p></div>
-        <div class="card" data-r><div class="card-num">06</div><h3>Search and AI discovery</h3><p>Crawlable pages, useful internal links, visible answer copy, accurate metadata, and structured data that matches the page. We also identify third-party profile and editorial opportunities that can strengthen independent authority.</p></div>
+        <div class="card" data-r><h3>FINRA Rule 2210 &amp; SEC Marketing Rule</h3><p>We draft for fair, balanced, non-misleading presentation and organize testimonials, endorsements, performance content, and disclosures for the client's review under <a href="https://www.finra.org/rules-guidance/rulebooks/finra-rules/2210">FINRA Rule 2210</a> or the <a href="https://www.sec.gov/resources-small-businesses/small-business-compliance-guides/investment-adviser-marketing">SEC Marketing Rule</a> when applicable. The firm's CCO or counsel determines what is permitted and approves the final content.</p></div>
+        <div class="card" data-r><h3>Disclosure paths &amp; Form CRS</h3><p>When applicable, we can publish firm-supplied ADV brochures, <a href="https://www.sec.gov/files/formcrs.pdf">Form CRS</a>, privacy notices, and state-required notices on a dedicated disclosures page. Placement is directed by the firm's compliance team.</p></div>
+        <div class="card" data-r><h3>Advisor &amp; team bios</h3><p>Each advisor can have a clear bio page with firm-approved credentials, education, designations, and registrations. Structured data identifies the advisor as a <a href="https://schema.org/Person">Person</a> and the firm as an Organization, with more specific types used only when the visible facts support them.</p></div>
+        <div class="card" data-r><h3>Fee &amp; service transparency</h3><p>Clear services pages with engagement options, fee structure (% of AUM, flat fee, hourly, retainer, hybrid), minimums where applicable, and what's included. These details help prospects understand fit before they inquire.</p></div>
+        <div class="card" data-r><h3>CRM &amp; intake workflows</h3><p>Forms and scheduling paths can route into the client's approved CRM or workflow. Collection, retention, and disclosure follow the client's selected tools, privacy notice, and configuration.</p></div>
+        <div class="card" data-r><h3>Search and AI discovery</h3><p>Crawlable pages, useful internal links, visible answer copy, accurate metadata, and structured data that matches the page. We also identify third-party profile and editorial opportunities that can strengthen independent authority.</p></div>
       </div>
     </section>
 
     <section class="sec">
       <div class="sec-head">
-        <div class="eye">Process</div>
+
         <h2>How a focused RIA site moves <em>from kickoff to launch.</em></h2>
         <p>You work directly with us. There are no project managers, junior designers, or agency handoffs. Starter Refresh and Full Site Rebuild projects typically target a first full draft within 72 hours of kickoff. Custom Studio Build projects typically target a first review within 7 to 10 days. Final launch timing depends on firm-supplied content, integrations, compliance review, and approvals.</p>
       </div>
@@ -571,8 +575,8 @@
 
     <section class="sec sec-alt">
       <div class="sec-head">
-        <div class="eye">Pricing</div>
-        <h2>Flat-fee RIA &amp; advisor web design. <em>No retainers.</em></h2>
+
+        <h2 id="advisor-project-pricing">Flat build fees. Optional ongoing support.</h2>
         <p>All tiers include mobile optimization. After full payment, the client owns the completed project files created by TMN for the website, subject to the signed agreement. SEO, schema, integrations, accessibility, and industry-specific review requirements depend on the approved scope. Final launch timing depends on firm-supplied content, integrations, review requirements, approvals, and the signed agreement.</p>
       </div>
       <div class="cards" style="grid-template-columns:repeat(3,1fr);gap:1rem;max-width:1240px;margin:0 auto">
@@ -580,19 +584,25 @@
         <div class="card" data-r><div class="card-num">From $3,750</div><h3>Full Site Rebuild</h3><p>Strategic homepage or multi-page redesign with messaging refinement, conversion flow, mobile-first performance, and SEO foundations. First full drafts typically target 72 hours after kickoff.</p></div>
         <div class="card" data-r><div class="card-num">From $5,000</div><h3>Custom Studio Build</h3><p>For RIAs, multi-advisor firms, family offices, and wealth groups that need custom strategy, client-review copy and disclosures, team bios, deeper search work, and founder-led coordination. First reviews typically target 7 to 10 days. <a href="/custom-studio-build">See the full scope and boundaries.</a></p></div>
       </div>
+      <div class="bc-note">
+        <h3 id="advisor-ongoing-care">What you pay after the build</h3>
+        <p><a href="/ria-site-care">RIA Site Care</a> is optional at <strong>$100 per month</strong>. It includes hosting, maintenance, routine approved changes, and direct email support from Trevor with a target response within 1 business day.</p>
+        <p>Add the <a href="/managed-publishing-portal">Managed Publishing Portal</a> at $150 for <strong>$250 per month total</strong> when your team wants to publish directly. Add <a href="/compliance-care">Compliance Site Care</a> at $250 for <strong>$350 per month total</strong> when you need dated website records and a change log. These are separate choices. Taking both add-ons with RIA Site Care totals $500 per month.</p>
+        <p>Each monthly service is month to month. Compliance approval remains with the firm. After full payment, you can also take the completed website files and arrange your own hosting, subject to the signed agreement.</p>
+      </div>
       <div style="text-align:center;margin-top:2rem"><a href="/pricing" style="display:inline-flex;align-items:center;gap:0.5rem;font-size:0.92rem;font-weight:500;color:var(--ink);text-decoration:none;padding:0.7rem 1.2rem;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--bg-elev);transition:all 250ms var(--e)">See website pricing &amp; support <svg viewBox="0 0 14 10" fill="none" width="14" height="10"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
     </section>
 
     <section class="sec">
       <div class="sec-head">
-        <div class="eye">FAQ</div>
+
         <h2>Common questions from <em>advisors and RIAs.</em></h2>
         <p>Answers to the questions we hear most from financial firms when they reach out.</p>
       </div>
       <div style="max-width:880px;margin:0 auto;display:flex;flex-direction:column;gap:1rem">
         <details data-r style="background:var(--bg-elev);border:1px solid var(--line);border-radius:var(--r-md);padding:1.25rem 1.5rem;cursor:pointer">
           <summary style="font-weight:600;font-size:1.05rem;color:var(--ink);list-style:none">How much does a financial advisor website cost?</summary>
-          <p style="margin-top:0.85rem;color:var(--ink-mid);line-height:1.65;font-size:0.96rem">Financial advisor and RIA web design at TMN Creative starts at $2,250 for a Starter Refresh, $3,750 for a Full Site Rebuild, and $5,000 for a Custom Studio Build. Each tier has a different scope, with advisor bios, client-review copy and disclosures, and deeper industry-specific work included only when listed in the confirmed package or signed agreement. Flat website-build fees, no retainers. Advisory firms start with <a href="/ria-site-care">RIA Site Care</a> at $100/month.</p>
+          <p style="margin-top:0.85rem;color:var(--ink-mid);line-height:1.65;font-size:0.96rem">Financial advisor and RIA web design at TMN Creative starts at $2,250 for a Starter Refresh, $3,750 for a Full Site Rebuild, and $5,000 for a Custom Studio Build. Each tier has a different scope, with advisor bios, client-review copy and disclosures, and deeper industry-specific work included only when listed in the confirmed package or signed agreement. Website builds use flat project fees. Ongoing support is optional, with <a href="/ria-site-care">RIA Site Care</a> at $100/month.</p>
         </details>
         <details data-r style="background:var(--bg-elev);border:1px solid var(--line);border-radius:var(--r-md);padding:1.25rem 1.5rem;cursor:pointer">
           <summary style="font-weight:600;font-size:1.05rem;color:var(--ink);list-style:none">How do you handle FINRA Rule 2210 and SEC Marketing Rule review?</summary>
@@ -632,7 +642,7 @@
     <section class="sec sec-alt" aria-label="Sources and review boundaries">
       <aside class="source-ledger">
         <h2>Sources and review boundaries</h2>
-        <p>Reviewed Sep 3, 2026. TMN prepares website structure and supportable draft copy for the firm&apos;s review. The firm&apos;s CCO, counsel, broker-dealer review desk, and other responsible reviewers determine which rules apply and approve publication. No ranking, lead volume, or AI recommendation is promised.</p>
+        <p>Reviewed Sep 8, 2026 by Trevor and Taylor Niemann. TMN prepares website structure and supportable draft copy for the firm&apos;s review when included in the agreed scope. The firm&apos;s CCO, counsel, broker-dealer review desk, and other responsible reviewers determine which rules apply and approve publication. No ranking, lead volume, or AI recommendation is promised.</p>
         <ul>
           <li><a href="https://www.sec.gov/resources-small-businesses/small-business-compliance-guides/investment-adviser-marketing" target="_blank" rel="noopener">SEC investment adviser marketing guidance</a></li>
           <li><a href="https://www.finra.org/rules-guidance/rulebooks/finra-rules/2210" target="_blank" rel="noopener">FINRA Rule 2210</a></li>

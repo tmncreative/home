@@ -63,6 +63,7 @@
   var VERTICAL_SOURCES = {
     'accounting': true,
     'architecture': true,
+    'car-wash': true,
     'contractors': true,
     'dental': true,
     'financial-services': true,
@@ -150,6 +151,7 @@
     '/training-wheels-aba-website-design': 'healthcare',
     '/walnut-ventures-website-design': 'financial-services',
     '/web-design-for-attorneys': 'legal',
+    '/web-design-for-car-wash-companies': 'car-wash',
     '/web-design-for-service-businesses': 'contractors',
     '/website-design-for-healthcare-practices': 'healthcare',
     '/websites-for-accounting-firms': 'accounting',

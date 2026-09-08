@@ -1,0 +1,60 @@
+/* Opt-in refinements for the three AI-exposed buyer pages. No homepage rules. */
+/* Reuse the exact local serif files already used by the homepage. */
+@font-face { font-family: 'Source Serif 4'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/source-serif-4-regular-latin.woff2') format('woff2'); }
+@font-face { font-family: 'Source Serif 4'; font-style: italic; font-weight: 400; font-display: swap; src: url('fonts/source-serif-4-italic-latin.woff2') format('woff2'); }
+.bc-page { --sans: 'IBM Plex Sans', system-ui, -apple-system, sans-serif; }
+.bc-page .hero { padding-top: calc(68px + 3.5rem); padding-bottom: 3.5rem; }
+.bc-page .hero-caustic { display: none; }
+.bc-page .hero h1 { font-family: var(--sans) !important; font-size: clamp(2.2rem, 4.2vw, 3.6rem); font-weight: 500 !important; line-height: 1.12; letter-spacing: -.035em !important; max-width: 24ch; margin-inline: auto; text-wrap: balance; }
+.bc-page .hero .lead { max-width: 59ch; font-size: 1.1rem; margin-top: 1.3rem; }
+.bc-page .hero .authority-meta { margin: 1.2rem auto 0; color: var(--ink-mid); }
+.bc-page.tmn-guide .hero { padding-top: 3.5rem; }
+.bc-page.tmn-guide .hero h1 { margin-left: 0; }
+.bc-page .answer-panel { box-shadow: none; border-radius: 3px; }
+.bc-page .hero-actions, .bc-page .hero-ctas { flex-wrap: wrap; }
+.bc-page .btn { white-space: nowrap; }
+.bc-page .bc-jump { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem 1.7rem; padding: 1rem var(--rail, 1.25rem); border-block: 1px solid var(--line); background: var(--bg-elev, #fff); }
+.bc-jump a, .bc-links a { display: inline-flex; align-items: center; min-height: 44px; font-size: .95rem; font-weight: 600; color: var(--ink); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: .22em; }
+.bc-jump a:hover, .bc-links a:hover { text-decoration-color: currentColor; }
+.bc-page :is(section, aside, h2, h3)[id] { scroll-margin-top: 90px; }
+.bc-page .bc-proof { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); align-items: center; gap: clamp(1.75rem, 4vw, 3.5rem); max-width: 1160px; margin-inline: auto; }
+.bc-proof figure { margin: 0; min-width: 0; }
+.bc-proof img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 3px; }
+.bc-proof figcaption { margin-top: .75rem; font-size: .85rem; color: var(--ink-mid); line-height: 1.55; }
+.bc-proof-copy h2 { margin: 0 0 1rem; font-family: var(--sans); font-size: clamp(1.75rem, 2.7vw, 2.5rem); line-height: 1.15; letter-spacing: -.03em; text-wrap: balance; }
+.bc-proof-copy p { color: var(--ink-mid); line-height: 1.65; margin-bottom: 1rem; }
+.bc-proof-copy ul { padding-left: 1.2rem; color: var(--ink-mid); line-height: 1.65; }
+.bc-proof-copy li + li { margin-top: .55rem; }
+.bc-links { display: flex; flex-wrap: wrap; gap: .3rem 1.5rem; margin-top: 1rem; }
+.bc-page .bc-note { max-width: 78ch; margin: 1.5rem auto 0; font-size: .95rem; color: var(--ink-mid); line-height: 1.65; }
+.bc-page .bc-note a { color: inherit; text-decoration: underline; text-underline-offset: .2em; }
+.bc-page .bc-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 3rem; }
+.bc-options article { border-top: 1px solid var(--line); padding-top: 1.25rem; }
+.bc-options h3 { font-size: 1.2rem; margin-bottom: .65rem; }
+.bc-options p { color: var(--ink-mid); line-height: 1.65; max-width: 65ch; }
+.bc-options p + p { margin-top: .7rem; }
+.bc-page .bc-scope { max-width: 1100px; margin-inline: auto; }
+.bc-scope dl { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 1rem 2.5rem; }
+.bc-scope dt { font-weight: 600; color: var(--ink); }
+.bc-scope dd { color: var(--ink-mid); line-height: 1.65; margin: 0; }
+.bc-page .bc-support { margin: 2rem auto 0; max-width: 1100px; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.bc-support h3 { font-family: var(--sans); font-size: 1.25rem; margin-bottom: .65rem; }
+.bc-support p { color: var(--ink-mid); line-height: 1.65; max-width: 80ch; }
+.bc-page details summary { min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.bc-page details summary::after { content: '+'; flex: none; font-size: 1.3rem; }
+.bc-page details[open] summary::after { content: '−'; }
+.bc-page a:focus-visible, .bc-page summary:focus-visible { outline: 2px solid var(--accent-deep); outline-offset: 5px; }
+@media (max-width: 900px) {
+  .bc-page .bc-proof { grid-template-columns: 1fr; }
+  .bc-page .bc-proof figure { max-width: 680px; }
+  .bc-page .hero { padding-top: calc(68px + 2.5rem); }
+  .bc-page.tmn-guide .hero { padding-top: 2.5rem; }
+}
+@media (max-width: 600px) {
+  .bc-page .bc-options { grid-template-columns: 1fr; gap: 1.5rem; }
+  .bc-scope dl { grid-template-columns: 1fr; gap: .4rem; }
+  .bc-scope dt:not(:first-child) { margin-top: 1.1rem; }
+  .bc-page .bc-jump { justify-content: flex-start; gap: .15rem 1.2rem; }
+  .bc-page .hero .lead { font-size: 1.05rem; }
+  .bc-page .hero h1 { font-size: clamp(2rem, 8.2vw, 2.8rem); }
+}

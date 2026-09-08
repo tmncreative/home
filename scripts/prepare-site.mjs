@@ -9,7 +9,7 @@ const publicDirectories = new Set(['fonts', 'images', 'videos']);
 const publicExtensions = new Set(['.css', '.html', '.js', '.txt', '.xml']);
 const publicRootFiles = new Set(['_redirects']);
 const analyticsScript = '<script src="/tmn-analytics.v20260825a.js" defer></script>';
-const attributionVersion = '20260908a';
+const attributionVersion = '20260908b';
 const execFileAsync = promisify(execFile);
 const { stdout: trackedFileList } = await execFileAsync('git', ['ls-files', '-z'], {
   cwd: sourceRoot,

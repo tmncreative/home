@@ -186,6 +186,30 @@ test('each existing form sends only its existing qualification fields', () => {
   }
 });
 
+test('car-wash and financial-services attribution survives landing, inquiry, and confirmed lead', () => {
+  for (const [path, vertical] of [
+    ['/web-design-for-car-wash-companies', 'car-wash'],
+    ['/financial-services', 'financial-services']
+  ]) {
+    for (const query of ['', '?vertical=' + vertical]) {
+      const landing = fixture({ path, withForm: false });
+      const inquiry = fixture({ path: '/start-a-project' + query,
+        session: landing.session, local: landing.local, values: qualification });
+      assert.equal(inquiry.fields.get('vertical_source').value, vertical, path + query);
+      assert.equal(inquiry.fields.get('first_landing_path').value, path);
+      assert.equal(inquiry.calls.google.some(call => call[1] === 'generate_lead'), false);
+      inquiry.fire('submit');
+      assert.equal(inquiry.pending().vertical_source, vertical);
+      assert.equal(inquiry.pending().first_landing_path, path);
+      const event = lead(inquiry.success());
+      assert.equal(event.vertical_source, vertical);
+      assert.equal(event.first_landing_path, path);
+      assert.equal(event.project_investment, qualification.project_investment);
+      assert.equal(event.send_to, 'G-DYJWPYC8BR');
+    }
+  }
+});
+
 test('unknown and prototype-named forms cannot add qualification fields', () => {
   for (const name of ['newsletter-inquiry', 'constructor', '__proto__', 'toString']) {
     const f = fixture({ name, values: qualification });
@@ -299,7 +323,7 @@ test('built pages refresh attribution and preserve existing analytics and homepa
     const built = readFileSync(resolve(root, '_site', filename), 'utf8');
     const source = readFileSync(resolve(root, filename), 'utf8');
     assert.equal(built.split(analyticsTag).length - 1, 1, filename);
-    assert.equal(built.includes('tmn-attribution.v20260503b.js?v=20260908a'), true, filename);
+    assert.equal(built.includes('tmn-attribution.v20260503b.js?v=20260908b'), true, filename);
     assert.equal(normalize(built), normalize(source), filename + ' changed beyond allowed scripts');
   }
 });
