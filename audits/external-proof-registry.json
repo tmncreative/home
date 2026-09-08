@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-08",
   "purpose": "Private source of truth for the independent evidence cited on https://tmncreative.com/verify. A reachable link is not proof that the claim is still true; substantive facts require a human check before public copy changes.",
   "settings": {
     "staleAfterDays": 30,
@@ -132,10 +132,10 @@
       "publiclyLinked": true,
       "status": "active",
       "sourceOwner": "third-party platform",
-      "whatBuyerCanCheck": "The public agency profile and independently submitted client reviews, if any are published.",
+      "whatBuyerCanCheck": "The public agency profile showed 5 reviews at 5.0 overall on September 8, 2026: 2 visibly labeled Verified and 3 online reviews. Descriptive copy still needs the Care to Speak launch-status and first-draft timing corrections documented in editorial-corrections-and-authority-2026-09-08.md.",
       "manualChecks": ["Profile points to TMN Creative", "Founding year and descriptive facts are accurate", "Published review count is reflected only after direct inspection"],
-      "lastVerified": "2026-08-25",
-      "nextCheck": "2026-09-25"
+      "lastVerified": "2026-09-08",
+      "nextCheck": "2026-10-08"
     },
     {
       "id": "profile-designrush",

@@ -33,6 +33,33 @@
     'already-knew-tmn': true,
     'other': true
   };
+  // Only fixed form choices belong in analytics. Never include contact details,
+  // company names, free-text goals, or the visitor's pasted AI conversation.
+  var PROJECT_CHOICES = {
+    project_investment: ['2250-5000','5000-10000','10000-plus','10000-20000','20000-plus','not-approved'],
+    project_scope: ['premium-redesign','lead-generation','multi-location','site-and-platform','custom-platform','recommendation','ria-site-care','publishing-portal','ai-visibility','compliance-care','content-care'],
+    timeline: ['30-days','1-3-months','3-6-months','researching'],
+    decision_role: ['owner-founder','partner-executive','marketing-operations','external-consultant']
+  };
+
+  var QUALIFICATION_FIELDS = {
+    'qualified-project-inquiry': ['project_investment','project_scope','timeline','decision_role'],
+    'tmn-meta-intake': ['project_investment'],
+    'tmn-creative-intake': ['project_investment','timeline','decision_role'],
+    'studio-inquiry': ['project_investment','timeline']
+  };
+
+  function projectChoice(name, value, formName){
+    if(!Object.prototype.hasOwnProperty.call(QUALIFICATION_FIELDS, formName)) return '';
+    if(QUALIFICATION_FIELDS[formName].indexOf(name) === -1) return '';
+    if(!Object.prototype.hasOwnProperty.call(PROJECT_CHOICES, name)) return '';
+    return PROJECT_CHOICES[name].indexOf(value) !== -1 ? value : '';
+  }
+
+  function projectFormChoice(form, name){
+    var field = form.querySelector('[name="' + name + '"]');
+    return field && !field.disabled ? projectChoice(name, field.value, form.getAttribute('name')) : '';
+  }
   var VERTICAL_SOURCES = {
     'accounting': true,
     'architecture': true,
@@ -540,6 +567,10 @@
         booking_source: cleanBookingSource(readSessionValue(SESSION_BOOKING_SOURCE_KEY)),
         ai_provider: currentAiSource ? aiSourceSlug(currentAiSource) : '',
         first_landing_path: cleanFirstLandingPath(attribution.first_landing_path || ''),
+        project_investment: projectFormChoice(form, 'project_investment'),
+        project_scope: projectFormChoice(form, 'project_scope'),
+        timeline: projectFormChoice(form, 'timeline'),
+        decision_role: projectFormChoice(form, 'decision_role'),
         at: Date.now()
       }));
     } catch(e){}
@@ -688,8 +719,16 @@
       if(window.gtag){
         var googleParameters = analyticsEventParameters(confirmedProps || {});
         googleParameters.event_category = 'lead';
-        if(window.__TMN_GA4_MEASUREMENT_ID__) googleParameters.send_to = window.__TMN_GA4_MEASUREMENT_ID__;
-        window.gtag('event', 'generate_lead', googleParameters);
+        // Qualification dimensions are scoped to this GA4 lead event only.
+        // Revalidate after storage so modified tokens cannot leak free text.
+        Object.keys(PROJECT_CHOICES).forEach(function(name){
+          var choice = projectChoice(name, pending[name], pending.form);
+          if(choice) googleParameters[name] = choice;
+        });
+        if(window.__TMN_GA4_MEASUREMENT_ID__){
+          googleParameters.send_to = window.__TMN_GA4_MEASUREMENT_ID__;
+          window.gtag('event', 'generate_lead', googleParameters);
+        }
         window.gtag('event', 'conversion', {
           send_to: 'AW-18041747908/lead'
         });

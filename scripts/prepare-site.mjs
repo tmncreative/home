@@ -9,6 +9,7 @@ const publicDirectories = new Set(['fonts', 'images', 'videos']);
 const publicExtensions = new Set(['.css', '.html', '.js', '.txt', '.xml']);
 const publicRootFiles = new Set(['_redirects']);
 const analyticsScript = '<script src="/tmn-analytics.v20260825a.js" defer></script>';
+const attributionVersion = '20260908a';
 const execFileAsync = promisify(execFile);
 const { stdout: trackedFileList } = await execFileAsync('git', ['ls-files', '-z'], {
   cwd: sourceRoot,
@@ -51,9 +52,13 @@ for (const entry of await readdir(publishRoot, { withFileTypes: true })) {
   if (!entry.isFile() || extname(entry.name) !== '.html') continue;
 
   const pagePath = join(publishRoot, entry.name);
-  const html = await readFile(pagePath, 'utf8');
+  const sourceHtml = await readFile(pagePath, 'utf8');
+  const html = sourceHtml.replace(/(src="\/?tmn-attribution\.v20260503b\.js)(?:\?v=[^"\s]+)?"/g, `$1?v=${attributionVersion}"`);
 
-  if (html.includes(analyticsScript)) continue;
+  if (html.includes(analyticsScript)) {
+    if (html !== sourceHtml) await writeFile(pagePath, html);
+    continue;
+  }
   if (!html.includes('</head>')) {
     throw new Error(`Unable to add analytics to ${entry.name}: missing </head>`);
   }
